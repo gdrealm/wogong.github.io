@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="../style.css">
+<title>常用命令</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- for SyntaxHighlighter core -->
+		<script type="text/javascript" src="../scripts/shCore.js"></script>
+		<link type="text/css" rel="stylesheet" href="../styles/shCore.css"/>
+		<!-- for SyntaxHighlighter theme -->
+		<link type="text/css" rel="stylesheet" href="../styles/shThemeMidnight.css"/>
+		<!-- for SyntaxHighlighter syntax -->
+		<script type="text/javascript" src="../scripts/shBrushAsm.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushBash.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCpp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCSharp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJava.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushLua.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPerl.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPhp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPython.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushRuby.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushSql.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushVim.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushXml.js"></script>
+		<!-- for SyntaxHighlighter execute -->
+		<script type="text/javascript">
+		SyntaxHighlighter.all();
+		</script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30349200-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		   })();
+		</script>
+</head>
+<body>
+
+<ul class="nav">
+<li><a href="../index.html">Wiki</a></li>             
+<li><a href="../navigator.html">Navigator</a></li>             
+<li><a href="../about.html">About</a></li>
+<li><a href="../blog.html">Blog</a></li>
+</ul>
+<form style="float: right;" action="http://www.google.com/search" method="get">              
+<input type="text" size="30" name="q"  placeholder="Search">              
+<input name="sitesearch" value="wogong.github.com" type="hidden">             
+</form>
+
+<div class="clear">
+<!-- Place this tag where you want the badge to render -->
+<a href="https://plus.google.com/116560009434103921581?prsrc=3" rel="publisher" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:16px;height:16px;float:right;"/></a>
+
+
+<p>
+Latex系统参考
+Latex常用命令:
+latex example.tex_____nothing to say
+dvips example.dvi_____make .dvi into .ps
+xdvi example.dvi_____displsy .dvi(only for unix~)
+</p>
+
+
+
+<p>
+Latex宏包：
+syntonly
+babel
+inputenc
+fontenc
+</p>
+
+
+
+<p>
+Latex内部命令：
+\\ or \newline
+\\*   强行断行，禁止分页
+\newpage
+\sloppy
+\fussy
+\underline{text}  强调（划线）
+\emph{text}  强调（斜体）
+\mbox{text}
+\fbox{text}
+\frenchspacing
+\mbox{}  取消连字
+\tableofcontents
+\maketitle
+\title{...}
+\author{...\and...}
+\date{...}
+\frontmatter  应紧接\begin{document}，罗马数字页码
+\mainmatter  应在第一章正文紧前，阿拉伯数字页码重新计数
+\appendix
+\backmatter
+\label{marker},\ref{marker} and \pageref{marker}  交叉引用
+\footnote{text}
+\textit{text}
+\textsf{text}
+\texttt{text}
+\verb+text+
+</p>
+
+<p>
+for style: article
+  \section{...}
+  \section*{...}  不出现在目录，不编号
+  \paragraph{...}
+</p>
+
+<p>
+  \subsection{...}
+  \subparagraph{...}
+</p>
+
+<p>
+  \subsubsection{...}
+for style: report&amp;book
+  \part{...}
+  \chapter{...}
+</p>
+
+
+
+<p>
+Latex字符串:
+\today
+\TeX
+\LaTeX
+\LaTeXe
+</p>
+
+
+
+<p>
+Latex特殊字符、符号:
+''  ''
+''
+</p>
+<ul>
+<li>
+ 连字号
+
+</ul>
+<p>
+--  短破折号
+--- 破折号
+\(-\)  减号
+\~  波浪号
+\(\sim\)  波浪号
+\(^{\circ}\mathrm{C}\)  度
+\ldots  省略号
+</p>
+
+
+
+<p>
+Latex环境：
+\begin{environment} text end{environment}
+  itemize 简单列表
+  enumerate  带序号的列表
+  description  带描述的列表 
+  note: text中使用item[]标识
+</p>
+
+<p>
+  flushleft  左对齐文本
+  flushright  右对齐
+  center  中央对齐
+</p>
+
+<p>
+  quote  一般引用
+  quotation  较长引用，对段落进行缩进
+  verse  引用诗歌
+</p>
+
+<p>
+  verbatim  逐字打印
+</p>
+
+<p>
+  tabular
+</p>
+
+</div>
+
+</body>
+
+	<div class="footer">
+	<p>&copy; 2012 wogong &nbsp;&nbsp; </p>
+	</div>
+
+</html>
+

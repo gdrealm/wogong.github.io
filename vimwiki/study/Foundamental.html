@@ -1,0 +1,992 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Foundamental</title>
+   <meta name="author" content="wogong" />
+
+   <link rel="start" href="/" />
+   <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/feedname" title="RSS feed" />
+		<!-- for SyntaxHighlighter core -->
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shCore.js"></script>
+		<link type="text/css" rel="stylesheet" href="../../assets/vimwiki/styles/shCore.css"/>
+		<!-- for SyntaxHighlighter theme -->
+		<link type="text/css" rel="stylesheet" href="../../assets/vimwiki/styles/shThemeMidnight.css"/>
+		<!-- for SyntaxHighlighter syntax -->
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushAsm.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/../scripts/shBrushBash.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushCpp.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushCSharp.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushJava.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushLua.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushPerl.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushPhp.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushPython.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushRuby.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushSql.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushVim.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushXml.js"></script>
+		<!-- for SyntaxHighlighter execute -->
+		<script type="text/javascript">
+		SyntaxHighlighter.all();
+		</script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30349200-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		   })();
+		</script>
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="../../assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="../../assets/themes/mark-reid/css/screen.css" type="text/css" />
+
+</head>
+<body id="">
+<div id="site">
+  
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">&larr; <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+      <li><a class="home" href="../../">Home</a></li>
+      <li><a  href="../../archive.html">Archive</a></li>
+      <li><a  href="../../pages.html">Pages</a></li>
+      <li><a  href="../../categories.html">Categories</a></li>
+      <li><a  href="../../tags.html">Tags</a></li>
+      <li><a  href="../index.html">Wiki</a></li>
+    </ul>
+  </div>
+
+  
+<div id="page">
+
+
+<div class="toc">
+<ul>
+<li><a href="#toc_0.1">基础工程</a>
+<ul>
+<li><a href="#toc_0.1.1">绪论</a>
+<li><a href="#toc_0.1.2">R1 土压力基本知识</a>
+<li><a href="#toc_0.1.3">R2 地基承载力</a>
+<li><a href="#toc_0.1.4">第1章 地基勘察</a>
+<ul>
+<li><a href="#toc_0.1.4.1">1.1 概述</a>
+<li><a href="#toc_0.1.4.2">1.2 地基岩土分类</a>
+<li><a href="#toc_0.1.4.3">1.3 地基勘察方法</a>
+<li><a href="#toc_0.1.4.4">1.4 地基勘察报告</a>
+</ul>
+<li><a href="#toc_0.1.5">第2章 天然地基上的浅基础设计</a>
+<ul>
+<li><a href="#toc_0.1.5.1">2.1 概述</a>
+<li><a href="#toc_0.1.5.2">2.2 浅基础设计方法、步骤</a>
+<li><a href="#toc_0.1.5.3">2.3 浅基础类型、材料</a>
+<li><a href="#toc_0.1.5.4">2.4 基础埋置深度</a>
+<li><a href="#toc_0.1.5.5">2.5 地基承载力及验算</a>
+<li><a href="#toc_0.1.5.6">2.6 地基变形特征</a>
+</ul>
+<li><a href="#toc_0.1.6">第3章 条形、筏形和箱形基础设计</a>
+<li><a href="#toc_0.1.7">第4章</a>
+<li><a href="#toc_0.1.8">第5章 地基处理</a>
+<ul>
+<li><a href="#toc_0.1.8.1">5.1 概述</a>
+<li><a href="#toc_0.1.8.2">5.2 换填法</a>
+<li><a href="#toc_0.1.8.3">5.3 加密法</a>
+<li><a href="#toc_0.1.8.4">5.4 胶结法</a>
+<li><a href="#toc_0.1.8.5">5.5 加筋法(简介）</a>
+</ul>
+<li><a href="#toc_0.1.9">第7章 特殊土地基</a>
+<li><a href="#toc_0.1.10">第8章 地基抗震分析和设计</a>
+</ul>
+</ul>
+</ul>
+</div>
+<h2 id="toc_0.1">基础工程</h2>
+<h3 id="toc_0.1.1">绪论</h3>
+<ol>
+<li>
+地基基础基本概念及对其基本要求：强度，变形，经济
+
+<li>
+基础工程主要问题
+
+<ol>
+<li>
+各种基础的设计
+
+<li>
+软弱地基处理：soil improvement
+
+</ol>
+</ol>
+<p>
+处理方法，处理后地基强度，变形性能分析
+</p>
+<ol>
+<li>
+基坑工程（降水、支护）
+
+<li>
+已有建筑物纠偏、托换underpinning、平移
+
+</ol>
+<li>
+基础工程特点
+
+<ol>
+<li>
+很强的个性
+
+<li>
+复杂性：影响因素多，包括地基，基础，上部结构，设计，施工，使用各个环节
+
+<li>
+
+
+<li>
+造价高，工期长，决定了合理的方案会有客观的效益
+
+<li>
+实践性：要在理解概念的基础上
+
+<li>
+综合性
+
+</ol>
+<li>
+学习本课程需注意的问题
+
+<ol>
+<li>
+注意理解概念原理
+
+<li>
+学会全面综合考虑问题，既有逻辑思维，也要有辩证思维
+
+</ol>
+<li>
+本课程安排：
+
+<p>
+考核方式：
+</p>
+<ul>
+<li>
+期中考试 10
+
+<li>
+大作业 25
+
+<li>
+期末考试 65
+
+</ul>
+
+<h3 id="toc_0.1.2">R1 土压力基本知识</h3>
+<p>
+补讲土力学 第六章
+</p>
+
+<ol>
+<li>
+概念
+
+<li>
+类型
+
+<li>
+静止土压力计算
+
+<li>
+主动土压力和被动土压力的计算
+
+<li>
+土分层及有地下水时的压力计算
+
+</ol>
+
+<h3 id="toc_0.1.3">R2 地基承载力</h3>
+<p>
+补讲土力学 第八章
+</p>
+
+<ol>
+<li>
+地基破坏过程及地基承载力概念
+
+</ol>
+<p>
+<strong>典型荷载-沉降曲线三个阶段：</strong><br />
+</p>
+<ul>
+<li>
+压密阶段( 直线变形阶段)
+
+<li>
+局部剪损阶段
+
+<li>
+整体剪切破坏阶段(塑性区贯通)
+
+</ul>
+<p>
+<strong>两个临界荷载：</strong>
+</p>
+<ul>
+<li>
+临塑荷载
+
+<li>
+极限荷载
+
+</ul>
+<p>
+<strong>地基承载力：</strong> 地基承受荷载的能力。<br />
+</p>
+<ul>
+<li>
+极限承载力：荷载稍大于此值，地基即彻底破坏。和土性及基础埋深、大小、形状等有关
+
+<li>
+容许承载力：考虑一定安全储备、变形限制。所以除上述因素外，还与上部结构情况有关。
+
+</ul>
+<p>
+<strong>地基破坏三种形式</strong>
+</p>
+<ul>
+<li>
+整体剪切破坏：典型情况，如前所述；
+
+<li>
+局部剪切破坏：变形持续发展，土抗剪强度不能同时发挥，塑性区不贯通而沉降已很大，承载力低
+
+<li>
+冲剪破坏：刺入式破坏，变形发展快，承载力更低
+
+</ul>
+<p>
+<strong>各种破坏形式发生的条件：</strong><br />
+地基土较硬、基础埋深较小的情况下，一般发生整体剪切破坏；土软、埋深大，则可发生后两种形式的破坏。Vesic曾给出定量判别条件（见p276）。
+</p>
+
+<ol>
+<li>
+地基极限承载力计算
+
+<li>
+限制塑性区确定地基容许承载力
+
+</ol>
+
+<h3 id="toc_0.1.4">第1章 地基勘察</h3>
+<h4 id="toc_0.1.4.1">1.1 概述</h4>
+<ol>
+<li>
+勘察内容方法决定于：
+
+<ol>
+<li>
+工程等级
+
+<li>
+场地条件
+
+<li>
+勘察阶段：
+
+<ul>
+<li>
+选址勘察，初步勘查，详细勘察。勘察内容依次增多。
+
+<li>
+重要工程施工勘察
+
+</ul>
+</ol>
+<li>
+地基勘察任务：确定场地的适宜性；为岩土工程设计提供依据及建议，具体成果有：
+
+<ul>
+<li>
+土层分布，各土层性质，力学性质
+
+<li>
+地下水分布，有无腐蚀性质
+
+<li>
+可能的不良地质问题：滑坡、岩洞、矿穴、古井，古墓等
+
+<li>
+提供场地土的标准冻结深度（季节性冻土区）
+
+<li>
+场地的地震效应（地震烈度大于6度区）
+
+</ul>
+</ol>
+
+
+<p>
+场地和地基：前者范围大
+</p>
+
+<h4 id="toc_0.1.4.2">1.2 地基岩土分类</h4>
+<ul>
+<li>
+一般按组成分类：岩石，碎土石，砂土，粉土，粘性土，人工填土
+
+<li>
+岩石硬度：
+
+<li>
+岩体完整程度：
+
+<li>
+按地质年代分：
+
+<li>
+按搬运距离分：
+
+<li>
+按颗粒大小分：
+
+</ul>
+
+<h4 id="toc_0.1.4.3">1.3 地基勘察方法</h4>
+<p>
+广义的讲，
+</p>
+<ol>
+<li>
+地球物理勘探：用物理方法勘探土层，地下水分布及性质
+
+<ul>
+<li>
+原理：
+
+<li>
+优点：快，省
+
+<li>
+缺点：各种方法能测的参数有限，且都很不可靠
+
+<li>
+波速法：（场地分类必备）单孔法，跨孔法，表面波法
+
+</ul>
+<li>
+坑探
+
+<ul>
+<li>
+优点：简便，直观，取样质量高
+
+<li>
+缺点：深度有限，水下开挖难，仅用于小工程
+
+</ul>
+<li>
+钻探
+
+<ul>
+<li>
+
+
+</ul>
+<li>
+标准贯入试验
+
+<ul>
+<li>
+方法：钻孔至拟测深度以上15cm
+
+<li>
+用途：
+
+</ul>
+<li>
+轻型动力触探
+
+<li>
+重型动力触探
+
+<li>
+静力触探
+
+<li>
+平板荷载试验
+
+<li>
+十字板剪切试验
+
+<li>
+旁压试验
+
+</ol>
+<h4 id="toc_0.1.4.4">1.4 地基勘察报告</h4>
+<ol>
+<li>
+报告内容
+	用文字、图表说明下列各方面：
+
+<ul>
+<li>
+任务：工作简介及任务要求
+
+<li>
+勘察过程、方法（平面图、钻孔布置图等）
+
+<li>
+结果：地形地貌；土层分布
+
+<li>
+意见和建议
+
+<ul>
+<li>
+场地适宜性评价
+		-
+
+</ul>
+</ul>
+<li>
+勘察报告的阅读、使用
+	理解其内容并评价其正确性、完整性，需工程地质、土力学、基础过程等知识
+
+<li>
+勘察报告举例
+	本章习题不做，但看一下是否会
+
+</ol>
+
+<h3 id="toc_0.1.5">第2章 天然地基上的浅基础设计</h3>
+<h4 id="toc_0.1.5.1">2.1 概述</h4>
+<p>
+天然地基、人工基础
+浅基础：埋深小于5m或小于基础宽，可不计侧摩擦
+优先采用天然地基
+</p>
+
+<h4 id="toc_0.1.5.2">2.2 浅基础设计方法、步骤</h4>
+<ol>
+<li>
+地基基础设计思路
+
+<ol>
+<li>
+允许承载力设计方法
+
+<li>
+单一安全系数的极限状态设计方法：两种极限状态
+
+<li>
+概率极限状态设计法（限制失效概率）
+
+<li>
+实用极限状态设计方法（采用分项系数）
+
+<li>
+荷载代表值与荷载组合
+
+</ol>
+<li>
+现行《地基基础规范》设计内容要点
+
+<ul>
+<li>
+地基基础安全等级
+
+<li>
+地基承载力验算
+
+<li>
+变形验算
+
+<li>
+稳定验算（属承载力）
+
+<li>
+基础本身的强度验算，荷载用基本组合，裂缝验算用标准组合
+
+</ul>
+<li>
+设计步骤
+
+<ol>
+<li>
+了解情况
+
+<li>
+基础类型、材料
+
+<li>
+持力层、埋深
+
+<li>
+定基底尺寸 p&lt;=f
+
+<li>
+验算承载力
+
+<li>
+基础结构构造
+
+<li>
+施工图
+
+</ol>
+</ol>
+
+<h4 id="toc_0.1.5.3">2.3 浅基础类型、材料</h4>
+<ol>
+<li>
+浅基础类型
+
+<ol>
+<li>
+单独基础
+
+<ul>
+<li>
+用于柱下、墙梁下（荷载较小）；
+
+<li>
+分刚性基础、扩展基础、壳体基础。
+
+<li>
+同一基底尺寸，刚性基础高度大
+
+<li>
+刚性角：混凝土的刚性角较砖大
+
+</ul>
+</ol>
+</ol>
+
+<ol>
+<li>
+壳体基础
+
+<ul>
+<li>
+用料省，其内主要产生压应力
+
+<li>
+但角度要合适，过平则有拉应力，过陡则高度要大（受力与屋盖不同）
+
+<li>
+施工复杂
+
+</ul>
+<li>
+条形基础
+
+<ul>
+<li>
+用于柱下、墙下墙下条基可有刚性、扩展之分（墙高差别大时亦不可能做成刚性） <em>纵向弯曲</em>
+
+<li>
+双向条基：交叉梁基础（或条基+连梁）
+
+</ul>
+<li>
+筏型基础
+
+</ol>
+<p>
+又称满堂红基础，防水性好
+<em>考点</em> 比较上梁下板与上板下梁
+</p>
+<ol>
+<li>
+箱型基础
+
+</ol>
+<p>
+刚度大，抗不均匀沉降能力强<br />
+与筏基的区别？
+</p>
+
+<ol>
+<li>
+基础材料
+
+</ol>
+<p>
+基础所处环境差，对其材料有较高要求
+</p>
+<ul>
+<li>
+砖石、砂浆：其最低标号见表2-9，对砖要看：是否寒区、潮湿程度对石材、砂浆：仅看潮湿程度，因其抗冻性好
+
+<li>
+钢砼：用于荷载较大的情况，一般不低于C20。（强度低时，易开裂，使钢筋锈蚀，膨胀，破坏混凝土）
+
+<li>
+素混凝土：多用C15
+
+<li>
+灰土：多用三七灰土（体积比），不可有生灰块夯实最优含水量—“捏紧成团，落地开花”密实度控制：虚铺22-25cm，夯成15cm（一步灰土）。承载力标准值用20-25t/m<sup><small>2</small></sup> 。抗水性差，早期抗冻性差，仅用于水位以上加水泥成三合土更好
+
+</ul>
+
+<h4 id="toc_0.1.5.4">2.4 基础埋置深度</h4>
+<p>
+考虑以下因素：
+</p>
+<ol>
+<li>
+建筑本身
+
+</ol>
+<p>
+使用功能，高层建筑的稳定要求
+</p>
+<ol>
+<li>
+工程地质条件
+
+</ol>
+<p>
+用好土作持力层
+</p>
+<ol>
+<li>
+水文地质条件
+
+<ul>
+<li>
+尽可能在地下水位以上（往往做不到）
+
+<li>
+有承压水时，其上应有足够土重
+
+</ul>
+</ol>
+
+<ol>
+<li>
+土层冻结深度
+
+<ul>
+<li>
+不冻或永冻均问题不大，季节性冻融则可造成危害
+
+<li>
+冻胀：水结冰膨胀，冻后又吸水更加大膨胀。
+
+<li>
+含水细粒土易冻胀，粗粒土（细砂以上）不冻胀；但细颗粒含量较多时也冻胀；颗粒过细过多，不渗透，又不冻胀
+
+<li>
+融陷：冻土融化发生沉陷冻胀、融陷循环使建筑物损坏
+
+<li>
+计算设计冻深。 <em>三系数分别考虑土类、冻胀性、环境影响</em> 最小埋深
+
+</ul>
+</ol>
+
+<ol>
+<li>
+场地环境
+
+<ul>
+<li>
+要大于雨水冲刷、树木生长、其它生物活动形成孔洞等可能到达的深度。
+
+<li>
+在已有建筑附近时Δ H/L〈0.5～1
+
+<li>
+有管线时，要深于管线埋深
+
+</ul>
+</ol>
+<h4 id="toc_0.1.5.5">2.5 地基承载力及验算</h4>
+<ol>
+<li>
+地基承载力的确定
+
+<ul>
+<li>
+特征值
+
+<li>
+考虑深宽修正的特征值
+
+<li>
+计入深宽影响的特征值
+
+</ul>
+<li>
+承载力验算
+
+<ol>
+<li>
+持力层验算
+
+<li>
+软下卧层验算：原地原型试验给出承载力时，不需要验算
+
+</ol>
+</ol>
+<p>
+<em>记住公式啊啊啊</em>
+</p>
+<ol>
+<li>
+地基稳定验算
+
+</ol>
+
+<ol>
+<li>
+坡顶建筑基础设计要点
+
+<ul>
+<li>
+边坡本身要稳定
+
+<li>
+基础边缘到坡面保持一定距离
+
+</ul>
+</ol>
+
+<h4 id="toc_0.1.5.6">2.6 地基变形特征</h4>
+<ol>
+<li>
+地基变形特征
+
+<ul>
+<li>
+沉降量
+
+<li>
+沉降差
+
+<li>
+倾斜
+
+<li>
+局部倾斜
+
+</ul>
+</ol>
+<p>
+不同结构对不同类型的变形更敏感:
+</p>
+<ul>
+<li>
+框架对沉降差敏感;
+
+<li>
+高耸结构怕倾斜;
+
+<li>
+墙体怕局部倾斜
+
+</ul>
+
+<ol>
+<li>
+变形允许值
+
+</ol>
+<p>
+对单层排架结构控制沉降量,以控制沉降差;对高耸结构,如地基、荷载均匀,可仅验算沉降量。
+</p>
+
+<ol>
+<li>
+变形验算
+
+</ol>
+
+<p>
+===2.7 刚性基础设计
+</p>
+<ol>
+<li>
+荷载计算
+
+</ol>
+<p>
+一般上部结构对基础的荷载，计算到室内外平均高程
+必要时可作偏心荷载
+</p>
+
+
+<ol>
+<li>
+基底尺寸计算
+
+</ol>
+<p>
+实际为地基验算
+</p>
+<ol>
+<li>
+中心荷载
+
+<li>
+偏心荷载
+
+</ol>
+
+
+<ol>
+<li>
+基础高度
+
+</ol>
+
+<ol>
+<li>
+基础构造
+
+</ol>
+<p>
+要点:刚性角、经济合理、便于施工
+</p>
+<ol>
+<li>
+砖基础:要符合模数
+
+<li>
+砌石基础:每台阶至少两层,台阶伸出长度&lt;150
+
+<li>
+素混凝土基础:每台阶高度&lt;500
+
+<li>
+灰土基础:因边角不易夯实,每侧放出50
+
+</ol>
+
+<p>
+===2.8 扩展基础设计
+多用钢筋混凝土,因有拉应力。基底尺寸计算同前,这里考虑基础本身强度、配筋
+</p>
+
+<ol>
+<li>
+破坏形式
+
+</ol>
+
+<ol>
+<li>
+单独基础冲切验算
+
+</ol>
+
+<ol>
+<li>
+弯曲破坏验算
+
+</ol>
+
+<ol>
+<li>
+基础构造
+
+</ol>
+
+<h3 id="toc_0.1.6">第3章 条形、筏形和箱形基础设计</h3>
+<p>
+3.1 概述
+3.2 
+3.3
+3.4
+3.5
+</p>
+
+<h3 id="toc_0.1.7">第4章</h3>
+
+<h3 id="toc_0.1.8">第5章 地基处理</h3>
+<h4 id="toc_0.1.8.1">5.1 概述</h4>
+<p>
+一、常见软弱土
+二、处理目的及方法分类
+三、方法选用
+</p>
+<h4 id="toc_0.1.8.2">5.2 换填法</h4>
+<h4 id="toc_0.1.8.3">5.3 加密法</h4>
+<h4 id="toc_0.1.8.4">5.4 胶结法</h4>
+<h4 id="toc_0.1.8.5">5.5 加筋法(简介）</h4>
+
+<h3 id="toc_0.1.9">第7章 特殊土地基</h3>
+<p>
+7.1 湿陷性黄土
+7.2 膨胀土地基
+</p>
+
+<h3 id="toc_0.1.10">第8章 地基抗震分析和设计</h3>
+
+<p>
+8.1 地震反应及场地分类
+8.2 地基抗震验算
+</p>
+
+<p>
+二、地基液化判别和等级划分
+</p>
+
+<p>
+四、地基震陷
+</p>
+
+<p>
+六、天然地基抗震承载力
+</p>
+
+
+</div><!-- End Page -->
+
+
+  
+  <div id="footer">
+  	<address>
+  		<span class="copyright">
+  			Content by <a href="/info/site.html">wogong</a>. Design by 
+  			<a href="http://mark.reid.name/">Mark Reid</a>
+  			<br/>
+  			(<a rel="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Some rights reserved</a>)			
+  		</span>
+  		<span class="engine">
+  			Powered by <a href="http://github.com/mojombo/jekyll/" title="A personal wiki">Vimwiki</a>
+  		</span>
+  	</address>
+  </div>
+  
+</div>
+
+<!--[if IE 6]>
+<script type="text/javascript"> 
+	/*Load jQuery if not already loaded*/ if(typeof jQuery == 'undefined'){ document.write("<script type=\"text/javascript\"   src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></"+"script>"); var __noconflict = true; } 
+	var IE6UPDATE_OPTIONS = {
+		icons_path: "http://static.ie6update.com/hosted/ie6update/images/"
+	}
+</script>
+<script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script>
+<![endif]-->
+
+  
+</body>
+</html>
+
+

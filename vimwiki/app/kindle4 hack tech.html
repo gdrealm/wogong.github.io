@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="../style.css">
+<title>WoNotebook</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- for SyntaxHighlighter core -->
+		<script type="text/javascript" src="../scripts/shCore.js"></script>
+		<link type="text/css" rel="stylesheet" href="../styles/shCore.css"/>
+		<!-- for SyntaxHighlighter theme -->
+		<link type="text/css" rel="stylesheet" href="../styles/shThemeMidnight.css"/>
+		<!-- for SyntaxHighlighter syntax -->
+		<script type="text/javascript" src="../scripts/shBrushAsm.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushBash.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCpp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCSharp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJava.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushLua.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPerl.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPhp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPython.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushRuby.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushSql.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushVim.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushXml.js"></script>
+		<!-- for SyntaxHighlighter execute -->
+		<script type="text/javascript">
+		SyntaxHighlighter.all();
+		</script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30349200-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		   })();
+		</script>
+</head>
+<body>
+
+<ul class="nav">
+<li><a href="../index.html">Wiki</a></li>             
+<li><a href="../Nav.html">Navigator</a></li>             
+<li><a href="../About.html">About</a></li>
+</ul>
+<form style="float: right;" action="http://www.google.com/search" method="get">              
+<input type="text" size="30" name="q"  placeholder="Search">              
+<input name="sitesearch" value="wogong.github.com" type="hidden">             
+</form>
+
+<div class="clear">
+<!-- Place this tag where you want the badge to render -->
+<a href="https://plus.google.com/116560009434103921581?prsrc=3" rel="publisher" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:16px;height:16px;float:right;"/></a>
+
+
+<ul>
+<li>
+转载链接：(感谢原作者，这里纯粹是个人收集整理)
+
+</ul>
+<p>
+<a href="http://miaoo.in/kindle4-modify-font.html">http://miaoo.in/kindle4-modify-font.html</a>
+<a href="http://nickdotcat.info/digital/2011-12/change-screensaver-on-kindle/">http://nickdotcat.info/digital/2011-12/change-screensaver-on-kindle/</a>
+<a href="http://nickdotcat.info/tech/2011-12/kindle-4-kill-ads/">http://nickdotcat.info/tech/2011-12/kindle-4-kill-ads/</a>
+<a href="http://bbs.duokan.com/forum/viewthread.php?tid=52895&amp;highlight=%E5%B1%8F%E4%BF%9D">http://bbs.duokan.com/forum/viewthread.php?tid=52895&amp;highlight=%E5%B1%8F%E4%BF%9D</a>
+</p>
+
+<h3 id="toc_0.0.1">更改字体</h3>
+<p>
+1) 获得序列号
+在kindle设置菜单中得到你的设备序列号（形如：B00114XXXXXXXXXX）
+</p>
+
+<p>
+2) 获得root密码
+利用如下python获得root密码：
+<pre class="brush:python;">
+#!/usr/bin/env python
+import hashlib
+print(“fiona%s”%hashlib.md5(“这里替换为你的设备序列号\n”.encode(‘utf-8′)).hexdigest()[7:11])
+</pre>
+注意，上述方法针对4.01版本系统，如果Kindle系统版本为4.0，那么可以忽略上述步骤，root 密码为 ”mario“（不含引号）。
+</p>
+
+<p>
+3)复制字体，进入调试模式
+将Kindle通过usb连接至PC，将要替换的中文字体文件复制到Kindle的documents文件夹下，如CJK.ttf 和CJK_Bold.ttf(前者是普通字体，后者是粗体)。然后，为了进入调试模式，需要在kindle根目录下创建一个名为“ENABLE_DIAGS”的空文件。重启设备(Settings -&gt; Menu -&gt; Restart)
+</p>
+
+<p>
+4) 调试模式下开启USBnet
+重启后，设备会自动进入调试模式，将Kindle连上USB线，在菜单中依次选择 Misc individual diagnostics -&gt; Utilities -&gt; Enable USBnet，最后并根据提示按方向键右键确认(FW RIGHT)
+</p>
+
+<p>
+5) 安装驱动
+在Windows7下，系统可能不能识别调试模式下的Kindle，你需要在设备管理器(device manager)中选中新的未知设备（其默认被识别在网络适配器[Network Adapter]条目下），右键选择更新驱动程序，然后选择手动查找的方式，在列表中选择网络适配器(Network adapter)，厂商选择Microsoft Coporation ，选择设备为”Remote NDIS based internet sharing device”（这里可能有出入，也可能在中Microsoft Inc）。
+</p>
+
+
+<p>
+6) 设置网络连接
+在网络连接面板中，会出现一个新的网络连接（对应于上一步安装的设备），设置该连接IP为：192.168.15.1，子网掩码为：255.255.255.0 ，其它保持默认。
+</p>
+
+<p>
+7) SSH登录
+现在就可以通过SSH登录了，在Putty中连接到192.168.15.244(这是Kindle的默认地址) ，输入用户名为 root ，密码为 2) 中所得 。
+</p>
+
+<p>
+8) 挂载驱动器
+在PC的SSH终端上输入以下命令挂载驱动器：
+mount /dev/mmcblk0p1 /mnt/base-mmc
+</p>
+
+<p>
+9) 复制字体
+我们先前复制的字体存储在(/mnt/base-us/documents/)路径下，Kindle系统字体存储在(/mnt/base-mmc/usr/java/lib/fonts/)，输入以下命令将要替换的字体复制到系统字体文件夹下：
+cp /mnt/base-us/documents/CJK.ttf /mnt/base-mmc/usr/java/lib/fonts/
+cp /mnt/base-us/documents/CJK_Bold.ttf /mnt/base-mmc/usr/java/lib/fonts/
+</p>
+
+<p>
+10) 修改系统默认字体设置
+在修改前，先对系统文件进行备份，有备无患：
+cp /mnt/base-mmc/usr/java/lib/font.properties /mnt/base-mmc/usr/java/lib/font.properties.bak
+然后，执行：
+vi /mnt/base-mmc/usr/java/lib/font.properties
+找到如下行：
+hans.0=MHeiM18030_E.ttf
+hans.plain=MHeiM18030_E.ttf
+hans.1=MHeiM18030_E_Bold.ttf
+hans.bold=MHeiM18030_E_Bold.ttf
+将其修改为:
+hans.0=CJK.ttf
+hans.plain=CJK.ttf
+hans.1=CJK_Bold.ttf
+hans.bold=CJK_Bold.ttf
+保存退出(按ESC，输入 :wq)。
+经过以上步骤的修改后，语言为中文的书籍就能够正常显示了，但对于未设置语言的书籍（可以用PC上的calibre进行设置），以及Kindle主界面中的书籍标题，仍然没有更新到新的字体。我观察发现，问题在于Kindle会优先使用日文来渲染汉字，所以会存在日文汉字、正体中文、简体中文交叉显示的情况。在下文步骤12）中已经提供了一个较好的解决方法。
+</p>
+
+<p>
+11) 退出调试模式
+在Kindle上退回到调试模式主菜单，并选择”’Exit, Reboot or Disable Diags’”-&gt;”’Disable Diagnostics”,，并按照提示按左键确认（FW Left ）退出。稍等片刻，设备将重启并回到正常模式。
+</p>
+
+<p>
+12) 修改区位字符编码
+根据peikkk在留言中的提示，按照以下方法，不用修改日文及正体中文的字体设置，就能够很好的解决书籍标题及未设定语言的书籍的字体显示问题，再次感谢。
+当Kindle回到正常模式后，在主界面中按键盘键调出虚拟键盘，输入：
+;debugOn –&gt;确认键
+~changelocale zh-CN.utf8 –&gt;确认键
+;debugOff –&gt;确认键
+重新启动Kindle。可以很好的让目录和未指定语言的书显示所指定的简体字体。而不用再 去改动 日韩和繁体字的 font配置文件了
+</p>
+
+
+<p>
+2.ssh连接设备：
+</p>
+
+<p>
+1) 调试模式下ssh登录
+</p>
+
+<p>
+2) 挂载驱动器、复制ssh server
+mount /dev/mmcblk0p1 /mnt/base-mmc
+cp -r /usr/local /mnt/base-mmc/usr/
+sync
+</p>
+
+<p>
+3) 添加防火墙规则
+vi /mnt/base-mmc/etc/sysconfig/iptables
+在打开的文件中，添加如下行：
+-A INPUT -i wlan0 -p tcp --dport 22 -j ACCEPT
+保存退出。
+</p>
+
+<p>
+4) 退出调试模式
+在Kindle上退回到调试模式主菜单，并选择”’Exit, Reboot or Disable Diags’”-&gt;”’Disable Diagnostics”,，并按照提示按左键确认（FW Left ）退出。稍等片刻，设备将重启并回到正常模式。
+</p>
+
+<p>
+5) 通过Wifi登录
+确保Kindle已回到正常模式，已连接到Wifi，没有连接usb数据线，处于非屏保状态.
+打开Putty（或者任何ssh终端），输入Kindle的IP地址登陆。
+</p>
+
+<p>
+6）开启可读写挂载
+Kindle默认的挂载是只读的，输入下面命令开启可读写挂载：
+mntroot rw
+此后，你就可以进行你需要的各种修改了。当读写完成想要退出的时候，记得恢复只读挂载：
+mntroot ro
+</p>
+
+
+<p>
+3.更改屏保：
+</p>
+
+
+<p>
+在公司没条件试，暂时先把看到的方法摘抄下来，回去后好好试一下。
+</p>
+
+<p>
+— 同样是来自Belkaar，这次自己稍微翻译了一下 :p —
+前提，如果能够ssh到kindle，那么就可以继续下面的了：
+1) 在kindle上创建一个叫 ‘screensaver’ 的文件夹 (即普通情况下连接电脑后在kindle盘符下创建)
+</p>
+
+<p>
+2a) 如果是通过wifi ssh到kindle (切换文件系统读写状态 CMD: mntroot rw/ mntroot ro)
+Code:
+mv /opt/amazon/screen_saver/600x800 /opt/amazon/screen_saver/600x800_bak
+ln -s /mnt/us/screensaver /opt/amazon/screen_saver/600x800
+2b) 如果是通过USB ssh到kindle
+Code:
+mount /dev/mmcblk0p1 /mnt/base-mmc
+mv /mnt/base-mmc/opt/amazon/screen_saver/600x800 /mnt/base-mmc/opt/amazon/screen_saver/600x800_bak
+ln -s /mnt/us/screensaver /mnt/base-mmc/opt/amazon/screen_saver/600x800
+</p>
+
+<p>
+3) 把屏保文件放到最先创建的那个目录里，即 ‘screensaver’ 文件夹 (放入新的屏保文件后需要重启kindle才能发现新的屏保)。如果不小心删除了 ‘screensaver’ 文件夹或者该文件夹下面没有文件，并不会对kindle有任何影响，只是屏保界面会显示成一片空白而已。
+</p>
+
+
+<p>
+4.去除广告
+</p>
+
+<p>
+1)下载后的广告所在的路径：/mnt/us/system/.assets 或者 /mnt/base-us/system/.assets，这两个路径是挂载的同一个文件系统
+</p>
+
+<p>
+在这下面就是保存的广告信息，所以，首先需要将其除掉：
+方法一：将.asset里面内容全部删除：
+rm -rf /mnt/us/system/.assets/*
+然后将.assets权限设为不可写
+chmod 000 .assets
+方法二：直接删除.assets
+rm -f /mnt/base-us/.assets
+然后新建一个同名文件
+touch .assets
+设权限为全不可写（因为本身是file类型，也可以不设权限）
+</p>
+
+<p>
+2)此时修改之后，已经不会再显示广告信息了，但是屏保和底部广告仍然会有提示“Please connect wirelessly to download the latest special offers”，这时只需要将/opt/amazon/screen_saver/adunits文件夹改名或者删除或者改权限为不可读写都可以，我在这里是用的改名
+mv /opt/amazon/screen_saver/adunits /opt/amazon/screen_saver/adunits_bak
+</p>
+
+
+<p>
+3)自动更换屏保图片。
+mv /var/local/adunits /var/local/adunits_bak #或者删掉此文件夹也行
+</p>
+
+<p>
+4.字典设置
+kindle4 字典和语言对应，英文字典只在英文书籍中有效.但是有的英文mobi格式书籍仍然无法取词，解决办法是用calibre编辑一下mobi的元数据，语言那栏选择英语。再放在kindle上阅读！
+</p>
+
+</div>
+
+</body>
+
+	<div class="footer">
+	<p>&copy; 2012 wogong &nbsp;&nbsp; </p>
+	</div>
+
+</html>
+

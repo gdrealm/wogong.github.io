@@ -1,0 +1,1466 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="../style.css">
+<title>WoNotebook</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- for SyntaxHighlighter core -->
+		<script type="text/javascript" src="../scripts/shCore.js"></script>
+		<link type="text/css" rel="stylesheet" href="../styles/shCore.css"/>
+		<!-- for SyntaxHighlighter theme -->
+		<link type="text/css" rel="stylesheet" href="../styles/shThemeMidnight.css"/>
+		<!-- for SyntaxHighlighter syntax -->
+		<script type="text/javascript" src="../scripts/shBrushAsm.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushBash.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCpp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCSharp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJava.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushLua.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPerl.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPhp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPython.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushRuby.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushSql.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushVim.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushXml.js"></script>
+		<!-- for SyntaxHighlighter execute -->
+		<script type="text/javascript">
+		SyntaxHighlighter.all();
+		</script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30349200-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		   })();
+		</script>
+</head>
+<body>
+
+<ul class="nav">
+<li><a href="../index.html">Wiki</a></li>             
+<li><a href="../Nav.html">Navigator</a></li>             
+<li><a href="../About.html">About</a></li>
+</ul>
+<form style="float: right;" action="http://www.google.com/search" method="get">              
+<input type="text" size="30" name="q"  placeholder="Search">              
+<input name="sitesearch" value="wogong.github.com" type="hidden">             
+</form>
+
+<div class="clear">
+<!-- Place this tag where you want the badge to render -->
+<a href="https://plus.google.com/116560009434103921581?prsrc=3" rel="publisher" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:16px;height:16px;float:right;"/></a>
+
+
+<div class="toc">
+<ul>
+<li><a href="#toc_0.1">土木工程CAD基础</a>
+<ul>
+<li><a href="#toc_0.1.1">第一章 引言</a>
+<ul>
+<li><a href="#toc_0.1.1.1">1.1 CAD技术的基本概念</a>
+<li><a href="#toc_0.1.1.2">1.2 CAD技术的目的和意义</a>
+<li><a href="#toc_0.1.1.3">1.3 CAD技术的发展和应用领域</a>
+<li><a href="#toc_0.1.1.4">1.4 CAD技术在土木工程中的应用</a>
+<li><a href="#toc_0.1.1.5">1.5 本课程的任务和学习方法</a>
+</ul>
+<li><a href="#toc_0.1.2">第二章 CAD系统概论</a>
+<ul>
+<li><a href="#toc_0.1.2.1">2.1 CAD系统组成</a>
+<li><a href="#toc_0.1.2.2">2.2 CAD系统分类</a>
+<li><a href="#toc_0.1.2.3">2.3 土木工程设计阶段CAD系统</a>
+<li><a href="#toc_0.1.2.4">2.4 土木工程施工阶段CAD系统</a>
+<li><a href="#toc_0.1.2.5">2.5 使用Revit进行建筑设计举例</a>
+<li><a href="#toc_0.1.2.6">2.6 使用PKPM进行结构设计举例</a>
+<li><a href="#toc_0.1.2.7">2.7 CAD系统选型</a>
+</ul>
+<li><a href="#toc_0.1.3">第三章 计算机图形技术</a>
+<ul>
+<li><a href="#toc_0.1.3.1">3.1 概述</a>
+<li><a href="#toc_0.1.3.2">3.2 图形生成</a>
+<li><a href="#toc_0.1.3.3">3.3 图形几何变换</a>
+<li><a href="#toc_0.1.3.4">3.4 图形显示处理</a>
+<li><a href="#toc_0.1.3.5">3.5 工程制图程序的设计</a>
+</ul>
+<li><a href="#toc_0.1.4">第四章 三维建筑造型</a>
+<ul>
+<li><a href="#toc_0.1.4.1">4.1 概述</a>
+<li><a href="#toc_0.1.4.2">4.2 三维几何模型</a>
+<li><a href="#toc_0.1.4.3">4.3 三维真实感图形显示</a>
+<li><a href="#toc_0.1.4.4">4.4 AutoCAD三维建筑造型</a>
+</ul>
+<li><a href="#toc_0.1.5">第五章 AutoCAD应用技术</a>
+<ul>
+<li><a href="#toc_0.1.5.1">5.1 AutoCAD概述</a>
+<ul>
+<li><a href="#toc_0.1.5.1.1">5.1.1 AutoCAD的发展</a>
+<li><a href="#toc_0.1.5.1.2">5.1.2 AutoCAD的主要功能</a>
+<li><a href="#toc_0.1.5.1.3">5.1.3 AutoCAD的二次开发环境</a>
+</ul>
+<li><a href="#toc_0.1.5.2">5.2 面向对象程序设计基础</a>
+<ul>
+<li><a href="#toc_0.1.5.2.1">5.2.1 面向对象程序设计概述</a>
+<li><a href="#toc_0.1.5.2.2">5.2.2 C++语言概述</a>
+<li><a href="#toc_0.1.5.2.3">5.2.3 C++语言面向对象程序设计</a>
+</ul>
+<li><a href="#toc_0.1.5.3">5.3 Windows应用程序设计入门</a>
+<ul>
+<li><a href="#toc_0.1.5.3.1">5.3.1 Windows应用程序设计概述</a>
+<li><a href="#toc_0.1.5.3.2">5.3.2 Windows应用程序设计基础</a>
+</ul>
+<li><a href="#toc_0.1.5.4">5.4 AutoCAD的二次开发技术</a>
+<ul>
+<li><a href="#toc_0.1.5.4.1">5.4.1 ObjectARX基础</a>
+<li><a href="#toc_0.1.5.4.2">5.4.2 ObjectARX应用程序开发环境</a>
+<li><a href="#toc_0.1.5.4.3">5.4.3 利用向导进行应用程序设计</a>
+<li><a href="#toc_0.1.5.4.4">5.4.4 典型Object应用程序功能实现</a>
+</ul>
+</ul>
+<li><a href="#toc_0.1.6">第六章 人机交互技术</a>
+<ul>
+<li><a href="#toc_0.1.6.1">6.1 概述</a>
+<ul>
+<li><a href="#toc_0.1.6.1.1">6.1.1 人机交互的概念</a>
+<li><a href="#toc_0.1.6.1.2">6.1.2 人机交互的目的</a>
+<li><a href="#toc_0.1.6.1.3">6.1.3 人机交互的任务</a>
+<li><a href="#toc_0.1.6.1.4">6.1.4 人机交互设备</a>
+<li><a href="#toc_0.1.6.1.5">6.1.5 人机交互技术：用以实现人机交互的计算机软件技术</a>
+</ul>
+<li><a href="#toc_0.1.6.2">6.2 交互输入技术</a>
+<ul>
+<li><a href="#toc_0.1.6.2.1">6.2.1 主要交互输入方式</a>
+<li><a href="#toc_0.1.6.2.2">6.2.2 命令语言方式</a>
+<li><a href="#toc_0.1.6.2.3">6.2.3 菜单选择方式</a>
+<li><a href="#toc_0.1.6.2.4">6.2.4 AutoCAD用户菜单</a>
+</ul>
+<li><a href="#toc_0.1.6.3">6.3 交互控制技术</a>
+<li><a href="#toc_0.1.6.4">6.4 图形拾取技术</a>
+<ul>
+<li><a href="#toc_0.1.6.4.1">6.4.1 主要图形拾取方法</a>
+<li><a href="#toc_0.1.6.4.2">6.4.2 拾取点定位法</a>
+<li><a href="#toc_0.1.6.4.3">6.4.3 图形搜索法</a>
+</ul>
+<li><a href="#toc_0.1.6.5">6.5 交互式图形用户界面设计</a>
+<ul>
+<li><a href="#toc_0.1.6.5.1">6.5.1 图形用户界面的概念</a>
+<li><a href="#toc_0.1.6.5.2">6.5.2 图形用户界面的基本形式</a>
+<li><a href="#toc_0.1.6.5.3">6.5.3 CAD系统图形用户界面的基本特征</a>
+<li><a href="#toc_0.1.6.5.4">6.5.4 CAD系统图形用户界面的设计</a>
+</ul>
+</ul>
+<li><a href="#toc_0.1.7">第七章 工程分析与优化设计</a>
+<ul>
+<li><a href="#toc_0.1.7.1">7.1 概述</a>
+<li><a href="#toc_0.1.7.2">7.2 工程分析</a>
+<li><a href="#toc_0.1.7.3">7.3 工程优化设计</a>
+</ul>
+<li><a href="#toc_0.1.8">第八章 工程数据处理与交换</a>
+<ul>
+<li><a href="#toc_0.1.8.1">8.1 概述</a>
+<li><a href="#toc_0.1.8.2">8.2 工程数据处理</a>
+<ul>
+<li><a href="#toc_0.1.8.2.1">8.2.1 需要处理的工程数据</a>
+<li><a href="#toc_0.1.8.2.2">8.2.2 工程数据的程序化</a>
+<li><a href="#toc_0.1.8.2.3">8.2.3 使用数据文件进行处理</a>
+<li><a href="#toc_0.1.8.2.4">8.2.4 使用数据库进行处理</a>
+</ul>
+<li><a href="#toc_0.1.8.3">8.3 CAD系统数据交换</a>
+<ul>
+<li><a href="#toc_0.1.8.3.1">8.3.1 CAD系统数据交换的必要性</a>
+<li><a href="#toc_0.1.8.3.2">8.3.2 通过操作系统机制进行数据交换</a>
+<li><a href="#toc_0.1.8.3.3">8.3.3 通过标准文件格式进行数据交换</a>
+<li><a href="#toc_0.1.8.3.4">8.3.4 通过外部参照进行数据交换</a>
+</ul>
+</ul>
+<li><a href="#toc_0.1.9">第九章 土木工程CAD系统开发</a>
+<ul>
+<li><a href="#toc_0.1.9.1">9.1 概述</a>
+<ul>
+<li><a href="#toc_0.1.9.1.1">9.1.1 软件工程学产生的背景</a>
+<li><a href="#toc_0.1.9.1.2">9.1.2 软件工程学</a>
+</ul>
+<li><a href="#toc_0.1.9.2">9.2 需求分析</a>
+<ul>
+<li><a href="#toc_0.1.9.2.1">9.2.1 目的</a>
+<li><a href="#toc_0.1.9.2.2">9.2.2 问题定义</a>
+<li><a href="#toc_0.1.9.2.3">9.2.3 可行性研究</a>
+<li><a href="#toc_0.1.9.2.4">9.2.4 系统分析</a>
+</ul>
+<li><a href="#toc_0.1.9.3">9.3 系统设计</a>
+<ul>
+<li><a href="#toc_0.1.9.3.1">9.3.1 目的</a>
+<li><a href="#toc_0.1.9.3.2">9.3.2 程序结构设计</a>
+<li><a href="#toc_0.1.9.3.3">9.3.3 数据结构设计</a>
+<li><a href="#toc_0.1.9.3.4">9.3.4 文档编制</a>
+</ul>
+<li><a href="#toc_0.1.9.4">9.4 程序设计</a>
+<ul>
+<li><a href="#toc_0.1.9.4.1">9.4.1 任务</a>
+<li><a href="#toc_0.1.9.4.2">9.4.2 程序设计风格</a>
+</ul>
+<li><a href="#toc_0.1.9.5">9.5 系统测试</a>
+<ul>
+<li><a href="#toc_0.1.9.5.1">9.5.1 测试级别</a>
+<li><a href="#toc_0.1.9.5.2">9.5.2 测试步骤</a>
+<li><a href="#toc_0.1.9.5.3">9.5.3 测试方法</a>
+<li><a href="#toc_0.1.9.5.4">9.5.4 选购CAD的验收测试</a>
+</ul>
+</ul>
+<li><a href="#toc_0.1.10">第十章 BIM技术概论</a>
+<ul>
+<li><a href="#toc_0.1.10.1">10.1 引言</a>
+<li><a href="#toc_0.1.10.2">10.2 BIM技术的核心内容</a>
+<li><a href="#toc_0.1.10.3">10.3 BIM目前究竟能为我们做什么</a>
+<li><a href="#toc_0.1.10.4">10.4 关于BIM技术中国做了什么</a>
+<li><a href="#toc_0.1.10.5">10.5 BIM技术的发展趋势</a>
+</ul>
+</ul>
+</ul>
+</ul>
+</div>
+<h2 id="toc_0.1">土木工程CAD基础</h2>
+<h3 id="toc_0.1.1">第一章 引言</h3>
+<h4 id="toc_0.1.1.1">1.1 CAD技术的基本概念</h4>
+<p>
+1.1.1 CAD技术的概念
+</p>
+
+<p>
+1.1.2 CAD技术的理论基础
+</p>
+
+<p>
+1.1.3 CAD技术的基础性技术
+</p>
+
+<h4 id="toc_0.1.1.2">1.2 CAD技术的目的和意义</h4>
+<p>
+1.2.1 工程及产品设计的特点
+</p>
+
+<p>
+1.2.2 CAD技术的目的
+</p>
+
+<p>
+1.2.3 CAD技术的意义
+</p>
+
+<h4 id="toc_0.1.1.3">1.3 CAD技术的发展和应用领域</h4>
+
+<p>
+1.3.1 CAD技术发展历史
+</p>
+
+<p>
+1.3.2 目前的应用领域
+</p>
+
+<h4 id="toc_0.1.1.4">1.4 CAD技术在土木工程中的应用</h4>
+
+<p>
+1.4.1 在不同的土木工程中的应用
+</p>
+
+<p>
+1.4.2 不同阶段的应用
+</p>
+
+<h4 id="toc_0.1.1.5">1.5 本课程的任务和学习方法</h4>
+
+<p>
+1.5.1 课程目的
+</p>
+
+<p>
+1.5.2 课程内容
+</p>
+
+<p>
+1.5.3 课程特点
+</p>
+
+<p>
+1.5.4 学习方法
+</p>
+
+<p>
+1.5.5 课程安排
+</p>
+
+<p>
+1.5.6 教学措施
+</p>
+
+<p>
+1.5.7 考核方法
+</p>
+
+<h3 id="toc_0.1.2">第二章 CAD系统概论</h3>
+<h4 id="toc_0.1.2.1">2.1 CAD系统组成</h4>
+
+<p>
+2.1.1 CAD系统的组成
+</p>
+
+<p>
+2.1.2 CAD系统的硬件
+</p>
+
+<p>
+2.1.3 CAD系统的软件
+</p>
+
+<p>
+2.1.4 CAD系统的网络
+</p>
+
+<h4 id="toc_0.1.2.2">2.2 CAD系统分类</h4>
+
+<p>
+2.2.1 CAD系统的分类
+</p>
+
+<p>
+2.2.2 通用CAD系统
+</p>
+
+<p>
+2.2.3 土木工程CAD系统分类
+</p>
+
+<h4 id="toc_0.1.2.3">2.3 土木工程设计阶段CAD系统</h4>
+
+<p>
+2.3.1 土木工程设计阶段的划分
+</p>
+
+<p>
+2.3.2 设计阶段各专业的配合
+</p>
+
+<p>
+2.3.3 设计阶段对CAD系统的需求
+</p>
+
+<p>
+2.3.4 设计阶段典型CAD系统举例
+</p>
+
+<h4 id="toc_0.1.2.4">2.4 土木工程施工阶段CAD系统</h4>
+
+<p>
+2.4.1 土木工程施工的阶段划分
+</p>
+
+<p>
+2.4.2 土木工程施工对CAD系统的需求
+</p>
+
+<p>
+2.4.3 典型CAD系统举例
+</p>
+
+<h4 id="toc_0.1.2.5">2.5 使用Revit进行建筑设计举例</h4>
+<h4 id="toc_0.1.2.6">2.6 使用PKPM进行结构设计举例</h4>
+<h4 id="toc_0.1.2.7">2.7 CAD系统选型</h4>
+<p>
+2.7.1 CAD系统的选型方法
+2.7.2 硬件的选型
+2.7.3 软件的选型
+</p>
+<h3 id="toc_0.1.3">第三章 计算机图形技术</h3>
+<h4 id="toc_0.1.3.1">3.1 概述</h4>
+
+<h4 id="toc_0.1.3.2">3.2 图形生成</h4>
+<p>
+3.2.1 常用的坐标系： 用户 设备 规格化
+</p>
+
+<p>
+3.2.2 基本图形元素： 矢量图形 光栅图形
+</p>
+
+<p>
+3.2.3 生成直线段的算法
+</p>
+
+<p>
+3.2.4 生成直线图形的算法
+</p>
+
+<p>
+3.2.5 生成曲线图形的算法
+</p>
+<ol>
+<li>
+曲线插补法
+
+<li>
+用一系列直段逼近一条曲线
+
+</ol>
+<p>
+3.2.5.1曲线的表示方法
+</p>
+<ol>
+<li>
+显示表示
+
+<li>
+隐式表示
+
+<li>
+参数表示（采用）
+
+</ol>
+<h4 id="toc_0.1.3.3">3.3 图形几何变换</h4>
+<p>
+3.3.1 概念：平移、旋转、缩放、投影；以点的变换为基础，使用矩阵表示点的变换规律
+</p>
+
+<p>
+3.3.2 二维图形几何变换
+</p>
+
+<p>
+3.3.3 三维图形几何变换
+</p>
+
+<h4 id="toc_0.1.3.4">3.4 图形显示处理</h4>
+<p>
+3.4.1 图形的窗口和视口变换
+</p>
+<ol>
+<li>
+用户域，窗口
+
+<li>
+屏幕域，视口
+
+</ol>
+
+<p>
+3.4.2 图形裁剪
+</p>
+
+<h4 id="toc_0.1.3.5">3.5 工程制图程序的设计</h4>
+<p>
+3.5.1 用计算机绘制工程图的方法
+</p>
+<ol>
+<li>
+直接绘图法
+
+<li>
+基本图素拼合法
+
+<li>
+参数绘图法
+
+</ol>
+
+<p>
+3.5.2 工程图形绘制程序的设计
+</p>
+
+<p>
+3.5.3 建筑结构CAD系统中的图形功能
+</p>
+<h3 id="toc_0.1.4">第四章 三维建筑造型</h3>
+<h4 id="toc_0.1.4.1">4.1 概述</h4>
+<p>
+主要的技术内容：
+</p>
+<ol>
+<li>
+三维几何模型的建立
+
+<li>
+三维真实感图形显示
+
+<li>
+相应的数据结构及算法
+
+</ol>
+
+<h4 id="toc_0.1.4.2">4.2 三维几何模型</h4>
+<p>
+4.2.1线框模型：用顶点和棱边表示形体
+</p>
+
+<p>
+4.2.2表面模型；在线框模型的棱边之间定义面
+</p>
+
+<p>
+4.2.3实体模型
+</p>
+
+<h4 id="toc_0.1.4.3">4.3 三维真实感图形显示</h4>
+<p>
+4.3.1消隐处理
+</p>
+<ol>
+<li>
+逼真
+
+<li>
+避免二义性
+
+</ol>
+<p>
+所涉及到的基本算法
+</p>
+<ol>
+<li>
+最大最小试验
+
+<li>
+包含性试验
+
+<li>
+空间两线段在投影面上的交点
+
+<li>
+深度检验
+
+</ol>
+
+<p>
+4.3.2明暗效应处理
+</p>
+
+<p>
+4.3.2.1 影响因素
+</p>
+
+<p>
+4.3.2.2 光照模型
+</p>
+
+<p>
+4.3.3真实感图形生成算法
+</p>
+<ol>
+<li>
+扫描线算法
+
+<li>
+光线跟踪算法
+
+</ol>
+
+<h4 id="toc_0.1.4.4">4.4 AutoCAD三维建筑造型</h4>
+<p>
+4.4.1 概述
+</p>
+
+<p>
+4.4.2 AutoCAD三维绘图基础
+</p>
+
+<p>
+4.4.3 AutoCAD三维建模
+</p>
+
+<p>
+4.4.4 AutoCAD三维模型编辑
+</p>
+
+<p>
+4.4.5 AutoCAD三维真实感图形显示
+</p>
+
+<h3 id="toc_0.1.5">第五章 AutoCAD应用技术</h3>
+<h4 id="toc_0.1.5.1">5.1 AutoCAD概述</h4>
+<h5 id="toc_0.1.5.1.1">5.1.1 AutoCAD的发展</h5>
+
+<h5 id="toc_0.1.5.1.2">5.1.2 AutoCAD的主要功能</h5>
+
+<ol>
+<li>
+提供交互式绘图环境
+
+<ul>
+<li>
+二维图形的建立、编辑功能：包括：线、圆、弧、矩形等基本图形块、外部参照等复合图形文本、尺寸等标注图形
+
+<li>
+三维图形的建立、编辑及渲染功能
+
+</ul>
+<li>
+提供二次开发环境
+
+</ol>
+
+<h5 id="toc_0.1.5.1.3">5.1.3 AutoCAD的二次开发环境</h5>
+<ol>
+<li>
+Visual LISP
+
+<li>
+VBA
+
+<li>
+ObjectARX
+
+</ol>
+<h4 id="toc_0.1.5.2">5.2 面向对象程序设计基础</h4>
+<h5 id="toc_0.1.5.2.1">5.2.1 面向对象程序设计概述</h5>
+<ol>
+<li>
+程序设计方法
+
+<li>
+面向对象程序设计特征
+
+<ul>
+<li>
+使用；
+
+<li>
+三个特征：
+
+<ol>
+<li>
+使用类和对象；
+
+<li>
+以类和对象作为程序的基本构件；
+
+<li>
+使用类之间的继承关系。
+
+</ol>
+<li>
+好处：程序的结构自然、直观，易于理解；较易形成可复用的类和组件
+
+</ul>
+</ol>
+<h5 id="toc_0.1.5.2.2">5.2.2 C++语言概述</h5>
+<ol>
+<li>
+C++语言由来
+
+<li>
+特点
+
+<li>
+用途
+
+<li>
+主要改进点
+
+</ol>
+
+<h5 id="toc_0.1.5.2.3">5.2.3 C++语言面向对象程序设计</h5>
+<ol>
+<li>
+C++程序的构成
+
+<li>
+类
+
+<ul>
+<li>
+类的定义
+
+<li>
+特殊的成员函数
+
+</ul>
+<li>
+对象
+
+<ul>
+<li>
+对象的定义
+
+<li>
+对象成员的表示方法
+
+<li>
+成员函数的表示
+
+<li>
+对象的生存期
+
+</ul>
+</ol>
+
+<ul>
+<li>
+数据封装
+
+<li>
+继承性
+
+<li>
+多态性
+
+</ul>
+<p>
+-
+</p>
+<h4 id="toc_0.1.5.3">5.3 Windows应用程序设计入门</h4>
+<h5 id="toc_0.1.5.3.1">5.3.1 Windows应用程序设计概述</h5>
+<ul>
+<li>
+Windows应用程序的主要特点：
+
+<ol>
+<li>
+消息驱动的
+
+<li>
+利用Windows图形设备接口输出图形
+
+<li>
+基于资源进行编程
+
+<li>
+可以利用动态链接库
+
+</ol>
+</ul>
+<h5 id="toc_0.1.5.3.2">5.3.2 Windows应用程序设计基础</h5>
+<p>
+5.3.2.1 Windows数据类型
+5.3.2.2 MFC应用框架
+5.3.2.3 常用Windows消息及处理函数
+标准Windows消息
+</p>
+<ol>
+<li>
+键盘消息
+
+<li>
+鼠标消息
+
+<li>
+控件通知消息
+
+<li>
+命令消息
+
+</ol>
+
+<p>
+5.3.2.4 MFC中的消息映射机制
+</p>
+
+<p>
+5.3.2.5 MFC的文档/视图结构
+</p>
+<ul>
+<li>
+分类：单文档，多文档
+
+<li>
+特点
+
+</ul>
+
+<p>
+5.3.3 MFC对话框编程
+5.3.3.1 对话框编程的基本概念
+</p>
+<ol>
+<li>
+对话框的种类：模态+非模态
+
+<li>
+对话框的组成：资源+类
+
+<li>
+建立过程
+
+<li>
+数据交换与检验机制
+
+</ol>
+
+<p>
+5.3.3.2 模态对话框编程
+</p>
+
+<h4 id="toc_0.1.5.4">5.4 AutoCAD的二次开发技术</h4>
+<h5 id="toc_0.1.5.4.1">5.4.1 ObjectARX基础</h5>
+<h5 id="toc_0.1.5.4.2">5.4.2 ObjectARX应用程序开发环境</h5>
+<ul>
+<li>
+组成
+
+<li>
+Windows操作系统
+
+<li>
+AutoCAD2008
+
+<li>
+VS.NET 2005 
+
+<li>
+ObjectARX SDK for AutoCAD 2008
+
+<li>
+ObjectARX类和函数分类
+
+<li>
+应用程序所需的ObjectARX函数库
+
+</ul>
+
+<h5 id="toc_0.1.5.4.3">5.4.3 利用向导进行应用程序设计</h5>
+<h5 id="toc_0.1.5.4.4">5.4.4 典型Object应用程序功能实现</h5>
+<p>
+5.4.4.1用户界面实现
+</p>
+
+<p>
+5.4.4.2AutoCAD数据库的操作
+</p>
+
+<h3 id="toc_0.1.6">第六章 人机交互技术</h3>
+<h4 id="toc_0.1.6.1">6.1 概述</h4>
+<h5 id="toc_0.1.6.1.1">6.1.1 人机交互的概念</h5>
+<p>
+人机对话
+</p>
+<h5 id="toc_0.1.6.1.2">6.1.2 人机交互的目的</h5>
+<p>
+改善软件的易操作性
+</p>
+<h5 id="toc_0.1.6.1.3">6.1.3 人机交互的任务</h5>
+<ol>
+<li>
+基本任务
+
+<li>
+组合任务
+
+<li>
+三维任务
+
+</ol>
+
+<h5 id="toc_0.1.6.1.4">6.1.4 人机交互设备</h5>
+<p>
+：物理设备，逻辑设备；二者关系；
+</p>
+
+<h5 id="toc_0.1.6.1.5">6.1.5 人机交互技术：用以实现人机交互的计算机软件技术</h5>
+<p>
+分为三类：输入、控制、拾取
+</p>
+<h4 id="toc_0.1.6.2">6.2 交互输入技术</h4>
+<h5 id="toc_0.1.6.2.1">6.2.1 主要交互输入方式</h5>
+<ol>
+<li>
+命令语言方式
+
+<li>
+菜单选择
+
+</ol>
+<h5 id="toc_0.1.6.2.2">6.2.2 命令语言方式</h5>
+<p>
+6.2.2.1 用户引导的命令语言
+</p>
+
+<p>
+6.2.2.2 系统引导的命令语言
+</p>
+
+<h5 id="toc_0.1.6.2.3">6.2.3 菜单选择方式</h5>
+<ol>
+<li>
+文本菜单
+
+<li>
+台板~
+
+<li>
+屏幕~
+
+<li>
+图像~
+
+</ol>
+
+<h5 id="toc_0.1.6.2.4">6.2.4 AutoCAD用户菜单</h5>
+
+<h4 id="toc_0.1.6.3">6.3 交互控制技术</h4>
+<p>
+6.3.1 主要交互控制方法
+</p>
+
+<p>
+6.3.2 定位法：粘贴，pasteclip
+</p>
+
+<p>
+6.3.3 强制法
+</p>
+
+<p>
+6.3.4 网格法
+</p>
+
+<p>
+6.3.5 引力场法
+</p>
+
+<p>
+6.3.6 橡皮带法
+</p>
+
+<p>
+6.3.7 拖拉法
+</p>
+
+<p>
+6.3.8 草图法
+</p>
+
+<h4 id="toc_0.1.6.4">6.4 图形拾取技术</h4>
+<h5 id="toc_0.1.6.4.1">6.4.1 主要图形拾取方法</h5>
+<h5 id="toc_0.1.6.4.2">6.4.2 拾取点定位法</h5>
+<p>
+6.4.2.1 拾取窗方式
+</p>
+
+<p>
+6.4.2.2 提示窗方式
+</p>
+
+<p>
+6.4.2.3 试拾取形式
+</p>
+<h5 id="toc_0.1.6.4.3">6.4.3 图形搜索法</h5>
+
+<p>
+6.4.3.1 点的拾取
+</p>
+
+<p>
+6.4.3.2 直线段的拾取
+</p>
+
+<p>
+6.4.3.3 多边形的拾取
+</p>
+<h4 id="toc_0.1.6.5">6.5 交互式图形用户界面设计</h4>
+<h5 id="toc_0.1.6.5.1">6.5.1 图形用户界面的概念</h5>
+<h5 id="toc_0.1.6.5.2">6.5.2 图形用户界面的基本形式</h5>
+<h5 id="toc_0.1.6.5.3">6.5.3 CAD系统图形用户界面的基本特征</h5>
+<h5 id="toc_0.1.6.5.4">6.5.4 CAD系统图形用户界面的设计</h5>
+<p>
+6.5.4.1 用户模型
+</p>
+
+<p>
+6.5.4.2 屏幕布置
+</p>
+
+<p>
+6.5.4.3 命令语言
+</p>
+
+<p>
+6.5.4.4 菜单组织
+</p>
+
+<p>
+6.5.4.5 信息反馈
+</p>
+
+<h3 id="toc_0.1.7">第七章 工程分析与优化设计</h3>
+<h4 id="toc_0.1.7.1">7.1 概述</h4>
+<h4 id="toc_0.1.7.2">7.2 工程分析</h4>
+<p>
+7.2.1 工程分析的分类
+</p>
+<ol>
+<li>
+力学分析
+
+<li>
+设计分析：主要方法有：优化设计、可靠性设计、模拟仿真
+
+<li>
+设计方案评估
+
+</ol>
+
+<p>
+7.2.2 有限元分析法
+</p>
+<h4 id="toc_0.1.7.3">7.3 工程优化设计</h4>
+<p>
+7.3.1 概念
+</p>
+
+<p>
+7.3.2 基本原理
+</p>
+
+<p>
+在给定条件下得到最优设计结果
+</p>
+
+<p>
+7.3.3 优化设计数学模型的建立
+</p>
+
+<p>
+优化设计的三要素：
+</p>
+<ol>
+<li>
+设计变量
+
+<li>
+约束条件
+
+<li>
+目标函数
+
+</ol>
+
+<p>
+7.3.4 优化数学模型的求解
+</p>
+<h3 id="toc_0.1.8">第八章 工程数据处理与交换</h3>
+<p>
+本章学习重点：
+</p>
+<ol>
+<li>
+了解CAD软件中对表格数据和线图的处理方法
+
+<li>
+掌握文件与数据库的定义和区别
+
+<li>
+掌握掌握数据库 数据库中数据模型的概念 中数据模型的概念
+
+<li>
+掌握CAD系统数据交换的形式和作用
+
+</ol>
+
+<h4 id="toc_0.1.8.1">8.1 概述</h4>
+<p>
+概念
+</p>
+<ol>
+<li>
+数据处理
+
+</ol>
+
+<ol>
+<li>
+数据交换：将从一个应用软件获取的数据用于其他软件
+
+</ol>
+
+<h4 id="toc_0.1.8.2">8.2 工程数据处理</h4>
+<h5 id="toc_0.1.8.2.1">8.2.1 需要处理的工程数据</h5>
+<p>
+数据形式
+</p>
+<ol>
+<li>
+表格形式的数据
+
+<li>
+线图形式的数据
+
+<li>
+设计结果数据
+
+</ol>
+
+<p>
+处理方法：
+</p>
+<ol>
+<li>
+程序化
+
+<li>
+使用数据文件进行处理
+
+<li>
+使用数据库进行处理
+
+</ol>
+
+<h5 id="toc_0.1.8.2.2">8.2.2 工程数据的程序化</h5>
+<p>
+8.2.2.1表格(table)数据程序化
+</p>
+<ol>
+<li>
+数组形式保存，利用查表或者插值得到数据
+
+<li>
+数据拟合方法将表格拟合成公式
+
+</ol>
+
+<p>
+8.2.2.2 线图(chart)数据程序化
+</p>
+<ol>
+<li>
+公式化
+
+<li>
+离散，退化成表格
+
+<li>
+拟合公式化
+
+</ol>
+
+<h5 id="toc_0.1.8.2.3">8.2.3 使用数据文件进行处理</h5>
+
+<h5 id="toc_0.1.8.2.4">8.2.4 使用数据库进行处理</h5>
+<p>
+特点：
+</p>
+<ol>
+<li>
+数据的独立性
+
+<li>
+数据存储结构化
+
+<li>
+可保证数据的完整性和安全性
+
+<li>
+可减少冗余数据
+
+</ol>
+
+<p>
+8.2.4.1 数据库的数据模型
+</p>
+<ol>
+<li>
+关系数据模型
+
+<li>
+网状数据模型
+
+<li>
+层次数据模型
+
+<li>
+面向对象数据模型：对象模型在外部存储中的实现
+
+</ol>
+
+<p>
+8.2.4.2 数据库管理系统
+DBMS=data management system
+</p>
+
+<p>
+用于对数据库的定义和操作
+</p>
+
+<p>
+8.2.4.3 数据库的设计
+</p>
+<ol>
+<li>
+概念设计
+
+<li>
+逻辑设计
+
+<li>
+物理设计
+
+</ol>
+
+<p>
+Excel与Access的差别：Excel一般不可以查询，没有报表功能，没有数据接口。
+</p>
+<h4 id="toc_0.1.8.3">8.3 CAD系统数据交换</h4>
+<h5 id="toc_0.1.8.3.1">8.3.1 CAD系统数据交换的必要性</h5>
+<ol>
+<li>
+Windows剪贴板
+
+<li>
+对象链接与嵌入
+
+</ol>
+<h5 id="toc_0.1.8.3.2">8.3.2 通过操作系统机制进行数据交换</h5>
+<ol>
+<li>
+windows剪贴板
+
+<li>
+对象链接与嵌入
+
+</ol>
+
+<h5 id="toc_0.1.8.3.3">8.3.3 通过标准文件格式进行数据交换</h5>
+<p>
+8.3.3.1 矢量题标准文件格式
+</p>
+<ol>
+<li>
+DXF 事实标准
+
+<li>
+IGES 工业标准
+
+<li>
+HPGL 绘图仪采用
+
+</ol>
+<p>
+8.3.3.2 位图标准文件格式
+</p>
+<ol>
+<li>
+TIFF
+
+<li>
+BMP/DIB
+
+<li>
+JPG
+
+</ol>
+
+<p>
+8.3.3.3 AutoCAD的文件格式
+在在AutoCAD中
+</p>
+<ol>
+<li>
+可按dwg及dxf格式保存图形文件
+
+<li>
+可生成
+
+</ol>
+<p>
+dwf格式文件：AutoCAD图形文件Web格式
+wmf格式文件：Windows图元文件
+bmp格式文件 
+3ds格式文件：3ds max格式
+</p>
+<ol>
+<li>
+可打开dwg及dxf格式的图形文件
+
+</ol>
+
+<h5 id="toc_0.1.8.3.4">8.3.4 通过外部参照进行数据交换</h5>
+<p>
+用于设计人员之间的协同工作
+</p>
+
+<h3 id="toc_0.1.9">第九章 土木工程CAD系统开发</h3>
+<h4 id="toc_0.1.9.1">9.1 概述</h4>
+<h5 id="toc_0.1.9.1.1">9.1.1 软件工程学产生的背景</h5>
+
+<h5 id="toc_0.1.9.1.2">9.1.2 软件工程学</h5>
+<p>
+研究软件开发与维护过程中所需使用的原则、方法和技术的科学
+</p>
+
+<h4 id="toc_0.1.9.2">9.2 需求分析</h4>
+<h5 id="toc_0.1.9.2.1">9.2.1 目的</h5>
+<p>
+明确系统必须做什么，系统设计的基础
+</p>
+
+<h5 id="toc_0.1.9.2.2">9.2.2 问题定义</h5>
+<ol>
+<li>
+调查研究
+
+<li>
+分析问题
+
+<li>
+形成报告
+
+</ol>
+
+<h5 id="toc_0.1.9.2.3">9.2.3 可行性研究</h5>
+
+<h5 id="toc_0.1.9.2.4">9.2.4 系统分析</h5>
+
+<p>
+实例
+</p>
+
+<h4 id="toc_0.1.9.3">9.3 系统设计</h4>
+<h5 id="toc_0.1.9.3.1">9.3.1 目的</h5>
+<p>
+明确如何实现软件
+</p>
+
+<p>
+内容：
+</p>
+<ol>
+<li>
+用户界面设计（chp6）
+
+<li>
+程序结构设计
+
+<li>
+数据结构设计
+
+<li>
+文档编制
+
+</ol>
+<h5 id="toc_0.1.9.3.2">9.3.2 程序结构设计</h5>
+<ol>
+<li>
+程序设计原则
+
+<li>
+程序设计方法
+
+</ol>
+<h5 id="toc_0.1.9.3.3">9.3.3 数据结构设计</h5>
+<ol>
+<li>
+设计内容
+
+<li>
+常用数据结构
+
+</ol>
+<h5 id="toc_0.1.9.3.4">9.3.4 文档编制</h5>
+
+<h4 id="toc_0.1.9.4">9.4 程序设计</h4>
+<h5 id="toc_0.1.9.4.1">9.4.1 任务</h5>
+<h5 id="toc_0.1.9.4.2">9.4.2 程序设计风格</h5>
+<p>
+9.4.2.1程序组织
+</p>
+
+<p>
+9.4.2.2语句构造
+</p>
+
+<p>
+9.4.2.3数据说明
+</p>
+
+<p>
+9.4.2.4语句构造
+</p>
+
+<p>
+9.4.2.3数据说明
+</p>
+
+<p>
+9.4.2.4输入/输出
+</p>
+<h4 id="toc_0.1.9.5">9.5 系统测试</h4>
+<h5 id="toc_0.1.9.5.1">9.5.1 测试级别</h5>
+<ol>
+<li>
+单元测试
+
+<li>
+组合测试
+
+</ol>
+<h5 id="toc_0.1.9.5.2">9.5.2 测试步骤</h5>
+<ol>
+<li>
+模块测试
+
+<li>
+子系统测试
+
+<li>
+系统测试
+
+<li>
+验收测试
+
+</ol>
+<h5 id="toc_0.1.9.5.3">9.5.3 测试方法</h5>
+<ol>
+<li>
+黑盒测试
+
+<li>
+白盒测试
+
+</ol>
+<h5 id="toc_0.1.9.5.4">9.5.4 选购CAD的验收测试</h5>
+
+<h3 id="toc_0.1.10">第十章 BIM技术概论</h3>
+<h4 id="toc_0.1.10.1">10.1 引言</h4>
+<p>
+Building Information Model 建筑模型信息化
+</p>
+<h4 id="toc_0.1.10.2">10.2 BIM技术的核心内容</h4>
+<h4 id="toc_0.1.10.3">10.3 BIM目前究竟能为我们做什么</h4>
+<ol>
+<li>
+业主
+
+<li>
+设计方
+
+<li>
+施工方
+
+</ol>
+<h4 id="toc_0.1.10.4">10.4 关于BIM技术中国做了什么</h4>
+<p>
+little
+</p>
+<h4 id="toc_0.1.10.5">10.5 BIM技术的发展趋势</h4>
+<ol>
+<li>
+基于BIM技术的应用软件
+
+<li>
+关于BIM技术进一步的研究开发
+
+<li>
+在某些领域中的创新应用
+
+</ol>
+
+</div>
+
+</body>
+
+	<div class="footer">
+	<p>&copy; 2012 wogong &nbsp;&nbsp; </p>
+	</div>
+
+</html>
+

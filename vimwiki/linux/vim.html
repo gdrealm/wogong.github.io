@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="../style.css">
+<title>vim</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- for SyntaxHighlighter core -->
+		<script type="text/javascript" src="../scripts/shCore.js"></script>
+		<link type="text/css" rel="stylesheet" href="../styles/shCore.css"/>
+		<!-- for SyntaxHighlighter theme -->
+		<link type="text/css" rel="stylesheet" href="../styles/shThemeMidnight.css"/>
+		<!-- for SyntaxHighlighter syntax -->
+		<script type="text/javascript" src="../scripts/shBrushAsm.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushBash.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCpp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCSharp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJava.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushLua.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPerl.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPhp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPython.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushRuby.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushSql.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushVim.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushXml.js"></script>
+		<!-- for SyntaxHighlighter execute -->
+		<script type="text/javascript">
+		SyntaxHighlighter.all();
+		</script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30349200-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		   })();
+		</script>
+</head>
+<body>
+
+<ul class="nav">
+<li><a href="../index.html">Wiki</a></li>             
+<li><a href="../navigator.html">Navigator</a></li>             
+<li><a href="../about.html">About</a></li>
+<li><a href="../blog.html">Blog</a></li>
+</ul>
+<form style="float: right;" action="http://www.google.com/search" method="get">              
+<input type="text" size="30" name="q"  placeholder="Search">              
+<input name="sitesearch" value="wogong.github.com" type="hidden">             
+</form>
+
+<div class="clear">
+<!-- Place this tag where you want the badge to render -->
+<a href="https://plus.google.com/116560009434103921581?prsrc=3" rel="publisher" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:16px;height:16px;float:right;"/></a>
+
+
+<h4 id="toc_0.0.0.1">vim shortcuts</h4>
+<p>
+复制  yy  Y
+粘贴  p  P
+跳转到文末  G
+另存为  :w name
+全部删除  dG
+全部复制  ggyG
+全选高亮显示  ggvG ggVG
+全选复制  ggyG
+</p>
+
+
+<h4 id="toc_0.0.0.2">vbundle</h4>
+<p>
+what a great tool! 
+and from now on, rc file is enough
+</p>
+
+<h4 id="toc_0.0.0.3">vimviki</h4>
+<ul>
+<li>
+使用 <code>vimwiki</code> 提示错误：
+    Can't open file syntax/AUTOMAKE.vim
+
+</ul>
+<p>
+在 <code>.vim/syntax/</code> 路径下添加 <code>AUTOMAKE.vim</code> 文件即可解决。文件地址<a href="http://vim.cybermirror.org/runtime/ftplugin/automake.vim">AUTOMAKE.vim</a>
+</p>
+
+
+<ul>
+<li>
+Vimwiki又出现错误：
+
+</ul>
+<p>
+Vimwiki2HTML功能无法使用，不知道什么原因，懒得折腾了，重新安装vinwiki也没有解决问题。
+</p>
+
+<ul>
+<li>
+关于Vimwiki的网站搜索问题，个人觉得如果添加Google的自定义搜索会严重影响页面打开的速度，所以完全可以不提供搜索功能。这样就要求页面的组织合理，所以以后应该注意分类，合理组织。另外，这个站点的主要目的还是在于笔记备忘，搜索技能不差的应该可以自己打开Google搜索了。哈哈，反正我是这么做的，刚刚这么试了，感觉还不错。ps:在<a href="http://www.v2ex.com">V2ex</a>上有人建议使用ack插件，试用感觉不错。20120820
+
+</ul>
+
+<ul>
+<li>
+评论功能：
+
+</ul>
+<p>
+看的人应该不多，就不开放了，有问题可以邮件联系，详见About页面（还没做）。
+</p>
+
+<ul>
+<li>
+页面的title设置，在模板里设置%title%，将会自动生成wiki页面的%tilte作为html页面的title，若是未设置，默认采用wiki文件名。20120820
+
+</ul>
+
+<ul>
+<li>
+更新帮助文件 :helptags $VIMFILE/doc
+
+</ul>
+
+</div>
+
+</body>
+
+	<div class="footer">
+	<p>&copy; 2012 wogong &nbsp;&nbsp; </p>
+	</div>
+
+</html>
+

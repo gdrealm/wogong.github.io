@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="../style.css">
+<title>JavaScript</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- for SyntaxHighlighter core -->
+		<script type="text/javascript" src="../scripts/shCore.js"></script>
+		<link type="text/css" rel="stylesheet" href="../styles/shCore.css"/>
+		<!-- for SyntaxHighlighter theme -->
+		<link type="text/css" rel="stylesheet" href="../styles/shThemeMidnight.css"/>
+		<!-- for SyntaxHighlighter syntax -->
+		<script type="text/javascript" src="../scripts/shBrushAsm.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushBash.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCpp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCSharp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJava.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushLua.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPerl.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPhp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPython.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushRuby.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushSql.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushVim.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushXml.js"></script>
+		<!-- for SyntaxHighlighter execute -->
+		<script type="text/javascript">
+		SyntaxHighlighter.all();
+		</script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30349200-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		   })();
+		</script>
+</head>
+<body>
+
+<ul class="nav">
+<li><a href="../index.html">Wiki</a></li>             
+<li><a href="../navigator.html">Navigator</a></li>             
+<li><a href="../about.html">About</a></li>
+<li><a href="../blog.html">Blog</a></li>
+</ul>
+<form style="float: right;" action="http://www.google.com/search" method="get">              
+<input type="text" size="30" name="q"  placeholder="Search">              
+<input name="sitesearch" value="wogong.github.com" type="hidden">             
+</form>
+
+<div class="clear">
+<!-- Place this tag where you want the badge to render -->
+<a href="https://plus.google.com/116560009434103921581?prsrc=3" rel="publisher" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:16px;height:16px;float:right;"/></a>
+
+
+<h4 id="toc_0.0.0.1">JavaScript语言学习</h4>
+<p>
+学习教材：《JavaScript网页编程从入门到精通》 北京科海电子出版社 
+</p>
+
+
+
+<p>
+第一篇 语言概述
+</p>
+
+<p>
+CHAPTER 1 JavaScript概述
+1.1概念
+</p>
+
+<p>
+1.2基本特点及其与Java的比较
+</p>
+
+<p>
+1.3作用
+1.3.1进行交互
+1.3.2进行本地验证
+</p>
+
+<p>
+1.4应用
+1.4.1服务器端应用
+1.4.2客户端应用
+</p>
+
+<p>
+1.5如何使用
+1.5.1嵌入JavaScript
+1.5.2链接JavaScript
+</p>
+
+<p>
+1.6怎样编写
+1.6.1使用纯文本编辑器
+1.6.2专业脚本编辑工具 
+</p>
+
+<p>
+1.7如何运行
+</p>
+
+
+<p>
+CHAPTER 2 HTML是学习JavaScript的基础
+</p>
+
+
+<p>
+CHAPTER 3 JavaScript基本语法
+3.1注释
+3.1.1单行注释 //注释文字
+3.1.2多行注释  /<strong>多行注释文字</strong>/
+3.1.3隐藏脚本注释 &lt;--! //--&gt;
+</p>
+
+<p>
+3.2关键字 基本关键字（报错）+特殊关键字（不报错）
+</p>
+
+<p>
+3.3&lt;script&gt;标记
+3.3.1属性设置 language/type（HTML自身）；src（js路径）
+3.3.2位置 head或者body标签内
+3.3.3数量 没有要求
+</p>
+
+<p>
+3.4分号 一句代码可以不使用（不会报错，不推荐），多行代码需要使用。
+</p>
+
+<p>
+3.5数据类型
+3.5.1基本数据类型
+整数 十进制；19进制：0X或者0x前缀；八进制：加0
+浮点数 基本形式+指数形式（指数不得超过3位，需为整数）
+string
+boolean布尔型
+3.5.2特殊数据类型
+null
+undefined
+3.5.3数据类型转换
+基本数据类型转换为字符串型 toString()
+字符串型转换成数值型 parseInt;parseFloat
+转换为布尔型
+其他数据类型转换成数值型
+特殊数值类型转换为字符串安
+</p>
+
+<p>
+3.6变量
+3.6.1变量命名 六条命名规则
+3.6.2变量声明和初始化 关键字var
+3.6.3变量类型 弱变量语言，在程序运行中类型可以改变
+3.6.4变量作用域 局部变量/全局变量。（二者可以同名【不推荐】；函数体中必须采用var声明局部变量，否则为全局变量。）
+</p>
+
+
+<p>
+CHAPTER4 JavaScript运算符
+</p>
+
+
+<p>
+CHAPTER5 JavaScript结构语句
+</p>
+
+</div>
+
+</body>
+
+	<div class="footer">
+	<p>&copy; 2012 wogong &nbsp;&nbsp; </p>
+	</div>
+
+</html>
+

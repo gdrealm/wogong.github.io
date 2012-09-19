@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="../style.css">
+<title>WoNotebook</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- for SyntaxHighlighter core -->
+		<script type="text/javascript" src="../scripts/shCore.js"></script>
+		<link type="text/css" rel="stylesheet" href="../styles/shCore.css"/>
+		<!-- for SyntaxHighlighter theme -->
+		<link type="text/css" rel="stylesheet" href="../styles/shThemeMidnight.css"/>
+		<!-- for SyntaxHighlighter syntax -->
+		<script type="text/javascript" src="../scripts/shBrushAsm.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushBash.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCpp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCSharp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJava.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushLua.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPerl.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPhp.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushPython.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushRuby.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushSql.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushVim.js"></script>
+		<script type="text/javascript" src="../scripts/shBrushXml.js"></script>
+		<!-- for SyntaxHighlighter execute -->
+		<script type="text/javascript">
+		SyntaxHighlighter.all();
+		</script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30349200-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		   })();
+		</script>
+</head>
+<body>
+
+<ul class="nav">
+<li><a href="../index.html">Wiki</a></li>             
+<li><a href="../Nav.html">Navigator</a></li>             
+<li><a href="../About.html">About</a></li>
+</ul>
+<form style="float: right;" action="http://www.google.com/search" method="get">              
+<input type="text" size="30" name="q"  placeholder="Search">              
+<input name="sitesearch" value="wogong.github.com" type="hidden">             
+</form>
+
+<div class="clear">
+
+<h3 id="toc_0.0.1">git</h3>
+<ul>
+<li>
+学习书籍:
+
+</ul>
+<p>
+Pro Git，有简体中文版
+</p>
+
+<ul>
+<li>
+Set up git
+
+</ul>
+<p>
+<pre class="brush: bash;">
+</p>
+<blockquote>
+git config --global user.name "Your Name"
+git config --global user.email wogong38@gmail.com
+mkdir dotfile
+cd dotfile
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin git@github.com:wogong/dotfile.git
+git push -u origin master
+</blockquote>
+<p>
+</pre>
+</p>
+<ul>
+<li>
+移除某些文件
+
+</ul>
+<p>
+git rm --cached "files" 仅仅取消追踪<br />
+git rm "files" 会在工作目录删除这些文件
+</p>
+
+<ul>
+<li>
+在github中永久移除文件及其历史记录
+
+</ul>
+<p>
+参看帮助信息
+</p>
+
+<h3 id="toc_0.0.2">vimwiki利用、<code>GitHub</code>发布个人主页</h3>
+<ol>
+<li>
+如何建立？
+
+<li>
+如何同步？
+
+</ol>
+<p>
+同步命令：
+</p>
+<blockquote>
+git add "files"<br />
+git commmit -m "message"<br />
+git push origin master<br />
+</blockquote>
+
+<h3 id="toc_0.0.3">与其他服务比较</h3>
+<p>
+其实Dropbox用来做一个简单的版本控制完全木有问题啊，对于小白来说更加直观方便。当然这是针对非程序员或者并非对代码进行版本控制。所以果断将wiki的html文件夹移除Dropbox同步文件夹。双重备份完全没有意义还容易出错。尤其是在双系统情况下。
+</p>
+
+<ul>
+<li>
+github 如何永久删除文件及其历史记录：<a href="http://help.github.com/remove-sensitive-data/">http://help.github.com/remove-sensitive-data/</a> 
+
+</ul>
+
+</div>
+
+</body>
+
+	<div class="footer">
+	<p>&copy; 2012 wogong &nbsp;&nbsp; </p>
+	</div>
+
+</html>
+
