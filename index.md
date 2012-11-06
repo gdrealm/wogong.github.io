@@ -9,12 +9,7 @@ Welcome to wogong's blog
 
 ---
 
-## About Jekyll
-
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
-
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
-
+我在这里记录有价值的信息
 
 ## Posts List
 
