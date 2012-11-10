@@ -1,0 +1,34 @@
+; Summary: Proxy Switchy! Exported Rule List
+; Date: Friday, November 09, 2012
+; Website: http://bit.ly/proxyswitchy
+
+#BEGIN
+
+[wildcard]
+*://t.co/*
+*://hotoo.me/*
+*://wiki.hotoo.me/*
+*://deekshithallamaneni.tk/*
+*://173.212.244.182/*
+*://err.pengfu.com/*
+*://www.letscorp.net/*
+*://bit.ly/*
+*://forums.dropbox.com/*
+*://api.twitter.com/*
+*://twitpic.com/*
+*://webcache.googleusercontent.com/*
+*://billshi.wordpress.com/*
+*://vptz.wordpress.com/*
+*://boardreader.com/*
+*://pxue.net/*
+*://twitter.com/*
+*://status.twitter.com/*
+*://img.ly/*
+*://www.ajaxsamples.cn/*
+*://dl.dropbox.com/*
+*://blog.hotoo.me/*
+
+[regexp]
+
+
+#END
