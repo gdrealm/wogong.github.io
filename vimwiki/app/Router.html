@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>Cloud</title>
+   <title>Router</title>
    <meta name="author" content="wogong" />
 
    <link rel="start" href="/" />
@@ -74,10 +74,35 @@
 
 
 <p>
-Dropbox
-百度网盘
-金山快盘：T盘与快盘合并了。
+入手Asus RT-N13U B1，TFTP刷机总是失败，一点反应没有，win7 64bit系统。遂搜索至台湾某网站，利用asus官网软件刷openwrt成功。记录刷机的步骤于此：
 </p>
+
+<ol>
+<li>
+下载安装ASUS Firmware Restoration。
+
+<li>
+下载对应的3rd-party Firmware，tomato、ddwrt或者openwrt。
+
+<li>
+把网线插上RT-N16的LAN。
+
+<li>
+先开启 Firmware Restoration，选择正确的 Firmware 后先别上载。
+
+<li>
+把RT-N16的电源都拔除后，按住Reset不放(不是WPS按钮，很多人都搞混了)，再把电源插上，等约3-5秒会看到RT-N16的前面板电源灯号在闪烁，此时Reset按钮一样别放开，点选 Firmware Restoration上载。
+
+<li>
+看到上载的过程有蓝色进度条出现就可以把Reset放掉，当完成100%上传后，等个约1分钟左右让RT-N16重开机，就可以连上192.168.1.1，账号root，密码admin。
+
+<li>
+如果还是连不上，就再Reset一次，应该就可以了。
+
+<li>
+此方法适用于任何固件，包括原厂固件。
+
+</ol>
 
 
 </div><!-- End Page -->
