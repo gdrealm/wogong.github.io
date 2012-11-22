@@ -19,5 +19,10 @@ tags: [archlinux, vmware]
 安装一个包即可解决问题：
 	sudo pacman -S open-vm-tools-modules
 
+挂载Windows共享文件：
+    sudo mount -t vmhgfs .host:/sharename /mnt/hgfs
+如果希望卡机自动挂载，在/etc/fstab文件加上：
+    .host:/sharename	/mnt/hgfs vmhgfs fmask=0133,dmask=0022 0 0
+
 接下来就是恢复自己的工作环境了。感谢Github，感谢Dropbox。
 
