@@ -30,6 +30,7 @@
 		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushSql.js"></script>
 		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushVim.js"></script>
 		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushXml.js"></script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 		<!-- for SyntaxHighlighter execute -->
 		<script type="text/javascript">
 		SyntaxHighlighter.all();
@@ -491,6 +492,137 @@ def method2():
 </ul>
 
 <h3 id="toc_0.0.10">Python基础教程09 面向对象的进一步拓展</h3>
+<p>
+上一讲我们熟悉了对象和类的基本概念。这一讲我们将进一步拓展，以便我们真正能实际运用对象和类。
+</p>
+
+<p>
+1. 在方法内调用类属性（变量以及其它方法）：
+</p>
+
+<p>
+上一讲我们已经提到，在定义方法时，必须有self这一参数，这个参数指的是对象。由于对象拥有类的所有性质，那么我们就可以在方法内部通过self来调用类的其它属性。
+<pre class="brush:python">
+class Human(object):
+laugh = 'hahahaha'
+def show_laugh(self):
+print self.laugh
+def laugh_100th(self):
+for i in range(100):
+self.show_laugh()
+li_lei = Human()              # 李雷
+li_lei.laugh_100th()
+</pre>
+我们这里有一个变量属性laugh，在方法show_laugh()中通过self.laugh被调用。方法show_laugh则在laugh_100th中通过self.show_laugh()被调用。
+</p>
+
+<p>
+（在方法中更改类变量属性的值是危险的，这样会影响根据这个类定义的所有对象的这一属性！！）
+</p>
+
+<p>
+2. \_\<em>init\</em>\_()方法
+</p>
+
+<p>
+\_<em>init</em>_()是一个特殊方法(special method)。Python里会有一些特殊方法，Python会以特别的方式处理它们。特殊方法的名字的特点是前后都有两个下划线。
+</p>
+
+<p>
+_<em>init</em>_()方法的特殊在于，如果你在类中定义了这个方法，一旦你根据这个类建立对象，Python就会自动调用这个方法（这个过程也叫初始化）。（在上一讲中，我们手动调用了move()方法）
+</p>
+
+<p>
+class happyBird(Bird):
+def _<em>init</em>_(self,more_words):
+print 'We are happy birds.',more_words
+</p>
+
+<p>
+summer = happyBird('Happy,Happy!')
+（Bird类的定义见上一讲）
+</p>
+
+<p>
+屏幕上打印出： We are happy birds.Happy,Happy!
+</p>
+
+<p>
+我们看到，尽管我们只是创建了summer对象，但_<em>init</em>_()方法被自动调用了。最后一行的语句(summer = happyBird...)先创建了对象，然后执行：
+</p>
+
+<p>
+summer._<em>init</em>_(more_words)
+</p>
+
+<p>
+'Happy,Happy!' 被传递给了_<em>init</em>_()的参数more_words
+</p>
+
+ 
+
+<p>
+3. 对象的性质
+</p>
+
+<p>
+上一讲我们讲了变量属性和方法属性。要注意，这些属性是类的属性。所有属于一个类的对象都会共享这些属性。比如说，鸟都有羽毛，鸡都不会飞。
+</p>
+
+<p>
+在一些情况下，我们需要用到对象的性质。比如说，人是一个类别，我们知道，性别是人类的一个性质，但并不是所有的人类都是男性或者所有的人类都是女性。这个性质的值会随着对象的不同而不同。（李雷是人类的一个对象，性别是男；韩美美也是人类的一个对象，性别是女）。
+</p>
+
+<p>
+从上一讲中，我们已经知道了，当定义类的方法时，必须要传递一个self的参数。这个参数指代的就是类的一个对象。当然，这是一个很模糊的一个概念。但一旦我们用类来新建一个对象（比如说我们下面例子中的li_lei）, 那么li_lei就是self所代表的东西。我们已经知道了，li_lei会拥有Human类的属性。进一步，我们通过赋值给self.attribute，给li_lei这一对象增加一些性质（比如说性别）。由于self强制传递给各个方法，方法可以通过引用self.attribute很方便地查询到这些性质，并进行进一步的操作。
+</p>
+
+<p>
+这样，我们在类的属性统一的基础上，又给每个对象增添了各自特色的性质，从而能描述多样的世界。
+</p>
+
+<p>
+class Human(object):
+def _<em>init</em>_(self, input_gender):
+self.gender = input_gender
+def printGender(self):
+print self.gender
+</p>
+
+<p>
+li_lei = Human('male') # 这里，'male'作为参数传递给_<em>init</em>_()方法的input_gender变量。
+print li_lei.gender
+li_lei.printGender()
+首先，在初始化中，将参数input_gender赋值给对象li_lei的性质gender。（上一讲，我们已经提到，self指示的是对象, 也就是li_lei）
+</p>
+
+<p>
+我们发现，li_lei拥有了属性gender。在类human的定义中，并没有这样一个变量属性。Python是在建立了li_lei这一对象之后，专门为li_lei建立的属性。我们称此为对象的性质。（也有人以类属性，对象属性来区分）。
+</p>
+
+<p>
+对象的性质也可以被其它方法调用，正如我们在printGender方法中所看到的那样。
+</p>
+
+ 
+
+<p>
+总结：
+</p>
+
+<p>
+通过self调用类属性
+</p>
+
+<p>
+_<em>init</em>_(): 在建立对象时自动执行
+</p>
+
+<p>
+类属性和对象的性质的区别
+</p>
+
+
 <h3 id="toc_0.0.11">Python基础教程10 反过头来看看</h3>
 
 
