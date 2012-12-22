@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 layout: post
 title: "kindle dxg添加中文支持及更改字体"
@@ -136,4 +135,3 @@ mobileread论坛同样提供了方便的升级文件：
 
 安装完成后，修改`launchpad.ini`文件，增加`N = !/test/bin/usbnetwork`,保存，重启。快速安`shift+n`可以在存储模式与网卡模式之间切换，进入usbnetwork之后按照之前的修改即可，注意3.2.1与2.5.8字体文件的不同，3.2.1增加了对中文字体的支持。
 
->>>>>>> f01781f989d889650d474c6629b926ead26a94f4
