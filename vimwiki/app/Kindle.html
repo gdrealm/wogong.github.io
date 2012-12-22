@@ -1,37 +1,43 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-<link rel="Stylesheet" type="text/css" href="../style.css">
-<title>WoNotebook</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Kindle</title>
+   <meta name="author" content="wogong" />
+
+   <link rel="start" href="/" />
+   <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/feedname" title="RSS feed" />
 		<!-- for SyntaxHighlighter core -->
-		<script type="text/javascript" src="../scripts/shCore.js"></script>
-		<link type="text/css" rel="stylesheet" href="../styles/shCore.css"/>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shCore.js"></script>
+		<link type="text/css" rel="stylesheet" href="../../assets/vimwiki/styles/shCore.css"/>
 		<!-- for SyntaxHighlighter theme -->
-		<link type="text/css" rel="stylesheet" href="../styles/shThemeMidnight.css"/>
+		<link type="text/css" rel="stylesheet" href="../../assets/vimwiki/styles/shThemeMidnight.css"/>
 		<!-- for SyntaxHighlighter syntax -->
-		<script type="text/javascript" src="../scripts/shBrushAsm.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushBash.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushCpp.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushCSharp.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushCss.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushJava.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushJScript.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushLua.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushPerl.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushPhp.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushPython.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushRuby.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushSql.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushVim.js"></script>
-		<script type="text/javascript" src="../scripts/shBrushXml.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushAsm.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/../scripts/shBrushBash.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushCpp.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushCSharp.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushJava.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushLua.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushPerl.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushPhp.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushPython.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushRuby.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushSql.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushVim.js"></script>
+		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushXml.js"></script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 		<!-- for SyntaxHighlighter execute -->
 		<script type="text/javascript">
 		SyntaxHighlighter.all();
 		</script>
 		<script type="text/javascript">
 		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-30349200-1']);
+		  _gaq.push(['_setAccount', 'UA-34308107-1']);
 		  _gaq.push(['_trackPageview']);
 		  (function() {
 		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -39,22 +45,33 @@
 		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		   })();
 		</script>
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="../../assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="../../assets/themes/mark-reid/css/screen.css" type="text/css" />
+   <link rel="stylesheet" href="../../assets/vimwiki/style.css" type="text/css" />
+
 </head>
-<body>
+<body id="">
+<div id="site">
+  
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">&larr; <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+      <li><a class="home" href="../../">Home</a></li>
+      <li><a  href="../../archive.html">Archive</a></li>
+      <li><a  href="../../categories.html">Categories</a></li>
+      <li><a  href="../../tags.html">Tags</a></li>
+      <li><a  href="../index.html">Wiki</a></li>
+    </ul>
+  </div>
 
-<ul class="nav">
-<li><a href="../index.html">Wiki</a></li>             
-<li><a href="../Nav.html">Navigator</a></li>             
-<li><a href="../About.html">About</a></li>
-</ul>
-<form style="float: right;" action="http://www.google.com/search" method="get">              
-<input type="text" size="30" name="q"  placeholder="Search">              
-<input name="sitesearch" value="wogong.github.com" type="hidden">             
-</form>
-
-<div class="clear">
-<!-- Place this tag where you want the badge to render -->
-<a href="https://plus.google.com/116560009434103921581?prsrc=3" rel="publisher" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:16px;height:16px;float:right;"/></a>
+  
+<div id="page">
 
 
 <h3 id="toc_0.0.1">这里记录<code>Kindle</code>的使用技巧：</h3>
@@ -67,10 +84,30 @@ Oh,昨天没有抵挡住诱惑，败了kindle dxg！现在焦急的等待中，�
 最近发现Amazon可以提供转换6寸PDF，虽然不如duokan系统自带的，但是总算可以看非6寸PDF了。今天发现发送的PDF转换之后乱码了，应该是字体的问题？重新打印一下，再次转换即可解决乱码问题。
 
 </ul>
+
+<ul>
+<li>
+kindle4 4.1.0 可以支持中文词典，官方新华字典已经放出
+
+</ul>
+<p>
+-
+</p>
+
 <h4 id="toc_0.0.1.1">bambook for kindle安装</h4>
-<h5 id="toc_0.0.1.1.1">4.0.1或者之前版本按照安装包里的指导文件安装</h5>
-<h5 id="toc_0.0.1.1.2">4.1.0版本安装步骤</h5>
-<h6 id="toc_0.0.1.1.2.1">1.拷贝安装文件，重启Kindle</h6>
+
+<p>
+4.0.1或者之前版本按照安装包里的指导文件安装
+</p>
+
+<p>
+4.1.0版本安装步骤
+</p>
+
+<p>
+1.拷贝安装文件，重启Kindle
+</p>
+
 <ol>
 <li>
 连接USB线, 拷贝安装文件到Kindle磁盘; 弹出Kindle磁盘， 拔出USB线。拷贝的文件列表如下
@@ -106,7 +143,10 @@ Oh,昨天没有抵挡住诱惑，败了kindle dxg！现在焦急的等待中，�
 </ol>
 
 
-<h6 id="toc_0.0.1.1.2.2">2.诊断模式选择DDQ菜单，安装多看</h6>
+<p>
+2.诊断模式选择DDQ菜单，安装多看
+</p>
+
 <ol>
 <li>
 选择 D) Exit, Reboot or Disable Diags 按五向键之中键确认<br />
@@ -128,25 +168,25 @@ DDQ之后， K4将重启进入自动安装界面，约5分钟安装完毕。<br 
 
 </ul>
 
-<h5 id="toc_0.0.1.1.3">Kindle 4 的新版本version4.1.0,</h5>
+<h4 id="toc_0.0.1.2">Kindle 4 的新版本version4.1.0,</h4>
+
 <p>
 今天20120605，Amazon推出了Kindle 4 的新版本version4.1.0
 更新链接：<a href="http://www.amazon.com/gp/help/customer/display.html/?nodeId=200774090">http://www.amazon.com/gp/help/customer/display.html/?nodeId=200774090</a>
 由于之前更换屏保导致升级错误，恢复备份即可解决问题。新版本改进不多，但是值得升级。
 </p>
 
-
-
-<h5 id="toc_0.0.1.1.4"><a href="kindle4 hack tech.html">kindle4 hack tech</a></h5>
-<h5 id="toc_0.0.1.1.5">管理Archieved items</h5>
+<h4 id="toc_0.0.1.3"><a href="kindle4 hack tech.html">kindle4 hack tech</a></h4>
+<h4 id="toc_0.0.1.4"><a href="kindle dxg hack.html">kindle dxg hack</a></h4>
+<h4 id="toc_0.0.1.5">管理Archieved items</h4>
 <p>
 今天发现Amazon可以同步Personal Documents了，这点真的非常赞。无论是在我的Kindle，还是在Android设备上，我可以看自己传上去的书，还可以分享自己的Highlights，但是Amazon对于Personal Documents的管理十分的不方便，尤其是只能一个一个删除，而且每删除一两项就会自动刷新（虽然可以手动Esc强制取消），搜索找到以下的一个Bookmarklet，现在记录如下：
 </p>
 
 <p>
 参考链接包括：
-<a href="http://www.mobileread.com/forums/showthread.php?t=162972">mobileread论坛</a>
-<a href="http://www.richardzhong.com/2012/03/%E5%A6%82%E4%BD%95_%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4_personal_documents_amazon_kindle_%E4%BD%BF%E7%94%A8_%E6%8A%80%E5%B7%A7/#comment-28">个人博客</a>
+[<a href="http://www.mobileread.com/forums/showthread.php?t=162972">http://www.mobileread.com/forums/showthread.php?t=162972</a> mobileread论坛]
+[<a href="http://www.richardzhong.com/2012/03/%E5%A6%82%E4%BD%95_%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4_personal_documents_amazon_kindle_%E4%BD%BF%E7%94%A8_%E6%8A%80%E5%B7%A7/#comment-28">http://www.richardzhong.com/2012/03/%E5%A6%82%E4%BD%95_%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4_personal_documents_amazon_kindle_%E4%BD%BF%E7%94%A8_%E6%8A%80%E5%B7%A7/#comment-28</a> 个人博客]
 </p>
 
 <p>
@@ -156,13 +196,49 @@ DDQ之后， K4将重启进入自动安装界面，约5分钟安装完毕。<br 
 javascript:(function(){ var v = new RegExp("amazon"); if (!v.test(document.URL)) { return false; } {a=document.getElementsByClassName('rowBodyCollapsed');for(var i = 0; i&lt;a.length; i++){Fion.deleteItem('deleteItem_'+a[i].getAttribute('asin'));};return; }})();
 </blockquote>
 
+<p>
+使用calibre的插件管理collection
+[<a href="http://www.mobileread.com/forums/showthread.php?t=118635">http://www.mobileread.com/forums/showthread.php?t=118635</a> 帮助文档链接]
+</p>
+
+
+<p>
+<a href="kindle_navigator.html">kindle_navigator</a>
+</p>
+
+
+</div><!-- End Page -->
+
+
+  
+  <div id="footer">
+  	<address>
+  		<span class="copyright">
+  			Content by <a href="http://www.wogong.net/about.html">wogong</a>. Design by 
+  			<a href="http://mark.reid.name/">Mark Reid</a>
+  			<br/>
+  			(<a rel="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Some rights reserved</a>)			
+  		</span>
+  		<span class="engine">
+  			Powered by <a href="https://code.google.com/p/vimwiki/" title="A personal wiki for Vim">Vimwiki</a> and <a href="http://github.com" title="Github">Github</a>
+  		</span>
+  	</address>
+  </div>
+  
 </div>
 
+<!--[if IE 6]>
+<script type="text/javascript"> 
+	/*Load jQuery if not already loaded*/ if(typeof jQuery == 'undefined'){ document.write("<script type=\"text/javascript\"   src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></"+"script>"); var __noconflict = true; } 
+	var IE6UPDATE_OPTIONS = {
+		icons_path: "http://static.ie6update.com/hosted/ie6update/images/"
+	}
+</script>
+<script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script>
+<![endif]-->
+
+  
 </body>
-
-	<div class="footer">
-	<p>&copy; 2012 wogong &nbsp;&nbsp; </p>
-	</div>
-
 </html>
+
 
