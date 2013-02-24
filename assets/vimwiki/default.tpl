@@ -6,52 +6,9 @@
    <meta http-equiv="content-type" content="text/html; charset=%encoding%" />
    <title>%title%</title>
    <meta name="author" content="wogong" />
-
-   <link rel="start" href="/" />
-   <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/feedname" title="RSS feed" />
-		<!-- for SyntaxHighlighter core -->
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shCore.js"></script>
-		<link type="text/css" rel="stylesheet" href="../%root_path%assets/vimwiki/styles/shCore.css"/>
-		<!-- for SyntaxHighlighter theme -->
-		<link type="text/css" rel="stylesheet" href="../%root_path%assets/vimwiki/styles/shThemeMidnight.css"/>
-		<!-- for SyntaxHighlighter syntax -->
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushAsm.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/%root_path%scripts/shBrushBash.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushCpp.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushCSharp.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushCss.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushJava.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushJScript.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushLua.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushPerl.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushPhp.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushPython.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushRuby.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushSql.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushVim.js"></script>
-		<script type="text/javascript" src="../%root_path%assets/vimwiki/scripts/shBrushXml.js"></script>
-		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-		<!-- for SyntaxHighlighter execute -->
-		<script type="text/javascript">
-		SyntaxHighlighter.all();
-		</script>
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-34308107-1']);
-		  _gaq.push(['_trackPageview']);
-		  (function() {
-		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		   })();
-		</script>
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="../%root_path%assets/themes/mark-reid/css/syntax.css" type="text/css" />
-
-   <!-- Homepage CSS -->
    <link rel="stylesheet" href="../%root_path%assets/themes/mark-reid/css/screen.css" type="text/css" />
+   <link rel="stylesheet" href="../%root_path%assets/themes/mark-reid/css/syntax.css" type="text/css" />
    <link rel="stylesheet" href="../%root_path%assets/vimwiki/style.css" type="text/css" />
-
 </head>
 <body id="">
 <div id="site">
@@ -95,16 +52,16 @@
   
 </div>
 
-<!--[if IE 6]>
-<script type="text/javascript"> 
-	/*Load jQuery if not already loaded*/ if(typeof jQuery == 'undefined'){ document.write("<script type=\"text/javascript\"   src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></"+"script>"); var __noconflict = true; } 
-	var IE6UPDATE_OPTIONS = {
-		icons_path: "http://static.ie6update.com/hosted/ie6update/images/"
-	}
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 </script>
-<script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script>
-<![endif]-->
-
   
 </body>
 </html>

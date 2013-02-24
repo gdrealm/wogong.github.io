@@ -20,6 +20,4 @@ Welcome to wogong's blog
 </ul>
 
 ## [Douban](http://www.douban.com/people/wogong38/)
-<script type="text/javascript" src="http://www.douban.com/service/badge/wogong38/?show=collection&amp;n=6&amp;columns=6&amp;picsize=medium&amp;hidelogo=yes&amp;hideself=yes&amp;cat=movie|book" ></script>
-
-
+<script type="text/javascript" src="http://www.douban.com/service/badge/wogong38/?show=collection&amp;n=6&amp;columns=6&amp;picsize=medium&amp;hidelogo=yes&amp;hideself=yes&amp;cat=movie|book|music" ></script>
