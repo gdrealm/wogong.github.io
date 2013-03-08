@@ -5,52 +5,10 @@
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>Programming_Structural_Mechanics</title>
-   <meta name="author" content="wogong" />
-
-   <link rel="start" href="/" />
-   <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/feedname" title="RSS feed" />
-		<!-- for SyntaxHighlighter core -->
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shCore.js"></script>
-		<link type="text/css" rel="stylesheet" href="../../assets/vimwiki/styles/shCore.css"/>
-		<!-- for SyntaxHighlighter theme -->
-		<link type="text/css" rel="stylesheet" href="../../assets/vimwiki/styles/shThemeMidnight.css"/>
-		<!-- for SyntaxHighlighter syntax -->
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushAsm.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/../scripts/shBrushBash.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushCpp.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushCSharp.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushCss.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushJava.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushJScript.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushLua.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushPerl.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushPhp.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushPython.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushRuby.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushSql.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushVim.js"></script>
-		<script type="text/javascript" src="../../assets/vimwiki/scripts/shBrushXml.js"></script>
-		<!-- for SyntaxHighlighter execute -->
-		<script type="text/javascript">
-		SyntaxHighlighter.all();
-		</script>
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-34308107-1']);
-		  _gaq.push(['_trackPageview']);
-		  (function() {
-		   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		   })();
-		</script>
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="../../assets/themes/mark-reid/css/syntax.css" type="text/css" />
-
-   <!-- Homepage CSS -->
+   <meta name="author" content="cheng zhen" />
    <link rel="stylesheet" href="../../assets/themes/mark-reid/css/screen.css" type="text/css" />
+   <link rel="stylesheet" href="../../assets/themes/mark-reid/css/syntax.css" type="text/css" />
    <link rel="stylesheet" href="../../assets/vimwiki/style.css" type="text/css" />
-
 </head>
 <body id="">
 <div id="site">
@@ -105,7 +63,7 @@ Vibration 4.5
 
 </ol>
 
-<h3 id="toc_0.1.1">Introduction</h3>
+<h3 id="toc_0.1.1">1.Introduction</h3>
 <p>
 One solid foundation, Two tall buildings
 </p>
@@ -137,7 +95,7 @@ Constitutive
 Computer-Oriented SM
 </p>
 
-<h3 id="toc_0.1.2">Fortran 90</h3>
+<h3 id="toc_0.1.2">2.Fortran 90</h3>
 <p>
 Fortran means: Formula Translator
 </p>
@@ -169,15 +127,47 @@ logical
 </p>
 
 <p>
-2-1 见程序源文件。
+2-1 见程序源文件。程序的输出结果为：
 </p>
 
 <p>
-2-2 程序运行结果为，a,b可以精确表示，c,d无法精确表示，因为计算机利用二进制存储数据的方式决定了在单精度数转化为双精度数时会出现误差，但是对于可以用二进制精确表示的单精度数不存在这个问题，例如题中的a,b，以及另外添加作为对比的e=2.25，在转化为双精度数值时均能保持精度。这一点之前尚不清楚，在看了计算机存储数据及具体转化之后终于弄清楚了。
+The kind parameters of these three numbers 1,1.0,1.0D0 are:            4           4           8
 </p>
 
 <p>
-2-3 pi与pi2的精度误差同2-2，出现在单精度类型转化为双精度类型的过程。pi3不存在转化的问题，所以没有精度误差，输出与输入一样。pi4是通过双精度数精确计算得到的，经过查询wikipedia知PI的前几位数据为3.14159 26535 89793 23846，对比知道pi4(3.14159265358979)的数据正确。
+2-2 程序输出结果为：
+</p>
+<blockquote>
+10.0000000000000         1.00000000000000        0.100000001490116
+</blockquote>
+<p>
+   0.999999977648258D-002    2.25000000000000
+</p>
+
+<p>
+Program completed
+</p>
+
+
+<p>
+程序运行结果为，a,b可以精确表示，c,d无法精确表示，因为计算机利用二进制存储数据的方式决定了部分十进制的浮点数不可能由有限位数二进制数精确表示，单精度数转化为双精度数时同样也会出现误差，但是对于可以用二进制精确表示的单精度数不存在这个问题，例如题中的a,b，以及另外添加作为对比的e=2.25，在转化为双精度数值时均能保持精度。
+</p>
+
+<p>
+2-3 程序的输出结果为：
+</p>
+<blockquote>
+3.14159011840820         3.14159274101257         3.14159265358793
+3.14159265358979
+</blockquote>
+
+<p>
+Program completed
+</p>
+
+
+<p>
+pi与pi2的精度误差原因同2-2。pi3不存在转化的问题，所以没有精度误差，输出与输入一样。pi4是通过双精度数精确计算得到的，经过查询wikipedia知PI的前几位数据为3.14159 26535 89793 23846，对比知道pi4(3.14159265358979)的数据正确。
 </p>
 
 <p>
@@ -197,6 +187,141 @@ logical
 </p>
 
 
+<h4 id="toc_0.1.2.2">homework3</h4>
+<p>
+课本习题
+2-5 见程序源文件。程序的输出结果为：
+</p>
+
+<p>
+	c1=550.000
+	c2=55.0000
+	c3=225.000
+</p>
+
+<p>
+2-6 (c)是错误的，其他均正确。c的语句elf90编译报错。因为matmul不可用于两个向量的乘积。而(c)中的x与matmul(a,x)均为向量。
+</p>
+
+<p>
+2-7 见程序源文件。程序输出结果为：
+</p>
+
+<p>
+Please input a integer:4
+</p>
+<blockquote>
+11          12          13          14
+21          22          23          24
+31          32          33          34
+41          42          43          44
+</blockquote>
+
+<p>
+Program completed
+</p>
+    
+<p>
+2-8 见程序源文件。程序输出结果为：
+</p>
+
+<p>
+the sum of 1 to 100 is:         5050
+</p>
+
+<p>
+Program completed
+</p>
+    
+
+<p>
+2-9  见程序源文件。程序输出结果为：
+</p>
+
+<p>
+r0 is   0.596046E-07
+d0 is   0.111022302462516D-015
+i is          11
+j is      982948
+</p>
+
+<p>
+Program completed
+</p>
+
+<p>
+由循环计数变量ij知双精度(d0)的情况下循环次数远远大于单精度(r0)的情况。
+</p>
+
+<h3 id="toc_0.1.3">3.结构体系的数值化</h3>
+<h4 id="toc_0.1.3.1">3.1 坐标系、位移和力</h4>
+<ol>
+<li>
+坐标系
+
+<li>
+单元杆端位移和杆端力
+
+<li>
+坐标转换
+
+</ol>
+<h4 id="toc_0.1.3.2">3.2 结构编码</h4>
+<ol>
+<li>
+单元编码
+
+<li>
+结点自由度
+
+<li>
+结点编号
+
+<li>
+整体结点位移编码
+
+<li>
+单元定位向量
+
+<li>
+杆端位移的提取
+
+</ol>
+<h4 id="toc_0.1.3.3">3.3 F90实现</h4>
+<ol>
+<li>
+结构数据文件格式
+
+<ul>
+<li>
+控制参数
+
+<li>
+结点数据
+
+<li>
+单元数据
+
+</ul>
+</ol>
+
+<h4 id="toc_0.1.3.4">homework4</h4>
+<p>
+PDF文档
+</p>
+
+
+<h3 id="toc_0.1.4">4.Geometry Stability</h3>
+<p>
+4.1 Elem. Analysis
+</p>
+<ol>
+<li>
+Element model and division
+
+</ol>
+
+
 </div><!-- End Page -->
 
 
@@ -204,9 +329,8 @@ logical
   <div id="footer">
   	<address>
   		<span class="copyright">
-  			Content by <a href="/info/site.html">wogong</a>. Design by 
+  			Content by <a href="https://plus.google.com/116560009434103921581?rel=author">cheng zhen</a>. Design by 
   			<a href="http://mark.reid.name/">Mark Reid</a>
-  			<br/>
   			(<a rel="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Some rights reserved</a>)			
   		</span>
   		<span class="engine">
@@ -217,16 +341,16 @@ logical
   
 </div>
 
-<!--[if IE 6]>
-<script type="text/javascript"> 
-	/*Load jQuery if not already loaded*/ if(typeof jQuery == 'undefined'){ document.write("<script type=\"text/javascript\"   src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></"+"script>"); var __noconflict = true; } 
-	var IE6UPDATE_OPTIONS = {
-		icons_path: "http://static.ie6update.com/hosted/ie6update/images/"
-	}
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 </script>
-<script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script>
-<![endif]-->
-
   
 </body>
 </html>

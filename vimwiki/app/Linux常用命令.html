@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Linux常用命令</title>
+   <meta name="author" content="cheng zhen" />
+   <link rel="stylesheet" href="../../assets/themes/mark-reid/css/screen.css" type="text/css" />
+   <link rel="stylesheet" href="../../assets/themes/mark-reid/css/syntax.css" type="text/css" />
+   <link rel="stylesheet" href="../../assets/vimwiki/style.css" type="text/css" />
+</head>
+<body id="">
+<div id="site">
+  
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">&larr; <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+      <li><a class="home" href="../../">Home</a></li>
+      <li><a  href="../../archive.html">Archive</a></li>
+      <li><a  href="../../categories.html">Categories</a></li>
+      <li><a  href="../../tags.html">Tags</a></li>
+      <li><a  href="../index.html">Wiki</a></li>
+    </ul>
+  </div>
+
+  
+<div id="page">
+
+
+
+<ul>
+<li>
+wget的一些参数：-c 支持断点连续下载
+
+</ul>
+
+<ul>
+<li>
+查看系统已有字体：fc-list
+
+</ul>
+
+<ul>
+<li>
+查看电池电量信息：acpi
+
+</ul>
+
+<ul>
+<li>
+cd系列
+    cd -  后退
+    cd ..  上一层目录
+    cd .  这个真心没用，本层目录
+
+</ul>
+
+<ul>
+<li>
+更改路径：
+
+<ol>
+<li>
+暂时使用
+
+</ol>
+</ul>
+<p>
+亦即重启或注销后就失效了。
+使用 PATH=\(PATH:目录:目录... 直接赋值。如 PATH=\)PATH:/sbin。
+</p>
+<ol>
+<li>
+长期使用
+
+</ol>
+<p>
+在全局文件 /etc/profile 中或用户自定义文件 ~/.bash_profile 中添加上述命令即可！bash_rc?
+</p>
+
+<ul>
+<li>
+tar
+
+</ul>
+<p>
+tar xzf .tar.gz
+tar xjf .tar.bz2
+tar xvf .tar
+tar Jxvf .tar.xz 
+</p>
+
+<ul>
+<li>
+用户和组
+
+</ul>
+<p>
+gpasswd -a username groupname : add user to group
+</p>
+
+<ul>
+<li>
+samba
+
+</ul>
+<p>
+smbclient //166.111.9.155/movie -U username%passwd
+</p>
+
+
+<ul>
+<li>
+权限等一些很恶心的东西
+
+</ul>
+<p>
+学习下
+</p>
+
+
+</div><!-- End Page -->
+
+
+  
+  <div id="footer">
+  	<address>
+  		<span class="copyright">
+  			Content by <a href="https://plus.google.com/116560009434103921581?rel=author">cheng zhen</a>. Design by 
+  			<a href="http://mark.reid.name/">Mark Reid</a>
+  			(<a rel="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Some rights reserved</a>)			
+  		</span>
+  		<span class="engine">
+  			Powered by <a href="https://code.google.com/p/vimwiki/" title="A personal wiki for Vim">Vimwiki</a> and <a href="http://github.com" title="Github">Github</a>
+  		</span>
+  	</address>
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+  
+</body>
+</html>
+
+

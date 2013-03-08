@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>pacman </title>
+   <meta name="author" content="cheng zhen" />
+   <link rel="stylesheet" href="../../assets/themes/mark-reid/css/screen.css" type="text/css" />
+   <link rel="stylesheet" href="../../assets/themes/mark-reid/css/syntax.css" type="text/css" />
+   <link rel="stylesheet" href="../../assets/vimwiki/style.css" type="text/css" />
+</head>
+<body id="">
+<div id="site">
+  
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">&larr; <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+      <li><a class="home" href="../../">Home</a></li>
+      <li><a  href="../../archive.html">Archive</a></li>
+      <li><a  href="../../categories.html">Categories</a></li>
+      <li><a  href="../../tags.html">Tags</a></li>
+      <li><a  href="../index.html">Wiki</a></li>
+    </ul>
+  </div>
+
+  
+<div id="page">
+
+
+<p>
+强制更新包目录
+</p>
+<blockquote>
+pacman -Syy
+</blockquote>
+
+<p>
+删除单个软件包，保留其全部已经安装的依赖关系 
+</p>
+<blockquote>
+pacman -R package_name
+</blockquote>
+
+<p>
+删除指定软件包，及其所有没有被其他已安装软件包使用的依赖关系：
+</p>
+<blockquote>
+pacman -Rs package_name
+</blockquote>
+
+<p>
+要删除软件包和所有依赖这个软件包的程序:(警告: 此操作是递归的，请小心检查，可能会一次删除大量的软件包。) 
+</p>
+<blockquote>
+pacman -Rsc package_name
+</blockquote>
+<p>
+要删除软件包，但是不删除依赖这个软件包的其他程序：
+</p>
+<blockquote>
+pacman -Rdd package_name
+</blockquote>
+<p>
+pacman 删除某些程序时会备份重要配置文件，在其后面加上*.pacsave扩展名。-n 选项可以删除这些文件：
+</p>
+<blockquote>
+pacman -Rn package_name<br />
+pacman -Rsn package_name
+</blockquote>
+<p>
+acman 使用 -Q 参数查询本地软件包数据库。
+</p>
+<blockquote>
+pacman -Q --help
+</blockquote>
+<p>
+使用 -S 参数来查询远程同步的数据库。
+</p>
+<blockquote>
+pacman -S --help
+</blockquote>
+<p>
+pacman 可以在包数据库中查询软件包，查询位置包含了软件包的名字和描述。
+</p>
+<blockquote>
+pacman -Ss package
+</blockquote>
+<p>
+要查询已安装的软件包：
+</p>
+<blockquote>
+pacman -Qs package
+</blockquote>
+<p>
+显示软件包的详尽的信息：
+</p>
+<blockquote>
+pacman -Si package
+</blockquote>
+<p>
+查询本地安装包的详细信息：
+</p>
+<blockquote>
+pacman -Qi package
+</blockquote>
+<p>
+使用两个 -i 将同时显示备份文件和修改状态：
+</p>
+<blockquote>
+pacman -Qii package_name
+</blockquote>
+<p>
+要获取已安装软件包所包含文件的(very useful when you can't find the configuration files)
+</p>
+<blockquote>
+pacman -Ql package
+</blockquote>
+
+
+</div><!-- End Page -->
+
+
+  
+  <div id="footer">
+  	<address>
+  		<span class="copyright">
+  			Content by <a href="https://plus.google.com/116560009434103921581?rel=author">cheng zhen</a>. Design by 
+  			<a href="http://mark.reid.name/">Mark Reid</a>
+  			(<a rel="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Some rights reserved</a>)			
+  		</span>
+  		<span class="engine">
+  			Powered by <a href="https://code.google.com/p/vimwiki/" title="A personal wiki for Vim">Vimwiki</a> and <a href="http://github.com" title="Github">Github</a>
+  		</span>
+  	</address>
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+  
+</body>
+</html>
+
+
