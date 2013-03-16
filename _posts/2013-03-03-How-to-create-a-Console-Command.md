@@ -7,7 +7,7 @@ tags: [Symfony2, Command, Console]
 ---
 {% include JB/setup %}
 
-详情请参见官方文档 http://symfony.com/doc/2.0/cookbook/console/console_command.html<F12>
+详情请参见[官方文档](http://symfony.com/doc/2.0/cookbook/console/console_command.html<F12>)
 
 ## 自动注册的终端命令
 
@@ -72,4 +72,16 @@ tags: [Symfony2, Command, Console]
             $output->writeln($translator->trans('Hello!'));
         }
     }
-    
+ 
+## 在命令行发送邮件
+
+如果你使用了memory spooling，那么子啊终端命令中调用时可能会没有办法发送邮件。因为在这种情况下，symfony不会自动发送邮件，你需要自己手动flushing，添加以下代码即可解决：
+
+    $container = $this->getContainer();
+    $mailer = $container->get('mailer');
+    $spool = $mailer->getTransport()->getSpool();
+    $transport = $container->get('swiftmailer.transport.real');
+    $spool->flushQueue($transport);
+
+参考官方文档：[http://symfony.com/doc/2.0/cookbook/console/sending_emails.html](http://symfony.com/doc/2.0/cookbook/console/sending_emails.html)
+
