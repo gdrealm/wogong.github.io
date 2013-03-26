@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>svn</title>
+   <title>postfix</title>
    <meta name="author" content="cheng zhen" />
    <link rel="stylesheet" href="../../assets/themes/mark-reid/css/screen.css" type="text/css" />
    <link rel="stylesheet" href="../../assets/themes/mark-reid/css/syntax.css" type="text/css" />
@@ -31,64 +31,11 @@
 <div id="page">
 
 
-<ol>
-<li>
-Google Code 目前使用的版本管理。
-
-</ol>
-
-<ol>
-<li>
-Non-members may check out a read-only working copy anonymously over HTTP.
-    svn checkout <a href="http://calibre2opds.googlecode.com/svn/trunk/">http://calibre2opds.googlecode.com/svn/trunk/</a> calibre2opds-read-only
-
-</ol>
-
 <p>
-svn update
-</p>
-
-<h2 id="toc_0.1">svn diff 使用vimdiff</h2>
-
-<p>
-在svn的手册里有diffwrap.sh这样一个脚本：
+删除邮件队列中全部文件：
 </p>
 <blockquote>
-#!/bin/sh
-</blockquote>
-<ol>
-<li>
-配置你喜欢的diff程序路径
-    DIFF="vimdiff"
-
-<li>
-SVN diff命令会传入两个文件的参数 
-    LEFT=${6}
-    RIGHT=${7}
-
-<li>
-拼接成diff命令所需要的命令格式
-    \(DIFF \)LEFT $RIGHT
-
-</ol>
-
-<p>
-把这个文件改名为svndiff，放在/usr/local/bin/目录里，并给执行权限
-然后修改~/.subversion/config文件，将其中
-</p>
-
-
-<ol>
-<li>
-diff-cmd = diff_program (diff, gdiff, etc.)
-
-</ol>
-
-<p>
-修改成
-</p>
-<blockquote>
-diff-cmd = /usr/local/bin/svndiff现实效果如下：
+postsuper -d ALL
 </blockquote>
 
 
