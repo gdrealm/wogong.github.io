@@ -31,7 +31,8 @@
 <div id="page">
 
 
-<h3 id="toc_0.0.1">git</h3>
+<h1 id="toc_1">git</h1>
+
 <ul>
 <li>
 学习书籍:
@@ -83,28 +84,41 @@ git rm "files" 会在工作目录删除这些文件
 参看帮助信息
 </p>
 
-<h3 id="toc_0.0.2">vimwiki利用、<code>GitHub</code>发布个人主页</h3>
-<ol>
-<li>
-如何建立？
 
-<li>
-如何同步？
-
-</ol>
-<p>
-同步命令：
-</p>
+<h2 id="toc_1.1">git远程仓库的管理</h2>
 <blockquote>
-git add "files"<br />
-git commmit -m "message"<br />
-git push origin master<br />
+git remote add name url
+</blockquote>
+<blockquote>
+git remote rm name
+</blockquote>
+<blockquote>
+git remote rename oldneme newname
 </blockquote>
 
-<h3 id="toc_0.0.3">与其他服务比较</h3>
 <p>
-其实Dropbox用来做一个简单的版本控制完全木有问题啊，对于小白来说更加直观方便。当然这是针对非程序员或者并非对代码进行版本控制。所以果断将wiki的html文件夹移除Dropbox同步文件夹。双重备份完全没有意义还容易出错。尤其是在双系统情况下。
+多个仓库可以一个一个推送，也可以在config文件中配置别名一起推送：
 </p>
+<blockquote>
+[remote "all"]
+url = git@github.com:luoshupeng/commonuseppa.git
+url = git@gitcafe.com:chinesedragon/commonuseppa.git
+url = chinesedragon@gitcd.com:/commonuseppa
+</blockquote>
+
+
+
+
+<p>
+git pull name branch
+</p>
+
+<p>
+git puush name branch
+</p>
+
+
+
 
 <ul>
 <li>
@@ -120,6 +134,33 @@ github如何永久删除文件及其历史记录：<a href="http://help.github.c
 生成密钥： ssh-keygen -t rsa -C "your_email@youremail.com"
 
 </ul>
+
+
+<h2 id="toc_1.2">git diff采用vimdiff</h2>
+
+
+<p>
+<a href="http://stackoverflow.com/questions/3713765/viewing-all-git-diffs-with-vimdiff">http://stackoverflow.com/questions/3713765/viewing-all-git-diffs-with-vimdiff</a>
+</p>
+<blockquote>
+git config --global diff.tool vimdiff
+git config --global difftool.prompt false
+git config --global alias.d difftool
+</blockquote>
+
+<p>
+Typing git d yields the expected behavior, type :wq in vim cycles to the next file in the changeset.
+</p>
+
+<p>
+<a href="http://technotales.wordpress.com/2009/05/17/git-diff-with-vimdiff/">http://technotales.wordpress.com/2009/05/17/git-diff-with-vimdiff/</a>
+</p>
+
+
+<h2 id="toc_1.3">与其他服务比较</h2>
+<p>
+其实Dropbox用来做一个简单的版本控制完全木有问题啊，对于小白来说更加直观方便。当然这是针对非程序员或者并非对代码进行版本控制。所以果断将wiki的html文件夹移除Dropbox同步文件夹。双重备份完全没有意义还容易出错。尤其是在双系统情况下。
+</p>
 
 
 </div><!-- End Page -->
