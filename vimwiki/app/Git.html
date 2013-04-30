@@ -82,10 +82,20 @@ git rm "files" 会在工作目录删除这些文件
 </ul>
 <p>
 参看帮助信息
+1
+$git rm --cached FILENAME
+这样就可以了…如果后面跟的是目录就加上个 -r  就行了…
+（这个操作不会删除这个文件）
 </p>
 
 
 <h2 id="toc_1.1">git远程仓库的管理</h2>
+<blockquote>
+git remote show -v
+</blockquote>
+<blockquote>
+git remote show name -v
+</blockquote>
 <blockquote>
 git remote add name url
 </blockquote>
@@ -107,7 +117,9 @@ url = chinesedragon@gitcd.com:/commonuseppa
 </blockquote>
 
 
-
+<p>
+git fetch 只会抓取数据，但是不会自动合并，这就是fetch与pull的区别
+</p>
 
 <p>
 git pull name branch
@@ -160,6 +172,15 @@ Typing git d yields the expected behavior, type :wq in vim cycles to the next fi
 <h2 id="toc_1.3">与其他服务比较</h2>
 <p>
 其实Dropbox用来做一个简单的版本控制完全木有问题啊，对于小白来说更加直观方便。当然这是针对非程序员或者并非对代码进行版本控制。所以果断将wiki的html文件夹移除Dropbox同步文件夹。双重备份完全没有意义还容易出错。尤其是在双系统情况下。
+</p>
+
+
+<p>
+需要输入密码:
+</p>
+
+<p>
+config中采用了https协议
 </p>
 
 
