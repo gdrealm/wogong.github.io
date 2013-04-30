@@ -64,6 +64,20 @@ hr {
 	margin: 1.46em 0 0 0;
 }
 
+hr #split { 
+	border-top: 1px solid whitesmoke;
+	border-bottom: none;
+	padding: 0;
+	margin: 1.46em 0 0 0;
+}
+
+.gsc-control-cse {
+    font-family: Arial, sans-serif;
+    border-color: whitesmoke;
+    background-color: whitesmoke;
+}
+
+
 sup { line-height: 1ex; }
 
 #site {
