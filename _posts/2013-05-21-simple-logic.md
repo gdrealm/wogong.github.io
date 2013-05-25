@@ -2,8 +2,8 @@
 layout: post
 title: "《简单的逻辑学》书摘"
 description: "简单的逻辑学"
-category: it
-tags: [kindle, vnc]
+category: read
+tags: [logic]
 ---
 {% include JB/setup %}
 
