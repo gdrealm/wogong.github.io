@@ -2,7 +2,7 @@
 layout: post
 title: "使用ssh优化上网"
 description: ""
-category: test
+category: it
 tags: [ssh]
 ---
 {% include JB/setup %}
