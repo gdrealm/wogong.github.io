@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
+
+</head>
+<body>
+<div id="site">
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">← <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+	  <li><a class="home" href="/">Home</a></li>	
+	  <li><a href="/archive.html">Archive</a></li>
+      <li><a href="/kindle.html">Kindle</a></li>
+      <li><a href="/wiki/">Wiki</a></li>
+    </ul>
+  </div>
+
+  <div id="page">
+<div id="TOC">
+<ul>
+<li><a href="#mysql">mysql</a><ul>
+<li><a href="#调试的时候可以根据不同的需要选用不同的输出方式">调试的时候可以根据不同的需要选用不同的输出方式。</a></li>
+</ul></li>
+</ul>
+</div>
+<p>[BOTTOM][TOP]php参考资料</p>
+<p>php官方手册</p>
+<p>安装环境：（archlinux）</p>
+<ul>
+<li>php - mysql</li>
+</ul>
+<p>使用：</p>
+<h1 id="mysql"><a href="#mysql">mysql</a></h1>
+<p>sudo /etc/rc.d/mysqld start</p>
+<p>mysql -u root -p</p>
+<p>create database <em>databsename</em></p>
+<p>show databases</p>
+<p>drop database <em>databasename</em></p>
+<p>create table <em>tablename</em></p>
+<p>describe <em>tablename</em></p>
+<p>drop table <em>tablename</em> use aliendatabase</p>
+<p>select * from aliens_abduction</p>
+<p>访问phpmyadmin：http://localhost/phpmyadmin</p>
+<p>sha() secure hash algotithm</p>
+<p>Setting UTF8 defaults for MySQL is as simple as adding a few lines to your configuration file (typicallymy.cnf):</p>
+<p>[mysqld] collation-server = utf8_general_ci character-set-server = utf8 source filename.sql;</p>
+<p>[BOTTOM][TOP]ch12 合成与web服务</p>
+<p>XML</p>
+<p>simplexml_load_file()</p>
+<p>RSS</p>
+<p>SimpleXMLElement</p>
+<p>命名空间</p>
+<p>php的文件配置 php.ini</p>
+<p>可以采用php --version 简单检查配置文件错误。</p>
+<p>基本知识看php手册。</p>
+<p>框架学习-Symfony</p>
+<p>yml文件的格式十分重要，否则会出各种奇怪的问题。</p>
+<p>处理csv文件的函数：fgetcsv</p>
+<p>== 框架 == [[Symfony]]</p>
+<p>== 调试 ==</p>
+<p>变量输出：</p>
+<p>PHP开发中，经常会查看变量的值，因此经常会将变量的值输出到页面以便于查看。 常用的输出方式有：echo 、print 、print_r 、var_dump 、var_exprot 等；</p>
+<p>echo和print常用来输出字符串；</p>
+<p>查看数组常用print_r、var_dump、var_exprot；</p>
+<p>若使用echo和print输出数组时则，结果只能显示&quot;Array&quot;，不会显示数组的结构。</p>
+<p>一下举一例说明几种用法</p>
+配合print &quot;
+<pre>"和print "</pre>
+<p>&quot;，以数组<span class="math"><em>a</em><em>为</em><em>例</em><em>说</em><em>明</em><em>各</em><em>种</em><em>输</em><em>出</em><em>的</em><em>区</em><em>别</em>。</span>a = array ('a' =&gt; 'apple', 'b' =&gt; 'banana', 'c' =&gt; array ('x', 'y', 'z'));</p>
+<p>print_r($a); 输出结果：</p>
+<p>{{{Array ( [a] =&gt; apple [b] =&gt; banana [c] =&gt; Array ( [0] =&gt; x [1] =&gt; y [2] =&gt; z ) ) }}}</p>
+print &quot;
+<pre>"; print_r($a); print "</pre>
+<p>&quot;; 输出结果： {{{ Array ( [a] =&gt; apple [b] =&gt; banana [c] =&gt; Array ( [0] =&gt; x [1] =&gt; y [2] =&gt; z )</p>
+<p>) }}} var_dump($a); 输出结果：</p>
+<p>{{{</p>
+<p>array(3) { [&quot;a&quot;]=&gt; string(5) &quot;apple&quot; [&quot;b&quot;]=&gt; string(6) &quot;banana&quot; [&quot;c&quot;]=&gt; array(3) { [0]=&gt; string(1) &quot;x&quot; [1]=&gt; string(1) &quot;y&quot; [2]=&gt; string(1) &quot;z&quot; } }</p>
+<p>}}}</p>
+print &quot;
+<pre>"; var_dump($a); print "</pre>
+<p>&quot;; 输出结果： {{{ array(3) { [&quot;a&quot;]=&gt; string(5) &quot;apple&quot; [&quot;b&quot;]=&gt; string(6) &quot;banana&quot; [&quot;c&quot;]=&gt; array(3) { [0]=&gt; string(1) &quot;x&quot; [1]=&gt; string(1) &quot;y&quot; [2]=&gt; string(1) &quot;z&quot; } } }}} var_export($a); 输出结果： {{{array ( 'a' =&gt; 'apple', 'b' =&gt; 'banana', 'c' =&gt; array ( 0 =&gt; 'x', 1 =&gt; 'y', 2 =&gt; 'z', ), ) }}}</p>
+print &quot;
+<pre>"; var_export($a); print "</pre>
+<p>&quot;; 输出结果： {{{ array ( 'a' =&gt; 'apple', 'b' =&gt; 'banana', 'c' =&gt; array ( 0 =&gt; 'x', 1 =&gt; 'y', 2 =&gt; 'z', ), ) }}}</p>
+<h2 id="调试的时候可以根据不同的需要选用不同的输出方式"><a href="#调试的时候可以根据不同的需要选用不同的输出方式">调试的时候可以根据不同的需要选用不同的输出方式。</a></h2>
+<p>CategoryProgram</p>
+
+  </div>
+</div>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>

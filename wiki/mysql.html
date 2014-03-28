@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
+
+</head>
+<body>
+<div id="site">
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">← <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+	  <li><a class="home" href="/">Home</a></li>	
+	  <li><a href="/archive.html">Archive</a></li>
+      <li><a href="/kindle.html">Kindle</a></li>
+      <li><a href="/wiki/">Wiki</a></li>
+    </ul>
+  </div>
+
+  <div id="page">
+<div id="TOC">
+<ul>
+<li><a href="#mysql">Mysql</a><ul>
+<li><a href="#note">note</a></li>
+<li><a href="#常用命令">常用命令</a></li>
+<li><a href="#list-of-all-mysql-commands">List of all MySQL commands:</a></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="mysql"><a href="#mysql">Mysql</a></h1>
+<h2 id="note"><a href="#note">note</a></h2>
+<ol style="list-style-type: decimal">
+<li>set names &quot;latin1&quot; 显示中文</li>
+</ol>
+<h2 id="常用命令"><a href="#常用命令">常用命令</a></h2>
+<p>sudo /etc/rc.d/mysqld start</p>
+<p>mysql -u root -p</p>
+<p>create database <em>databsename</em></p>
+<p>show databases</p>
+<p>drop database <em>databasename</em></p>
+<p>create table <em>tablename</em></p>
+<p>describe <em>tablename</em></p>
+<p>drop table <em>tablename</em> use aliendatabase</p>
+<p>select * from aliens_abduction</p>
+<p>访问phpmyadmin：http://localhost/phpmyadmin</p>
+<p>sha() secure hash algotithm</p>
+<p>source filename.sql;</p>
+<h2 id="list-of-all-mysql-commands"><a href="#list-of-all-mysql-commands">List of all MySQL commands:</a></h2>
+<pre><code>Note that all text commands must be first on line and end with &#39;;&#39;
+?         (\?) Synonym for `help&#39;.
+clear     (\c) Clear the current input statement.
+connect   (\r) Reconnect to the server. Optional arguments are db and host.
+delimiter (\d) Set statement delimiter.
+edit      (\e) Edit command with $EDITOR.
+ego       (\G) Send command to mysql server, display result vertically.
+exit      (\q) Exit mysql. Same as quit.
+go        (\g) Send command to mysql server.
+help      (\h) Display this help.
+nopager   (\n) Disable pager, print to stdout.
+notee     (\t) Don&#39;t write into outfile.
+pager     (\P) Set PAGER [to_pager]. Print the query results via PAGER.
+print     (\p) Print current command.
+prompt    (\R) Change your mysql prompt.
+quit      (\q) Quit mysql.
+rehash    (\#) Rebuild completion hash.
+source    (\.) Execute an SQL script file. Takes a file name as an argument.
+status    (\s) Get status information from the server.
+system    (\!) Execute a system shell command.
+tee       (\T) Set outfile [to_outfile]. Append everything into given outfile.
+use       (\u) Use another database. Takes database name as argument.
+charset   (\C) Switch to another charset. Might be needed for processing binlog with multi-byte charsets.
+warnings  (\W) Show warnings after every statement.
+nowarning (\w) Don&#39;t show warnings after every statement.
+
+For server side help, type &#39;help contents&#39;</code></pre>
+
+  </div>
+</div>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>

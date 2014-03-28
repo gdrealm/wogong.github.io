@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
+
+</head>
+<body>
+<div id="site">
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">← <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+	  <li><a class="home" href="/">Home</a></li>	
+	  <li><a href="/archive.html">Archive</a></li>
+      <li><a href="/kindle.html">Kindle</a></li>
+      <li><a href="/wiki/">Wiki</a></li>
+    </ul>
+  </div>
+
+  <div id="page">
+<p>== PS1相关知识 ==</p>
+<ol style="list-style-type: decimal">
+<li><p>提示行的转义字符： {{{ 序列 说明<br />ASCII 响铃字符（也可以键入 07）<br />&quot;Wed Sep 06&quot; 格式的日期<br />ASCII 转义字符（也可以键入 33）<br />主机名的第一部分（如 &quot;mybox&quot;）<br />主机的全称（如 &quot;mybox.mydomain.com&quot;）<br />在此shell中通过按 ^Z 挂起的进程数<br />此 shell 的终端设备名（如 &quot;ttyp4&quot;）<br />换行符<br />回车符<br />shell 的名称（如 &quot;bash&quot;）<br />24 小时制时间（如 &quot;23:01:01&quot;）<br />12 小时制时间（如 &quot;11:01:01&quot;）<br />@ 带有 am/pm 的 12 小时制时间<br />用户名<br />bash 的版本（如 2.04）<br />Bash 版本（包括补丁级别）<br />当前工作目录（如 &quot;/home/drobbins&quot;）<br />当前工作目录的“基名 (basename)”（如 &quot;drobbins&quot;）<br />! 当前命令在历史缓冲区中的位置<br /># 命令编号（只要您键入内容，它就会在每次提示时累加）<br />$ 如果您不是超级用户 (root)，则插入一个 &quot;$&quot;；如果您是超级用户，则显示一个 &quot;#&quot;<br />插入一个用三位数 xxx（用零代替未使用的数字，如 &quot;07&quot;）表示的 ASCII 字符<br />\ 反斜杠<br />[ 这个序列应该出现在不移动光标的字符序列（如颜色转义序列）之前。它使 bash 能够正确计算自动换行。<br />] 这个序列应该出现在非打印字符序列之后。<br />}}}</p></li>
+<li><p>颜色设置： 颜色设置可用以下格式表示： &quot; [[F;B;Cm]&quot; 其中，[与]是保证其内的非打印字符不占用行上的任何空间，这样就能使自动换行后的颜色设置正常工作了； [与m之间的内容表示设置颜色，F是前景色，B是背景色，C是代码多个颜色用分号隔开,但F、B、C顺序可变，这是因为他们的数值不冲突。 特殊的颜色设置格式： &quot;[0m&quot;、&quot;[m&quot;都是通知终端将颜色（前景、背景、加粗）设置重置为默认。</p></li>
+<li><p>颜色与代码表： 颜色表： {{{ 表代码<br />前景 背景 颜色<br />---------------------------------------<br />30 40 黑色<br />31 41 紅色<br />32 42 绿色<br />33 43 黄色<br />34 44 蓝色<br />35 45 紫红色<br />36 46 青蓝色<br />37 47 白色<br />}}}</p></li>
+</ol>
+<p>表代码 {{{<br />代码 意义<br />-------------------------<br />0 OFF<br />1 高亮显示<br />4 underline<br />5 闪烁<br />7 反白显示<br />8 不可见<br />}}} ---- CategoryApp</p>
+
+  </div>
+</div>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
+
+</head>
+<body>
+<div id="site">
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">← <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+	  <li><a class="home" href="/">Home</a></li>	
+	  <li><a href="/archive.html">Archive</a></li>
+      <li><a href="/kindle.html">Kindle</a></li>
+      <li><a href="/wiki/">Wiki</a></li>
+    </ul>
+  </div>
+
+  <div id="page">
+<div id="TOC">
+<ul>
+<li><a href="#mutt">mutt</a><ul>
+<li><a href="#note">note</a></li>
+<li><a href="#配置文件">配置文件</a></li>
+<li><a href="#参考">参考</a></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="mutt"><a href="#mutt">mutt</a></h1>
+<h2 id="note"><a href="#note">note</a></h2>
+<p>如果我说mutt像文件管理器，不知道会不会有人喷，233333</p>
+<p>当年看王垠的wiki，感觉mutt是如此的蛋疼，所以一直没有需求。因为gmail的网页版做的已经十分完美了。</p>
+<p>现在再次接触mutt的原因是在管理mail server时有大量的邮件需要管理，查看。顺便看了下mutt，才发现mutt其实就是一个邮件文件管理器。 安装好了发送邮件接收邮件的软件之后使用基本十分简单，中文支持的问题貌似也不是太恶心。但是我在ubuntu10.10上的中文总是显示有问题，12.04上的就OK</p>
+<p>配置文件什么的只要设置下邮箱位置就OK，网上也有一堆，我的github上也放了，但是以后应该不会更新了。</p>
+<h2 id="配置文件"><a href="#配置文件">配置文件</a></h2>
+<pre><code># 默认信箱目录                                                                                      
+set folder=&quot;/home/wogong/mails/&quot;                                                                    
+# 已读的信箱                                                                                      
+# set mbox=&quot;+incoming&quot;                                                                              
+# 进入mutt后默认使用的信箱，可以考虑和$HOME/.procmailrc设置的默认信箱相同                         
+set spoolfile=&quot;+mail&quot;                                                                               
+# 草稿箱                                                                                          
+set postponed=&quot;+postponed&quot;                                                                          
+# 已发送的信箱                                                                                    
+set record=&quot;+outgoing&quot;</code></pre>
+<h2 id="参考"><a href="#参考">参考</a></h2>
+<p><a href="http://xhc.me/wp-content/uploads/mutt/manual_1.5.19_zh.html#tuning-search">Mutt中文手册</a></p>
+
+  </div>
+</div>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>

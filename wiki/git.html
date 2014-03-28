@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
+
+</head>
+<body>
+<div id="site">
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">← <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+	  <li><a class="home" href="/">Home</a></li>	
+	  <li><a href="/archive.html">Archive</a></li>
+      <li><a href="/kindle.html">Kindle</a></li>
+      <li><a href="/wiki/">Wiki</a></li>
+    </ul>
+  </div>
+
+  <div id="page">
+<div id="TOC">
+<ul>
+<li><a href="#git">Git</a><ul>
+<li><a href="#note">note</a></li>
+<li><a href="#学习书籍">学习书籍</a></li>
+<li><a href="#常用命令">常用命令</a></li>
+<li><a href="#配置">配置</a></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="git"><a href="#git">Git</a></h1>
+<h2 id="note"><a href="#note">note</a></h2>
+<ol style="list-style-type: decimal">
+<li>与其他服务比较<br /> 其实Dropbox用来做一个简单的版本控制完全木有问题啊，对于小白来说更加直观方便。当然这是针对非程序员或者并非对代码进行版本控制。所以果断将wiki的html文件夹移除Dropbox同步文件夹。双重备份完全没有意义还容易出错。尤其是在双系统情况下。</li>
+<li>提交提示输入密码：<br /> config中采用了https协议，修改采用git协议即可。</li>
+<li>git fetch 只会抓取数据，但是不会自动合并，这就是fetch与pull的区别。</li>
+<li><p>git pull &amp; git push 均不是全局的(和默认设定有关)，最好的办法是指定远程分支。</p>
+<pre><code>git pull name branch
+git push name branch</code></pre></li>
+<li>常用托管网站</li>
+</ol>
+<ul>
+<li><a href="http://github.com">GitHub</a></li>
+<li><a href="http://bitbucket.org">BitBucket</a> 免费私有仓库，比github好太多，就是天朝访问捉急。</li>
+<li><a href="http://gitcafe.com">GitCafe</a></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li><code>git blame</code> Using git blame to trace changes in a file. a really cute name.</li>
+</ol>
+<h2 id="学习书籍"><a href="#学习书籍">学习书籍</a></h2>
+<ol style="list-style-type: decimal">
+<li>Pro Git 本书有简体中文版本</li>
+</ol>
+<ul>
+<li>豆瓣：<a href="http://book.douban.com/subject/3420144/">Pro Git</a></li>
+<li>在线版本en： http://git-scm.com/book</li>
+<li>Amazon.com： <a href="http://www.amazon.com/Pro-Experts-Voice-Software-Development/dp/1430218339/ref=sr_1_1?ie=UTF8&amp;qid=1367378781&amp;sr=8-1&amp;keywords=pro+git">Pro Git</a></li>
+</ul>
+<h2 id="常用命令"><a href="#常用命令">常用命令</a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Setup git</p>
+<pre><code>git config --global user.name &quot;Your Name&quot;
+git config --global user.email example@domin.com
+mkdir dotfile
+cd dotfile
+git init
+// git --bare init # 仓库
+touch README
+git add README
+git commit -m &#39;first commit&#39;
+git remote add origin git@github.com:username/dotfile.git
+git push -u origin master</code></pre></li>
+<li>移除文件</li>
+</ol>
+<ul>
+<li>git rm --cached &quot;files&quot; 仅仅取消追踪，不会删除文件（文件夹递归操作 -r）</li>
+<li>git rm &quot;files&quot; 会在工作目录删除这些文件</li>
+<li>在github中永久移除文件及其历史记录： <a href="http://help.github.com/remove-sensitive-data/">github如何永久删除文件及其历史记录</a></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>分支管理</li>
+</ol>
+<ul>
+<li>rename local branch name: <code>git branch -m oldbranchrename newbranchname</code></li>
+<li>git branch -d branchname</li>
+<li><p>rename remote branch name: delete, and recreate</p>
+<pre><code>    $ git fetch &lt;remote-name&gt;
+    $ git checkout -b &lt;branch-name&gt; &lt;remote-branch&gt;
+    $ git push &lt;remote-name&gt; &lt;branch-name&gt;
+    $ git push &lt;remote-name&gt; &lt;branch-name&gt;:&lt;remote-branch-name&gt;
+    $ git merge &lt;remote-branch-name&gt;
+    // remove remote branch
+    $ git push &lt;remote-name&gt; :&lt;remote-branch-name&gt;</code></pre></li>
+<li><p>将本地分支推送到远程分支，相当于备份分支 。 <code>git push remote-repo-name branchname</code></p></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li><p>远程仓库管理</p>
+<pre><code>git remote show -v
+git remote show name -v
+git remote add name url
+git remote rm name
+git remote rename oldneme newname</code></pre></li>
+<li>Git的撤消操作：重置, 签出和撤消<br />Git提供了多种修复你开发过程中的错误的方法. 方法的选择取决于 你的情况: 包含有错误的文件是否提交了(commited); 如果你把它 已经提交了, 那么你是否把有错误的提交已与其它人共享这也很重要.</li>
+</ol>
+<ul>
+<li><p>修复未提交文件中的错误(重置)<br /> 如果你现在的工作目录(work tree)里搞的一团乱麻, 但是你现在还没有把它们提交; 你可以通过下面的命令, 让工作目录回到上次提交时的状态(last committed state):</p>
+<pre><code>    $ git reset --hard HEAD</code></pre>
+<p>这条件命令会把你工作目录中所有未提交的内容清空(当然这不包括未置于版控制下的文件 untracked files). 从另一种角度来说, 这会让&quot;git diff&quot; 和&quot;git diff --cached&quot;命令的显示法都变为空。<br />如果你只是要恢复一个文件,如&quot;hello.rb&quot;, 你就要使用<code>git checkout</code></p>
+<pre><code>    $ git checkout -- hello.rb</code></pre>
+这条命令把hello.rb从HEAD中签出并且把它恢复成未修改时的样子。</li>
+<li>修复已提交文件中的错误<br /> 如果你已经做了一个提交(commit),但是你马上后悔了, 这里有两种截然不同的方法去处理这个问题:
+<ol style="list-style-type: decimal">
+<li><p>创建一个新的提交(commit), 在新的提交里撤消老的提交所作的修改. 这种作法在你已经把代码发布的情况下十分正确。 创建一个新的，撤消(revert)了前期修改的提交(commit)是很容易的; 只要把出错的提交(commit)的名字(reference)做为参数传给命令: git revert就可以了; 下面这条命令就演示了如何撤消最近的一个提交:<code>$ git revert HEAD</code><br />这样就创建了一个撤消了上次提交(HEAD)的新提交, 你就有机会来修改新提交(new commit)里的提交注释信息。<br />你也可撤消更早期的修改, 下面这条命令就是撤消“上上次”(next-to-last)的提交:<code>$ git revert HEAD^</code><br />在这种情况下,git尝试去撤消老的提交,然后留下完整的老提交前的版本.　如果你最近的修改和要撤消的修改有重叠(overlap),那么就会被要求手工解决冲突(conflicts),　就像解决合并(merge)时出现的冲突一样。<br />译者注: git revert 其实不会直接创建一个提交(commit), 把撤消后的文件内容放到索引(index)里,你需要再执行git commit命令，它们才会成为真正的提交(commit)。</p></li>
+<li>你也可以去修改你的老提交(old commit). 但是如果你已经把代码发布了,那么千万别这么做; git不会处理项目的历史会改变的情况,如果一个分支的历史被改变了那以后就不能正常的合并。<br /> 如果你刚刚做了某个提交(commit), 但是你又想马上修改这个提交; git commit 现在支持一个叫--amend的参数，它能让你修改刚才的这个提交(HEAD commit). 这项机制能让你在代码发布前,添加一些新的文件或是修改你的提交注释(commit message).<br /> 如果你在老提交(older commit)里发现一个错误, 但是现在还没有发布到代码服务器上. 你可以使用 git rebase命令的交互模式, &quot;git rebase -i&quot;会提示你在编辑中做相关的修改. 这样其实就是让你在rebase的过程来修改提交.</li>
+</ol></li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>暂存工作目录未提交文件。<code>git stash</code></li>
+</ol>
+<h2 id="配置"><a href="#配置">配置</a></h2>
+<ol style="list-style-type: decimal">
+<li><p>help.autocorrect 该配置项只在 Git 1.6.1及以上版本有效，假如你在Git 1.6中错打了一条命令，会显示：</p>
+<pre><code>$ git com git: &#39;com&#39; is not a git-command. 
+See &#39;git --help&#39;. 
+Did you mean this?      commit </code></pre>
+如果你把help.autocorrect设置成1（译注：启动自动修正），那么在只有一个命令被模糊匹配到的情况下，Git 会自动运行该命令。</li>
+<li><p>git diff采用vimdiff<br /> http://stackoverflow.com/questions/3713765/viewing-all-git-diffs-with-vimdiff http://technotales.wordpress.com/2009/05/17/git-diff-with-vimdiff/</p>
+<pre><code>git config --global diff.tool vimdiff
+git config --global difftool.prompt false
+git config --global alias.d difftool</code></pre>
+Typing git d yields the expected behavior, type :wq in vim cycles to the next file in the changeset.</li>
+<li><p>多个仓库可以一个一个推送，也可以在config文件中配置别名 一起推送：</p>
+[remote &quot;all&quot;] url = git@github.com:luoshupeng/commonuseppa.git url = git@gitcafe.com:chinesedragon/commonuseppa.git url = chinesedragon@gitcd.com:/commonuseppa</li>
+<li><p>git log 显示优化</p>
+<pre><code>git config --global alias.lg &quot;log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --&quot;</code></pre>
+<p>`</p></li>
+</ol>
+
+  </div>
+</div>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>

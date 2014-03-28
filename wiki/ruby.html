@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
+
+</head>
+<body>
+<div id="site">
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">← <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+	  <li><a class="home" href="/">Home</a></li>	
+	  <li><a href="/archive.html">Archive</a></li>
+      <li><a href="/kindle.html">Kindle</a></li>
+      <li><a href="/wiki/">Wiki</a></li>
+    </ul>
+  </div>
+
+  <div id="page">
+<div id="TOC">
+<ul>
+<li><a href="#ruby">ruby</a><ul>
+<li><a href="#note">note</a></li>
+<li><a href="#install">Install</a></li>
+<li><a href="#相关项目">相关项目</a></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="ruby"><a href="#ruby">ruby</a></h1>
+<hr />
+<h2 id="note"><a href="#note">note</a></h2>
+<ol style="list-style-type: decimal">
+<li>RVM ruby的版本管理工具，可以在同一台电脑安装并管理多个ruby版本</li>
+<li>RubyGems ruby项目的包管理工具</li>
+</ol>
+<h2 id="install"><a href="#install">Install</a></h2>
+<p>在安装 Ruby 之前，先要安装 RVM：</p>
+<pre><code>$ curl -L https://get.rvm.io | bash -s</code></pre>
+<p>（如果你已经安装了 RVM，应该运行下面的命令 <code>rvm get stable</code> 确保安装的是最新版本。）</p>
+<p>然后运行下面的命令检查安装 Ruby 的需求条件：</p>
+<pre><code>$ rvm requirements</code></pre>
+<p>在我的系统中，要安装以下所示的库（使用 Homebrew，OS X 中的包管理系统）：</p>
+<pre><code>$ brew install libtool libxslt libksba openssl</code></pre>
+<p>在 Linux 中，可以使用 apt-get 或 yum。</p>
+<p>我还得安装 YAML 库：</p>
+<pre><code># For Mac with Homebrew
+$ brew install libyaml
+
+# For Debian-based Linux systems
+$ apt-get install libyaml-dev
+
+# For Fedora/CentOS/RHEL Linux systems
+$ yum install libyaml-devel</code></pre>
+<h2 id="相关项目"><a href="#相关项目">相关项目</a></h2>
+<ol style="list-style-type: decimal">
+<li>[[Gollum|gollum]] 基于ruby 和 git 的wiki 系统，名称源于指环王。 通过文件夹形式实现层级。很自然的想法，但是遇到一些 很奇怪的情况，再看；webrick 的反向查询，见blog。</li>
+<li><p>Jekyll</p>
+<pre><code>jekyll server
+jekyll --server --no-auto 利于检查错误</code></pre></li>
+<li>Octopress [http://octopress.org/docs/setup/ 官方文档]</li>
+</ol>
+<p>4.</p>
+
+  </div>
+</div>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>

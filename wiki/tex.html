@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
+
+</head>
+<body>
+<div id="site">
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">← <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+	  <li><a class="home" href="/">Home</a></li>	
+	  <li><a href="/archive.html">Archive</a></li>
+      <li><a href="/kindle.html">Kindle</a></li>
+      <li><a href="/wiki/">Wiki</a></li>
+    </ul>
+  </div>
+
+  <div id="page">
+<div id="TOC">
+<ul>
+<li><a href="#tex">Tex</a><ul>
+<li><a href="#推荐文档书籍">推荐文档书籍</a></li>
+<li><a href="#排版">排版</a></li>
+<li><a href="#安装">安装</a></li>
+<li><a href="#使用">使用</a><ul>
+<li><a href="#中文解决方案">中文解决方案</a></li>
+<li><a href="#数学排版">数学排版</a></li>
+<li><a href="#常用命令">常用命令</a></li>
+<li><a href="#latex宏包">Latex宏包</a></li>
+<li><a href="#latex内部命令">Latex内部命令</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="tex"><a href="#tex">Tex</a></h1>
+<p>相关条目： [[texmacs]]</p>
+<h2 id="推荐文档书籍"><a href="#推荐文档书籍">推荐文档书籍</a></h2>
+<ul>
+<li>《LaTeX2e 完全学习手册》</li>
+<li>lshort</li>
+</ul>
+<h2 id="排版"><a href="#排版">排版</a></h2>
+<p>一直想学而未坚持下来，总是在使用的时候为求方便叛逃 到Office 阵营。其实Tex/LaTex 并不是十分难学，前期 学习成本的确会高一点，但是之后的方便会证明这种投入 是值得的。加油！</p>
+<ul>
+<li>关于中英文、数学公式混排中的标点符号选择问题。所 有文本段落使用全角逗号和空心句号，只有在数学式之中 的逗号为半角。</li>
+</ul>
+<h2 id="安装"><a href="#安装">安装</a></h2>
+<p>推荐TexLive 套装。目前使用的是Texlive2013 。Windows 与Linux 下均有相应的安装包，安装过程很简单。不推荐 采用源里面的安装，例如Arch <code>%sudo pacman -S texlive-core</code> ， 采用这种方式安装的Tex可能不包括常用的宏包，例如 ctex（后文会详细说到）。</p>
+<h2 id="使用"><a href="#使用">使用</a></h2>
+<h3 id="中文解决方案"><a href="#中文解决方案">中文解决方案</a></h3>
+<p>中文推荐解决方案，ctex 文档类</p>
+<h3 id="数学排版"><a href="#数学排版">数学排版</a></h3>
+<ol style="list-style-type: decimal">
+<li>2^x</li>
+</ol>
+<h3 id="常用命令"><a href="#常用命令">常用命令</a></h3>
+<pre><code>latex example.tex_____nothing to say
+dvips example.dvi_____make .dvi into .ps
+xdvi example.dvi_____displsy .dvi(only for unix~)</code></pre>
+<h3 id="latex宏包"><a href="#latex宏包">Latex宏包</a></h3>
+<ul>
+<li>syntonly</li>
+<li>babel</li>
+<li>inputenc</li>
+<li>fontenc</li>
+</ul>
+<h3 id="latex内部命令"><a href="#latex内部命令">Latex内部命令</a></h3>
+<pre><code>\\ or \newline
+\\*   强行断行，禁止分页
+\newpage
+\sloppy
+\fussy
+\underline{text}  强调（划线）
+\emph{text}  强调（斜体）
+\mbox{text}
+\fbox{text}
+\frenchspacing
+\mbox{}  取消连字
+\tableofcontents
+\maketitle
+\title{...}
+\author{...\and...}
+\date{...}
+\frontmatter  应紧接\begin{document}，罗马数字页码
+\mainmatter  应在第一章正文紧前，阿拉伯数字页码重新计数
+\appendix
+\backmatter
+\label{marker},\ref{marker} and \pageref{marker}  交叉引用
+\footnote{text}
+\textit{text}
+\textsf{text}
+\texttt{text}
+\verb+text+</code></pre>
+<p>for style: article</p>
+<pre><code>\section{...}
+\section**{...}  不出现在目录，不编号 (一个星号)
+\paragraph{...}
+
+\subsection{...}
+\subparagraph{...}
+
+\subsubsection{...}
+
+for style: report&amp;book
+\part{...}
+\chapter{...}</code></pre>
+<p>Latex字符串:</p>
+<pre><code>\today
+\TeX
+\LaTeX
+\LaTeXe</code></pre>
+<p>Latex特殊字符、符号: '' '' '' - 连字号 -- 短破折号 --- 破折号 <span class="math"> − </span> 减号 ~ 波浪号 <span class="math"> ∼ </span> 波浪号 <span class="math">$^{\circ}\mathrm{C}$</span> 度 省略号</p>
+<p>Latex环境：</p>
+<pre><code>\begin{environment} text end{environment}
+itemize 简单列表
+enumerate  带序号的列表
+description  带描述的列表 
+note: text中使用item[]标识
+
+flushleft  左对齐文本
+flushright  右对齐
+center  中央对齐
+
+quote  一般引用
+quotation  较长引用，对段落进行缩进
+verse  引用诗歌
+
+verbatim  逐字打印
+
+tabular</code></pre>
+
+  </div>
+</div>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>

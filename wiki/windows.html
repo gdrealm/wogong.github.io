@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
+
+</head>
+<body>
+<div id="site">
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">← <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+	  <li><a class="home" href="/">Home</a></li>	
+	  <li><a href="/archive.html">Archive</a></li>
+      <li><a href="/kindle.html">Kindle</a></li>
+      <li><a href="/wiki/">Wiki</a></li>
+    </ul>
+  </div>
+
+  <div id="page">
+<div id="TOC">
+<ul>
+<li><a href="#windows">Windows</a><ul>
+<li><a href="#note">note</a></li>
+<li><a href="#系统功能">系统功能</a></li>
+<li><a href="#reinstall">Reinstall</a></li>
+<li><a href="#神兵利器">神兵利器</a></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="windows"><a href="#windows">Windows</a></h1>
+<h2 id="note"><a href="#note">note</a></h2>
+<ol style="list-style-type: decimal">
+<li>环境变量管理。Envman</li>
+<li>快速启动 <code>d:\Dropbox\Software\_QS\</code> working with adress bar in task bar.</li>
+<li>program and features 取消不常用的windows 功能。</li>
+<li>如何修改网络类型？homegroup troubleshoot。</li>
+<li><p>休眠</p>
+<pre><code>powercfg -h off 关闭休眠
+powercfg /h /size 50   调整休眠文件大小 (50为内存百分比，范围50-100)</code></pre></li>
+<li>mstsc 远程桌面，可以在远程挂载本地硬盘。</li>
+<li>Windows更新失败，使用 sfc/scannow修复系统。</li>
+<li>服务管理 services.mvc</li>
+<li><p>tasklist /mvc</p></li>
+</ol>
+<h2 id="系统功能"><a href="#系统功能">系统功能</a></h2>
+<ol style="list-style-type: decimal">
+<li>计划任务 Schedule tasks 用于自动备份 C 盘文件还是很方便的。</li>
+<li>Windows 命令行下复制文件夹及其子目录的命令详解</li>
+<li>功能：拷贝一个或多个文件到指定盘上。</li>
+<li>类型：内部命令</li>
+<li>格式：COPY [源盘][路径]〈源文件名〉[目标盘][路径][目标文件名]</li>
+<li>使用说明：</li>
+</ol>
+<blockquote>
+<ol style="list-style-type: decimal">
+<li><blockquote>
+<p>（1）COPY是文件对文件的方式复制数据，复制前目标盘必须已经格式化；</p>
+</blockquote></li>
+<li><blockquote>
+<p>（2）复制过程中，目标盘上相同文件名称的旧文件会被源文件取代；</p>
+</blockquote></li>
+<li><blockquote>
+<p>（3）复制文件时，必须先确定目标般有足够的空间，否则会出现；insufficient的错误信息，提示磁盘空间不够；</p>
+</blockquote></li>
+<li><blockquote>
+<p>（4）文件名中允许使用通配举“*”“？”，可同时复制多个文件；</p>
+</blockquote></li>
+<li><blockquote>
+<p>（5）COPY命令中源文件名必须指出，不可以省略。</p>
+</blockquote></li>
+<li><blockquote>
+<p>（6）复制时，目标文件名可以与源文件名相同，称作“同名拷贝”此时目标文件名可以省略；</p>
+</blockquote></li>
+<li><blockquote>
+<p>（7）复制时，目标文件名也可以与源文件名不相同，称作“异名拷贝”，此时，目标文件名不能省略；</p>
+</blockquote></li>
+<li><blockquote>
+<p>（8）复制时，还可以将几个文件合并为一个文件，称为“合并拷贝”，格式如下：COPY；[源盘][路径]〈源文件名1〉〈源文件名2〉…[目标盘][路径]〈目标文件名〉；</p>
+</blockquote></li>
+<li><blockquote>
+<p>（9）利用COPY命令，还可以从键盘上输入数据建立文件，格式如下：COPY CON [盘符：]</p>
+</blockquote></li>
+</ol>
+</blockquote>
+<h2 id="reinstall"><a href="#reinstall">Reinstall</a></h2>
+<ol style="list-style-type: decimal">
+<li>软件</li>
+</ol>
+<ul>
+<li>备份picasa数据库：c:2 </li>
+<li>备份itunes音乐库，将Windows 我的音乐位置更改至安装前的位置即可？以后再验证。</li>
+<li>备份虚拟机文件</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>浏览器</li>
+</ol>
+<ul>
+<li>swithysharp数据导出</li>
+<li>fawave数据导出</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>安装完毕，做什么？</li>
+</ol>
+<ul>
+<li>更改个人文件默认位置，windows库</li>
+<li>安装软件:输入法，office，迅雷，TC，Dropbox，Evernote</li>
+</ul>
+<h2 id="神兵利器"><a href="#神兵利器">神兵利器</a></h2>
+<ol style="list-style-type: decimal">
+<li>Everything 文件名搜索神器;不支持全文搜索</li>
+<li>unlocker 实在是很赞的一款小工具。非常适合稳健重命名移动删除等工作。</li>
+<li>KeyTweak windows下改变键盘映射工具，其他类似工具参见xbeta http://xbeta.info/key-tweak-remap.htm</li>
+<li>AutoHotKey</li>
+<li><a href="http://blog.kowalczyk.info/software/sumatrapdf/free-pdf-reader.html">SumatraPDF</a><br /> Sumatra PDF is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows。<br /> [[Shortcuts|sumatrapdf]]</li>
+</ol>
+
+  </div>
+</div>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>

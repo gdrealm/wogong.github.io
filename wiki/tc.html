@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
+
+</head>
+<body>
+<div id="site">
+  <div id="header">
+    <h1>
+    	<a href="/" title="WoNote">WoNote</a>
+    	<span class="byline">← <a href="/">wogong</a></span>
+    </h1>
+    <ul class="nav">
+	  <li><a class="home" href="/">Home</a></li>	
+	  <li><a href="/archive.html">Archive</a></li>
+      <li><a href="/kindle.html">Kindle</a></li>
+      <li><a href="/wiki/">Wiki</a></li>
+    </ul>
+  </div>
+
+  <div id="page">
+<div id="TOC">
+<ul>
+<li><a href="#tc-or-totalcommander">TC or TotalCommander</a><ul>
+<li><a href="#note">note</a></li>
+<li><a href="#快捷键">快捷键</a></li>
+<li><a href="#配置文件">配置文件</a><ul>
+<li><a href="#configuration">[Configuration]</a></li>
+<li><a href="#shortcuts">[Shortcuts]</a></li>
+<li><a href="#packer">[Packer]</a></li>
+</ul></li>
+<li><a href="#插件">插件</a></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="tc-or-totalcommander"><a href="#tc-or-totalcommander">TC or TotalCommander</a></h1>
+<h2 id="note"><a href="#note">note</a></h2>
+<ol style="list-style-type: decimal">
+<li>安装时可以选择配置文件位置，但是工具栏需要自己 定义，工具栏文件default.bar同样放在Dropbox文件夹 中，方便恢复。</li>
+<li>安装时可以自定义配置文件的位置，但是安装完毕之 后则没有这个配置选项。官方网站给出了这样一个小程 序，inireloc，可以满足使用要求</li>
+<li>viaTC 利用 [[AHK|ahk]] 编写的 TC 下 VIM 风格快捷键插件。</li>
+</ol>
+<h2 id="快捷键"><a href="#快捷键">快捷键</a></h2>
+<ul>
+<li>C-m 批量重命名</li>
+<li>ALT+SHIFT+ENTER 　在详细列表状态下显示当前所有目录的大小</li>
+<li>Ctrl + B 把当前文件夹下所有子目录中的文件放在一起显示</li>
+<li>CTRL + P 把当前路径拷贝到命令行</li>
+<li>→ 将焦点定位到命令行以便输入命令。</li>
+<li>Ctrl + ↑ 将当前选中的压缩文件或文件夹在一个新的窗口中打开。</li>
+<li>C+F12 筛选。</li>
+</ul>
+<h2 id="配置文件"><a href="#配置文件">配置文件</a></h2>
+<h3 id="configuration"><a href="#configuration">[Configuration]</a></h3>
+<ul>
+<li>DirBrackets=0 文件夹前后不加中括号。</li>
+<li>SortUpper=2 数字文件名排序，自然数顺序。</li>
+<li>SpaceMovesDown=1 空格键选择后光标下移。</li>
+<li>RenameSelOnlyName=1 重命名不选择扩展名。</li>
+<li>OleComments=0 只显示注释。</li>
+<li>LongInStatus=1 在状态栏显示文件名。</li>
+</ul>
+<p>*<br />*</p>
+<h3 id="shortcuts"><a href="#shortcuts">[Shortcuts]</a></h3>
+<ul>
+<li>F2=cm_RenameOnly <F2> 重命名</li>
+<li>C+E=em_Everything Ctrl+e Everything 搜索。</li>
+<li>CA+F5=cm_PackFiles 压缩文件在本窗格的同一文件夹下。</li>
+</ul>
+<h3 id="packer"><a href="#packer">[Packer]</a></h3>
+<ul>
+<li>ExpertMode=0<br />1：压缩包内的文件回车/双击后直接运行/打开， 0：显示该文件属性窗口，点击“unpack and execute”按钮 后才运行。 运行都是解压到tc的临时目录下，一般是 %TEMP%/_tc目录下，(<code>c:\Users\zhen\AppData\Local\Temp\_tc\</code>) 一般可以自动删除，但如压缩包仍处于打开状态（tc仍在 查看该包内容），则会提示是否不清除临时文件而强行退出。</li>
+</ul>
+<h2 id="插件"><a href="#插件">插件</a></h2>
+<ol style="list-style-type: decimal">
+<li><p>QuickSearch eXtended<br /><code>ctrl-s</code><br />TC拼音首字母搜索功能，或者说，TC本身的快速搜索功能， 早就一统江湖，只是这里没有更新。新王者就是——QuickSearch eXtended 。 它相当于 Shanny 的拼音首字母搜索，加 Google 的 空格/模糊搜索。【xbeta】</p></li>
+<li><p>uLister<br />TC的万能文件查看插件 http://xbeta.info/tc-docx.htm</p></li>
+</ol>
+
+  </div>
+</div>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34308107-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>
