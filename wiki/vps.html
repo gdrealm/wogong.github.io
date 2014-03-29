@@ -4,11 +4,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
+  <meta name="author" content="wogong" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
    <!-- syntax highlighting CSS -->
    <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
-
    <!-- Homepage CSS -->
    <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
 
@@ -45,7 +45,8 @@
 <pre><code># arch  
 `pacman -S git tmux vim ctags curl sudo`
 # ubuntu  
-`apt-get install git tmux vim ctags curl sudo`</code></pre></li>
+`apt-get update`
+`apt-get install git tmux vim ctags curl mosh`</code></pre></li>
 <li><p>add user<br /> <code>useradd -m -g users -s /bin/bash &lt;username&gt;</code></p></li>
 <li><p>dotfiles<br /> <code>git clone https://github.com/wogong/dotfiles.git ~</code></p></li>
 <li><p>设置用户密码,添加sudo权限<br /> <code>passwd &lt;username&gt; &amp;&amp; visudo</code></p></li>
@@ -55,7 +56,7 @@ BundleInstall</code></pre></li>
 <li><p>SSH禁用密码登陆</p>
 <pre><code>vim /etc/ssh/sshd_config
 /etc/init.d/ssh restart</code></pre></li>
-<li><p>locale <code>/etc/locale.conf</code></p></li>
+<li><p>locale <code>dpkg-reconfigure locales</code> <code>/etc/locale.conf</code></p></li>
 <li><p>timezone</p>
 <pre><code># ubuntu  
 sudo tzconfig`，or `dpkg-reconfigure tzdata
@@ -108,6 +109,20 @@ timedatectl set-timezone Asia/Shanghai</code></pre></li>
 </ol>
 
   </div>
+
+  <div id="footer">
+  	<address>
+  		<span class="copyright">
+            Content by <a href="../">wogong</a>. Design by 
+  			<a href="http://mark.reid.name/">Mark Reid</a>
+  			(<a rel="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Some rights reserved</a>)			
+  		</span>
+  		<span class="engine">
+			Powered by <a href="http://johnmacfarlane.net/pandoc/" title=" a universal document converter">Pandoc</a> and <a href="http://github.com" title="Github">Github</a>
+  		</span>
+  	</address>
+  </div>
+
 </div>
 
   <script type="text/javascript">

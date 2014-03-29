@@ -99,3 +99,5 @@ http://www.wogong.net/wiki/bash.html
 http://www.wogong.net/wiki/ahk.html
 http://www.wogong.net/wiki/academic.html
 http://www.wogong.net/wiki/_tmplate.html
+http://www.wogong.net/wiki/trick.html
+http://www.wogong.net/wiki/watch.html

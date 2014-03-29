@@ -4,11 +4,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
+  <meta name="author" content="wogong" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
    <!-- syntax highlighting CSS -->
    <link rel="stylesheet" href="/assets/themes/mark-reid/css/syntax.css" type="text/css" />
-
    <!-- Homepage CSS -->
    <link rel="stylesheet" href="/assets/themes/mark-reid/css/screen.css" type="text/css" />
 
@@ -49,7 +49,9 @@ tar -zxvf shell.tar.gz          将gzip文件解压
 tar -jcvf shell.tar.bz2 shell/  压缩为bz2文件
 tar -jxvf shell.tar.bz2         将bz2文件解压
 tar -cvf shell.tar shell/
-tar -xvf shell.tar</code></pre>
+tar -xvf shell.tar
+
+gunzip -d .gz</code></pre>
 <h2 id="tar---help"><a href="#tar---help"><code>tar --help</code></a></h2>
 <pre><code>%tar --help
 Usage: tar [OPTION...] [FILE]...
@@ -186,6 +188,20 @@ Report bugs to &lt;bug-tar@gnu.org&gt;.</code></pre>
 <p>–exclude FILE :在压缩的过程中，不要将FILE打包</p>
 
   </div>
+
+  <div id="footer">
+  	<address>
+  		<span class="copyright">
+            Content by <a href="../">wogong</a>. Design by 
+  			<a href="http://mark.reid.name/">Mark Reid</a>
+  			(<a rel="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Some rights reserved</a>)			
+  		</span>
+  		<span class="engine">
+			Powered by <a href="http://johnmacfarlane.net/pandoc/" title=" a universal document converter">Pandoc</a> and <a href="http://github.com" title="Github">Github</a>
+  		</span>
+  	</address>
+  </div>
+
 </div>
 
   <script type="text/javascript">
