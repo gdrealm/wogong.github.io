@@ -40,4 +40,7 @@ tags: [Twitter, Google Apps Script, Google Drive]
 
 你也可以选择使用一些额外的代码将更新的文件推送到到另一台Web服务器，或者将本地的Google Drive和虚拟主机之间同步，但现在我很高兴Google存储我的数据。
 
-update0225：前几天一直没有空折腾，今天搞好自己的了，我的tweets: https://googledrive.com/host/0BwpUrJ713Y8MNi1fUGQtSU4wdWc/
+- update0225：前几天一直没有空折腾，今天搞好自己的了，我的tweets: https://googledrive.com/host/0BwpUrJ713Y8MNi1fUGQtSU4wdWc/
+            你也可以打开这个链接: http:twitter.wogong.net
+
+- update20140329：几个月前 Google Script 出现错误，作者的修复更新见这里：https://gist.github.com/mhawksey/7770536
