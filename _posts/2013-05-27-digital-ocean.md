@@ -5,9 +5,6 @@ description: "Digital Ocean VPS评测, 优惠码"
 category: it
 tags: [vps]
 ---
-{% include JB/setup %}
-
------
 
 官网：  [Digital Ocean](https://www.digitalocean.com)
 

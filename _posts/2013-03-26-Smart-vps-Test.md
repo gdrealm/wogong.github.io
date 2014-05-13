@@ -5,9 +5,6 @@ description: "SmartVPS香港节点入门套餐VPS测试"
 category: it
 tags: [VPS]
 ---
-{% include JB/setup %}
-
------
 
 - 起因：[smartVPS少量测试主机免费赠送](http://c3.orca.io/t/63630#reply59)
 

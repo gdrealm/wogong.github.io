@@ -5,7 +5,6 @@ description: "kindle折腾备忘"
 category: it
 tags: [kindle]
 ---
-{% include JB/setup %}
 
 ## 汉化方法
 kindle dxg更换字体最普遍的方法来自国外的mobileread论坛的[这篇帖子](http://www.mobileread.com/forums/showthread.php?t=88004)。简而言之，是采用安装包的方式自动破解、更换字体。这里不再详述，目前网上能够搜到的大部分汉化皆是这种方法。多看论坛采用的也是类似的方法。

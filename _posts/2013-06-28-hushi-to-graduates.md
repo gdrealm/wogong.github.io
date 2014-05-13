@@ -5,7 +5,6 @@ description: "胡适致毕业生：在不健全的中国，如何不堕落"
 category: favorate
 tags: [hushi]
 ---
-{% include JB/setup %}
 
 毕业，看到这篇文章，大师的教诲在今日依旧受用，希望谨记教诲。
 

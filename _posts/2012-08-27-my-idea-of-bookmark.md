@@ -5,7 +5,6 @@ description: ""
 category: think
 tags: [bookmark, xmarks, google bookmark, delicious]
 ---
-{% include JB/setup %}
 
 书签：Bookmark，
 

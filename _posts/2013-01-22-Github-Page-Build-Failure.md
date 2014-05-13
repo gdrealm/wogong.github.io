@@ -5,7 +5,6 @@ description: ""
 category: it
 tags: [github, jekyll]
 ---
-{% include JB/setup %}
 
 ## 通用的解决方法
 

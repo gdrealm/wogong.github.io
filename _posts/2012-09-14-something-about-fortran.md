@@ -5,7 +5,6 @@ description: ""
 category: language
 tags: [fortran, elf]
 ---
-{% include JB/setup %}
 
 这学期开始学习程序结构力学(Programming Structural Mechanics)，课程使用的主要语言为Fortran90，关于Fortran的传奇之处早有耳闻。一下是两段非常著名的短文，当然是英文的，我会尝试翻译这两篇短文。
 

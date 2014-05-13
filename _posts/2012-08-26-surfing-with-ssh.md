@@ -5,7 +5,6 @@ description: ""
 category: it
 tags: [ssh]
 ---
-{% include JB/setup %}
 本文测试贴图，以及指导如何使用SSH。假设的上网环境是Chrome未装任何扩展，或者IE（本文演示的浏览器版本chrome21、IE10，版本差异基本不影响操作）
 
 ### 打开Interenet选项（Interenet Options）

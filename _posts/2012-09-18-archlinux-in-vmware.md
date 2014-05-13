@@ -5,7 +5,6 @@ description: ""
 category: it
 tags: [archlinux, vmware]
 ---
-{% include JB/setup %}
 
 最近安装windows8，手欠格了Arch的分区，导致我远离了Arch的世界，虽然Win8用着感觉还挺不错的，但是终究没有Linux的shell好用，决定装个虚拟机Arch随便用用。加上64bit的windows使我的小Y史无前例的达到了4G的内存，装个Arch应该没有多大问题。
 

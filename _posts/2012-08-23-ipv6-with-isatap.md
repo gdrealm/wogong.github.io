@@ -5,7 +5,6 @@ description: ""
 category: it
 tags: [ipv6, isatap]
 ---
-{% include JB/setup %}
 
 为什么通过isatap方式接入？
 
