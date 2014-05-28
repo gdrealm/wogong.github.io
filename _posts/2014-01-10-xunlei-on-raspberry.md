@@ -5,7 +5,6 @@ description: "树莓派上使用迅雷远程下载"
 category: it
 tags: [raspberry, thunder, xunlei]
 ---
-{% include JB/setup %}
 
 ### 设备信息
 

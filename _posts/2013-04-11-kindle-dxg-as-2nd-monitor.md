@@ -5,9 +5,6 @@ description: "use kindle dxg as 2nd monitor"
 category: it
 tags: [kindle, vnc]
 ---
-{% include JB/setup %}
-
------
 
 ## 背景
 

@@ -5,7 +5,6 @@ description: "some thought about electric reading"
 category: think
 tags: [instapaper]
 ---
-{% include JB/setup %}
 
 
 ## 背景 Background

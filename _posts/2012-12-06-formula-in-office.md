@@ -5,7 +5,6 @@ description: ""
 category: daily
 tags: [office, formula, mathtype, aurora]
 ---
-{% include JB/setup %}
 
 ## 公式输入需求
 

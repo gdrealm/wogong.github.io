@@ -5,7 +5,6 @@ description: "gollum in vmware runs extremely slow"
 category: it
 tags: [gollum, webrick, vmware]
 ---
-{% include JB/setup %}
 
 在家，告别了学校的百兆网络。目前3G 过活。无奈发现虚
 拟机中的gollum 运行极度缓慢，Chrome 的开发者工具显示

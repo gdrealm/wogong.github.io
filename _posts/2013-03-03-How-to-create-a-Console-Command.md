@@ -5,7 +5,6 @@ description: ""
 category: it
 tags: [Symfony2, Command, Console]
 ---
-{% include JB/setup %}
 
 详情请参见[官方文档](http://symfony.com/doc/2.0/cookbook/console/console_command.html<F12>)
 

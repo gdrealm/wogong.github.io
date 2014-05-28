@@ -5,7 +5,6 @@ description: "thought about it"
 category: daily
 tags: [civil]
 ---
-{% include JB/setup %}
 
 一个月的实习过的很快，因为是8月中旬才开始施工实习，所以天气状况也不错，并没有受到酷暑的折磨。我们严格来说算不上在艰苦的环境中呆了一个月，工地的项目部环境很好，食堂伙食也让我怀念。回首这一个月，这里简单记录一点，真实的东西。
 

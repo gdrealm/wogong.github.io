@@ -5,7 +5,6 @@ description: ""
 category: it
 tags: [Twitter, Google Apps Script, Google Drive]
 ---
-{% include JB/setup %}
 
 翻译自: [Keep your Twitter Archive fresh on Google Drive using a bit of Google Apps Script](http://mashe.hawksey.info/2013/01/sync-twitter-archive-with-google-drive/)
 
