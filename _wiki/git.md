@@ -126,4 +126,7 @@ Git提供了多种修复你开发过程中的错误的方法. 方法的选择取
 4. git log 显示优化  
 
         git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
-`
+
+## git hooks
+jekyll 自动部署,注意 `#!/bin/bash -l`
+https://www.digitalocean.com/community/articles/how-to-deploy-jekyll-blogs-with-git

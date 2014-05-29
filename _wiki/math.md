@@ -1,3 +1,10 @@
+---
+layout: wiki
+title: math
+create: 2014-05-29
+update: 2014-05-29
+---
+
 ## MATH 数学趣题
 
 1. 鸡兔同笼--方程组
