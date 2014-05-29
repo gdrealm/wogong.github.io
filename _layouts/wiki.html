@@ -2,8 +2,22 @@
 layout: default
 ---
 <div id="post">
-  <div class="yue">
+  <h1 itemprop="name">{{ page.title }} </h1>
+  <span itemprop="articleBody">
   {{ content }}
-  </div>
+  </span>
+</div>
+
+<div>
+<p>
+<hr />
+<span itemprop="datePublished" content="{{page.update}}">Published {{ page.create}}, Updated {{page.update}}</span> <br>
+<span>Link: <a itemprop="url" href="http://www.wogong.net{{page.url}}">www.wogong.net{{page.url}}</a></span> <br>
+<span itemscope itemtype="http://schema.org/Article">
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+  BY <span itemprop="name">wogong</span>
   <a href="https://plus.google.com/+ZhenCheng/?rel=author"></a>
+</span>
+</span>
+</p>
 </div>
