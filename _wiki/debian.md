@@ -1,8 +1,17 @@
 ---
 layout: wiki
 title: debian
+create: 
+update: 2014-05-18
 ---
 
+## note
+2. apt-get
+    mirror: /etc/apt/sources.list
+    apt-get update
+    apt-get upgrade
+    apt-get insatall name
+    apt-get remove name
 Configuring Locales
 
 The Easy Way
@@ -15,18 +24,19 @@ Edit /etc/locale.gen as root. If /etc/locale.gen does not exist, create it. An e
 Run /usr/sbin/locale-gen as root
 A sample /etc/locale.gen
 
-# This file lists locales that you wish to have built. You can find a list
-# of valid supported locales at /usr/share/i18n/SUPPORTED. Other
-# combinations are possible, but may not be well tested. If you change
-# this file, you need to rerun locale-gen.
-#
-# XXX GENERATED XXX
-#
-# NOTE!!! If you change this file by hand, and want to continue
-# maintaining manually, remove the above line. Otherwise, use the command
-# "dpkg-reconfigure locales" to manipulate this file. You can manually
-# change this file without affecting the use of debconf, however, since it
-# does read in your changes.
-
-en_US.UTF-8 UTF-8
+    > # This file lists locales that you wish to have built. You can find a list
+    > # of valid supported locales at /usr/share/i18n/SUPPORTED. Other
+    > # combinations are possible, but may not be well tested. If you change
+    > # this file, you need to rerun locale-gen.
+    > #
+    > # XXX GENERATED XXX
+    > #
+    > # NOTE!!! If you change this file by hand, and want to continue
+    > # maintaining manually, remove the above line. Otherwise, use the command
+    > # "dpkg-reconfigure locales" to manipulate this file. You can manually
+    > # change this file without affecting the use of debconf, however, since it
+    > # does read in your changes.
+    > 
+    > en_US.UTF-8 UTF-8
+    > 
 

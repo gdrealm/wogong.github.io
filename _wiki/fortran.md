@@ -1,9 +1,9 @@
 ---
 layout: wiki
 title: fortran
+create: 
+update: 2014-05-18
 ---
-
-## Fortran
 
 elf90 严格的Fortran90的子集
 
@@ -20,9 +20,9 @@ where结构：
 		...
 	end where
 
-# 形状相同
-# 不许嵌套
-# 最多两个分支
+* 形状相同
+* 不许嵌套
+* 最多两个分支
 
 cycle与exit语句
 		
@@ -65,4 +65,6 @@ SIZE(ARRAY, dim) is a function which returns the number of elements in an array 
 fortran 列优先。如 2 times 3 的矩阵，第 1、2 行分别为 1 2 3、4 5 6
 应该这样赋值。/1, 4, 2, 5, 3, 6/
 
+
+## subroutine
 

@@ -1,6 +1,6 @@
 baseurl: ""
 production_url: http://www.wogong.net
-permalink: /:categories/:title
+permalink: /blog/:title
 
 timezone: Asia/Shanghai
 markdown: rdiscount
@@ -13,6 +13,8 @@ author:
 collections:
     wiki:
         output: true
+    i:
+        output: false
 
 
 # front-matter default

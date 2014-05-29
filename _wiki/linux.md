@@ -5,10 +5,6 @@ title: linux
 
 # linux
 
-%title linux
-%author wogong
-%date 2014-03-28
-
 我使用过的发行版，按照时间顺序依次为：Ubuntu, Fedora, Archlinux, Debian。
 使用时间最久远、我最喜欢的是Archlinux。
 目前使用最多的是Archlinux & Ubuntu。
@@ -38,13 +34,6 @@ ubuntu下ack居然是另外一个东西，解决：
    - 用户信息文件 `/etc/passwd`
    - 踢出已登录用户 `pkill -KILL -t pts/0`
      可以采用`w`查看当前登录用户详细信息
-2. apt-get
-
-    mirror: /etc/apt/sources.list
-    apt-get update
-    apt-get upgrade
-    apt-get insatall name
-    apt-get remove name
 3. rsyslog 日志系统
 4. pacman
 
@@ -283,33 +272,8 @@ showkey prints to the standard error output its version number, a compile option
 切换到systemd出现错误，原因在于fstab文件挂载了vmware分享文件夹，官方wiki中说明
 
 
+memcache
 
-[BOTTOM][TOP]Doctrine
-
-Object Document Mapper (ODM)
-
-编辑好yml文件之后自动生成setter和getter：
-
-php app/console doctrine:mongodb:generate:documents ColorContactBundle
-
-Object Relationship Mapper (ORM)
-
-[BOTTOM][TOP]other
-
-service在config.yml中注册，初始化时传递的参数类型也在这里定义。
-
-Describe sina here.
-
-批量删除新浪围脖：
-
-http://wocao123.sinaapp.com/
-
-详细看这里：http://v2ex.com/t/67207
-
-
-Describe memcache here.
-
-这是神马东西。。
 
 启动命令 memcached -m 512 -l 127.0.0.1 -p 11211 -u root
 

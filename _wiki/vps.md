@@ -13,21 +13,17 @@ title: vps
         `pacman -S git tmux vim ctags curl sudo`
         # ubuntu  
         `apt-get update`
-        `apt-get install git tmux vim ctags curl mosh zsh`
+        `apt-get install sudo git tmux vim ctags curl mosh zsh openssl ca-certificates`
 
 2. add user   
    `useradd -m -g users -s /bin/zsh <username>`
 
 3. dotfiles  
    `git clone https://github.com/wogong/dotfiles.git ~`
+   `git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting`
 
 4. 设置用户密码,添加sudo权限  
    `passwd <username> && visudo`
-
-5. zsh
-   - oh-my-zsh
-     `curl -L http://install.ohmyz.sh | sh`
-
 
 5. 配置vundle
 
@@ -42,6 +38,7 @@ title: vps
 7. locale 
    `dpkg-reconfigure locales`
    `/etc/locale.conf`
+   `/etc/locale.gen` && `sudo locale-gen` 
 
 8. timezone
 
@@ -88,3 +85,5 @@ title: vps
    - do       $10    -- https://www.digitalocean.com/?refcode=2e0ea664bd28
 6. bandwagonhost --https://bandwagonhost.com/aff.php?aff=476
 7. ramnode 6折 zhujiceping
+8. VULTR 日本机房速度不错，类似DigitalOcean 
+   http://www.vultr.com/?ref=6802768

@@ -36,12 +36,19 @@ http://coolshell.cn
 
 
 ## useful commands
-### basioc
+### basic
 s
 Delete character at cursor and substitute text.
 
 S
 Delete line and substitute text.
+
+1. 强大的buffer
+:ls 查看当前打开文件列表
+:bp 前一文件
+:bn 后一文件
+N+Ctrl+^ 跳转到编号N的文件
+:buffer N
 
 
 ### vimgrep
@@ -73,7 +80,7 @@ file代表的是文件名，文件名也可以用正则表达式，特别是**�
 :ccl[ose] 关闭 quickfix 窗口
 ctrl + ww 切换编辑窗口和quickfix窗口，在quickfix里面和编辑窗口一样jk表示上下移动，回车选中进入编辑窗口
  
-最后，可以给:copen和:cn设定一个快捷键，在_vimrc里加入
+最后，可以给:copen和:cn设定一个快捷键，在.vimrc里加入
 map <leader>c :copen<CR>
 map <leader>n :cn<CR>
 
@@ -82,10 +89,57 @@ set syntax = apdl
 
 根据后缀设置 syntax，see vimrc
 
+
+### vimdiff
+
+vimdiff filea fileb
+
+移动到下一个diff：
+
+]c
+移动到上一个diff：
+
+[c
+
+:diffput
+
+:diffget
+
+:diffupdate
+
+
+zo
+（folding open，之所以用z这个字母，是因为它看上去像折叠着的纸）
+或者打开折叠
+
+zc
+保存退出
+
+在比较和合并告一段落之后，可以用下列命令对两个文件同时进行操作。比如同时退出：
+
+:qa(未对文件做过修改，直接退出)
+:qa! (不保存文件退出)
+:wqa(保存文件并退出)
+
+:set diffopt=context: 5
+
+
+
+
+
 ## vimrc
 1. mouse设置  
 set mouse=a 不可以右键粘贴，但是可以鼠标操作切换vsplit窗口
 set mouse-=a 相反
+2. 判断 OS
+
+    if has('win32')
+    ... 
+    elseif has('unix')
+    ... 
+    elseif has('mac')
+    ... 
+    endif
 
 ----
 ## Plugin
@@ -102,7 +156,7 @@ set mouse-=a 相反
 BundleInstall，安装插件
 
 手动安装插件：
-1. 下载 github 包，到 bundle 目录
+1. 下载 git 包，到 bundle 目录
 2. vimrc 中添加插件名
 3. done
 
@@ -178,6 +232,11 @@ let g:vim_markdown_folding_disabled=1
 + :zoomin
 - :zoomout
   :zoomreset
+
+### snipMate
+:help snipMate
+
+function<TAB>
 
 
 ## shortcut

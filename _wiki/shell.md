@@ -8,6 +8,7 @@ title: shell
 # Linux Shell学习笔记
 查看环境变量： env
 改变shell种类： chsh -s /bin/bash （更改为bash）
+禁用shell /etc/passwd /bin/false
 
 .bashrc文件可以指定某些程序在用户登录的时候就自动启动
 .bash_profile shell配置文件
