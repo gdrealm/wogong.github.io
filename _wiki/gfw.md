@@ -5,8 +5,11 @@ title: gfw
 
 # GFW 中国长城防火墙 Great Fire Wall
 
+提供代购 VPN Shadowsocks 服务
+
+
 ## 我推荐的方式
-ShadowSocks
+### ShadowSocks
 
 1. PC 端有靠谱的软件，配合 Chrome 的 SwithchySharp 扩展使用。
 2. 移动端
@@ -14,6 +17,10 @@ ShadowSocks
    - iOS 也有应用，不过没有使用过。
 3. 需要试用的可以联系我，个人现在使用的方案为每月10G流量，一年40RMB
 
+### PowerPAC
+非常方便，价格便宜，速度有待考察
+https://powerpac.in
+使用我的推荐链接，免费获得256M流量：http://powerpac.in/reg?r=118
 
 ## 常用翻墙方式
 1. [[shadowsocks]]
