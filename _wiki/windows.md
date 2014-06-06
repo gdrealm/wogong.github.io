@@ -53,7 +53,8 @@ title: windows
 3. 安装完毕，做什么？
    - 更改个人文件默认位置，windows库
    - 安装软件:输入法，office，迅雷，TC，Dropbox，Evernote
-
+4. 数据
+   - $HOME 目录 配置文件， vim
 ## 神兵利器
 1. Everything
 文件名搜索神器;不支持全文搜索

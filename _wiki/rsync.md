@@ -29,6 +29,9 @@ Windows版下载：https://www.itefix.no/i2/cwrsync-get 选(Free Edition 免费�
 复制链接文件。达到备份目的
 rsync -L --port=28950 -vzrtopg --progress --delete 127.0.0.1::backupdir /cygdrive/h/BACKUPDIR
 
+rsync -L --chmod u+rwx --port=28950 -avr --progress --delete -stat 127.0.0.1::music /cygdrive/g/BACKUPDIR/Music
+
+
 
 
 一、安装配置 Rsync 服务端
