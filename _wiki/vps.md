@@ -3,8 +3,6 @@ layout: wiki
 title: vps
 ---
 
-# VPS
-
 ## 配置VPS
 
 1. install `git, tmux, vim, ctags, curl, sudo`
@@ -19,7 +17,7 @@ title: vps
    `useradd -m -g users -s /bin/zsh <username>`
 
 3. dotfiles  
-   `git clone https://github.com/wogong/dotfiles.git ~`
+   `git clone https://github.com/wogong/dotfiles.git ~`  
    `git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting`
 
 4. 设置用户密码,添加sudo权限  

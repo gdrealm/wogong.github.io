@@ -3,10 +3,6 @@ layout: wiki
 title: ruby
 ---
 
-# ruby
-
-----
-
 ## note
 
 1. RVM ruby的版本管理工具，可以在同一台电脑安装并管理多个ruby版本
@@ -52,7 +48,7 @@ title: ruby
 4. 
 
 
-## 
+## gem source 
 http://ruby.taobao.org/
 
 为什么有这个？
@@ -68,6 +64,7 @@ $ gem sources -l
 *** CURRENT SOURCES ***
 
 https://ruby.taobao.org
-# 请确保只有 ruby.taobao.org
+
+请确保只有 ruby.taobao.org
 $ gem install rails
 

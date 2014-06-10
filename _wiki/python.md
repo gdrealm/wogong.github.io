@@ -1,9 +1,9 @@
 ---
 layout: wiki
 title: python
+create: 2014-06-10
+update: 2014-06-10
 ---
-
-# Python
 
 ## NOTE
 1. `python -m SimpleHTTPServer` 8000端口快速共享文件。(Python3 中取消了SimpleHTTPServer 这个模块。)
@@ -12,12 +12,10 @@ title: python
    - import module 推荐
    - from module import func 只导入需要的函数
    - from module import * 不推荐
-
 2. itertools 迭代工具
 
-## 环境配置
+## INSTALL
 Windows 下，建议安装32bit 版本。
-
 ### easy_install
 [下载地址：](http://pypi.python.org/pypi/setuptools) 
 可以找到正确的版本进行下载。win7 32位可以下载
@@ -28,7 +26,6 @@ setuptools-0.6c11.win32-py2.7.exe 。
 [ez_setup.py](http://peak.telecommunity.com/dist/ez_setup.py)
 后，在cmd下执行 python ez_setup.py，
 即可自动安装setuptools。目前没有直接的exe安装版本。
-
 ### vim 配置
 pep8 编程风格检查；vim缩进折叠等设置见配置文件
 flake8 同样也很神奇，但是暂时没必要安装
@@ -38,7 +35,6 @@ flake8 同样也很神奇，但是暂时没必要安装
    在线wiki。还不错。使用过一段时间，从vimwiki 迁移过来，后来再次迁移到gollum。
 2. Python(x,y)
    用于科学计算
-
 ### Web 框架
 1. web.py
 2. 

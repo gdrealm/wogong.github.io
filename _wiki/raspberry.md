@@ -1,16 +1,19 @@
 ---
 layout: wiki
 title: raspberry
+update: 2014-06-10
 ---
 
-# Raspberry
-
-## todo
-
+## Setting
+1. sudo raspi-config
+2. mirror deb http://mirrors.ustc.edu.cn/raspbian/raspbian/   wheezy main contrib non-free rpi
+3. 按照[vps](./vps.html)配置
+4. samba 
 
 ## Function
 1. git repository : how to sync with Github?
-2. gollum
+2. BTSync
+. 
 
 ## 外设
 1. usb 转串口接线 done
@@ -83,6 +86,6 @@ Edit the file /etc/wpa_supplicant/wpa_supplicant.conf and add the network={.....
     }
 
 
-## 参考
+## 参考资料
 http://linuxtoy.org/archives/cool-ideas-for-raspberry-pi.html
 
