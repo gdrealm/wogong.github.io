@@ -1,9 +1,13 @@
 ---
 layout: default
-title: About wogong
+title: About
+update: 2014-06-13
 ---
 
 ## Timeline
+
+## Bio
+Civil Engineering, 不折腾会死星人, Arch&Debian, Google Fan, RSS, Kindle, Git, wiki, Vimer, V2EXer
 
 ## Social Network
 Twitter: 
