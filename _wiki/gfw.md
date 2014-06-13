@@ -1,16 +1,13 @@
 ---
 layout: wiki
-title: gfw
+title: proxy
 create: 2014-06-07
-update: 2014-06-07
+update: 2014-06-11
 ---
 
-# GFW 中国长城防火墙 Great Fire Wall
+GFW 中国长城防火墙 Great Fire Wall
 
-提供代购 VPN Shadowsocks 服务
-
-
-## 我推荐的方式
+## 推荐方式
 ### ShadowSocks
 1. PC 端有靠谱的软件，配合 Chrome 的 SwithchySharp 扩展使用。
 2. 移动端
@@ -18,7 +15,6 @@ update: 2014-06-07
    - iOS 也有应用，不过没有使用过。
 3. 需要试用的可以联系我，个人现在使用的方案为每月10G流量，一年40RMB
    @cosbeta 服务
-
 ### PowerPAC
 非常方便，价格便宜，速度有待考察
 https://powerpac.in
@@ -44,7 +40,7 @@ https://powerpac.in
             socksParentProxy = "127.0.0.1:7070" # 设置透明代理
             socksProxyType = socks5
    - Manual http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/polipo.html#Top 
-
+5. 
 
 ## 项目
 1. gfwlist

@@ -1,22 +1,23 @@
 ---
 layout: wiki
 title: network
+update: 2014-06-12
 ---
 
-# Network 
-
-## linux
-1. arch wiki
+## NOTE
+0. arch wiki
    https://wiki.archlinux.org/index.php/Network
 
-## common sense
 1. 带宽
    425Kbps，此处的b即是Byte。1Byte=8bit，加上其它开销，10Kb的宽带流量可大致获得1KB每秒的下载速度，所以下载速度为425KB/秒时带宽约为4.25Mbps。
 
-## CDN
-给我的blog使用了ORCA，添加了blog.wogong.net，
-因为CNAME出了一点小问题，so，再看吧。
+2. 子网掩码
 
+   255.0.0.0 = /8
+   255.255.0.0 = /16
+   255.255.255.0 = /24
+   
+4. CDN
 国内的规模较大的CDN基本都需要备案，小规模的虽然有，
 但是稳定性及性能方面显然值得怀疑，所以，死了国内CDN
 的心吧。
@@ -32,7 +33,7 @@ title: network
 除了常见上述功能，inSSIDer还提供了新闻报道，网络过滤，GPS等附加功能，感兴趣的用户可以自己尝试。 通过inSSIDer软件，你将轻松选择无线信号强、网络稳定、信道不拥挤的最佳无线网络热点，赶快去试试吧。
 
 
-## archlinux
+* archlinux wireless
 
 wireless,Archlinux
 
