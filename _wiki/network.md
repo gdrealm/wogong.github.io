@@ -1,8 +1,15 @@
 ---
 layout: wiki
 title: network
-update: 2014-06-12
+update: 2014-06-13
 ---
+
+## Commands
+1. ifconfig
+2. arp IP -- MAC
+3. ping
+
+
 
 ## NOTE
 0. arch wiki

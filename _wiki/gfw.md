@@ -2,19 +2,30 @@
 layout: wiki
 title: proxy
 create: 2014-06-07
-update: 2014-06-11
+update: 2014-06-15
 ---
 
 GFW 中国长城防火墙 Great Fire Wall
 
 ## 推荐方式
+### 免费分享 ShadowSocks 帐号
+1. Android  
+下载 Shadowsocks 应用，添加配置，扫描二维码：
+[ssla](http://wogong.qiniudn.com/ssla.png)
+2. 桌面
+[配置文件](http://wogong.qiniudn.com/config.json)
+    - Windows
+        - 32bit http://dl.chenyufei.info/shadowsocks/shadowsocks-local-win32-1.1.1.zip 
+        - 64bit http://dl.chenyufei.info/shadowsocks/shadowsocks-local-win64-1.1.1.zip
+    - Other
+
+
 ### ShadowSocks
 1. PC 端有靠谱的软件，配合 Chrome 的 SwithchySharp 扩展使用。
 2. 移动端
    - Android Google Play 有 Shadowsocks 的应用，root后可以全局使用，智能切换，完全替代 VPN
    - iOS 也有应用，不过没有使用过。
-3. 需要试用的可以联系我，个人现在使用的方案为每月10G流量，一年40RMB
-   @cosbeta 服务
+
 ### PowerPAC
 非常方便，价格便宜，速度有待考察
 https://powerpac.in

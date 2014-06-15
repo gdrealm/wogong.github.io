@@ -1,9 +1,8 @@
 ---
 layout: wiki
 title: git
+update: 2014-06-14
 ---
-
-# Git
 
 ## note
 1. 与其他服务比较  

@@ -19,6 +19,8 @@ update: 2014-06-13
 8. 服务管理 services.mvc
 9. tasklist /mvc
 10. 计划任务 Schedule tasks 用于自动备份 C 盘文件还是很方便的。
+11. CMD 自带命令： help
+
 
 ## Reinstall
 1. 软件

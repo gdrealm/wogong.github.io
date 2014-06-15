@@ -1,14 +1,16 @@
 ---
 layout: wiki
 title: tex
+update: 2014-06-13
 ---
+
 相关条目： [[texmacs]]
 
-## 推荐文档书籍
+1. 推荐文档书籍
 - 《LaTeX2e 完全学习手册》
 - lshort
 
-## 排版
+2. 排版
 一直想学而未坚持下来，总是在使用的时候为求方便叛逃
 到Office阵营。其实Tex/LaTex并不是十分难学，前期
 学习成本的确会高一点，但是之后的方便会证明这种投入
@@ -18,15 +20,26 @@ title: tex
 有文本段落使用全角逗号和空心句号，只有在数学式之中
 的逗号为半角。
 
-## 安装
+3. 安装 INSTALL
 推荐TexLive 套装。目前使用的是Texlive2013 。Windows
 与Linux 下均有相应的安装包，安装过程很简单。不推荐
 采用源里面的安装，例如Arch `%sudo pacman -S texlive-core` ，
 采用这种方式安装的Tex可能不包括常用的宏包，例如
 ctex（后文会详细说到）。
 
+xelatex + ctex
+4. Tex 术语
+    - format: tex; plain tex; latex(latex2e, latex3); context [CTeX资料](http://www.ctex.org/LaTeX)
+    - engine: latex; pdflatex; xetex; luatex
+    - macro package: 对基本格式的功能扩展
+    - distro: 套件，各种引擎、宏包、文档的集合
+    - 编译：tex ——> dvi/pdf
+
+
+
 ## 使用
-### 中文解决方案
+
+
 中文推荐解决方案，ctex 文档类
 
 ### 数学排版
