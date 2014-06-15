@@ -10,7 +10,7 @@ GFW 中国长城防火墙 Great Fire Wall
 ## 推荐方式
 ### 免费分享 ShadowSocks 帐号
 1. Android  
-下载 Shadowsocks 应用，添加配置，扫描二维码：
+下载 Shadowsocks 应用，添加配置，扫描二维码：  
 ![ssla](http://wogong.qiniudn.com/ssla.png)
 2. 桌面  
 [配置文件](http://wogong.qiniudn.com/config.json)
