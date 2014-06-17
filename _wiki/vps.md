@@ -1,6 +1,7 @@
 ---
 layout: wiki
 title: vps
+update: 2014-06-16
 ---
 
 ## 配置VPS
@@ -52,7 +53,10 @@ title: vps
    `sudo hostnamectl set-hostname myhostname`
 
 ## VPS 评测
-1. CPU `cat /proc/cpuinfo`
+1. CPU  
+    - `cat /proc/cpuinfo`
+    - `openssl speed md5` 这样的方法快速地看一台机器的 CPU 性能，只要看最后一个数字就够了。好性能的标准是 50 万以上。
+
 2. 内存 `free -m`
 3. 硬盘 `dd if=/dev/zero of=test bs=64k count=4k oflag=dsync`
    结果，大于10M，建站就没有什么影响了。好的话，能达到70M，
@@ -61,9 +65,9 @@ title: vps
 4. 入口带宽 `wget http://cachefly.cachefly.net/100mb.test`
 5. 出口带宽 `wget /file/in/your/server`
 6. 网络 `ping, tracert`
-   - http://ping.chinaz.com 
-   - http://www.webkaka.com 
-   - http://ping.aizhan.com
+   - <http://ping.chinaz.com> 
+   - <http://www.webkaka.com> 
+   - <http://ping.aizhan.com>
 7. 稳定性 uptime
    - dndpod
 8. UnixBench
@@ -71,17 +75,18 @@ title: vps
    很伤VPS，普通的VPS得分能在500-800之间。
 
 ## VPS提供商比较
-1. BudgetVM 推介 https://www.budgetvm.com/account/aff.php?aff=1061
-   10.94$
+1. BudgetVM  
+    推介 <https://www.budgetvm.com/account/aff.php?aff=1061>
 2. BuyVM 有余额
 3. Hostigation
 4. Linode
-5. DigitalOcean
+5. DigitalOcean  
    1. 经常有一些 promo code，等于白送钱，很不错。
    2. 目前还有几个账户，余额20$；推介
-   - wogong38 $29.42 -- https://www.digitalocean.com/?refcode=4398536459b9
-   - do       $10    -- https://www.digitalocean.com/?refcode=2e0ea664bd28
-6. bandwagonhost --https://bandwagonhost.com/aff.php?aff=476
-7. ramnode 6折 zhujiceping
-8. VULTR 日本机房速度不错，类似DigitalOcean 
-   http://www.vultr.com/?ref=6802768
+   - wogong38 $29.42 -- <https://www.digitalocean.com/?refcode=4398536459b9>
+6. bandwagonhost --<https://bandwagonhost.com/aff.php?aff=476>
+7. ramnode  
+    6折 zhujiceping
+8. VULTR  
+   日本机房速度不错，类似DigitalOcean 
+   <http://www.vultr.com/?ref=6802768>

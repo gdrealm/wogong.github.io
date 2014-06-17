@@ -14,6 +14,8 @@ collections:
     wiki:
         output: true
     i:
+        output: true
+    doc:
         output: false
 
 
