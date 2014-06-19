@@ -1,11 +1,16 @@
 ---
 layout: wiki
-title: ws
+title: wish
 create: 2014-06-17
 update: 2014-06-19
 ---
 
-## 定期购买
+## wish
+1. Dell显示器
+1. iPhone 拍照方便， jsut so easy
+3. 单车
+14. Macbook Pro
+2. 长尾夹
 
 ### 日用品
 1. 纸巾+卷纸+抽纸
@@ -24,15 +29,9 @@ update: 2014-06-19
 5. 肌酸/蛋白粉
 
 
-## 海淘列表
+### 海淘列表
 2. kindle
 
-## wish
-1. Dell显示器
-1. iPhone 拍照方便， jsut so easy
-3. 单车
-14. Macbook Pro
-2. 长尾夹
 
 ## wished
 * 机械键盘 -- keycool 87 白色茶轴

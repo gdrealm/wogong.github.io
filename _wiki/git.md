@@ -132,3 +132,9 @@ https://www.digitalocean.com/community/articles/how-to-deploy-jekyll-blogs-with-
 
 ## git on server
 
+    sudo add user git
+    su git
+    cd
+    mkdir .ssh
+    cp /home/wogong/.ssh/id_rsa .ssh
+    

@@ -1,11 +1,10 @@
 ---
 layout: wiki
-title: td
+title: todo
 create: 2014-06-17
 update: 2014-06-17
 ---
 
-## TODO
 * 苏州行
 * 端午游照片 and 文章
 * openwrt
