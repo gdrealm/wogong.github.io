@@ -2,7 +2,7 @@
 layout: wiki
 title: ws
 create: 2014-06-17
-update: 2014-06-17
+update: 2014-06-19
 ---
 
 ## 定期购买
@@ -25,22 +25,23 @@ update: 2014-06-17
 
 
 ## 海淘列表
-1. 剃须刀
 2. kindle
 
-## 心愿单
+## wish
 1. Dell显示器
 1. iPhone 拍照方便， jsut so easy
-2. *机械键盘*
 3. 单车
-5. *X230 扩展坞*
-6. *录音笔 其实可以用 touch 代替的好嘛*
-8. *激光黑白打印机 done broother L1110*
-9. *台灯*
-11. *Micro USB line*
-13. 玻璃杯子
 14. Macbook Pro
-1. *SD card for RPi*
 2. 长尾夹
-3. AKG K420
 
+## wished
+* 机械键盘 -- keycool 87 白色茶轴
+* X230 扩展坞 -- 淘宝 二手
+* 录音笔 -- 其实可以用 touch 代替的好嘛
+* 激光黑白打印机 --broother L1110
+* 台灯 -- phlips
+* SD card for RPi
+* Micro USB line
+* 玻璃杯子 -- 羽毛球比赛 裁判奖品
+* AKG K420 -- JD
+* 剃须刀

@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: raspberry
-update: 2014-06-10
+update: 2014-06-19
 ---
 
 ## Setting
@@ -13,7 +13,6 @@ update: 2014-06-10
 ## Function
 1. git repository : how to sync with Github?
 2. BTSync
-. 
 
 ## 外设
 1. usb 转串口接线 done
@@ -75,6 +74,14 @@ Default /etc/network/interfaces file as supplied in the raspbian image - do not 
     iface wlan0 inet manual
     wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
     iface default inet dhcp
+    # 静态
+    iface default inet static
+    address 192.168.1.2
+    netmask 255.255.255.0
+    gateway 192.168.1.1
+    dns-nameservers x.x.x.x #你的本地dns地址
+
+
 
 Edit the file /etc/wpa_supplicant/wpa_supplicant.conf and add the network={.....} section. Use the command sudo nano /etc/wpa_supplicant/wpa_supplicant.conf to open and edit the file. Exit the editor and save the file using keys cntl-X, Y, Enter.
 
@@ -85,6 +92,8 @@ Edit the file /etc/wpa_supplicant/wpa_supplicant.conf and add the network={.....
         psk="Your-Network-Password"
     }
 
+* 重启网络
+    sudo /etc/init.d/networking restart
 
 ## 参考资料
 http://linuxtoy.org/archives/cool-ideas-for-raspberry-pi.html

@@ -4,24 +4,24 @@ title: td
 create: 2014-06-17
 update: 2014-06-17
 ---
+
 ## TODO
-* tex learning, compare with TeXmacs
-* prepost?
-* kindle push has some problems
-* Google + 更改头像
-* rimeime
-* blog: jekyll, nginx, git hooks --- drafts
 * 苏州行
-* WWJ 头像
-* cellphone number record service, useful when you change your number.
 * 端午游照片 and 文章
-* dnsmasq
 * openwrt
 * WinPE download
 
 
-
 ## DONE
+* dnsmasq -- ...
+* cellphone number record service, useful when you change your number. -- see i/mobile
+* blog: jekyll, nginx, git hooks --- drafts
+* rimeime -- current IME
+* Google + 更改头像 -- no need
+* prepost? -- not worry, you leran when you need
+* kindle push has some problems
+* tex learning, compare with TeXmacs -- just TeX is OK
+* WWJ 头像 -- mailed
 * Download：词典，FEM课程 -- 
 * Tex 文档整理 --- done
 * babun console in windows --- not that cool

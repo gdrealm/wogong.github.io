@@ -129,3 +129,6 @@ Git提供了多种修复你开发过程中的错误的方法. 方法的选择取
 ## git hooks
 jekyll 自动部署,注意 `#!/bin/bash -l`
 https://www.digitalocean.com/community/articles/how-to-deploy-jekyll-blogs-with-git
+
+## git on server
+
