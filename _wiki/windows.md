@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: windows
-update: 2014-06-13
+update: 2014-06-21
 ---
 
 ## note
@@ -20,6 +20,9 @@ update: 2014-06-13
 9. tasklist /mvc
 10. 计划任务 Schedule tasks 用于自动备份 C 盘文件还是很方便的。
 11. CMD 自带命令： help
+12. Windows en   
+    中文 需要更改 语音设置 否则一些中文软件会出现乱码
+
 
 
 ## Reinstall
