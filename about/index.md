@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: about
 update: 2014-06-13
 ---
 

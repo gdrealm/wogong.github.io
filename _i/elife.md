@@ -6,11 +6,11 @@ update: 2014-06-27
 ---
 
 ## site
-1. ~~[reader.wogong.net](reader.wogong.net)~~  
+1. ~~reader.wogong.net~~  
    源站 selfoss.wogong.net，采用orca CDN 分发。可以支持https，但是https与CDN冲突，目前舍弃https。
-2. ~~[twitter.wogong.net](twitter.wogong.net)~~  
+2. ~~twitter.wogong.net~~  
    dnspod 的显性URL 转发，利用Google Drive 进行托管，自动更新
-3. ~~[wiki.wogong.net](wiki.wogong.net)~~  
+3. ~~wiki.wogong.net~~  
    gollum，仓库在github。  
    采用nginx配置的反向代理。la.wogong.net:4567（默认值）
    已经取消，现在利用 pandoc 转化为静态文件托管在 github
@@ -25,41 +25,40 @@ update: 2014-06-27
    cops, 目前停用。
 
 ## VPS
-   1. la
+1. la
       - la.wogong.net:9091 Transmission
       - dl.wogong.net Download Dir
-   2. ar
+2. ar
       - wiki.wogonog.net `wiki` 301 to `wogong.net`
       - vagex 3 IP (ss proxy)
 ## proxy
-    1. vpnso (@cosbeta) ss
-    2. pcnt.in  https://pcnt.in/mypac?id=118
+1. vpnso (@cosbeta) ss
+2. pcnt.in  https://pcnt.in/mypac?id=118
 
 ## input
-   1. 现实
+1. 现实
    书籍、讲座、课堂、聊天、新闻联播
-   2. 网络
+2. 网络
       - RSS - feedly + press
       - 豆瓣, 知乎, V2EX
       - qzone, weibo, weixin
       - BBS
       - youku bili
-   3. 其他
+3. 其他
    各种资料、视频
 
 ## output
-   1. wiki
-   2. blog
-   3. Social Networks (need back up, you know, never trust any commercial companys)
-   4. Photos 来自手机，touch，他人所拍；统一文件夹整理，上传flickr存档，少许朋友圈分享
-
+1. wiki
+2. blog
+3. Social Networks (need back up, you know, never trust any commercial companys)
+4. Photos 来自手机，touch，他人所拍；统一文件夹整理，上传flickr存档，少许朋友圈分享
 
 ## Sync & Backup
-   1. PC
+1. PC
       - Documents + Music + Pictures 定期备份至移动硬盘
       - BTSync 备份
 
-   2. 网络信息
+2. 网络信息
       - weibo 主动发布，豆瓣同步，多看阅读分享  ；
               通过 ifttt 至 Evernote，含 coco
       - Twitter 主动发布（尽量减少，慢慢转移至weibo），豆瓣同步，kindle分享；  
@@ -68,7 +67,7 @@ update: 2014-06-27
                  很少主动发布信息，多为自动同步，基本不需备份
       - Douban 主动发布，标记；  
                通过 ifttt 至 Evernote 
-   3. Mobile
+3. Mobile
       - SMS SMS backup+ to Gmail ; SMS to Text to csv file
       - 随手记 定期备份至SD
       - call log SMS backup+ to Gmail and Google Calendar
