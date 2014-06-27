@@ -35,7 +35,6 @@ update: 2014-06-27
     1. vpnso (@cosbeta) ss
     2. pcnt.in  https://pcnt.in/mypac?id=118
 
-
 ## input
    1. 现实
    书籍、讲座、课堂、聊天、新闻联播
@@ -68,7 +67,7 @@ update: 2014-06-27
       - Facebook Twitter分享，kindle分享；   
                  很少主动发布信息，多为自动同步，基本不需备份
       - Douban 主动发布，标记；  
-               通过 ifttt 至 Evernote, 含 coco (印象笔记)
+               通过 ifttt 至 Evernote 
    3. Mobile
       - SMS SMS backup+ to Gmail ; SMS to Text to csv file
       - 随手记 定期备份至SD
@@ -88,22 +87,17 @@ update: 2014-06-27
 5. 密钥
    定期更换密钥对
 
+## download
 
+1. -> VPS : ar & la
+then to Internet cafe download to local disk.
+3. B
 
 ## Temp OR outdated
-
-移动设备：
-
-目前的想法是手机+平板
-鉴于严重依赖google且本人暂时并无归顺apple的的想法和经济实力
-且jobs之后的apple一系列行为等等原因，还是选用android。
-平板可以考虑nexus7.7，手机可以考虑nexus5
-
 
 cloud
 dropbox：在用课程资料文件+各种备份小文件+calibre书库
 目前主要采用dropbox和百度网盘。
-
 
 快盘：分享文件
 vdisk：新浪分享文件
@@ -112,34 +106,9 @@ vdisk：新浪分享文件
 dbank：各种分享文件，速度不错
 Google drive：kindle书籍仓库+往期课程文件+各种备份文件
 
-Blog
-vimwiki结合github发布
-evernote作为资源收集，wiki整理发布
-真心可以使用EN写博客，输出为html格式，发布到github上！
-现在使用jekyll啦，感觉很不错
-
-
-MAIL
-gmail主力邮箱，收取其他所有邮件
-hotmail备份邮箱，备份所有邮件；难道没有发现自己发送的邮件按照目前这种方式没有办法备份么？应该可以设置过滤器转发吧，但是这又这个必要么。思考思考
-主用wogong38账号，不再更改。辅助chengzhen1991和i@wogong.net
-
-
-
-
-weibo：移动端收藏，或者通过发邮件选择evernote保存到en中。
-（可以考虑如果云同步，获得邀请之后）
-
-twitter：favorate，自动同步到en
-
-
-
-
-
 
 PS：
 很多事情可以听听知乎的建议，当然之前一定要Google
-
 
 
 不需要自动化操作evernote的标签或者笔记本，通过ifttt，每次从gr中收集到的东西应该手动整理消化
@@ -154,13 +123,6 @@ instapaper liked 自动发送到evernote
 
 outlook邮箱接收各种邮箱备份！分类规则方便日后查找。大容量就是好
 
-
 知乎以及quora的每周精选 保存到Evernote
 gr星标文章通过邮件保存到这里
 
-
-## download
-
--> VPS : ar & la
-
-then to Internet cafe download to local disk.
