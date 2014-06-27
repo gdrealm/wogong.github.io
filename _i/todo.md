@@ -54,8 +54,9 @@ cafe
 
 ## 什么都不想做的时候，有以下选择：
 * 整理Evernote
-* 清理Instapaper
+* 清理Instapaper & Pocket
 * 整理Chrome Bookmark 
 * 各种教学视频
 * 整理阅读日记 vim+calendar
 * blog drafts
+* zhihu & Quora

@@ -12,7 +12,7 @@ Civil Engineering, 不折腾会死星人, Arch&Debian, Google Fan, RSS, Kindle, 
 ## Social Network
 Twitter: 
     - [@wogong38](https://twitter.com/wogong38)
-    - [Twitter Archive](https://googledrive.com/host/0BwpUrJ713Y8MNi1fUGQtSU4wdWc/)
+    - [Twitter Archive](https://googledrive.com/host/0BwpUrJ713Y8MNi1fUGQtSU4wdWc/) (for these who can't access Twitter in China)
 
 Google+:
     Sync from Twitter, using IFTTT.
@@ -23,9 +23,9 @@ Wechat:
     @wogong
 
 Weibo:
-    I hate weibo, @wogong, though.
+    I hate weibo, @wogong, just placeholder.
 
 Douban:
-    [@wogong38](http://www.douban.com/people/wogong38/) just for mark favorite.
+    [@wogong38](http://www.douban.com/people/wogong38/) just for marking favorite items.
     Sync to Twitter using [IFTTT](http://ifttt.com)
 
