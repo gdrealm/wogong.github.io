@@ -77,16 +77,28 @@ update: 2014-06-16
 ## VPS提供商比较
 1. BudgetVM  
     推介 <https://www.budgetvm.com/account/aff.php?aff=1061>
+
 2. BuyVM 有余额
+
 3. Hostigation
+
 4. Linode
+
 5. DigitalOcean  
    1. 经常有一些 promo code，等于白送钱，很不错。
    2. 目前还有几个账户，余额20$；推介
    - wogong38 $29.42 -- <https://www.digitalocean.com/?refcode=4398536459b9>
+
 6. bandwagonhost --<https://bandwagonhost.com/aff.php?aff=476>
+
 7. ramnode  
     6折 zhujiceping
+    - test file
+        - <http://test.sea.ramnode.com/100MB.test> 
+        - <http://test.atl.ramnode.com/100MB.test>
+        - <http://test.nl.ramnode.com/100MB.test>
+
 8. VULTR  
    日本机房速度不错，类似DigitalOcean 
    <http://www.vultr.com/?ref=6802768>
+   - test <https://www.vultr.com/locations/>
