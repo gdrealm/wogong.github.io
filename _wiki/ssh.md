@@ -1,9 +1,11 @@
 ---
 layout: wiki
 title: ssh
+create: 2014-06-29
+update: 2014-06-29
 ---
 
-# SSH Secure Shell
+Secure Shell
 
 ## 相关命令
 1. 生成密钥对 key
@@ -19,6 +21,7 @@ title: ssh
         PasswordAuthentication no # 禁用密码
 
 2. `~/.ssh/config`  
+sample config: `/etc/ssh/ssh_config`  
 配置服务器登录别名，以及使用多个证书。之后采用`ssh name`即可快速登录服务器。
 
         Host name  

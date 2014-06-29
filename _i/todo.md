@@ -9,6 +9,7 @@ update: 2014-06-27
 * 端午游照片 and 文章
 * openwrt
 * WinPE download
+* JD comments
 
 ---
 cafe

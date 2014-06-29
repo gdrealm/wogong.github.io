@@ -1,9 +1,8 @@
 ---
 layout: wiki
 title: hardware
+update: 2014-06-29
 ---
-
-# Hardware
 
 ## note
 1. 电脑显示接口
@@ -26,4 +25,7 @@ ThinkPad X230 可选网卡
 1. Intel Centrino Wireless-N 2200 (2x2 BGN)
 2. Intel Centrino Advanced-N 6205 AGN
 
-
+### DISK
+fat32 4G max
+ntfs
+exfat 

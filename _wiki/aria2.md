@@ -1,9 +1,8 @@
 ---
 layout: wiki
 title: aria2
+update: 2014-06-29
 ---
-
-# aria2
 
 aria2c --http-auth-challenge=true http://username:passwd@dl.wogong.net/MIT/MITRES2_002S10linear_lec01_300k.mp4
 
@@ -13,3 +12,5 @@ You can avoid this error by specifying CA certificate file using --ca-certificat
 There is another insecure way to avoid this error. Just give --check-certificate=false to aria2c.
 This is easier than previous one, but it is insecure because it does not verify remote server.
 
+
+aria2c -i list.txt
