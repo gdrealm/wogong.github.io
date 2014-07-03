@@ -17,6 +17,8 @@ collections:
         output: true
     doc:
         output: false
+    read:
+        output: true
 
 
 # front-matter default

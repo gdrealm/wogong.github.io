@@ -2,7 +2,7 @@
 layout: wiki
 title: elife
 create: 2014-06-19
-update: 2014-06-27
+update: 2014-07-03
 ---
 
 ## site
@@ -62,6 +62,7 @@ update: 2014-06-27
       - BTSync 备份 (MAIN)
       - Dropbox 本地IM记录
       - TrueCript 储存本地敏感资料，照片，文档
+      - User Dir: vim/snippet
       - 
 2. 网络信息
       - weibo 主动发布，豆瓣同步，多看阅读分享  ；
