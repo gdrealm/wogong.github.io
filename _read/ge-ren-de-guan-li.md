@@ -1,6 +1,6 @@
 ---
 layout: read
-title: ge-ren-de-guan-li
+title: 个人的管理
 ---
 
 个人的管理

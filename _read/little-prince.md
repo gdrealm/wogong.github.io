@@ -1,6 +1,6 @@
 ---
 layout: read
-title: little-prince
+title: 小王子
 ---
 
 # 小王子

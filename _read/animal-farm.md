@@ -1,6 +1,6 @@
 ---
 layout: read
-title: animal-farm
+title: 动物农场
 ---
 
 # 动物农场
