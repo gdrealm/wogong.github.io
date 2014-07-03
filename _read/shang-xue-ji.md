@@ -1,6 +1,6 @@
 ---
 layout: read
-title: shang-xue-ji
+title: 上学记
 ---
 
 何兆武
