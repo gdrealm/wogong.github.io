@@ -1,10 +1,9 @@
 ---
 layout: wiki
 title: wget
-update: 2014-06-25
+update: 2014-07-05
 ---
 
-# wget
 	* $ wget -r -np -nd http://example.com/packages/
 
 这条命令可以下载 http://example.com 网站上 packages 目录中的所有文件。其中，-np 的作用是不遍历父目录，-nd 表示不在本机重新创建目录结构。
@@ -31,22 +30,8 @@ update: 2014-06-25
 -np 表示不跟随链接，只下载指定目录及子目录里的东西；
 -p 下载页面显示所需的所有文件。比如页面中包含了图片，但是图片并不在/yourdir目录中，而在/images目录下，有此参数，图片依然会被正常下载。
 -k 修复下载文件中的绝对连接为相对连接，这样方便本地阅读。
-wget手册 wget命令使用方法
-wget 使用指南
-wget是一个从网络上自动下载文件的自由工具。它支持HTTP，HTTPS和FTP协议，可以使用HTTP代理.
-所谓的自动下载是指，wget可以在用户退出系统的之后在后台执行。这意味这你可以登录系统，启动一个wget下载任务，然后退出系统，wget将在后台执行直到任务完成，相对于其它大部分浏览器在下载大量数据时需要用户一直的参与，这省去了极大的麻烦。
-wget可以跟踪HTML页面上的链接依次下载来创建远程服务器的本地版本，完全重建原始站点的目录结构。这又常被称作"递归下载"。在递归下载的时 候，wget遵循Robot Exclusion标准(/robots.txt). wget可以在下载的同时，将链接转换成指向本地文件，以方便离线浏览。
-wget非常稳定,它在带宽很窄的情况下和不稳定网络中有很强的适应性.如果是由于网络的原因下载失败，wget会不断的尝试，直到整个文件下载完毕。如 果是服务器打断下载过程，它会再次联到服务器上从停止的地方继续下载。这对从那些限定了链接时间的服务器上下载大文件非常有用。
 
 
-wget的常见用法
-wget的使用格式
-Usage: wget (OPTION]... (URL]...
-
-* 用wget做站点镜像:
-wget -r -p -np -k http://dsec.pku.edu.cn/~usr_name/
-# 或者
-wget -m http://www.tldp.org/LDP/abs/html/
 * 在不稳定的网络上下载一个部分下载的文件，以及在空闲时段下载
 wget -t 0 -w 31 -c http://dsec.pku.edu.cn/BBC.avi -o down.log &
 # 或者从filelist读入要下载的文件列表

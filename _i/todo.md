@@ -2,24 +2,22 @@
 layout: wiki
 title: todo
 create: 2014-06-17
-update: 2014-06-27
+update: 2014-07-04
 ---
 
 * 苏州行
 * 端午游照片 and 文章
-* openwrt
 * WinPE download
 * JD comments
 
----
-cafe
-0. baidu install test speed
-1. ramnode test file: 
-    * <http://test.nl.ramnode.com/100MB.test>
-    * <http://test.sea.ramnode.com/100MB.test>
-
 
 ## DONE
+* cafe
+* baidu install test speed
+* ramnode test file: 
+    * <http://test.nl.ramnode.com/100MB.test>
+    * <http://test.sea.ramnode.com/100MB.test>
+* openwrt
 * dnsmasq -- ...
 * cellphone number record service, useful when you change your number. -- see i/mobile
 * blog: jekyll, nginx, git hooks --- drafts
