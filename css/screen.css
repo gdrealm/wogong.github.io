@@ -91,6 +91,12 @@ ul.posts {
   line-height: 1.5em;
 }
 
+@media screen and (max-device-width: 400px) {
+    .site {
+        width: 95%;
+    }
+}
+
 .title {
   color: #a00;
   font-weight: bold;
