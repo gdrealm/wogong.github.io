@@ -2,7 +2,7 @@
 layout: wiki
 title: python
 create: 2014-06-10
-update: 2014-06-10
+update: 2014-07-06
 ---
 
 ## NOTE
@@ -29,6 +29,11 @@ setuptools-0.6c11.win32-py2.7.exe 。
 ### vim 配置
 pep8 编程风格检查；vim缩进折叠等设置见配置文件
 flake8 同样也很神奇，但是暂时没必要安装
+
+### pip
+<ttp://pip.readthedocs.org/en/latest/installing.html>
+
+sudo apt-get install python-pip
 
 ## 相关项目
 1. moinmoin  

@@ -1,9 +1,8 @@
 ---
 layout: wiki
 title: kindle
+update: 2014-07-06
 ---
-
-# Amazon Kindle
 
 ## 产品
 1. Kindle DXG 
@@ -14,7 +13,6 @@ title: kindle
 6. Kindle Paperwhite 2（当前首选）简称 KPW2, KPW 的升级版本
 
 
-----
 ## 关于系统、折腾
 Kindle 的官方充电器输出电流为 0.85A。
 
@@ -69,7 +67,7 @@ Kindle 的官方充电器输出电流为 0.85A。
 
 今天发现Amazon可以同步Personal Documents了，这点真的非常赞。无论是在我的Kindle，还是在Android设备上，我可以看自己传上去的书，还可以分享自己的Highlights，但是Amazon对于Personal Documents的管理十分的不方便，尤其是只能一个一个删除，而且每删除一两项就会自动刷新（虽然可以手动Esc强制取消），搜索找到以下的一个Bookmarklet，现在记录如下：
 
-参考链接包括： [http://www.mobileread.com/forums/showthread.php?t=162972 mobileread论坛] [http://www.richardzhong.com/2012/03/%E5%A6%82%E4%BD%95_%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4_personal_documents_amazon_kindle_%E4%BD%BF%E7%94%A8_%E6%8A%80%E5%B7%A7/#comment-28 个人博客]
+参考链接： [http://www.mobileread.com/forums/showthread.php?t=162972 mobileread论坛] [http://www.richardzhong.com/2012/03/%E5%A6%82%E4%BD%95_%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4_personal_documents_amazon_kindle_%E4%BD%BF%E7%94%A8_%E6%8A%80%E5%B7%A7/#comment-28 个人博客]
 
 书签放在Chrome的书签栏中，URL：
 
