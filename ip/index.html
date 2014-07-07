@@ -11,6 +11,7 @@ title: IP Geo Location
             $.each(data, function(k, v) {
                 table_body += "<tr><td>" + k + "</td><td><b>" + v + "</b></td></tr>";
             });
+            table_body = table_body + "<tr><td>see</td><td><b><a href='http://bgp.he.net/ip/"+data.query+"' target='_blank'>bgp.he.net</a></b></td></tr>";
             $("#GeoResults").html(table_body);
         });
         </script>

@@ -9,8 +9,8 @@ update: 2014-07-07
 * 端午游照片 and 文章
 * WinPE download
 * JD comments
-* boc 1745
-* ip-api + he.net v2ex 
+* boc 1814
+* ip-api + he.net v2ex --- todo: query
 
 
 ## DONE
