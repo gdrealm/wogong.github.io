@@ -2,18 +2,19 @@
 layout: wiki
 title: todo
 create: 2014-06-17
-update: 2014-07-04
+update: 2014-07-07
 ---
 
 * 苏州行
 * 端午游照片 and 文章
 * WinPE download
 * JD comments
-* 交通银行 手机号码
-* 
+* boc 1745
+* ip-api + he.net v2ex 
 
 
 ## DONE
+* 交通银行 手机号码 
 * cafe
 * baidu install test speed
 * ramnode test file: 

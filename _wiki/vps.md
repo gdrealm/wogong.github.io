@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: vps
-update: 2014-06-16
+update: 2014-07-06
 ---
 
 ## 配置VPS
@@ -78,11 +78,14 @@ update: 2014-06-16
 1. BudgetVM  
     推介 <https://www.budgetvm.com/account/aff.php?aff=1061>
 
-2. BuyVM 有余额
+2. BuyVM 有余额 13$  
+    he.net 的网络，不错
 
 3. Hostigation
 
-4. Linode
+4. Linode  
+    Referrals Code: 9bd81fd03ec9f3917cb2db12d6843d1ee2d30892
+    Referrals <https://www.linode.com/?r=9bd81fd03ec9f3917cb2db12d6843d1ee2d30892>
 
 5. DigitalOcean  
    1. 经常有一些 promo code，等于白送钱，很不错。
@@ -98,7 +101,7 @@ update: 2014-06-16
         - <http://test.atl.ramnode.com/100MB.test>
         - <http://test.nl.ramnode.com/100MB.test>
 
-8. VULTR  
+8. VULTR  10$ 余额  
    日本机房速度不错，类似DigitalOcean 
    <http://www.vultr.com/?ref=6802768>
    - test <https://www.vultr.com/locations/>
