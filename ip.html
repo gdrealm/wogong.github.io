@@ -1,0 +1,16 @@
+---
+layout: default
+title: IP Geo Location
+---
+
+        <script src="http://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+        <table id="GeoResults"></table>
+        <script>
+        $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
+            var table_body = "";
+            $.each(data, function(k, v) {
+                table_body += "<tr><td>" + k + "</td><td><b>" + v + "</b></td></tr>";
+            });
+            $("#GeoResults").html(table_body);
+        });
+        </script>
