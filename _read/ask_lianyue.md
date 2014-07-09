@@ -1,9 +1,8 @@
 ---
 layout: read
-title: wo-ai-wen-lian-yue
+title: 我爱问连岳
 ---
 
-# 我爱问连岳
 
 连岳
 

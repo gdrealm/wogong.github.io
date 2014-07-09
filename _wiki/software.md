@@ -1,9 +1,10 @@
 ---
 layout: wiki
-title: software
+title: softwares
+create: 2014-07-08
+update: 2014-07-08
 ---
 
-# Software
 1. key tweak
 windows下改变键盘映射工具，其他类似工具参见xbeta  
 http://xbeta.info/key-tweak-remap.htm
@@ -30,7 +31,6 @@ F.lux：根据地理位置及光照条件改变屏幕色温，保护视力。感
 
 
 
-IrfanView iTunes：貌似不再需要备份音乐库了，直接放在windows默认的music文件夹就OK。
 KeyTweak
 MSC
 MyEntunnel：ssh必备，小巧方便

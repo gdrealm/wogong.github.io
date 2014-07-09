@@ -3,9 +3,7 @@ layout: read
 title: 论科学与艺术
 ---
 
-# 论科学与艺术
-
-http://book.douban.com/subject/1016532/
+<http://book.douban.com/subject/1016532/>
 
 ## 标注
 

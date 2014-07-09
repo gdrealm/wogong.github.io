@@ -2,19 +2,25 @@
 layout: wiki
 title: todo
 create: 2014-06-17
-update: 2014-07-07
+update: 2014-07-08
 ---
 
 * 苏州行
 * 端午游照片 and 文章
 * WinPE download
 * JD comments
-* boc 1814
+* boc 1814 -- U盾过期
+* 交通银行 手机号码 网银 
 * ip-api + he.net v2ex --- todo: query
+* kindle library on VPS, calibre or cops
+* ADINA download
+
+----------------SCHOLAR
+* 应力波基础 paper
+* 防护结构 paper
 
 
 ## DONE
-* 交通银行 手机号码 
 * cafe
 * baidu install test speed
 * ramnode test file: 

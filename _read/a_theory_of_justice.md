@@ -3,7 +3,7 @@ layout: read
 title: 正义论
 ---
 
-ohn Rawls
+John Rawls
 A THEORY OF JUSTICE
  
 正义论
