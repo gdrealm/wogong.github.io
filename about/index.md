@@ -1,10 +1,10 @@
 ---
 layout: default
 title: about
-update: 2014-06-13
+update: 2014-07-09
 ---
 
-## Timeline
+Universal ID: wogong OR wogong38
 
 ## Bio
 Civil Engineering, 不折腾会死星人, Arch&Debian, Google Fan, RSS, Kindle, Git, wiki, Vimer, V2EXer, VPS
