@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: vim
+create: 2014-07-10
+update: 2014-07-10
 ---
 
 # VIM
@@ -83,6 +85,7 @@ ctrl + ww 切换编辑窗口和quickfix窗口，在quickfix里面和编辑窗口
 最后，可以给:copen和:cn设定一个快捷键，在.vimrc里加入
 map <leader>c :copen<CR>
 map <leader>n :cn<CR>
+map <leader>p :cp<CR>
 
 ### syntax
 set syntax = apdl

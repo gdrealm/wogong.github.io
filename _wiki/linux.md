@@ -279,7 +279,6 @@ memcache
 
 memcache与memcached的区别。
 
-dpkg -S command 查看command属于哪个软件包。
 
 ping -t windows下持续ping
 
