@@ -1,7 +1,8 @@
 ---
 layout: wiki
 title: git
-update: 2014-06-14
+create: 2014-06-14
+update: 2014-07-16
 ---
 
 ## note
@@ -19,6 +20,8 @@ update: 2014-06-14
    * [BitBucket](http://bitbucket.org) 免费私有仓库，比github好太多，就是天朝访问捉急。
    * [GitCafe](http://gitcafe.com)
 4. `git blame` Using git blame to trace changes in a file. a really cute name.
+5. git on windows corrupt  
+   `C:\Program Files (x86)\Git\bin>rebase.exe -b 0x50000000 msys-1.0.dll`
 
 ## 学习书籍
 1. Pro Git 本书有简体中文版本
