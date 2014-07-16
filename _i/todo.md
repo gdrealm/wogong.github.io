@@ -2,7 +2,7 @@
 layout: wiki
 title: todo
 create: 2014-06-17
-update: 2014-07-12
+update: 2014-07-16
 ---
 
 * 苏州行
@@ -15,6 +15,8 @@ update: 2014-07-12
 * kindle library on VPS, calibre or cops
 * ADINA download
 * map mark 无锡 上海
+* 下载 Google新字体
+* pan song of ice and fire
 
 
 ----------------SCHOLAR
