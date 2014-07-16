@@ -2,7 +2,7 @@
 layout: wiki
 title: todo
 create: 2014-06-17
-update: 2014-07-08
+update: 2014-07-12
 ---
 
 * 苏州行
@@ -14,6 +14,8 @@ update: 2014-07-08
 * ip-api + he.net v2ex --- todo: query
 * kindle library on VPS, calibre or cops
 * ADINA download
+* map mark 无锡 上海
+
 
 ----------------SCHOLAR
 * 应力波基础 paper

@@ -3,8 +3,6 @@ layout: wiki
 title: router
 ---
 
-# Router 路由器
-
 ## RT-N13U B1 
 入手Asus RT-N13U B1，TFTP刷机总是失败，一点反应没有，
 win7 64bit系统。遂搜索至台湾某网站，利用asus官网软件

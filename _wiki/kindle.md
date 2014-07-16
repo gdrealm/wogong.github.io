@@ -1,10 +1,14 @@
 ---
 layout: wiki
 title: kindle
-update: 2014-07-06
+update: 2014-07-16
 ---
 
-## 产品
+1. kindle dxg 适合的PDF：优化->印刷版本。
+2. Kindle 的官方充电器输出电流为 0.85A。
+3. 切换中亚美亚账户时，生词本会清空
+
+* 产品
 1. Kindle DXG 
 2. Kindle Keyboard 3
 3. Kindle 4
@@ -12,11 +16,7 @@ update: 2014-07-06
 5. Kindle Paperwhite （当前首选）简称KPW，是内置光源的新一代触摸屏版本Kindle
 6. Kindle Paperwhite 2（当前首选）简称 KPW2, KPW 的升级版本
 
-
-## 关于系统、折腾
-Kindle 的官方充电器输出电流为 0.85A。
-
-### 多看？
+## 多看？
 推荐同学购买Kindle时，略微做点工作的人便会询问关于
 是否需要刷多看的问题。我来说下自己的看法。主要是对
 比Kindle的原生系统与多看系统。首先声明，我基本一直
@@ -45,18 +45,9 @@ Kindle 的官方充电器输出电流为 0.85A。
 哪里去，就个人而言，从来不在KPW上阅读PDF。update0420：
 非扫描电子书的重排很神奇。
 
-### 刷机
 刷机：目前Kindle可以选择的操作系统有Duokan、Bambook
 等等，刷机步骤不是很有难度，参见多看官方论坛指导。
 
-## 使用技巧
-1. kindle dxg 适合的PDF：优化->印刷版本。
-2. 
-
-## 书籍获取
-1. 书单搜索 Evernote
-2. 自定义搜索 http://www.wogong.net/kindle
-3. 商店，推荐多看、唐茶（DRM-free）和Amazon官方商店
 
 ## 书籍管理
 无他，开源软件[Calibre](http://calibre-ebook.com/)
@@ -158,7 +149,6 @@ USE_ALT_FONTS ，重命名的时候要确保文件无扩展名（这就是第一
 分享：朗道英汉词典+新华字典  http://pan.baidu.com/share/link?shareid=1353575379&uk=3894070902 
 
 
-## 关于 kindle 书籍资源的获取渠道
 
 ### 正版
 1. Amazon 官方商城  

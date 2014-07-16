@@ -2,7 +2,7 @@
 layout: wiki
 title: elife
 create: 2014-06-19
-update: 2014-07-03
+update: 2014-07-12
 ---
 
 ## site
@@ -27,14 +27,12 @@ update: 2014-07-03
    cops, 目前停用。
 
 ## VPS
-### usage
 
    1. PT ipv6 download --  transmission
    2. Jekyll blog -- ruby,rvm,jekyll,nginx
    3. Download -- offline dir
    4. vagex -- php
 
-### my vps
 1. la
       - la.wogong.net:9091 Transmission
       - dl.wogong.net Download Dir
@@ -63,7 +61,7 @@ update: 2014-07-03
 3. Social Networks (need back up, you know, never trust any commercial companies)
 4. Photos 来自手机，touch，他人所拍；统一文件夹整理，上传flickr存档，少许朋友圈分享
 
-## Sync & Backup
+## sync & backup
 1. PC
       - Documents + Music + Pictures 定期备份至移动硬盘 rsync
       - BTSync 备份 (MAIN)
@@ -102,3 +100,14 @@ Google drive：kindle书籍仓库+往期课程文件+各种备份文件+GMail at
 1. -> VPS : ar & la
 then to Internet cafe download to local disk.
 3. Baidu Pan & 115
+
+## security
+0. lastpass
+1. Google Authenticator
+    - Dropbox
+    - Microsoft
+    - Evernote
+    - Github
+    - Google
+    - Lastpass
+

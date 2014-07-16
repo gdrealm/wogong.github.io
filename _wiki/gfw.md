@@ -13,7 +13,7 @@ GFW 中国长城防火墙 Great Fire Wall
 下载 Shadowsocks 应用，添加配置，扫描二维码：  
 ![ssla](http://wogong.qiniudn.com/ssla.png)
 2. 桌面  
-[配置文件](http://wogong.qiniudn.com/config.json)
+[配置文件](http://wogong.qiniudn.com/ssla.json)
     - Windows
         - 32bit <http://dl.chenyufei.info/shadowsocks/shadowsocks-local-win32-1.1.1.zip>
         - 64bit <http://dl.chenyufei.info/shadowsocks/shadowsocks-local-win64-1.1.1.zip>

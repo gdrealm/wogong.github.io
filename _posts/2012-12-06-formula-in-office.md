@@ -4,6 +4,7 @@ title: "Microsoft Office中输入数学公式"
 description: ""
 category: daily
 tags: [office, formula, mathtype, aurora]
+update: 2014-07-15
 ---
 
 ## 公式输入需求
@@ -32,6 +33,8 @@ MathType目测应该是较为普及的使用方式，至少从我身边来看是
 ## Office
 
 其实一直对于Office有点成见，尤其是手写公式输入实在是太不科学了，简直无法想象会用鼠标手写输入公式。直到我看到了如下的这篇[文章](http://pan.baidu.com/share/link?shareid=169527&uk=3087520777)，顿时觉得相见恨晚。原来Office也支持这样的类Tex语法输入，对于使用Office的人来说实在是非常方便，基本键盘操作就可以搞定一篇文章，再也不用拿鼠标一个一个点符号。虽然不能更改字体这个略蛋疼，但不是不可以接受。原谅我的无知吧。
+
+update at 2014-07-15: 此种方法只支持新版的 word 文档，即`.docx`
 
 请保持好奇心，接受新事物。
 

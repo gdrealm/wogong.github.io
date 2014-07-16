@@ -2,7 +2,7 @@
 layout: wiki
 title: vim
 create: 2014-07-10
-update: 2014-07-10
+update: 2014-07-16
 ---
 
 # VIM
@@ -35,7 +35,7 @@ http://coolshell.cn
 9. word count: In command mode, press g, then ctrl-g
 10. :ju C-o C-i
     Use C-o to jump back to previous locations which were autosaved in a jumplist.
-
+11. :set paste 粘贴模式
 
 ## useful commands
 ### basic
