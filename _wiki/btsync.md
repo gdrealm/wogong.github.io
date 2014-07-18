@@ -1,7 +1,8 @@
 ---
 layout: wiki
-title: btsync
-update: 2014-06-10
+title: btync
+2014-06-10
+update: 2014-07-18
 ---
 
 BTSync BitTorrent Sync

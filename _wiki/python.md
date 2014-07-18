@@ -2,7 +2,7 @@
 layout: wiki
 title: python
 create: 2014-06-10
-update: 2014-07-06
+update: 2014-07-17
 ---
 
 ## NOTE
@@ -34,6 +34,8 @@ flake8 同样也很神奇，但是暂时没必要安装
 <ttp://pip.readthedocs.org/en/latest/installing.html>
 
 sudo apt-get install python-pip
+pip install 
+pip uninstall
 
 ## 相关项目
 1. moinmoin  

@@ -1,14 +1,16 @@
 ---
 layout: wiki
 title: rsync
+create: 2014-07-18
+update: 2014-07-18
 ---
-
-#rsync
 
 ## 常用命令
 
 1. sync dir
 `rsync -avz --delete source/ dest:/`
+
+`rsync -avzP --delete source/ dest:/`
 
 ## Windows 下配置 rsync
 
@@ -53,8 +55,9 @@ uid = 0
 
 log file = /cygdrive/f/RsyncLog/rsyncd.log
 
-# Module definitions
-# Remember cygwin naming conventions : c:\work becomes /cygdrive/c/work
+Module definitions
+
+Remember cygwin naming conventions : c:\work becomes /cygdrive/c/work
 
 [data_backup]
 path = /cygdrive/f/dataBackup

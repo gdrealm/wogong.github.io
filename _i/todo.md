@@ -7,24 +7,33 @@ update: 2014-07-16
 
 * 苏州行
 * 端午游照片 and 文章
-* WinPE download
 * JD comments
-* boc 1814 -- U盾过期
-* 交通银行 手机号码 网银 
-* ip-api + he.net v2ex --- todo: query
 * kindle library on VPS, calibre or cops
-* ADINA download
 * map mark 无锡 上海
-* 下载 Google新字体
-* pan song of ice and fire
+* android update
 
+
+---------------快递
+
+
+---------------DOWNLOAD
+* ADINA download
+* 下载 Google新字体 -- dl
+* pan song of ice and fire
+* Glee Season 1
 
 ----------------SCHOLAR
-* 应力波基础 paper
-* 防护结构 paper
+* 应力波基础 paper  -- next term
+* 有限元作业
+
 
 
 ## DONE
+* ip-api + he.net v2ex --- todo: query
+* 交通银行 手机号码 网银  --- give up
+* WinPE download --- give up
+* boc 1814 -- U盾过期 --- 0717 done
+* 防护结构 paper --- 0715 done
 * cafe
 * baidu install test speed
 * ramnode test file: 

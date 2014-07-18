@@ -1,11 +1,17 @@
 ---
 layout: wiki
 title: shell
+create: 2014-07-17
+update: 2014-07-17
 ---
 
-# bash搜索历史命令：Ctrl+R
-# 使用 bash 内置的$RANDOM 可以产生 0-32767 之间随机数:echo $RANDOM
-# Linux Shell学习笔记
+使用 bash 内置的$RANDOM 可以产生 0-32767 之间随机数:echo $RANDOM
+
+参数 
+
+$1 第一个参数
+
+## Linux Shell学习笔记
 查看环境变量： env
 改变shell种类： chsh -s /bin/bash （更改为bash）
 禁用shell /etc/passwd /bin/false

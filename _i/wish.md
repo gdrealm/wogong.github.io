@@ -6,15 +6,28 @@ update: 2014-06-29
 ---
 
 ## wish
-1. iPhone 拍照方便， jsut so easy
-3. 单车
-14. Macbook Pro
-2. 长尾夹
-1. 钱包
-2. 钟
-1. 钥匙扣
-* 移动电源
+* iPhone 拍照方便， jsut so easy
+* 单车 - 公路 折叠
+* Macbook Pro
+* 长尾夹
+* 钱包
+* 钟 in LAB
+* 钥匙扣
+* 衣服--  裤子  T-shirt 衬衫
 
+## wished
+* 移动电源 -- miui 10400 mAh
+* Dell显示器 -- U2414H 1516RMB @JD
+* 机械键盘 -- keycool 87 白色茶轴 400RMB @taobao
+* X230 扩展坞 -- 淘宝 二手
+* 录音笔 -- 其实可以用 touch 代替的好嘛
+* 激光黑白打印机 --broother L1110
+* 台灯 -- phlips
+* SD card for RPi
+* Micro USB line
+* 玻璃杯子 -- 羽毛球比赛 裁判奖品
+* AKG K420 -- JD
+* 剃须刀
 ### 日用品
 1. 纸巾+卷纸+抽纸
 2. 牙刷（lion+crest）+牙膏+牙线+漱口水(李施德林)
@@ -35,15 +48,3 @@ update: 2014-06-29
 2. kindle
 
 
-## wished
-* Dell显示器 -- U2414H 1516RMB @JD
-* 机械键盘 -- keycool 87 白色茶轴 400RMB @taobao
-* X230 扩展坞 -- 淘宝 二手
-* 录音笔 -- 其实可以用 touch 代替的好嘛
-* 激光黑白打印机 --broother L1110
-* 台灯 -- phlips
-* SD card for RPi
-* Micro USB line
-* 玻璃杯子 -- 羽毛球比赛 裁判奖品
-* AKG K420 -- JD
-* 剃须刀

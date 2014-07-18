@@ -2,7 +2,7 @@
 layout: wiki
 title: elife
 create: 2014-06-19
-update: 2014-07-12
+update: 2014-07-16
 ---
 
 ## site
@@ -42,6 +42,9 @@ update: 2014-07-12
 ## proxy
 1. vpnso (@cosbeta) ss
 2. <pcnt.in>  <https://pcnt.in/mypac?id=118>
+3. EDU Tsinghua  
+    * VPN 只可以浏览校内资源
+    * eproxy2 可以下载各种文献
 
 ## input
 1. 现实
