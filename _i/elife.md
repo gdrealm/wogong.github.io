@@ -2,7 +2,7 @@
 layout: wiki
 title: elife
 create: 2014-06-19
-update: 2014-07-16
+update: 2014-07-19
 ---
 
 ## site
@@ -106,6 +106,10 @@ then to Internet cafe download to local disk.
 
 ## security
 0. lastpass
+   - 1password 数据存储在本地，有手机客户端
+   - lastpass 数据存储在服务器
+   - Keepass
+   - Enpass
 1. Google Authenticator
     - Dropbox
     - Microsoft
@@ -113,4 +117,4 @@ then to Internet cafe download to local disk.
     - Github
     - Google
     - Lastpass
-
+2. Truecrypt

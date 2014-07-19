@@ -4,6 +4,8 @@ title: gpg
 create: 2014-06-04
 update: 2014-07-19
 ---
+09DD1201
+
 
 http://www.ruanyifeng.com/blog/2013/07/gpg.html
 
@@ -17,6 +19,8 @@ sudo apt-get install rng-tools
 2. 
 
 ## commands
+
+gpg --list-keys
 
 gpg -o outputname -d inputname
 
