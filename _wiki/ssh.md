@@ -2,21 +2,31 @@
 layout: wiki
 title: ssh
 create: 2014-06-29
-update: 2014-06-29
+update: 2014-07-19
 ---
 
 Secure Shell
 
-## 相关命令
 1. 生成密钥对 key
 `ssh-keygen -t rsa -C name@domain.com`  
 将www-data加入用户组,ssh密钥登陆会失效。使用VPS得到的教训。
 2. `scp`
+3. 本地7070端口代理，使用端口转发 `ssh -qTfnN -D 7070 xxx@x.x.x.x -p port`
+
+
+# ssh-agent
+You might need to start ssh-agent before you run the ssh-add command:
+
+    eval `ssh-agent -s`
+    ssh-add
+    ssh-add -L
+    ssh-add -D move all identity
 
 ## 配置
 1. `/etc/ssh/sshd_config`  
 修改配置文件之后需要重启ssh服务。
 
+        Port 22
         PubkeyAuthentication yes  # 公钥登录  
         PasswordAuthentication no # 禁用密码
 
@@ -26,6 +36,7 @@ sample config: `/etc/ssh/ssh_config`
 
         Host name  
             Hostname name.wogong.net  
+            Port 22
             User username  
             IdentityFile ~/.ssh/id_rsa
 
@@ -48,7 +59,3 @@ sample config: `/etc/ssh/ssh_config`
    - http://mosh.mit.edu/
 
 mosh 出现 locale 错误，从客户端和服务端两个方面检查。
-
-## 高级
-1. 使用端口转发 `ssh -qTfnN -D 7070 xxx@x.x.x.x -p port`
-2. 
