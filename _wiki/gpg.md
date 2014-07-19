@@ -1,9 +1,9 @@
 ---
 layout: wiki
 title: gpg
+create: 2014-06-04
+update: 2014-07-19
 ---
-
-# GPG
 
 http://www.ruanyifeng.com/blog/2013/07/gpg.html
 
@@ -15,5 +15,9 @@ gpg --gen-key
 sudo apt-get install rng-tools
 
 2. 
+
+## commands
+
+gpg -o outputname -d inputname
 
 

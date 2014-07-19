@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: transmission
+create: 2014-07-18
+update: 2014-07-18
 ---
 
 # Transmission

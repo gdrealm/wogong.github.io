@@ -2,11 +2,12 @@
 layout: wiki
 title: vps
 update: 2014-07-06
+update: 2014-07-18
 ---
 
 ## 配置VPS
 
-1. install `git, tmux, vim, ctags, curl, sudo`
+1. install `git tmux vim ctags curl sudo zsh`
 
         # arch  
         `pacman -S git tmux vim ctags curl sudo`

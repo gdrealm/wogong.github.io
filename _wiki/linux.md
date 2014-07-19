@@ -1,9 +1,8 @@
----
 layout: wiki
 title: linux
+create: 2014-07-18
+update: 2014-07-18
 ---
-
-# linux
 
 我使用过的发行版，按照时间顺序依次为：Ubuntu, Fedora, Archlinux, Debian。
 使用时间最久远、我最喜欢的是Archlinux。

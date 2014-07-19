@@ -17,7 +17,7 @@ title: nginx
         auth_basic "input you user name and password";
         auth_basic_user_file /path/to/passwd;
         # nginx可以为网站或目录甚至特定的文件设置密码认证。密码必须是crypt加密的。可以用apache的htpasswd来创建密码。
-        # htpasswd -b -c site_pass username password
+        # htpasswd -b -c pwd username password
 2. 目录文件列表功能  
    参考：http://wiki.nginx.org/ChsHttpAutoindexModule  
    如果想希望目录列表支持header,footer则可以安装三方插件: http://wiki.nginx.org/NginxNgxFancyIndex
