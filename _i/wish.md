@@ -14,6 +14,7 @@ update: 2014-06-29
 * 钟 in LAB
 * 钥匙扣
 * 衣服--  裤子  T-shirt 衬衫
+* USB 3.0 数据线
 
 ## wished
 * 移动电源 -- miui 10400 mAh
