@@ -2,7 +2,7 @@
 layout: wiki
 title: python
 create: 2014-06-10
-update: 2014-07-17
+update: 2014-07-19
 ---
 
 ## NOTE
@@ -13,6 +13,10 @@ update: 2014-07-17
    - from module import func 只导入需要的函数
    - from module import * 不推荐
 2. itertools 迭代工具
+5. ipython notebook (pythonxy)
+    - linux 
+        sudo apt-get install ipython-notebook
+        sudo apt-get install python-matplotlib
 
 ## INSTALL
 Windows 下，建议安装32bit 版本。
@@ -98,7 +102,11 @@ these accept complex numbers.
     - 非线性方程组求解以及最小值求解等使用MINPACK库
 4. SymPy
     SymPy官方网址： http://code.google.com/p/sympy
+5. matplotlib
 
+    # no X support
+    import matplotlib
+    matplotlib.use('Agg')
 
 ### 数值分析
 1. 非线性方程与方程组的数值解法

@@ -10,17 +10,12 @@ update: 2014-07-16
 * JD comments
 * kindle library on VPS, calibre or cops
 * map mark 无锡 上海
-* android update
-
-
----------------快递
-
+* android app update
 
 ---------------DOWNLOAD
-* ADINA download
-* 下载 Google新字体 -- dl
-* pan song of ice and fire
-* Glee Season 1
+* pan song of ice and fire.nobi
+* la MP3, font
+* se ADINA, Glee S05
 
 ----------------SCHOLAR
 * 应力波基础 paper  -- next term
