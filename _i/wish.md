@@ -14,9 +14,10 @@ update: 2014-06-29
 * 钟 in LAB
 * 钥匙扣
 * 衣服--  裤子  T-shirt 衬衫
-* USB 3.0 数据线
+* 木糖醇
 
 ## wished
+* USB 3.0 数据线 --- JD
 * 移动电源 -- miui 10400 mAh
 * Dell显示器 -- U2414H 1516RMB @JD
 * 机械键盘 -- keycool 87 白色茶轴 400RMB @taobao
