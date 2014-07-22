@@ -10,10 +10,10 @@ update: 2014-07-16
 * JD comments
 * kindle library on VPS, calibre or cops
 * map mark 无锡 上海
-* android app update
+* Python notebook
 
 ---------------DOWNLOAD
-* pan song of ice and fire.nobi
+* pan song of ice and fire.mobi
 * la MP3, font
 * se ADINA, Glee S05
 
@@ -24,6 +24,7 @@ update: 2014-07-16
 
 
 ## DONE
+* android app update -- jx123456789
 * ip-api + he.net v2ex --- todo: query
 * 交通银行 手机号码 网银  --- give up
 * WinPE download --- give up

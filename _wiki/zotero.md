@@ -1,10 +1,11 @@
 ---
 layout: wiki
-title: zetero
+title: zotero
+create: 2014-07-21
+update: 2014-07-21
 ---
 
-# Zotero（1）：文献管理软件Zotero基础及进阶示范
-2013-04-04 23:30:23
+Zotero（1）：文献管理软件Zotero基础及进阶示范
 
 多图且小白文，高手慎入。Zotero是一款开源、跨平台的文献管理软件。
 

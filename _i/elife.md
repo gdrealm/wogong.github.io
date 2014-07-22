@@ -118,3 +118,12 @@ then to Internet cafe download to local disk.
     - Google
     - Lastpass
 2. Truecrypt
+
+## finance
+随手记
+
+android 自动导出到 SD
+
+记账原则：
+1. 旅行什么的按照项目记账
+2. 代付借贷什么的按照实际来
