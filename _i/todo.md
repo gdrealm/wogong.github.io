@@ -5,6 +5,13 @@ create: 2014-06-17
 update: 2014-07-16
 ---
 
+---------------LONGTERM
+* 注册结构工程师
+* IELTS
+* ENGLISH BLOG
+* EYE exercise
+
+---------------PERIOD
 * 苏州行
 * 端午游照片 and 文章
 * JD comments
