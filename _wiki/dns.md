@@ -1,7 +1,8 @@
 ---
 layout: wiki
 title: dns
-update: 2014-06-11
+create: 1970-01-01
+update: 2014-07-24
 ---
 DNS: Domain Name Server
 
