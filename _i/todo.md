@@ -10,6 +10,7 @@ update: 2014-07-16
 * IELTS
 * ENGLISH BLOG
 * EYE exercise
+* pnacake.io
 
 ---------------PERIOD
 * 苏州行
@@ -20,6 +21,7 @@ update: 2014-07-16
 * Python notebook
 * taobao 开店
 * Dropbox 整理
+* 
 
 ---------------DOWNLOAD
 

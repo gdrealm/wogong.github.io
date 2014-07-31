@@ -18,6 +18,7 @@ update: 2014-06-29
 * 备用手机
 * 太阳镜
 * 2A 充电器
+* Holux M241 GPS 轨迹记录仪
 
 ## wished
 * USB 3.0 数据线 --- JD
