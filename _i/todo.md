@@ -10,7 +10,7 @@ update: 2014-07-16
 * IELTS
 * ENGLISH BLOG
 * EYE exercise
-* pnacake.io
+* pancake.io
 
 ---------------PERIOD
 * 苏州行

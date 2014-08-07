@@ -2,7 +2,7 @@
 layout: wiki
 title: wish
 create: 2014-06-17
-update: 2014-06-29
+update: 2014-08-04
 ---
 
 ## wish
@@ -19,6 +19,8 @@ update: 2014-06-29
 * 太阳镜
 * 2A 充电器
 * Holux M241 GPS 轨迹记录仪
+* 降噪耳机
+* 口罩
 
 ## wished
 * USB 3.0 数据线 --- JD

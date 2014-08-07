@@ -2,12 +2,13 @@
 layout: wiki
 title: openwrt
 create: 2014-06-07
-update: 2014-08-03
+update: 2014-08-04
 ---
 
 /etc/config/wireless open wireless
 
-1. 时区设置
+1. 时区设置 /etc/config/system
+
     ntpclient -s -t -h 0.openwrt.pool.ntp.org
     config 'system'
             option 'hostname' 'OpenWrt'
