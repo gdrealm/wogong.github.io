@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <!--[if lt IE 9]>
+　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+　　<![endif]-->
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   {% if page.url == "/404.html" %}
+   <meta http-equiv="refresh" content="5; url=/">
+   {% endif %}
+   <title>{{ page.title }}</title>
+
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+   <!-- Typeset CSS 
+   <link rel="stylesheet" href="/css/yue.css" type="text/css" />
+    Typeset CSS -->
+</head>
+<body>
+
+<div itemscope itemtype="http://schema.org/Article" class="site">
+  <div class="title">
+    <a href="/">Start</a>
+    <a class="extra" href="/">home</a>
+    <a class="extra" href="/wiki/">wiki</a>
+    <a class="extra" href="/read/">read</a>
+    <a class="extra" href="/kindle/">kindle</a>
+    <a class="extra" href="/about/">about</a>
+    <a class="extra" href="/message/">message</a>
+  </div>
+
+  {{ content }}
+  
+
+</body>
+</html>
