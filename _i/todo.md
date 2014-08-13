@@ -5,17 +5,25 @@ create: 2014-06-17
 update: 2014-07-16
 ---
 
+---------------LONGTERM
+* 注册结构工程师
+* IELTS
+* ENGLISH BLOG
+* EYE exercise
+* pancake.io
+
+---------------PERIOD
 * 苏州行
 * 端午游照片 and 文章
 * JD comments
 * kindle library on VPS, calibre or cops
 * map mark 无锡 上海
 * Python notebook
+* taobao 开店
+* Dropbox 整理
+* 
 
 ---------------DOWNLOAD
-* pan song of ice and fire.mobi
-* la MP3, font
-* se ADINA, Glee S05
 
 ----------------SCHOLAR
 * 应力波基础 paper  -- next term
@@ -24,6 +32,9 @@ update: 2014-07-16
 
 
 ## DONE
+* la MP3, font
+* se ADINA, Glee S05
+* pan song of ice and fire.mobi
 * android app update -- jx123456789
 * ip-api + he.net v2ex --- todo: query
 * 交通银行 手机号码 网银  --- give up
