@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "施工实习"
+title: "Construction Practice"
 description: "thought about it"
 category: daily
 tags: [civil]

@@ -6,3 +6,8 @@ descreption: jekyll, nginx, git hooks
 create: 2014-06-06
 update: 2014-06-06
 ---
+
+
+basic idea
+
+collection

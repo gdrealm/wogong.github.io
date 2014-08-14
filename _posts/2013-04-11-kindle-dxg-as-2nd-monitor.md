@@ -38,7 +38,7 @@ Amazon都放弃dxg了，新产品没有跟上来，软件版本也是很久没�
 
 附张折腾成功的照片
 
-<image src="http://25.media.tumblr.com/3e1a47bec1e03363a3fd7ef901c8147f/tumblr_ml32i0zyS41rpy6u9o1_500.jpg" />
+![dxg as screen](http://wogong.qiniudn.com/blog_dxg_as_screen.jpg)
 
 ## 参考
 
