@@ -181,6 +181,7 @@ USE_ALT_FONTS ，重命名的时候要确保文件无扩展名（这就是第一
    还是找不到的话就搜索吧。外文书籍还可以尝试海盗湾 TPB 这个网站，
    互联网最有名的种子分享地，也是盗版的天堂。不过需要翻墙。
 
-   
 
+移动铁通的网络，由于墙的影响，kindle会无法连接推送服务器，提示如此。
 
+![kindle](http://wogong.qiniudn.com/wikikindlegfw.gif)

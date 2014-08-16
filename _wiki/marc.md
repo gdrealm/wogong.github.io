@@ -15,7 +15,8 @@ title: marc
 - Step 1.  Open license.dat with Notepad.exe, replace localhost with your own hostname, replace 000000000000 with your Ethernet Address, and then save it. DO NOT CHANGE ANY OTHER THINGS!
 
 - Step 2.  Drag license.dat onto Keygen.exe to Generate license.dat.“Drag” means that “将文件拖动到keygen中，然后license.dat被patch成为license for your computer”。如图：
-{{http://24.media.tumblr.com/66d67a4b2b19f50223a92857c9620466/tumblr_meywx78ngJ1rpy6u9o1_500.jpg|drag}}
+
+![drag](http://wogong.qiniudn.com/wikimarc_lic_drag.jpg)
 
 - Step 3.  That's all.
 
@@ -25,8 +26,8 @@ title: marc
 下载文件，[[http://pan.baidu.com/share/link?shareid=169487&uk=3087520777|点我]]
 
 安装完毕后配置，建议将上一步骤生成的license.dat放在此程序的安装目录，一切按照默认路径即可。以下是配置LMTOOLS
-{{http://25.media.tumblr.com/27df930939a17117cef2a4fa525fd4bd/tumblr_meyxmjfzsx1rpy6u9o1_500.png|LMTOOLS}}
 
+![server](http://wogong.qiniudn.com/wikimarc_lic_server.png)
 最后save，开启服务。
 
 
