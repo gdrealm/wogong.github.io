@@ -5,7 +5,7 @@ create: 2014-06-07
 update: 2014-08-04
 ---
 
-/etc/config/wireless open wireless
+/etc/config/wireless --> open wireless
 
 1. 时区设置 /etc/config/system
 
@@ -43,3 +43,10 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
 
     opkg update && opkg install luci
     /etc/init.d/uhttpd start/enable
+
+## sample config
+
+## DNS
+1. FreeRouter 方式
+2. ChinaDNS-C
+-s 127.0.0.1,8.8.8.8

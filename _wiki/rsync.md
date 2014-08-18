@@ -249,4 +249,5 @@ rsync error: error starting client-server protocol (code 5) at main.c(1530) [sen
 rsync error: error in rsync protocol data stream (code 12) at io.c(794) [receiver=3.0.2]
 解决：很大可能是服务器端没有开启 rsync 服务，开启服务。
 
- 
+
+windows 下推荐采用 Sync Toy 实现本地备份
