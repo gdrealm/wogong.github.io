@@ -8,6 +8,7 @@ update: 2014-05-18
 
 `pandoc -o ch1.html ch1.md -s --template=default.html`
 
+pandoc -f markdown -t latex hello.txt
 
 
 ## default template:
