@@ -1,7 +1,8 @@
 ---
 layout: wiki
 title: tex
-update: 2014-06-13
+create: 2013-06-13
+update: 2014-08-28
 ---
 
 相关条目： [[texmacs]]
@@ -9,6 +10,7 @@ update: 2014-06-13
 1. 推荐文档书籍
 - 《LaTeX2e 完全学习手册》
 - lshort
+- 插图 LaTeX2e插图指南 <http://www.ctex.org/documents/latex/graphics/graphics.html>
 
 2. 排版
 一直想学而未坚持下来，总是在使用的时候为求方便叛逃
@@ -36,8 +38,6 @@ xelatex + ctex
     - 编译：tex ——> dvi/pdf
 
 
-
-## 使用
 
 
 中文推荐解决方案，ctex 文档类
@@ -143,4 +143,24 @@ Latex环境：
     verbatim  逐字打印
   
     tabular
-  
+ 
+### 插图及引用
+    \usepackage{graphicx}
+
+    \begin{figure}
+    \centering
+    \includegraphics[totalheight=2in]{graph.eps}
+    \caption{This is an inserted EPS graphic} \label{fig:graph}
+    \end{figure}
+
+The graph in Figure~\ref{fig:graph} on Page~\pageref{fig:graph}...
+
+\usepackage[section]{placeins}  使得浮动图形在所在的章节排出
+
+
+### 参考文献
+
+\bibliographystyle{chicago}
+\bibliography{scholar.bib}
+
+需要使用 bibtex 编译，之后再使用 xelatex 编译两次

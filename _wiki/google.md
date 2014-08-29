@@ -77,3 +77,7 @@ http://lucifr.com/2011/07/03/some-things-you-dont-know-about-google-plus/
 
 ## youtube
 * download <http://www.clipconverter.cc/>
+
+## drive
+
+proxycap+ss+hosts/chinadns
