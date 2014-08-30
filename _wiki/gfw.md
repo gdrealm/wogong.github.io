@@ -57,3 +57,7 @@ https://powerpac.in
 1. gfwlist
 2. smarthost
 3. autovpn
+4. chnroutes
+4. ChinaDNS
+
+dnsrelsy.exe -s 192.168.1.1,8.8.8.8

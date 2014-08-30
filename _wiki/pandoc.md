@@ -4,10 +4,12 @@ title: pandoc
 update: 2014-05-18
 ---
 
-# PANDOC
+* markdown -> html
+pandoc markdown 支持很多元素，脚注，数学公式，等等
 
 `pandoc -o ch1.html ch1.md -s --template=default.html`
 
+-s standalone
 
 
 ## default template:

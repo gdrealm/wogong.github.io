@@ -1,9 +1,10 @@
 ---
 layout: wiki
 title: google
+create: 2014-08-28
+update: 2014-08-28
 ---
 
-# GOOGLE
 
 
 - 提供单词读音的API,获取Google Translate发音的方法：
@@ -72,3 +73,11 @@ http://lucifr.com/2011/07/03/some-things-you-dont-know-about-google-plus/
 ## calendar
 1. 一些可以订阅的有趣的日历
    https://www.google.com/calendar/render?settings=10
+
+
+## youtube
+* download <http://www.clipconverter.cc/>
+
+## drive
+
+proxycap+ss+hosts/chinadns

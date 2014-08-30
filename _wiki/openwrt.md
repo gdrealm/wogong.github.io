@@ -48,5 +48,5 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
 
 ## DNS
 1. FreeRouter 方式
-2. ChinaDNS-C
+2. ChinaDNS-C Github
 -s 127.0.0.1,8.8.8.8
