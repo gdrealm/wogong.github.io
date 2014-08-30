@@ -26,7 +26,7 @@ You might need to start ssh-agent before you run the ssh-add command:
 1. `/etc/ssh/sshd_config`  
 修改配置文件之后需要重启ssh服务。
 
-        Port 22
+        Port 22 # ubuntu 下使用非22端口貌似会出问题
         PubkeyAuthentication yes  # 公钥登录  
         PasswordAuthentication no # 禁用密码
 
