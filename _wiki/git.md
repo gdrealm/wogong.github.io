@@ -2,7 +2,7 @@
 layout: wiki
 title: git
 create: 2014-06-14
-update: 2014-07-16
+update: 2014-08-30
 ---
 
 ## note
@@ -53,6 +53,7 @@ update: 2014-07-16
    [github如何永久删除文件及其历史记录](http://help.github.com/remove-sensitive-data/) 
 
 3. 分支管理
+
  * rename local branch name: 
   `git branch -m oldbranchrename newbranchname`
  * git branch -d branchname
@@ -67,6 +68,9 @@ update: 2014-07-16
             $ git push <remote-name> :<remote-branch-name>
  * 将本地分支推送到远程分支，相当于备份分支 。
    `git push remote-repo-name branchname`
+ * 合并本地分支
+    git ch mainb
+    git merge tomb
 
 4. 远程仓库管理
 

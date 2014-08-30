@@ -1,9 +1,9 @@
 ---
 layout: wiki
 title: nginx
+create: 2014-08-30
+update: 2014-08-30
 ---
-
-# NGINX
 
 ## 常用命令  
 添加php插件后需要重启：
