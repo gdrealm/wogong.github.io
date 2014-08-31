@@ -4,6 +4,10 @@ title: zotero
 create: 2014-07-21
 update: 2014-07-21
 ---
+已下载符合中国论文标准的引文样式
+
+暂时不支持 S
+
 
 Zotero（1）：文献管理软件Zotero基础及进阶示范
 

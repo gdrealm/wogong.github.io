@@ -284,3 +284,4 @@ ping -t windows下持续ping
 ping -c N linux下pingN次
 
 yes "yes" | script.sh
+

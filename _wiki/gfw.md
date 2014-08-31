@@ -59,5 +59,35 @@ https://powerpac.in
 3. autovpn
 4. chnroutes
 4. ChinaDNS
+    - windows: dnsrelsy.exe -s 192.168.1.1,8.8.8.8
+    - openwrt /etc/init.d/chinadns
+      add -s 127.0.0.1,8.8.8.8 \
+          sudo src/chinadns -l iplist.txt -s 192.168.1.1,208.67.222.222,8.8.8.8 -p 5151
 
-dnsrelsy.exe -s 192.168.1.1,8.8.8.8
+
+          
+1. 要用 dnsmasq ，在 tomato 的 dnsmasq 自定义框内添加：
+
+## Use ChinaDNS
+server=127.0.0.1#5151
+no-resolv
+bogus-priv
+domain-needed
+filterwin2k
+no-hosts
+neg-ttl=3600
+
+用这个方法，tomato dns 设定里面的 dns 服务器全部无效，自定义 host 文件也无效，完全保证从 chinadns 解析，要设置自己的 dns 就去 chainadns 命令行设置；
+
+2. 用作者的转发脚本，要用到 REDIRECT 模块，有些 tomato 版本不带，或者带了也不自启动，对于后者，解决方法是在防火墙脚本加一句：
+
+#load iptables REDIRECT moudel
+[ $(lsmod | grep "ipt_REDIRECT" | wc -l) -eq 0 ] && modprobe ipt_REDIRECT
+
+也可以改下转发命令：
+
+iptables -t nat -A PREROUTING -p udp --dport 53 -j DNAT --to-destination 192.168.1.1:5353
+
+其中 192.168.1.1 是你路由器地址，自己改。
+
+http://www.v2ex.com/t/124550?p=1
