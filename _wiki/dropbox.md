@@ -3,7 +3,6 @@ layout: wiki
 title: dropbox
 ---
 
-# Dropbox
 
 ## 软件安装
 ### Windows 略
@@ -53,3 +52,5 @@ Dropbox自动化，监控Dropbox特定文件夹，对Dropbox中的文档进行�
 4. 基于Dropbox和Markdown的blog：
 http://calepin.co/  源码：https://github.com/jokull/calepin; http://scriptogr.am/
 
+
+因为3G，告别Dropbox。

@@ -3,7 +3,7 @@ layout: wiki
 title: cad
 ---
 
-# AutoCAD
+AutoCAD
 
 - ArxWizards安装之后没有图标的解决办法
 将附件文件夹整体复制到`X:\Program Files\Autodesk\ObjectARX Wizards for AutoCAD\ArxAddInWiz`
