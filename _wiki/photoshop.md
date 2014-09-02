@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: ps
+title: photoshop
 ---
 
 第一章 基础知识

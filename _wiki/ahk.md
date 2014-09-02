@@ -3,8 +3,7 @@ layout: wiki
 title: ahk
 ---
 
-# AutoHotKey AHK
-
+AutoHotKey AHK
 
 ## note
 1. `;` 表示注释

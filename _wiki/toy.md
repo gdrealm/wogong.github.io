@@ -44,11 +44,11 @@ http://www.wogong.net/daily/2012/11/26/thinkpad-x230/
 
 ----
 ### Kindle Paperwhite
-购于豆瓣网友，日亚价格由于汇率原因非常优惠。
+购于豆瓣网友，日亚价格由于汇率原因非常优惠。690
 
 ----
 ### incase campus
-@coagent 海淘于美亚。
+@coagent 海淘于美亚。359
 
 ----
 ### 华为 E261

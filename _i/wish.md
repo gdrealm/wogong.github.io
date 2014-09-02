@@ -2,8 +2,10 @@
 layout: wiki
 title: wish
 create: 2014-06-17
-update: 2014-08-04
+update: 2014-09-02
 ---
+
+2014-08 开始采用 wunderlist 管理 wishlist，目前感觉良好，此处暂弃。
 
 ## wish
 * iPhone 拍照方便， jsut so easy

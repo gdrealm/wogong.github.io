@@ -3,7 +3,7 @@ layout: wiki
 title: thunder
 ---
 
-# THUNDER 迅雷
+THUNDER 迅雷
 
 迅雷会员，毫无疑问最具价值的中国会员服务。
 

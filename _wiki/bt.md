@@ -1,9 +1,10 @@
 ---
 layout: wiki
-title: bt
+title: bittorrent
 ---
 
-# BitTorrent
+BitTorrent
+
   BitTorrent is a protocol supporting the practice of peer-to-peer file sharing that is used to distribute large amounts of data over the Internet.   
   ----Wikipedia
 

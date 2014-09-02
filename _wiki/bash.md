@@ -3,7 +3,7 @@ layout: wiki
 title: bash
 ---
 
-== PS1相关知识 ==
+## PS1相关知识
  
  1.  提示行的转义字符：
  序列         说明  

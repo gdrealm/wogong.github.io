@@ -2,8 +2,11 @@
 layout: wiki
 title: todo
 create: 2014-06-17
-update: 2014-07-16
+update: 2014-09-02
 ---
+
+2014-08 开始采用 wunderlist 管理 todo，目前感觉良好，此处暂弃。
+
 
 ---------------LONGTERM
 * 注册结构工程师

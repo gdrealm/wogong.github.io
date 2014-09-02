@@ -3,7 +3,7 @@ layout: wiki
 title: bitcoin
 ---
 
-# Bitcoin 电子货币
+Bitcoin 电子货币
 
 ## Ripple
 rfmGCC8Ys53igpUUjaLY9FGJmNjRWaqExN

@@ -3,8 +3,6 @@ layout: wiki
 title: browser
 ---
 
-# browser
-
 ## note
 
 1. 扩展/插件备份

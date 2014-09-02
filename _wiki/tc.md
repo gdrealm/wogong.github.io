@@ -3,7 +3,7 @@ layout: wiki
 title: tc
 ---
 
-#TC or TotalCommander
+TC or TotalCommander
 
 ## note
 1. 安装时可以选择配置文件位置，但是工具栏需要自己

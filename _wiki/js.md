@@ -3,9 +3,7 @@ layout: wiki
 title: js
 ---
 
-==== JavaScript语言学习 ====
 学习教材：《JavaScript网页编程从入门到精通》 北京科海电子出版社 
-
 
 
 第一篇 语言概述
@@ -79,5 +77,3 @@ CHAPTER4 JavaScript运算符
 
 
 CHAPTER5 JavaScript结构语句
-----
-CategoryProgram

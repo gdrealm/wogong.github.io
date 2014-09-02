@@ -55,3 +55,8 @@ http://xbeta.info/key-tweak-remap.htm
    [[Shortcuts|sumatrapdf]]
 6. Universal-USB-Installer-1.9.5.2.exe 制作启动U盘
 7. babun  \*nix like console
+
+
+http://windows.microsoft.com/zh-cn/windows/windows-update-error-80070003
+
+重装系统 更改 HOME

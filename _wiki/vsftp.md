@@ -3,7 +3,7 @@ layout: wiki
 title: vsftp
 ---
 
-# VSFTP
+VSFTP
 
 主要是配置文件，安装即可使用。
 

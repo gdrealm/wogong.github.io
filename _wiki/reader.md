@@ -3,7 +3,7 @@ layout: wiki
 title: reader
 ---
 
-# 阅读者/阅读器 READER
+阅读者/阅读器 READER
 
 阅读是人类获取经验知识的重要途径。本词条主要面向软件方面，包括Web,移动设备等方面的阅读服务。
 

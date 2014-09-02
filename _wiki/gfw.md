@@ -62,7 +62,8 @@ https://powerpac.in
     - windows: dnsrelsy.exe -s 192.168.1.1,8.8.8.8
     - openwrt /etc/init.d/chinadns
       add -s 127.0.0.1,8.8.8.8 \
-          sudo src/chinadns -l iplist.txt -s 192.168.1.1,208.67.222.222,8.8.8.8 -p 5151
+    - RP 配合以下的
+          sudo src/chinadns -l ~/ChinaDNS-C-1.1.4/iplist.txt -s 192.168.1.1,208.67.222.222,8.8.8.8 -p 5151
 
 
           

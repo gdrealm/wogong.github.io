@@ -1,9 +1,22 @@
 ---
 layout: wiki
 title: raspberry
-update: 2014-06-19
+update: 2014-09-02
 ---
 
+## current services
+1. DNSmasq + ChinaDNS
+
+    sudo src/chinadns -l ~/ChinaDNS-C-1.1.4/iplist.txt -s   192.168.1.1,208.67.222.222,8.8.8.8 -p 5151
+
+2. rp:8888
+    `ipython notebook`
+
+3. Raneto rp:3000
+    
+    npm start
+
+    
 ## Setting
 1. sudo raspi-config
 2. mirror deb http://mirrors.ustc.edu.cn/raspbian/raspbian/   wheezy main contrib non-free rpi

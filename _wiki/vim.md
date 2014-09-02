@@ -5,8 +5,6 @@ create: 2014-07-10
 update: 2014-07-16
 ---
 
-# VIM
-
 coolshell has some great vim articles about vim. when you feel boring,
 you can always find some interesting things there.
 
