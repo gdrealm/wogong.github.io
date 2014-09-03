@@ -3,7 +3,7 @@ layout: wiki
 title: invest
 ---
 
-# INVEST 投资
+INVEST 投资
 
 ## 相关概念
 - 通货膨胀

@@ -5,21 +5,24 @@ create: 2014-08-26
 update: 2014-09-02
 ---
 
-cmd+shift+P 貌似是一切之门
+Tutorials book: (all in calibre lib)
+1. Instant Sublime Text Starter <http://book.douban.com/subject/21478309/>
+2. Mastering Sublime Text <http://book.douban.com/subject/25804133/>
 
 ## note
+0. Ctrl+Shift+P 是一切之门
 1. 小狼毫的光标跟随问题：   
-这是Sublime的bug，不是Rime的问题，别的中文输入法也有这种情况，楼主用Package Control 安装IMESupport这个包然后重启Sublime就行了。
-
+	这是Sublime的bug，不是Rime的问题，别的中文输入法也有这种情况，楼主用Package Control 安装IMESupport这个包然后重启Sublime就行了。
+2. fortran support
+	<https://github.com/textmate/fortran.tmbundle>
+	download [tmLanguage](https://raw.githubusercontent.com/textmate/fortran.tmbundle/master/Syntaxes/Fortran%20-%20Modern.tmLanguage)
 
 ## package
 1. markdown-preview
+2. git
 
 
-
-## shortcuts
-
-Keyboard Shortcuts - Windows/Linux
+## shortcuts Keyboard Shortcuts - Windows/Linux
 
 - Editing
 

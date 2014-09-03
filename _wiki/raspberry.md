@@ -17,7 +17,8 @@ update: 2014-09-02
     npm start
 
 4. nginx => wogong.net  => rp
-    
+
+5. samba    
     
 ## Setting
 1. sudo raspi-config
