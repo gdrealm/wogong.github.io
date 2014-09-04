@@ -5,10 +5,18 @@ create: 2014-01-01
 update: 2014-05-18
 ---
 
+1. 简洁严格的编译器：elf90
+
 elf90 严格的Fortran90的子集
 
 elf90安装在“Program Files”中在命令行中调用会出现错误，
 猜测是因为其中的空格导致。尚未测试。
+
+- doesn't support `print`, `write(*,*)` instead
+- `stop` in the end
+
+
+----
 
 where结构：
 
@@ -68,3 +76,11 @@ fortran 列优先。如 2 times 3 的矩阵，第 1、2 行分别为 1 2 3、4 5
 
 ## subroutine
 
+
+
+## 固有函数
+
+- random_seed()
+- random_number()
+- qsort() http://nf.nci.org.au/facilities/software/FORTRAN/Intel10/doc/main_for/mergedProjects/lref_for/source_files/rfqsort.htm
+- 
