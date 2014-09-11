@@ -36,7 +36,7 @@ Wireless Fidelity 基于IEEE 802.11b标准的无线局域网
 
 12. MySQL (pron.: /maɪ ˌɛskjuːˈɛl/ "My S-Q-L", officially, but also called /maɪ ˈsiːkwəl/ "My Sequel") is (as of 2008) the world's most used
 
-13. Nginx engine X
+13. Nginx Engine X
 
 14. archive ['ɑrkaɪv] 我知道肯定有很多人读成 ['archiv]
 

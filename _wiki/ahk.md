@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: ahk
+create: 2014-09-10
+update: 2014-09-10
 ---
 
 AutoHotKey AHK

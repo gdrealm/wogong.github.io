@@ -1,9 +1,11 @@
 ---
 layout: wiki
 title: matlab
+create: 2014-09-10
+update: 2014-09-10
 ---
 
-# MATLAB MATrix LABoratory
+MATLAB MATrix LABoratory
 
 ## Install
 1. MATLAB运行错误

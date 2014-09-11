@@ -1,9 +1,9 @@
 ---
 layout: wiki
 title: vmware
+create: 2014-09-09
+update: 2014-09-09 21:15:47
 ---
-
-# VMware
 
 1. 合并 vmdk 文件
 vmware-vdiskmanager.exe -r /f/Vmware/arch/Arch.vmdk -t 0 VM.vmdk
@@ -25,3 +25,5 @@ vmware-vdiskmanager.exe -r /f/Vmware/arch/Arch.vmdk -t 0 VM.vmdk
 
 
    sudo mount -t vmhgfs .host:/wind /mnt/D
+
+3. 制作启动U盘时，为了方便测试，可以将U盘当作硬盘添加到虚拟机，bios设置从硬盘启动。
