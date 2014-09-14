@@ -2,7 +2,7 @@
 layout: wiki
 title: fortran
 create: 2014-01-01
-update: 2014-05-18
+update: 2014-09-11
 ---
 
 1. 简洁严格的编译器：elf90
@@ -84,3 +84,12 @@ fortran 列优先。如 2 times 3 的矩阵，第 1、2 行分别为 1 2 3、4 5
 - random_number()
 - qsort() http://nf.nci.org.au/facilities/software/FORTRAN/Intel10/doc/main_for/mergedProjects/lref_for/source_files/rfqsort.htm
 - 
+
+
+
+## compiler
+1. gFortran
+
+默认支持的列长有限，需要`-ffree-line-length-0`去除限制
+
+	gfortran polyhedron.f90 qsort.f90 -ffree-line-length-0
