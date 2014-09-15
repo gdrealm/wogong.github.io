@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: invest
+create: 2014-09-16
+update: 2014-09-16
 ---
 
 INVEST 投资
