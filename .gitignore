@@ -2,14 +2,9 @@ _site/*
 
 Thumbs.db
 .DS_Store
-.SyncArchive
-.SyncID
-.SyncIgnore
 
 !.gitkeep
 *.jpg
 
 .rbenv-version
 .rvmrc
-_i
-_doc

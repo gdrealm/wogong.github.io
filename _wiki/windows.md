@@ -1,7 +1,8 @@
 ---
 layout: wiki
 title: windows
-update: 2014-06-21
+create: 2014-06-21
+update: 2014-09-15
 ---
 
 ## note
@@ -16,7 +17,7 @@ update: 2014-06-21
 
 6. mstsc 远程桌面，可以在远程挂载本地硬盘。
 7. Windows更新失败，使用 sfc/scannow修复系统。
-8. 服务管理 services.mvc
+8. 服务管理 services.mvc mscocnfig
 9. tasklist /mvc
 10. 计划任务 Schedule tasks 用于自动备份 C 盘文件还是很方便的。
 11. CMD 自带命令： help
