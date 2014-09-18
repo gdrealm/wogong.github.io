@@ -1,6 +1,8 @@
 ---
 layout: wiki
 title: bittorrent
+create: 2014-09-17
+update: 2014-09-17
 ---
 
 BitTorrent

@@ -2,7 +2,7 @@
 layout: wiki
 title: ssh
 create: 2014-06-29
-update: 2014-08-29
+update: 2014-09-17
 ---
 
 Secure Shell
@@ -57,9 +57,9 @@ sample config: `/etc/ssh/ssh_config`
 本地编辑好一句话以后再发送到服务器端执行。
 不过这样的话你就无法使用命令行提供的特殊功能（比如自动完成等）
 ，也没法使用终端下的编辑器了。
-2. mosh  
+2. mosh    mosh 出现 locale 错误，从客户端和服务端两个方面检查。
    参考资料：
    - https://library.linode.com/networking/mosh
    - http://mosh.mit.edu/
 
-mosh 出现 locale 错误，从客户端和服务端两个方面检查。
+

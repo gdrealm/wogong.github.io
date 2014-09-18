@@ -15,12 +15,6 @@ author:
 collections:
     wiki:
         output: true
-    i:
-        output: true
-    doc:
-        output: false
-    read:
-        output: true
 
 
 # front-matter default

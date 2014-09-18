@@ -1,9 +1,10 @@
 ---
 layout: wiki
 title: pronunciation
+create: 2014-09-17
+update: 2014-09-17
 ---
 
-# Pronunciation
 
 1. Putty ['pʌti] 
 之前我一直读[puti]，真是贻笑大方，不过相信有不少人读错了吧？
@@ -41,3 +42,25 @@ Wireless Fidelity 基于IEEE 802.11b标准的无线局域网
 14. archive ['ɑrkaɪv] 我知道肯定有很多人读成 ['archiv]
 
 15. 密钥 miyao OR mishi
+
+- python
+- django
+- Alexa
+- FIFO
+- safari
+- axure [a:k∫ur]
+- Origin [ˈɔridʒin]
+- avatar
+- retina  [ 'retnə ]
+- Kinect same as connect
+- parameter [pə'ræmitə]
+- suite [swi:t]
+- variable ['vεəriəbl]
+- maven. 读作: /meiven/ 而不是 /maven/
+- debian
+- Knuth
+- char /tʃɑr/ 
+- Ajax
+- Agile
+
+ref: 知乎
