@@ -2,7 +2,7 @@
 layout: wiki
 title: windows
 create: 2014-06-21
-update: 2014-09-15
+update: 2014-09-18
 ---
 
 ## note
@@ -24,7 +24,7 @@ update: 2014-09-15
 12. Windows en   
     中文 需要更改 语音设置 否则一些中文软件会出现乱码
     lpksetup 手动安装下载的语言包
-
+12. Appdata 文件夹内部文件位置可以更改，包括 Local LocalLow Roaming
 
 
 ## Reinstall
@@ -53,7 +53,6 @@ http://xbeta.info/key-tweak-remap.htm
 4. AutoHotKey
 5. [SumatraPDF](http://blog.kowalczyk.info/software/sumatrapdf/free-pdf-reader.html)  
    Sumatra PDF is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows。  
-   [[Shortcuts|sumatrapdf]]
 6. Universal-USB-Installer-1.9.5.2.exe 制作启动U盘
 7. babun  \*nix like console
 
