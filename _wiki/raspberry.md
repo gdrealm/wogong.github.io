@@ -1,7 +1,8 @@
 ---
 layout: wiki
 title: raspberry
-update: 2014-09-02
+create: 2014-09-02
+update: 2014-09-23
 ---
 
 ## current services
@@ -88,15 +89,26 @@ Default /etc/network/interfaces file as supplied in the raspbian image - do not 
     
     allow-hotplug wlan0
     iface wlan0 inet manual
-    wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
-    iface default inet dhcp
-    # 静态
-    iface default inet static
-    address 192.168.1.2
-    netmask 255.255.255.0
-    gateway 192.168.1.1
-    dns-nameservers x.x.x.x #你的本地dns地址
+    iface wlan0 inet dhcp
+        pre-up wpa_supplicant -Dwext -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -B 
 
+/etc/wpa_supplicant/wpa_supplicant.conf
+
+     ctrl_interface=/var/run/wpa_supplicant
+     #ap_scan=1
+
+     network={
+            ssid="wo_shi_yige_wifi_ssid"
+            scan_ssid=1
+            psk="wo_shi_mi_ma"
+            priority=5
+     }
+
+     network={
+            ssid="pi"
+            psk="onlyforpi"
+            priority=1
+     }
 
 
 Edit the file /etc/wpa_supplicant/wpa_supplicant.conf and add the network={.....} section. Use the command sudo nano /etc/wpa_supplicant/wpa_supplicant.conf to open and edit the file. Exit the editor and save the file using keys cntl-X, Y, Enter.
@@ -109,7 +121,7 @@ Edit the file /etc/wpa_supplicant/wpa_supplicant.conf and add the network={.....
     }
 
 * 重启网络
-    sudo /etc/init.d/networking restart
+    sudo /etc/init.d/networking reload
 
 ## 参考资料
 http://linuxtoy.org/archives/cool-ideas-for-raspberry-pi.html

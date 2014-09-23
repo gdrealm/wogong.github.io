@@ -2,7 +2,7 @@
 layout: wiki
 title: openwrt
 create: 2014-06-07
-update: 2014-08-04
+update: 2014-09-23
 ---
 
 /etc/config/wireless --> open wireless
@@ -45,6 +45,26 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
     /etc/init.d/uhttpd start/enable
 
 ## sample config
+1. default wireless
+
+    config wifi-device  radio0
+            option type     mac80211
+            option channel  11
+            option hwmode   11g
+            option path     'platform/ar933x_wmac'
+            option htmode   HT20
+            # REMOVE THIS LINE TO ENABLE WIFI:
+            option disabled 0
+
+    config wifi-iface
+            option device   radio0
+            option network  lan
+            option mode     ap
+            option ssid     wogong
+            option encryption psk2
+            option key        passwd
+
+
 
 ## DNS
 1. FreeRouter 方式
