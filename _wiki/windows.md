@@ -2,8 +2,9 @@
 layout: wiki
 title: windows
 create: 2014-06-21
-update: 2014-09-18
+update: 2014-09-24
 ---
+
 
 ## note
 1. 环境变量管理。Envman
@@ -25,7 +26,8 @@ update: 2014-09-18
     中文 需要更改 语音设置 否则一些中文软件会出现乱码
     lpksetup 手动安装下载的语言包
 12. Appdata 文件夹内部文件位置可以更改，包括 Local LocalLow Roaming
-
+13. 最近将日常使用的用户更改为标准账户，用了Windows系统五年多了，到今天才开始理解Windows的用户权限控制。以前总是吐槽微软，这次可以吐槽自己了。
+14. 开启了Windows的 file history 功能，同步到局域网的 raspberry
 
 ## Reinstall
 1. 软件

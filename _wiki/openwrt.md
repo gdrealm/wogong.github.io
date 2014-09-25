@@ -2,14 +2,14 @@
 layout: wiki
 title: openwrt
 create: 2014-06-07
-update: 2014-09-23
+update: 2014-09-24
 ---
 
 /etc/config/wireless --> open wireless
 
 1. 时区设置 /etc/config/system
 
-    ntpclient -s -t -h 0.openwrt.pool.ntp.org
+    ntpclient -s -t -h 0.openwrt.pool.ntp.org  不是自带的。
     config 'system'
             option 'hostname' 'OpenWrt'
             option 'zonename' 'Asia/Shanghai'
@@ -64,6 +64,42 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
             option encryption psk2
             option key        passwd
 
+2. repeater
+    - /etc/config/network
+
+        config interface 'wwan'
+            option proto 'dhcp'
+
+        config openwrt-wwan 'hostname'
+    
+    - /etc/config/firewall
+
+        config zone
+        option name 'wan'
+        option input 'REJECT'
+        option output 'ACCEPT'
+        option forward 'REJECT'
+        option masq '1'
+        option mtu_fix '1'
+        option network 'wan wwan'
+
+    - /etc/config/firewall
+
+        config wifi-iface
+                option device 'radio0'
+                option ssid 'wan ssid'
+                option encryption 'psk2+aes'
+                option key 'passwd'
+                option network 'wwan'
+                option mode 'sta'
+
+        config wifi-iface
+                option device   radio0
+                option network  lan
+                option mode     ap
+                option ssid     repeater ssid
+                option encryption psk2
+                option key        passwd
 
 
 ## DNS

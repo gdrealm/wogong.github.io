@@ -1,7 +1,7 @@
 layout: wiki
 title: linux
 create: 2014-07-18
-update: 2014-07-18
+update: 2014-09-24
 ---
 
 我使用过的发行版，按照时间顺序依次为：Ubuntu, Fedora, Archlinux, Debian。
@@ -10,7 +10,7 @@ update: 2014-07-18
 
 ## note
 1. ubuntu  `cat /etc/issue`
-2. ntp `ntpdate ntp.tuna.tsinghua.edu.cn`  3.cn.pool.ntp.org
+2. ntp sudo apt-get install ntpdate `ntpdate ntp.tuna.tsinghua.edu.cn`  3.cn.pool.ntp.org
    配置文件`/etc/ntp.conf`
    hwclock -w ?
 3. 更改默认shell `chsh -s /bin/bash`
