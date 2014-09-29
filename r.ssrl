@@ -1,0 +1,15 @@
+; Summary: Proxy Switchy! Exported Rule List
+; Date: 9/29/2014
+; Website: http://bit.ly/proxyswitchy
+
+#BEGIN
+
+[wildcard]
+*://*.google.com/*
+*://vpnso.com/*
+*://twitter.com/*
+
+[regexp]
+
+
+#END
