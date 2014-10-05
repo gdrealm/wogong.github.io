@@ -106,3 +106,29 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
 1. FreeRouter 方式
 2. ChinaDNS-C Github
 -s 127.0.0.1,8.8.8.8
+
+
+
+
+经验
+root@OpenWrt:~# sysupgrade /tmp/openwrt-ar71xx-generic-tl-mr11u-v1-squashfs-sysupgrade_6.09.bin
+Saving config files...
+Sending TERM to remaining processes ... crond dnsmasq ser2net ntpd syslogd klogd hotplug2 ubusd netifd 
+Sending KILL to remaining processes ... 
+Switching to ramdisk...
+Performing system upgrade...
+Unlocking firmware ...
+ 
+Writing from <stdin> to firmware ...  [w]
+Appending jffs2 data from /tmp/sysupgrade.tgz to firmware...TRX header not found
+Error fixing up TRX header
+ 
+Upgrade completed
+Rebooting system...
+刷机过程
+用telnet进入，passwd修改默认密码比如damndamn，然后路由器会自动ssh模式，此时telnet会开始无效，以后ssh登录路由器的时候带上id（ssh root@192.168.1.1，否则是不会以当前用户id进入的，mac里会这样）。
+下载WINSCP
+用scp协议连接到路由器，（有个麻烦对话框可以关闭查找用户组），然后上传文件到tmp。
+用winscp里的打开终端，sysupgrade /tmp/openwrt-ar71xx-generic-tl-wr703n-v1-squashfs-sysupgrade.bin
+直接开始刷固件。
+若干秒后，刷机完成。
