@@ -2,7 +2,7 @@
 layout: wiki
 title: raspberry
 create: 2014-09-02
-update: 2014-09-23
+update: 2014-10-06
 ---
 
 ## current services
@@ -30,6 +30,7 @@ update: 2014-09-23
 ## Function
 1. git repository
 2. BTSync: useless
+3. CUPS  foo2zjs 打印机
 
 ## 外设
 1. usb 转串口接线 done

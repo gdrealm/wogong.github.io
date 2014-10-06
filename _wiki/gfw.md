@@ -84,6 +84,23 @@ GFW 中国长城防火墙 Great Fire Wall
             neg-ttl=3600
 
 
+Github Repo
+
+OpenWRT
+
+    >opkg install ChinaDNS-C_1.x.x_ar71xx.ipk
+    >/etc/init.d/chinadns start
+    >(Optional) We strongly recommend you to set ChinaDNS as a upstream >DNS server for dnsmasq instead of using ChinaDNS directly:
+    >
+    >Run /etc/init.d/chinadns stop
+    >Remove the 2 lines containing iptables in /etc/init.d/chinadns.
+    >Update /etc/dnsmasq.conf to use only 127.0.0.1#5353:
+    >
+    >no-resolv
+    >server=127.0.0.1#5353
+    >Restart chinadns and dnsmasq
+
+
 
 
 

@@ -101,6 +101,15 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
                 option encryption psk2
                 option key        passwd
 
+3. wan pppoe
+
+		config interface 'wan'
+	        option ifname 'eth0'
+	        option proto 'pppoe'
+	        option username '02502223350'
+	        option password '123123'
+
+
 
 ## DNS
 1. FreeRouter 方式

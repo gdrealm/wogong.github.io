@@ -23,7 +23,7 @@ ubuntu下ack居然是另外一个东西，解决：
 添加php插件后需要重启：
         service nginx restart
         service php5-fpm restart
-6. 测试。
+6. split 分割文件，cat合并文件
  
 ## 常用命令
 1. 用户管理
