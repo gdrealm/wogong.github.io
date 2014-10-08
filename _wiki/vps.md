@@ -89,9 +89,9 @@ update: 2014-07-18
     Referrals <https://www.linode.com/?r=9bd81fd03ec9f3917cb2db12d6843d1ee2d30892>
 
 5. DigitalOcean  
-   1. 经常有一些 promo code，等于白送钱，很不错。
+   1. 经常有一些 promo code，等于白送钱，很不错。等到近期VPS到期换DO
    2. 目前还有几个账户，余额20$；推介
-   - wogong38 $29.42 -- <https://www.digitalocean.com/?refcode=4398536459b9>
+   - wogong38 $129.42 -- <https://www.digitalocean.com/?refcode=4398536459b9>
 
 6. bandwagonhost --<https://bandwagonhost.com/aff.php?aff=476>
 
