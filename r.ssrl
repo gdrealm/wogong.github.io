@@ -7,7 +7,6 @@
 [wildcard]
 *://*.google.com/*
 *://vpnso.com/*
-*://twitter.com/*
 *://vpnso.com/*
 *://*.twitter.com/*
 *://*.googleusercontent.com/*
@@ -28,8 +27,7 @@
 *://bt.neu6.edu.cn/*
 *://s3.feedly.com/*
 *://www.eyny.com/*
-*://dmm.com/*
-*://www.dmm.com/*
+*://*.dmm.com/*
 *://hdchina.org/*
 *://7y7y.com/*
 *://www.dmm.co.jp/*
