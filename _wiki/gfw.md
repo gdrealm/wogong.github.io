@@ -2,9 +2,8 @@
 layout: wiki
 title: proxy
 create: 2014-06-07
-update: 2014-09-14
+update: 2014-10-12
 ---
-
 GFW 中国长城防火墙 Great Fire Wall
 
 ## 推荐方式
@@ -21,14 +20,17 @@ GFW 中国长城防火墙 Great Fire Wall
 
 
 ### @cosbeta 提供的服务
-应网站要求不公布网址，目前使用其提供的shadowsocks，按年收费，价格便宜，自助服务。
+* Shadowsocks + VPN +APNP
+应网站要求不公布网址，目前使用其提供的shadowsocks，按年收费，价格便宜，自助服务。另有VPN，APNP等，多服务器，多协议。
 
-### PowerPAC
+### VnetLink 微林
+* PAC + HTTP + AnyConnect
 非常方便，价格便宜，按流量计费，亦可包月，价格便宜。
-<https://pcnt.in/i>
+<https://vnet.link>
 需要注册请联系我索要邀请码。
 
 ### 曲径
+* PAC
 高端大气上档次，多平台支持，价格相比以上较为昂贵。尤其推荐其Android平台下的APP，一键无忧。
 <http://getqujujing.com>
 
@@ -83,10 +85,7 @@ GFW 中国长城防火墙 Great Fire Wall
             no-hosts
             neg-ttl=3600
 
-
-Github Repo
-
-OpenWRT
+    - OpenWRT
 
     >opkg install ChinaDNS-C_1.x.x_ar71xx.ipk
     >/etc/init.d/chinadns start

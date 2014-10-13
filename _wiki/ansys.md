@@ -2,7 +2,7 @@
 layout: wiki
 title: ansys
 create: 2014-01-01
-update: 2014-09-16
+update: 2014-10-10
 ---
 
 ## 一般过程
@@ -40,3 +40,6 @@ Defines DOF constraints on lines.
 Deletes DOF constraints on a line.
 
 
+## install on windows
+as standard user, you should install Ansys as administrator.
+then you will get a environment varible error running Ansys. Just copy the ansys related environment varibles to current users. Done.

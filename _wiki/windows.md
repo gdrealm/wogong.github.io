@@ -20,6 +20,7 @@ update: 2014-09-24
 7. Windows更新失败，使用 sfc/scannow修复系统。
 8. 服务管理 services.msc mscocnfig
 9. tasklist /mvc
+0. taskmgr
 10. 计划任务 Schedule tasks 用于自动备份 C 盘文件还是很方便的。
 11. CMD 自带命令： help
 12. Windows en   
@@ -31,9 +32,22 @@ update: 2014-09-24
 
 ## Reinstall
 1. 软件
-   - 备份picasa数据库：c:\Users\chengzhen\AppData\Local\Google\Picasa2\ 
-   - 备份itunes音乐库，将Windows 我的音乐位置更改至安装前的位置即可？以后再验证。
-   - 备份虚拟机文件
+  - Office 记得取消安装一些奇葩的组件
+  - 小狼毫 用户资料夹采用mklink解决
+  - 7zip
+  - 浏览器 Chrome
+  - Drive 需要翻墙环境
+  - iTunes
+  - zotero
+  - 字体 Monoca
+  - git
+  - picasa
+  - eudict 程序文件需要备份
+
+能绿色一一定绿色
+
+鼠标触控板设置
+
 
 2. 浏览器 Chrome
    - swithysharp数据导出
@@ -43,6 +57,7 @@ update: 2014-09-24
    - 安装软件:输入法，office，迅雷，TC，Dropbox，Evernote
 4. 数据
    - $HOME 目录 配置文件， vim
+
 
 ## Softwares
 1. Everything
@@ -56,9 +71,33 @@ http://xbeta.info/key-tweak-remap.htm
 5. [SumatraPDF](http://blog.kowalczyk.info/software/sumatrapdf/free-pdf-reader.html)  
    Sumatra PDF is a PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR reader for Windows。  
 6. Universal-USB-Installer-1.9.5.2.exe 制作启动U盘
-7. babun  \*nix like console
+V7. babun  \*nix like console
 
 
 http://windows.microsoft.com/zh-cn/windows/windows-update-error-80070003
 
 重装系统 更改 HOME
+
+
+WINDOWS 中交换 CONTROL 键和 CAPS LOCK 键
+2013 年 7 月 16 日 MUNINN	1条评论
+How to swap the caps and ctrl in windows
+本篇文章有效的操作系统：Windows XP/Vista/7
+
+在开始的搜索框或者运行框输入regedit ，打开注册表管理器。
+转到  HKEY_LOCAL_MACHINE -> System -> CurrentControlSet -> Control -> KeyBoard Layout
+在此文件夹“新建” ， “二进制值”
+修改新建的名字为：Scancode Map
+在其上点右键，选择修改二进制数据，输入如下数据。第一列不用输入。所以不好复制，手输吧。
+0000 00 00 00 00 00 00 00 00
+0008 03 00 00 00 1d 00 3a 00
+0010 3a 00 1d 00 00 00 00 00
+0018
+
+0000 00 00 00 00 00 00 00 00
+0008 02 00 00 00 1d 00 3a 00
+0010 00 00 00 00
+
+好了 现在重启电脑 应该一切生效了 只用改这一处两个键就交换了
+
+出处： http://www.kodiva.com/post/swapping-caps-lock-and-control-keys
