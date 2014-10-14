@@ -5,42 +5,39 @@
 #BEGIN
 
 [wildcard]
-*://*.xx.fbcdn.net/*
 *://t66y.com/*
 *://xwall.io/*
 *://i.ytimg.com/*
 *://*.amazonaws.com/*
 *://t.co/*
-*://*.instagram.com/*
-*://*.cdninstagram.com/*
 *://bt.neu6.edu.cn/*
-*://s3.feedly.com/*
 *://www.eyny.com/*
 *://hdchina.org/*
-*://7y7y.com/*
 *://www.piring.com/*
 *://s.ytimg.com/*
 *://www02.eyny.com/*
 *://iceimg.com/*
 *://bt.byr.cn/*
 *://www.chinese.rfi.fr/*
-*://zh.wikipedia.org/*
 *://bit.ly/*
 *://occupycentral.appledaily.com/*
 *://hk.apple.nextmedia.com/*
 *://www.torrentfunk.tk/*
 *://ck101.com/*
 *://online.wsj.com/*
-*://*.flickr.com/*
 *://cn.nytimes.com/*
 
 [regexp]
 goo|ggpht|gstatic|youtube
 twitter|twimg
-facebook
+facebook|fbcdn
+yahoo|flickr
+wikipedia
 instagram
 akamaihd
 dropbox
+feedly
 dmm
+
 
 #END
