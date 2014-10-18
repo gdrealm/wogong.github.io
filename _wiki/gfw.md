@@ -28,6 +28,12 @@ GFW 中国长城防火墙 Great Fire Wall
 非常方便，价格便宜，按流量计费，亦可包月，价格便宜。
 <https://vnet.link>
 需要注册请联系我索要邀请码。
+wogong2 MFM
+wogong0
+wogong4 尚有剩余流量
+wogong1 0
+wogong3 0
+
 
 ### 曲径
 * PAC

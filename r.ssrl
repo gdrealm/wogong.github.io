@@ -5,16 +5,13 @@
 #BEGIN
 
 [wildcard]
-*://t66y.com/*
 *://xwall.io/*
-*://i.ytimg.com/*
 *://*.amazonaws.com/*
 *://t.co/*
 *://bt.neu6.edu.cn/*
 *://www.eyny.com/*
 *://hdchina.org/*
 *://www.piring.com/*
-*://s.ytimg.com/*
 *://www02.eyny.com/*
 *://iceimg.com/*
 *://bt.byr.cn/*
@@ -25,19 +22,20 @@
 *://www.torrentfunk.tk/*
 *://ck101.com/*
 *://online.wsj.com/*
-*://cn.nytimes.com/*
 
 [regexp]
-goo|ggpht|gstatic|youtube
+goo|ggpht|gstatic|youtube|android|ytimg
 twitter|twimg
 facebook|fbcdn
+microsoft|live|hotmail|outlook
 yahoo|flickr
+dnsimple
 wikipedia
 instagram
 akamaihd
 dropbox
-feedly
-dmm
-
+feedly|nytimes
+v2ex
+dmm|7y7y|t66y
 
 #END
