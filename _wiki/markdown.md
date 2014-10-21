@@ -2,7 +2,7 @@
 layout: wiki
 title: markdown
 create: 2014-08-08
-update: 2014-08-08
+update: 2014-10-21
 ---
 
 
@@ -15,3 +15,6 @@ markdown 写博客，轻松的文章。
 2. latex, then pandoc convert
 
 
+## 常用语法
+
+插入图片：![image](http://wogong-image.b0.upaiyun.com/)

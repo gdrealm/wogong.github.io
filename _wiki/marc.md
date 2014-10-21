@@ -1,6 +1,7 @@
 ---
 layout: wiki
 title: marc
+update: 2014-10-21
 ---
 
 # Marc
@@ -16,7 +17,7 @@ title: marc
 
 - Step 2.  Drag license.dat onto Keygen.exe to Generate license.dat.“Drag” means that “将文件拖动到keygen中，然后license.dat被patch成为license for your computer”。如图：
 
-![drag](http://wogong.qiniudn.com/wikimarc_lic_drag.jpg)
+![drag](http://wogong-image.b0.upaiyun.com/wiki/marc_lic_drag.jpg)
 
 - Step 3.  That's all.
 
@@ -27,7 +28,7 @@ title: marc
 
 安装完毕后配置，建议将上一步骤生成的license.dat放在此程序的安装目录，一切按照默认路径即可。以下是配置LMTOOLS
 
-![server](http://wogong.qiniudn.com/wikimarc_lic_server.png)
+![server](http://wogong-image.b0.upaiyun.com/wiki/marc_lic_server.png)
 最后save，开启服务。
 
 

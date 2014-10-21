@@ -10,7 +10,7 @@ tags: [github, jekyll]
 
 今日折腾了许久，更换了评论系统，由[Disqus](http://disqus.com/)转到了[多说](http://duoshuo.com/)，主要是考虑前者在国内被墙的厉害。但是在挂上VPN推送到[GitHub]()的几秒后弹出邮件提示“Page Build Failure”，详见下图：
 
-![failer](http://wogong.qiniudn.com/blog_github_page_failer.png)
+![failer](http://wogong-image.b0.upaiyun.com/github_page_failer.png)
 
 由于本地已经测试，可以成功build，所以倍感奇怪，网上搜索之后发现可能是Jekyll的版本与GitHub的版本不一样，可以通过`jekyll -v`查看本地安装的Jekyll版本，如果并非最新版本需要升级，当前的最新版本是`0.12.0`
 

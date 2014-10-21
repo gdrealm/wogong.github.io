@@ -2,7 +2,7 @@
 layout: wiki
 title: proxy
 create: 2014-06-07
-update: 2014-10-12
+update: 2014-10-21
 ---
 GFW 中国长城防火墙 Great Fire Wall
 
@@ -10,9 +10,9 @@ GFW 中国长城防火墙 Great Fire Wall
 ### 个人免费分享 ShadowSocks 帐号
 1. Android  
 下载 Shadowsocks 应用，添加配置，扫描二维码：  
-![ssla](http://wogong.qiniudn.com/wikissla.png)
+![ssla](http://wogong-file.b0.upaiyun.com/ssla.png)
 2. 桌面  
-[配置文件](http://wogong.qiniudn.com/wikissla.json)
+[配置文件](http://wogong-file.b0.upaiyun.com/ssla.json)
     - Windows
         - 32bit <http://dl.chenyufei.info/shadowsocks/shadowsocks-local-win32-1.1.1.zip>
         - 64bit <http://dl.chenyufei.info/shadowsocks/shadowsocks-local-win64-1.1.1.zip>
