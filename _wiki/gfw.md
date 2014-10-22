@@ -106,6 +106,6 @@ wogong3 0
     >Restart chinadns and dnsmasq
 
 
-
-
+5. gfwlist2pac <https://github.com/clowwindy/gfwlist2pac>
+gfwlist2pac -f pac -p "SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080; HTTPS node-cnx.vnet.link:111; PROXY node-cnx.vnet.link:110; DIRECT;" --user-rule user_rule.txt
 
