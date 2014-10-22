@@ -54,6 +54,7 @@ var domains = {
   "fizzik.com": 1, 
   "bbg.gov": 1, 
   "imagezilla.net": 1, 
+  "feedly.com": 1, 
   "myforum.com.hk": 1, 
   "imlive.com": 1, 
   "webshots.com": 1, 
