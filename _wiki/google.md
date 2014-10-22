@@ -2,7 +2,7 @@
 layout: wiki
 title: google
 create: 2014-08-28
-update: 2014-08-28
+update: 2014-10-21
 ---
 
 
@@ -81,3 +81,5 @@ http://lucifr.com/2011/07/03/some-things-you-dont-know-about-google-plus/
 ## drive
 
 proxycap+ss+hosts/chinadns
+
+## chrome download: <https://getchrome.io/>
