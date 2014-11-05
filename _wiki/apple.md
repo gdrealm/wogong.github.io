@@ -1,8 +1,8 @@
 ---
 layout: wiki
-title: itunes
+title: apple
 create: 2014-06-27
-update: 2014-06-27
+update: 2014-10-24
 ---
 
 Q: How to export iTunes podcast OPML file?

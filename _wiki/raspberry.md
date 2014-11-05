@@ -2,7 +2,7 @@
 layout: wiki
 title: raspberry
 create: 2014-09-02
-update: 2014-10-06
+update: 2014-10-30
 ---
 
 ## current services
@@ -127,3 +127,7 @@ Edit the file /etc/wpa_supplicant/wpa_supplicant.conf and add the network={.....
 ## 参考资料
 http://linuxtoy.org/archives/cool-ideas-for-raspberry-pi.html
 
+
+# CUPS
+打印
+安装驱动。Windows添加 `\\rp\printer_name`

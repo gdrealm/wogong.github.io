@@ -29,11 +29,19 @@ GFW 中国长城防火墙 Great Fire Wall
 <https://vnet.link>
 需要注册请联系我索要邀请码。
 wogong2 MFM
-wogong0
+wogong0 HYS
 wogong4 尚有剩余流量
 wogong1 0
 wogong3 0
+wogong5 0
 
+日本  全局[全球用户]    node-jp.vnet.link:465
+北美  全局[全球用户]    node-los.vnet.link:465
+中国  全局[全球用户]    node-cnx.vnet.link:465
+香港  全局[全球用户]    node-hk.vnet.link:465
+日本  智能[中国用户]    node-jp.vnet.link:999
+北美  智能[中国用户]    node-los.vnet.link:999
+香港  智能[中国用户]    node-hk.vnet.link:999
 
 ### 曲径
 * PAC
@@ -60,7 +68,7 @@ wogong3 0
 1. Privoxy HTTP 127.0.0.1:8118
 2. cow: https://github.com/cyfdecyf/cow
 3. squid: 王者，配置复杂
-4. polipo 简洁的HTTP代理，a caching web proxy  http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/  
+4. polipo 简洁的HTTP代理，a caching web proxy  Polipo is a caching web proxy designed to be used as a personal cache or a cache shared among a few users. http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/  
    - 配置文件
 
             authCredentials = "username:passwd" # 基本的HTTP认证

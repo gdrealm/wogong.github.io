@@ -33,7 +33,55 @@ rewrite ^/(.*) http://www.jefflei.com/$1 permanent;
 }
 
 
+4. Nginx 反代草榴论坛 的配置如下：
+
+        server
+        {
+        listen 80;
+        server_name xxx.xxx;
+
+        location / {
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-Ip $remote_addr;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_pass http://184.154.128.246/;
+        }
+
+        }
+        #把所有的xxx.xxx改为你自己的域名即可
+
+5. Nginx 反代 Google Scholar 的配置如下：
+
+        server
+        {
+        listen 443;
+        server_name xxx.xxx;
+
+        ssl on;
+        ssl_certificate /usr/local/nginx/ssl.crt;#这里改为你自己的证书路径
+        ssl_certificate_key /usr/local/nginx/ssl.key;#这里改为自己的密钥路径
+        ssl_protocols SSLv3 TLSv1;
+        ssl_ciphers ALL:-ADH:+HIGH:+MEDIUM:-LOW:-SSLv2:-EXP;
 
 
-## 参考资料
-1. 淘宝：http://tengine.taobao.org/book/chapter_02.html
+        location / {
+        proxy_redirect http://scholar.google.com/ /;
+        proxy_set_header Host "scholar.google.com";
+        proxy_set_header Accept-Encoding "";
+        proxy_set_header User-Agent $http_user_agent;
+        proxy_set_header Accept-Language "zh-CN";
+        proxy_set_header Cookie "PREF=ID=047808f19f6de346:U=0f62f33dd8549d11:FF=2:LD=zh-CN:NW=1:TM=1325338577:LM=1332142444:GM=1:SG=2:S=rE0SyJh2W1IQ-Maw";
+        proxy_pass http://scholar.google.com;
+        sub_filter scholar.google.com xxx.xxx;
+        sub_filter_once off;
+        }
+
+        }
+
+        server
+        {
+        listen 80;
+        server_name xxx.xxx;
+        rewrite ^(.*) https://xxx.xxx/$1 permanent;
+        }
+        #把所有的xxx.xxx改为你自己的域名

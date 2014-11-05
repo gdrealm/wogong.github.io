@@ -8,7 +8,7 @@ update: 2014-07-19
 09DD1201
 
 
-http://www.ruanyifeng.com/blog/2013/07/gpg.html
+<http://www.ruanyifeng.com/blog/2013/07/gpg.html>
 
 1. 生成密钥
 gpg --gen-key
