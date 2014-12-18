@@ -43,3 +43,6 @@ Deletes DOF constraints on a line.
 ## install on windows
 as standard user, you should install Ansys as administrator.
 then you will get a environment varible error running Ansys. Just copy the ansys related environment varibles to current users. Done.
+
+## prepost
+制作动画，file-movie

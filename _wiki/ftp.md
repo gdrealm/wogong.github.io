@@ -7,6 +7,8 @@ update: 2014-10-24
 1. Windows Filezila Client
 2. linux => lftp linux cli ftp client
 	lftp -u user,passwd server
+mirror
+mirror --reverse
 
 ## server
 1. linux

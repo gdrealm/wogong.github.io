@@ -51,6 +51,7 @@ pip uninstall
 2. 
 
 ## 基本语法
+注释，采用\#符号
 1. function
 
         def func_name():

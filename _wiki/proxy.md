@@ -2,7 +2,7 @@
 layout: wiki
 title: proxy
 create: 2014-06-07
-update: 2014-10-21
+update: 2014-11-07
 ---
 GFW 中国长城防火墙 Great Fire Wall
 
@@ -28,20 +28,21 @@ GFW 中国长城防火墙 Great Fire Wall
 非常方便，价格便宜，按流量计费，亦可包月，价格便宜。
 <https://vnet.link>
 需要注册请联系我索要邀请码。
-wogong2 MFM
-wogong0 HYS
-wogong4 尚有剩余流量
-wogong1 0
-wogong3 0
-wogong5 0
 
-日本  全局[全球用户]    node-jp.vnet.link:465
-北美  全局[全球用户]    node-los.vnet.link:465
-中国  全局[全球用户]    node-cnx.vnet.link:465
-香港  全局[全球用户]    node-hk.vnet.link:465
-日本  智能[中国用户]    node-jp.vnet.link:999
-北美  智能[中国用户]    node-los.vnet.link:999
-香港  智能[中国用户]    node-hk.vnet.link:999
+* wogong2 MFM
+* wogong0 HYS
+* wogong4 尚有剩余流量
+* wogong1 0
+* wogong3 0
+* wogong5 0
+
+* 日本  全局[全球用户]    node-jp.vnet.link:465
+* 北美  全局[全球用户]    node-los.vnet.link:465
+* 中国  全局[全球用户]    node-cnx.vnet.link:465
+* 香港  全局[全球用户]    node-hk.vnet.link:465
+* 日本  智能[中国用户]    node-jp.vnet.link:999
+* 北美  智能[中国用户]    node-los.vnet.link:999
+* 香港  智能[中国用户]    node-hk.vnet.link:999
 
 ### 曲径
 * PAC

@@ -4,6 +4,7 @@ title: raspberry
 create: 2014-09-02
 update: 2014-10-30
 ---
+树莓派
 
 ## current services
 1. DNSmasq + ChinaDNS

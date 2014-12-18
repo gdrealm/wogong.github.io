@@ -2,7 +2,7 @@
 layout: wiki
 title: git
 create: 2014-06-14
-update: 2014-08-30
+update: 2014-12-07
 ---
 
 ## note
@@ -23,6 +23,7 @@ update: 2014-08-30
 5. git on windows corrupt  
    `C:\Program Files (x86)\Git\bin>rebase.exe -b 0x50000000 msys-1.0.dll`
    快捷方式 sh.exe 设置属性快捷键都很方便
+6. git branch --set-upstream master origin/<branch> 设置默认提交repo及branch
 
 ## 学习书籍
 1. Pro Git 本书有简体中文版本

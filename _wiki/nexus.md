@@ -1,8 +1,7 @@
 ---
 layout: wiki
 title: nexus
-create: 0000-00-00
-update: 2014-10-24
+update: 2014-11-16
 ---
 Google 四儿子
 
@@ -21,3 +20,11 @@ TWRP
 
 
 首先进入操作系统的拨号“Dialer”界面，输入*#*#4636#*#*即可快速进入Android的工程测试模式。
+
+
+##　打开位置报告与Google Now
+1. market unlocker
+2. 飞行模式重启
+3. VPN
+4. 清理Google Search数据
+5. OK
