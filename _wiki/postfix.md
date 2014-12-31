@@ -1,16 +1,15 @@
 ---
 layout: wiki
 title: postfix
+create: 2014-12-30
+update: 2014-12-30
 ---
 
-== 学习书籍 ==
-
-[[http://www.amazon.com/Postfix-Definitive-Kyle-Dent-D/dp/0596002122/ref=sr_1_1?ie=UTF8&qid=1367378159&sr=8-1&keywords=postfix|Postfix: The Definitive Guide]]
+学习书籍: Postfix: The Definitive Guide
 
 本书有中文版本。
 
-== 常用命令 ==
-
+## 常用命令
 
 删除邮件队列中全部文件：
     
@@ -29,8 +28,3 @@ postmap hash:/etc/postfix/name 大部分文件都需要这样做才OK
 修改之后运行 sudo newaliases生效。
 
 http://unix.stackexchange.com/questions/65013/understanding-etc-aliases-and-what-it-does
-
-
-
-----
-CategoryApp

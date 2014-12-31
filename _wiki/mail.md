@@ -2,8 +2,7 @@
 layout: wiki
 title: mail
 ---
-
-# Mail Server
+Mail Server
 
 ## 邮件服务器设置
 
