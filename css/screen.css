@@ -22,33 +22,33 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.3em;
+  font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", "SimSun", sans-serif;
+  color: #222223;
 }
 
 h1 {
-  font-size: 2.25em;
-  margin-bottom: 1em;
+  font-size: 1.8em;
+  margin: 0.67em 0;
 }
 
 h2 {
-  font-size: 1.75em;
-  margin-bottom: 1em;
+  font-size: 1.5em;
+  margin: 0.83em 0;
 }
 
 h3 {
-  font-size: 1.5em;
-  margin-bottom: 1em;
+  font-size: 1.17em;
+  margin: 1em 0;
 }
 
-h4 {
-  font-size: 1..25em;
-  margin-bottom: 1em;
+h4, h5, h6 {
+  font-size: 1em;
+  margin: 1.6em 0 1em 0;
 }
 
 p {
-  margin-bottom: 16px;
+  margin-top: 0;
+  margin-bottom: 1.46em;
 }
 
 hr {
@@ -68,6 +68,87 @@ a:hover {
 a:visited {
   color: #a0a;
 }
+
+code {
+  color: #808080;
+  font-size: 0.96em;
+  background-color: #f9f9f7;
+  padding: 1px 2px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  word-wrap: break-word;
+}
+
+pre {
+  margin: 1.64em 0;
+  padding: 7px;
+  border: none;
+  border-left: 3px solid #dadada;
+  padding-left: 10px;
+  overflow: auto;
+  line-height: 1.5;
+  font-size: 0.96em;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  color: #4c4c4c;
+  background-color: #f9f9f7;
+}
+
+pre code {
+  color: #4c4c4c;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+blockquote {
+  margin: 0 0 1.64em 0;
+  border-left: 3px solid #dadada;
+  padding-left: 12px;
+  color: #666664;
+}
+
+blockquote a {
+  color: #666664;
+}
+
+ul,
+ol {
+  margin: 0 0 24px 6px;
+  padding-left: 16px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-bottom: 0.2em;
+}
+
+li ul,
+li ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 14px;
+}
+
+li ul {
+  list-style-type: disc;
+}
+
+li ul ul {
+  list-style-type: circle;
+}
+
+li p {
+  margin: 0.4em 0 0.6em;
+}
+
 
 table {
   font-size: inherit;
@@ -238,10 +319,4 @@ ul.posts {
   #related h2 {
     margin-bottom: 1em;
   }
-
-
-/* Pinboard */
-.pin-title { font-size:1em;text-decoration:none;color:#00a}
-.pin-description { color:#555; }
-.pin-tag { color:#18c;text-decoration:none;font-size:0.9em; }
 

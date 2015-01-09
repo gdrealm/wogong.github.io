@@ -80,9 +80,7 @@ http://windows.microsoft.com/zh-cn/windows/windows-update-error-80070003
 
 
 WINDOWS 中交换 CONTROL 键和 CAPS LOCK 键
-2013 年 7 月 16 日 MUNINN	1条评论
-How to swap the caps and ctrl in windows
-本篇文章有效的操作系统：Windows XP/Vista/7
+
 
 在开始的搜索框或者运行框输入regedit ，打开注册表管理器。
 转到  HKEY_LOCAL_MACHINE -> System -> CurrentControlSet -> Control -> KeyBoard Layout

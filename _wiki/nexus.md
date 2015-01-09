@@ -19,6 +19,13 @@ Google 四儿子
 
 3. 打开位置报告与Google Now => [LocationReportEnabler](https://github.com/GhostFlying/LocationReportEnabler) need root
 
+4. 进入bootload 模式：
+     - adb reboot bootloader
+     - 关机情况下，同时按电源键+音量减键
+
+5. 解锁 fastboot oem unlock
+
+
 ## 线刷OTA或官方镜像
 - 前提是安装好驱动与adb tools
 - Factory Images for Nexus Devices: https://developers.google.com/android/nexus/images

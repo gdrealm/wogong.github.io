@@ -1,7 +1,8 @@
 ---
 layout: wiki
 title: kindle
-update: 2014-07-16
+create: 2014-07-16
+update: 2015-01-01
 ---
 
 1. kindle dxg 适合的PDF：优化->印刷版本。
@@ -185,3 +186,7 @@ USE_ALT_FONTS ，重命名的时候要确保文件无扩展名（这就是第一
 移动铁通的网络，由于墙的影响，kindle会无法连接推送服务器，提示如此。
 
 ![kindle](http://wogong-image.b0.upaiyun.com/wiki/kindlegfw.gif)
+
+
+书籍若想支持生词本，需要含有ASIN编码，可以利用Calibre添加。
+http://www.mobileread.com/forums/showthread.php?t=224518

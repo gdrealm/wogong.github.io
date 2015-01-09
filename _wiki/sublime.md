@@ -17,7 +17,7 @@ Tutorials book: (all in calibre lib)
 	<https://github.com/textmate/fortran.tmbundle>
 	download [tmLanguage](https://raw.githubusercontent.com/textmate/fortran.tmbundle/master/Syntaxes/Fortran%20-%20Modern.tmLanguage)
 3 add date in sublime snippet. <http://stackoverflow.com/questions/11879481/can-i-add-date-time-for-sublime-snippet>
-
+4. { "word_wrap" : true } 自动折行
 
 ## package
 1. markdown-preview

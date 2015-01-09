@@ -4,65 +4,46 @@ title: proxy
 create: 2014-06-07
 update: 2014-11-07
 ---
-GFW 中国长城防火墙 Great Fire Wall
+本指南提供科学上网服务指导。
 
-## 推荐方式
-### 个人免费分享 ShadowSocks 帐号
-1. Android  
-下载 Shadowsocks 应用，添加配置，扫描二维码：  
-![ssla](http://wogong-file.b0.upaiyun.com/ssla.png)
-2. 桌面  
-[配置文件](http://wogong-file.b0.upaiyun.com/ssla.json)
-    - Windows
-        - 32bit <http://dl.chenyufei.info/shadowsocks/shadowsocks-local-win32-1.1.1.zip>
-        - 64bit <http://dl.chenyufei.info/shadowsocks/shadowsocks-local-win64-1.1.1.zip>
-    - Other
+## 相关概念
+1. 防火长城（英语：Great Firewall of China，常用简称：GFW，中文也称中国国家防火墙或防火长城。），是对中国政府在其互联网边界审查系统（包括相关行政审查系统）的统称。
+2. 服务器  
+    一般指提供特定服务的主机，你所访问的任何网页实际上都托管在服务器上。
+3. 代理服务器
+    科学上网最普遍的方式是通过第三方未被封禁的境外服务器进行访问，此服务器即称为代理服务器。
 
+
+## 推荐付费服务
 
 ### @cosbeta 提供的服务
 * Shadowsocks + VPN +APNP
 应网站要求不公布网址，目前使用其提供的shadowsocks，按年收费，价格便宜，自助服务。另有VPN，APNP等，多服务器，多协议。
 
 ### VnetLink 微林
-* PAC + HTTP + AnyConnect
+* HTTP
 非常方便，价格便宜，按流量计费，亦可包月，价格便宜。
 <https://vnet.link>
 需要注册请联系我索要邀请码。
-
-* wogong2 MFM
-* wogong0 HYS
-* wogong4 尚有剩余流量
-* wogong1 0
-* wogong3 0
-* wogong5 0
-
-* 日本  全局[全球用户]    node-jp.vnet.link:465
-* 北美  全局[全球用户]    node-los.vnet.link:465
-* 中国  全局[全球用户]    node-cnx.vnet.link:465
-* 香港  全局[全球用户]    node-hk.vnet.link:465
-* 日本  智能[中国用户]    node-jp.vnet.link:999
-* 北美  智能[中国用户]    node-los.vnet.link:999
-* 香港  智能[中国用户]    node-hk.vnet.link:999
 
 ### 曲径
 * PAC
 高端大气上档次，多平台支持，价格相比以上较为昂贵。尤其推荐其Android平台下的APP，一键无忧。
 <http://getqujujing.com>
 
-## 常用翻墙原理
+## 常用方式
 1. shadowsocks
-    1. PC 端有靠谱的软件，配合 Chrome 的 SwithchySharp 扩展使用。
+    1. PC 端有靠谱的客户端，配合 Chrome 的 SwithchyOmega 扩展使用。
     2. 移动端
-       - Android Google Play 有 Shadowsocks 的应用，root后可以全局使用，智能切换，完全替代 VPN
-       - iOS 也有应用，不过没有使用过。
-2. ssh
+       - Android Google Play 有 Shadowsocks 的应用，不需ROOT，智能切换，完全替代 VPN
+       - iOS 也有应用，需要越狱。
+3. HTTP or HTTPS proxy
 3. VPN virtual private network
     1. PPTP/L2TP
     2. OpenVPN
     3. AnyConnect
-4. APN
+4.ssh
 5. Hosts
-6. IPv6+Hosts
 7. gae: goagent
 
 ## 辅助软件
@@ -76,7 +57,6 @@ GFW 中国长城防火墙 Great Fire Wall
             socksParentProxy = "127.0.0.1:7070" # 设置透明代理
             socksProxyType = socks5
    - Manual http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/polipo.html#Top 
-5. 
 
 ## 项目
 1. gfwlist
