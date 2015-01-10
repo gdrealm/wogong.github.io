@@ -99,3 +99,7 @@ WINDOWS 中交换 CONTROL 键和 CAPS LOCK 键
 好了 现在重启电脑 应该一切生效了 只用改这一处两个键就交换了
 
 出处： http://www.kodiva.com/post/swapping-caps-lock-and-control-keys
+
+## Windows 8.1 安装密钥
+专业版安装密匙：XHQ8N-C3MCJ-RQXB6-WCHYG-C9WKB 
+普通版安装密匙：334NH-RXG76-64THK-C7CKG-D3VPT
