@@ -2,7 +2,7 @@
 layout: default
 title: 离线下载
 create: 2015-01-10
-update: 2015-01-10
+update: 2015-01-12
 ---
 
 ## 原理
@@ -18,10 +18,9 @@ update: 2015-01-10
 1. 任何时候告知本人你需要的资源，或者下载链接。远程下载到服务器。
 2. 任何成员去网吧时尽力将服务器的所有离线资源（包括其他资源）下载到本地。
 
-
 ## 注
 1. 远程服务器地址：(wogong:wogong_cc)
-    - <http://dl.wogong.net>
+    - <http://la.wogong.net>
+    - <http://ar.wogong.net>
     - <http://se.wogong.net>
-2. 推荐使用IDM作为下载工具（[安装包](http://dl.wogong.net/idm621.exe)）
-3. 关于在图书馆电脑下载资源的方法。
+2. 推荐使用IDM作为下载工具（[安装包](http://la.wogong.net/wogong-file/idm621.exe)）
