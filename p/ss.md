@@ -5,6 +5,8 @@ create: 2015-01-10
 update: 2015-01-10
 ---
 
+### 1. Windows 平台
+
 #### 下载最新版Shadowsocks
 
 Download [latest release](https://sourceforge.net/projects/shadowsocksgui/files/dist/).
@@ -20,3 +22,19 @@ For >= Windows 8, download Shadowsocks-win-dotnet4.0-x.x.x.zip.
 
 解压后将exe文件和配置文件（gui-config.json）放在同一目录，然后运行exe文件，之后右键屏幕右下角的shadowsocks图标，选中enable。现在，打开你的IE或Chrome，应该可以愉快的上网了。
 
+### 2. Mac OSX
+goagentX
+
+### 3. Android
+
+下载 Shadowsocks/影梭，扫描二维码，或者手动输入配置。
+
+### 4. iOS
+VPN
+
+### 最后
+任何免费的服务都是不靠谱的，至少有以下问题：
+1. 不稳定。
+2. 不安全，你确认人家不会作恶？例如偷窥你的隐私什么的，相信我，这是可能的。
+
+推荐使用付费服务。详见<http://wogong.net/wiki/proxy.html>  

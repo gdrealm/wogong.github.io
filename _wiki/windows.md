@@ -2,10 +2,8 @@
 layout: wiki
 title: windows
 create: 2014-06-21
-update: 2014-09-24
+update: 2015-01-11
 ---
-
-
 ## note
 1. 环境变量管理。Envman
 2. 快速启动 `d:\Dropbox\Software\_QS\` working with adress bar in task bar.
@@ -29,6 +27,7 @@ update: 2014-09-24
 12. Appdata 文件夹内部文件位置可以更改，包括 Local LocalLow Roaming
 13. 最近将日常使用的用户更改为标准账户，用了Windows系统五年多了，到今天才开始理解Windows的用户权限控制。以前总是吐槽微软，这次可以吐槽自己了。
 14. 开启了Windows的 file history 功能，同步到局域网的 raspberry
+15. 在CMD下输入netstat -anp tcp可以查看当前主机tcp开放了哪些端口
 
 ## Reinstall
 1. 软件
