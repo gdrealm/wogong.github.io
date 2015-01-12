@@ -1,11 +1,12 @@
 ---
 layout: default
 title: 科学上网
-create: 2015-01-10
-update: 2015-01-10
+create: 2015-01-12
+update: 2015-01-12
+published: true
 ---
 
-### 1. Windows 平台
+### Windows上使用Shadowsocks
 
 #### 下载最新版Shadowsocks
 
@@ -27,7 +28,10 @@ goagentX
 
 ### 3. Android
 
-下载 Shadowsocks/影梭，扫描二维码，或者手动输入配置。
+#### 安装 影梭/Shadowsocks 应用
+
+#### 若PC上已经使用Shadowsocks，右键显示二维码，利用APP的添加配置功能直接扫描二维码即可。当然你也可以手动输入配置。
+
 
 ### 4. iOS
 VPN
