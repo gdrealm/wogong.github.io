@@ -2,7 +2,7 @@
 layout: wiki
 title: windows
 create: 2014-06-21
-update: 2015-01-11
+update: 2015-01-15
 ---
 ## note
 1. 环境变量管理。Envman
@@ -22,12 +22,14 @@ update: 2015-01-11
 10. 计划任务 Schedule tasks 用于自动备份 C 盘文件还是很方便的。
 11. CMD 自带命令： help
 12. Windows en   
-    中文 需要更改 语音设置 否则一些中文软件会出现乱码
+    中文 需要更改 语言设置 否则一些中文软件会出现乱码
     lpksetup 手动安装下载的语言包
 12. Appdata 文件夹内部文件位置可以更改，包括 Local LocalLow Roaming
 13. 最近将日常使用的用户更改为标准账户，用了Windows系统五年多了，到今天才开始理解Windows的用户权限控制。以前总是吐槽微软，这次可以吐槽自己了。
 14. 开启了Windows的 file history 功能，同步到局域网的 raspberry
 15. 在CMD下输入netstat -anp tcp可以查看当前主机tcp开放了哪些端口
+16. runas /noprofile /user:admin cmd
+17. 系统环境变量中的 PATHEXT 项没有.EXE，在CMD下面执行命令需要加上exe后缀才能执行
 
 ## Reinstall
 1. 软件

@@ -2,7 +2,7 @@
 layout: wiki
 title: vps
 update: 2014-07-06
-update: 2014-07-18
+update: 2015-02-04
 ---
 
 ## 配置VPS
@@ -45,8 +45,9 @@ update: 2014-07-18
         # ubuntu  
         sudo tzconfig`，or `dpkg-reconfigure tzdata
         # debian   
-        debian tzselect
+        tzselect
         sudo cp /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime
+        sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
         # arch  
         timedatectl set-timezone Asia/Shanghai
 9. hostname
@@ -106,3 +107,7 @@ update: 2014-07-18
    日本机房速度不错，类似DigitalOcean 
    <http://www.vultr.com/?ref=6802768>
    - test <https://www.vultr.com/locations/>
+
+9. VPSTO
+   @showfom 推出的廉价VPS，主要用于科学上网
+   <https://portal.vpsto.com/aff.php?aff=045>

@@ -1,4 +1,4 @@
-layout: wiki
+  layout: wiki
 title: linux
 create: 2014-07-18
 update: 2014-09-24

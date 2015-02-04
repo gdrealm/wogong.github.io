@@ -4,6 +4,8 @@
 var domains = {
   "gimpshop.com": 1, 
   "www.muji.net": 1,
+  "gm1.ggpht.com": 1,
+  "s3.amazonaws.com": 1,
   "www.wunderlist.com": 1,
   "akamai.net": 1,
   "digg.com": 1,

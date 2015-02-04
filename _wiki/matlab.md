@@ -2,10 +2,12 @@
 layout: wiki
 title: matlab
 create: 2014-09-10
-update: 2014-09-10
+update: 2015-02-03
 ---
 
 MATLAB MATrix LABoratory
+
+x=solve('x^2+100*x+99=0','x')
 
 ## Install
 1. MATLAB运行错误
