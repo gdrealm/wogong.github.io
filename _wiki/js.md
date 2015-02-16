@@ -1,6 +1,8 @@
 ---
 layout: wiki
-title: js
+title: javascript
+create: 2015-02-14
+update: 2015-02-14
 ---
 
 学习教材：《JavaScript网页编程从入门到精通》 北京科海电子出版社 

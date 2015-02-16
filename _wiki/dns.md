@@ -1,8 +1,8 @@
----
+    ---
 layout: wiki
 title: dns
 create: 1970-01-01
-update: 2014-07-24
+update: 2015-02-10
 ---
 DNS: Domain Name Server
 
@@ -16,7 +16,10 @@ DNS: Domain Name Server
     ipconfig/flushdns
     net stop/start dnscache
     # MAC
-    sudo killall -HUP mDNSResponder (for Lion & Mountain Lion)
+        - sudo killall -HUP mDNSResponder (for Lion & Mountain Lion)
+        - dscacheutil -flushcache 
+    # Chrome
+        chrome://net-internals/#dns
 
 ## Tool
 ### dnsmasq

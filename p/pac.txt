@@ -2,6 +2,8 @@
 // https://github.com/clowwindy/gfwlist2pac
 
 var domains = {
+  "akamaihd.net": 1, 
+  "www.mindomo.com": 1, 
   "gimpshop.com": 1, 
   "www.muji.net": 1,
   "gm1.ggpht.com": 1,

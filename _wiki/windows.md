@@ -2,7 +2,7 @@
 layout: wiki
 title: windows
 create: 2014-06-21
-update: 2015-01-15
+update: 2015-02-13
 ---
 ## note
 1. 环境变量管理。Envman
@@ -30,7 +30,21 @@ update: 2015-01-15
 15. 在CMD下输入netstat -anp tcp可以查看当前主机tcp开放了哪些端口
 16. runas /noprofile /user:admin cmd
 17. 系统环境变量中的 PATHEXT 项没有.EXE，在CMD下面执行命令需要加上exe后缀才能执行
+18. 虚拟wifi
 
+        1、笔记本有无线网卡且支持虚拟WIFI。 
+        2、按WIN+X键，以管理员身份运行CMD回车。
+        3、输入netsh wlan set hostednetwork mode=allow ssid=mywifi key=12345678 设置无线名称和链接密码，等有提示设置成功出现再关闭。 
+        4、输入netsh wlan start hostednetwork 启动WIFI承载网络出现再关闭。 
+        5、此时控制面板中找到网络和共享中心点击进入。 
+        6、左侧点击“更改适配器设置”会弹出网络连接界面里面有本地连接 无线连接 无线连接2（Microsoft托管网络虚拟适配器这个无线连接2就是WIFI热点啦） ，右击属性，找到Internet TCP/IP协议4， 双击进入设置IP 地址为192.168.123.1 掩码255.255.255.0 关闭并确定。 
+        7、找到本地连接 （用路由器网线上网的那个也就是） 同样右击属性，共享选项卡--允许其他网络用户通过次...，前面打钩，选择-家庭网络选中无线网络2（就是选WIFI热点刚刚设置那个），确定。 
+        8，OK，这样基本电脑端设置就OK了，然后进行手机设置。 
+        9、连接SSID mywifi 连接输入密码 12345678，连接上。 
+        10、全部搞定。 
+        11、如果是宽带连接不是路由器上网，把本地连接的操作的换到宽带连接（拨号那个）设置。
+19. winsat disk -drive c 测试硬盘速度
+20. 
 ## Reinstall
 1. 软件
   - Office 记得取消安装一些奇葩的组件

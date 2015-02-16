@@ -1,10 +1,9 @@
 ---
 layout: wiki
 title: java
+create: 2015-02-14
+update: 2015-02-14
 ---
-
-# JAVA
-
 
 https://wiki.debian.org/Java/
 
