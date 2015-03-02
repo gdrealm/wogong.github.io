@@ -39,6 +39,7 @@ flake8 同样也很神奇，但是暂时没必要安装
 
 sudo apt-get install python-pip
 pip install 
+pip install -U 安装更新
 pip uninstall
 
 ## 相关项目

@@ -4,6 +4,55 @@ title: javascript
 create: 2015-02-14
 update: 2015-02-14
 ---
+## javascript
+1. variables `var counter=140;`
+        var tweet = "hello world";
+        var lenght = tweet.length;
+2. comparisons
+        > - Greater than
+        < - Less than
+        >= Greater than or equal to
+        <= Less than or equal to
+        === Equal to
+        !== Not equal to
+3. if
+        if(condition) {
+        
+        }
+4. function
+        var main = funtion(parameters) {
+        
+        };
+
+## jQuery
+1. main
+        var main=function() {
+            
+        }
+            
+        $(document).ready(main) //$(document)选择整个网页
+5. Event
+  - .click()
+  - .keypress()
+          var main = function() {
+            $(document).keypress(function() {
+              $(".btn").toggleClass("btn-like");
+              });
+            };
+          $(document).ready(main);
+          
+          //键盘m
+          $(document).keypress(function(event) {
+            if(event.which === 109) {
+              $('.dropdown-menu').toggle();
+              }
+            });
+  - 
+  
+          
+
+
+## other 
 
 学习教材：《JavaScript网页编程从入门到精通》 北京科海电子出版社 
 

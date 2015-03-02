@@ -10,7 +10,6 @@ update: 2015-02-13
 3. program and features 取消不常用的windows 功能。
 4. 如何修改网络类型？homegroup troubleshoot。
 5. 休眠
-
         powercfg -h off 关闭休眠
         powercfg /h /size 50   调整休眠文件大小 (50为内存百分比，范围50-100)
 
@@ -48,7 +47,7 @@ update: 2015-02-13
 ## Reinstall
 1. 软件
   - Office 记得取消安装一些奇葩的组件
-  - 小狼毫 用户资料夹采用mklink解决
+  - 小狼毫 用户资料夹采用mklink解决\ 同步至Dropbox
   - 7zip
   - 浏览器 Chrome
   - Drive 需要翻墙环境
@@ -57,7 +56,8 @@ update: 2015-02-13
   - 字体 Monoca
   - git
   - picasa
-  - eudict 程序文件需要备份
+  - eudict 程序文件需要备份 Portable文件夹 mklink to portable
+  - putty 注册表导出
 
 能绿色一一定绿色
 
@@ -69,7 +69,8 @@ update: 2015-02-13
 
 3. 安装完毕，做什么？
    - 更改个人文件默认位置，windows库
-   - 安装软件:输入法，office，迅雷，TC，Dropbox，Evernote
+   - everything 服务 开机启动
+   - 安装软件:输入法，office，TC，Dropbox，Evernote
 4. 数据
    - $HOME 目录 配置文件， vim
 
@@ -107,11 +108,14 @@ WINDOWS 中交换 CONTROL 键和 CAPS LOCK 键
 0010 3a 00 1d 00 00 00 00 00
 0018
 
+好了 现在重启电脑 应该  一切生效了 只用改这一处两个键就交换了
+
 0000 00 00 00 00 00 00 00 00
 0008 02 00 00 00 1d 00 3a 00
 0010 00 00 00 00
 
-好了 现在重启电脑 应该一切生效了 只用改这一处两个键就交换了
+只修改，不替换
+
 
 出处： http://www.kodiva.com/post/swapping-caps-lock-and-control-keys
 

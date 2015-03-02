@@ -2,7 +2,7 @@
 layout: wiki
 title: linux
 create: 2014-07-18
-update: 2014-09-24
+update: 2015-02-22
 ---
 
 我使用过的发行版，按照时间顺序依次为：Ubuntu, Fedora, Archlinux, Debian。
@@ -80,6 +80,9 @@ ubuntu下ack居然是另外一个东西，解决：
         ;
         要获取已安装软件包所包含文件的(very useful when you can't find the configuration files)
         pacman -Ql package
+        ;
+        pacman -U name.pkg.tar.bz2
+
 5. 文件系统  
    `fdisk, mkfs.ext3, mount df, du`
 6. 任务管理
@@ -148,13 +151,9 @@ http://wiki.ubuntu.org.cn/Apache%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA%E6%8C%87%E5
 ubuntu下ack居然是另外一个东西，解决：`sudo ln -sf /usr/bin/ack-grep /usr/local/bin/ack`
 
 
-
-
 ## Linux常用命令
-
 - 查看系统已有字体：fc-list
-
-- 查看电池电量信息：acpi
+- 查看电池电量信息：acpi; acpi -i
 
 - cd系列
     cd -  后退
@@ -256,11 +255,6 @@ e），查看所有用户
  * lsof
 
  * sudo chmod u+s `which ping`
-
-
-----
-CategoryApp
-
 
 Options
 
