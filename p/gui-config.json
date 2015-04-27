@@ -1,20 +1,12 @@
 {
-"configs" : [{
-"server" : "la.wogong.net",
-"server_port" : 8338,
-"local_port" : 8080,
-"password" : "wogong0",
-"method" : "aes-256-cfb",
-"remarks" : "LA"}
-,{
-"server" : "ar.wogong.net",
+"server" : "se.wogong.net",
 "server_port" : 8338,
 "local_port" : 8080,
 "password" : "wogong",
 "method" : "aes-256-cfb",
 "remarks" : "LA"}
 ,{
-"server" : "se.wogong.net",
+"server" : "ss.wogong.net",
 "server_port" : 8338,
 "local_port" : 8080,
 "password" : "wogong",

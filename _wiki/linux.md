@@ -83,6 +83,8 @@ ubuntu下ack居然是另外一个东西，解决：
         ;
         pacman -U name.pkg.tar.bz2
 
+        pacman -Qe
+
 5. 文件系统  
    `fdisk, mkfs.ext3, mount df, du`
 6. 任务管理

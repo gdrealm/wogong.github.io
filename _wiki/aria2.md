@@ -1,8 +1,14 @@
 ---
 layout: wiki
 title: aria2
-update: 2014-06-29
+update: 2015-03-17
 ---
+## Note
+1. Windows 下使用 VBS 建立开机启动脚本 http://bbs.kafan.cn/thread-1686205-1-1.html
+
+Successfully connected to Aria2 through remote RPC, however the connection is still insecure. For complete security try adding an authorization secret token while starting Aria2 (through the flag --rpc-secret)
+
+aria2c --all-proxy=http://proxy:8080 http://host/file
 
 aria2c --http-auth-challenge=true http://username:passwd@dl.wogong.net/MIT/MITRES2_002S10linear_lec01_300k.mp4
 

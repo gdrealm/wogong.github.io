@@ -3,6 +3,7 @@
 
 var domains = {
   "akamaihd.net": 1, 
+  "telegram.org": 1, 
   "www.mindomo.com": 1, 
   "gimpshop.com": 1, 
   "www.muji.net": 1,

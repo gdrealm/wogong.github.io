@@ -46,10 +46,7 @@ FORMAT SHORT E Floating point format with 5 digits.
 FORMAT LONG E Floating point format with 15 digits for double and 7 digits for single.
 FORMAT SHORT G Best of fixed or floating point format with 5 digits.
 FORMAT LONG G Best of fixed or floating point format with 15 digits for double and 7 digits for single.
-
-
 FORMAT may be used to switch between different output display formats of all numeric variables as follows:
-
 FORMAT HEX Hexadecimal format.
 FORMAT + The symbols +, - and blank are printed for positive, negative and zero elements. Imaginary parts are ignored.
 FORMAT BANK Fixed format for dollars and cents.
@@ -57,3 +54,6 @@ FORMAT RAT Approximation by ratio of small integers.
 FORMAT may be used to affect the spacing in the display of all variables as follows:
 FORMAT COMPACT Suppresses extra line-feeds.
 FORMAT LOOSE Puts the extra line-feeds back in 
+7. `...` 用于多行输入
+8. 随机数 0-1均匀分布 rand()
+9. 画点 `plot(x,y,'*')`

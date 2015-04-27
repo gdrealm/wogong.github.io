@@ -12,15 +12,10 @@ http://coolshell.cn
 
 
 ## note
-
 1. 改变当前文本文件编码：set fileencoding=gbk
-
 2. "set syntax=on" in .vimrc may cause this problem: "filetype unknown Press ENTER or type command to continue ". Finally resolved.
-
 3. 安装帮助文件：:helptags $VIM/doc 如果环境变量没有设置的话，直接在doc路径下打开vim，运行 :helptags .
-
 4. vim 7.3以后才支持 undofile
-
 5. Windows下使用注意环境变量的设置，%VIM%
 6. `:set guifont`
 7. 高亮第80列 set cc = 80
@@ -34,7 +29,7 @@ http://coolshell.cn
 10. :ju C-o C-i
     Use C-o to jump back to previous locations which were autosaved in a jumplist.
 11. :set paste 粘贴模式
-
+12. `"D:\Program Files\Vim\vim73\gvim.exe" -p --remote-tab-silent "%*"` Windows 下新标签打开
 ## useful commands
 ### basic
 s
@@ -49,7 +44,6 @@ Delete line and substitute text.
 :bn 后一文件
 N+Ctrl+^ 跳转到编号N的文件
 :buffer N
-
 
 ### vimgrep
 
@@ -69,7 +63,7 @@ file代表的是文件名，文件名也可以用正则表达式，特别是**�
 :vimgrep /test/ **  说明： 递归查找当前目录下所有包含test关键字
 :vimgrep /\<test\>/ **  说明： 递归查找当前目录下所有包含只有test关键字,不包括testabc、abctest、abctestabc等等，如果一行有多个test的话，只搜索一个test结果
 :vimgrep /\<test\>/g **  说明： 递归查找当前目录下所有包含只有test关键字,不包括testabc、abctest、abctestabc等等，如果一行有多个test的话，搜索多个test结果
-:vimgrep /\<test\>/ *.html  说明： 查找当前目录下所有的html文件包含只有test关键字,不包括testabc、abctest、abctestabc等等，如果一行有多个test的话，搜索多个test结果
+:vimgrep /\<test\>/ *.html 说明： 查找当前目录下所有的html文件包含只有test关键字,不包括testabc、abctest、abctestabc等等，如果一行有多个test的话，搜索多个test结果
 搜索的结果不会立即显示出来，但可以用:copen来打开所有的搜索结果，并会打开第一个符合的文件中第一个符合的位置
  
 下面是常用的搜索结果的命令：
@@ -126,8 +120,6 @@ zc
 
 
 
-
-
 ## vimrc
 1. mouse设置  
 set mouse=a 不可以右键粘贴，但是可以鼠标操作切换vsplit窗口
@@ -142,7 +134,6 @@ set mouse-=a 相反
     ... 
     endif
 
-----
 ## Plugin
 
 ### vundle
@@ -243,9 +234,9 @@ function<TAB>
 - hjkl
 - C-f C-b
 - %
-- w
+- w 跳转到词首
 - W jump by words
-- e
+- e 跳转到词尾
 - E
 b
 B

@@ -2,7 +2,7 @@
 layout: wiki
 title: python
 create: 2014-06-10
-update: 2014-07-19
+update: 2015-03-04
 ---
 
 ## NOTE
@@ -17,6 +17,9 @@ update: 2014-07-19
     - linux 
         sudo apt-get install ipython-notebook
         sudo apt-get install python-matplotlib
+6. v2ex_daily
+    pip install BeautifulSoup4
+    pip install requests
 
 ## INSTALL
 Windows 下，建议安装32bit 版本。
@@ -30,12 +33,13 @@ setuptools-0.6c11.win32-py2.7.exe 。
 [ez_setup.py](http://peak.telecommunity.com/dist/ez_setup.py)
 后，在cmd下执行 python ez_setup.py，
 即可自动安装setuptools。目前没有直接的exe安装版本。
+
 ### vim 配置
 pep8 编程风格检查；vim缩进折叠等设置见配置文件
 flake8 同样也很神奇，但是暂时没必要安装
 
 ### pip
-<ttp://pip.readthedocs.org/en/latest/installing.html>
+<http://pip.readthedocs.org/en/latest/installing.html>
 
 sudo apt-get install python-pip
 pip install 

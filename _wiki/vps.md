@@ -13,27 +13,27 @@ update: 2015-02-04
         `pacman -S git tmux vim ctags curl sudo`
         # ubuntu  
         `apt-get update`
-        `apt-get install sudo git tmux vim ctags curl mosh zsh openssl ca-certificates`
+        `apt-get install sudo git tmux vim ctags curl mosh zsh openssl ca-certificates keychain`
 
 2. add user   
-   `useradd -m -g users -s /bin/zsh <username>`
-
-3. dotfiles  
-   `git clone https://github.com/wogong/dotfiles.git ~`  
-   `git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting`
+   `useradd -m -g users -s /bin/zsh wogong`
 
 4. 设置用户密码,添加sudo权限  
    `passwd <username> && visudo`
-
-5. 配置vundle
-
-        git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-        BundleInstall
 
 6. SSH禁用密码登陆  
 
         vim /etc/ssh/sshd_config
         /etc/init.d/ssh restart
+
+3. dotfiles  
+   `git clone https://github.com/wogong/dotfiles.git ~`  
+   `git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting`
+
+5. 配置vundle
+
+        git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+        BundleInstall
 
 7. locale 
    `dpkg-reconfigure locales`
@@ -92,7 +92,11 @@ update: 2015-02-04
 5. DigitalOcean  
    1. 经常有一些 promo code，等于白送钱，很不错。等到近期VPS到期换DO
    2. 目前还有几个账户，余额20$；推介
-   - wogong38 $129.42 -- <https://www.digitalocean.com/?refcode=4398536459b9>
+       - wogong38 $129.42 -- <https://www.digitalocean.com/?refcode=4398536459b9>
+   3. 测试IP：
+       - 旧金山(San Francisco)：speedtest-sfo1.digitalocean.com   http://speedtest-sfo1.digitalocean.com/100mb.test     
+       - 纽约(New York)：speedtest-ny1.digitalocean.com   http://speedtest-ny1.digitalocean.com/100mb.test     
+       - 荷兰阿姆斯特丹(Amsterdam)：speedtest-ams1.digitalocean.com  http://speedtest-ams1.digitalocean.com/100mb.test
 
 6. bandwagonhost --<https://bandwagonhost.com/aff.php?aff=476>
 

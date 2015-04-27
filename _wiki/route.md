@@ -6,7 +6,10 @@ update: 2014-07-11
 ---
 
 route add 0.0.0.0 mask 0.0.0.0 192.168.1.100
+route add 0.0.0.0 mask 0.0.0.0 10.4.205.103
 
+route add 166.111.0.0 mask 255.255.0.0 10.4.205.1 
+route change 0.0.0.0 
 route delete 0.0.0.0
 
             C:\Windows\system32>route

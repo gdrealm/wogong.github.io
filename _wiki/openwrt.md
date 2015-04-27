@@ -84,7 +84,7 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
           option mtu_fix '1'
           option network 'wan wwan'
 
-    - /etc/config/firewall
+    - /etc/config/wireless
 
           config wifi-iface
                   option device 'radio0'
