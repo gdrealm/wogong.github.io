@@ -37,13 +37,18 @@ update: 2015-04-01
 
     ESIZE, SIZE, NDIV // Specifies the default number of line divisions.
     LSEL, Type, Item, Comp, VMIN, VMAX, VINC, KSWP // Selects a subset of lines.
+    
     ASEL, Type, Item, Comp, VMIN, VMAX, VINC, KSWP // Selects a subset of areas.
+    $$asel,s,area,,1,1
+
     VSEL, Type, Item, Comp, VMIN, VMAX, VINC, KSWP // Selects a subset of volumes. eg: vsel,s,volu, ,vmin,vmax, ,
     
     NSEL, Type, Item, Comp, VMIN, VMAX, VINC, KABS // Selects a subset of nodes.
+    $$
     ESEL, Type, Item, Comp, VMIN, VMAX, VINC, KABS // Selects a subset of elements.
 
     NSLV, Type, NKEY // Selects those nodes associated with the selected volumes.
+    NSLA, Type, NKEY // Selects those nodes associated with the selected areas.
     NSLL, Type, NKEY // Selects those nodes associated with the selected lines.
     
 
@@ -56,11 +61,18 @@ update: 2015-04-01
     DLDELE, LINE, Lab // Deletes DOF constraints on a line.    
 
     D, Node, Lab, VALUE, VALUE2, NEND, NINC, Lab2, Lab3, Lab4, Lab5, Lab6 // Defines degree-of-freedom constraints at nodes.
+    $$d,node,all
 
     DK, KPOI, Lab, VALUE, VALUE2, KEXPND, Lab2, Lab3, Lab4, Lab5, Lab6 // Defines DOF constraints at keypoints.
 7. 荷载
     SF, Nlist, Lab, VALUE, VALUE2 // Specifies surface loads on nodes.
     SFL, Line, Lab, VALI, VALJ, VAL2I, VAL2J // Specifies surface loads on lines of an area.
+
+    EDVEL, Option, Cname, VX, VY, VZ, OMEGAX, OMEGAY, OMEGAZ, XC, YC, ZC, ANGX, ANGY, ANGZ // Applies initial velocities to nodes or node components in an explicit dynamic analysis.
+    $$edvel,vgen,load_face,0,0.5,0
+
+    EDPVEL, Option, PID, VX, VY, VZ, OMEGAX, OMEGAY, OMEGAZ, XC, YC, ZC, ANGX, ANGY, ANGZ // Applies initial velocities to parts or part assemblies in an explicit dynamic analysis.
+    $$edpvl,vgen,3,0,-0.5,0
 
 8. 求解
     NSUBST, NSBSTP, NSBMX, NSBMN, Carry // Specifies the number of substeps to be taken this load step.
@@ -68,13 +80,20 @@ update: 2015-04-01
     LSSOLVE, LSMIN, LSMAX, LSINC // Reads and solves multiple load steps.
 8. Other
     *GET, Par, Entity, ENTNUM, Item1, IT1NUM, Item2, IT2NUM // Retrieves a value and stores it as a scalar parameter or part of an array parameter.
+    
     AUTOTS, Key // Specifies whether to use automatic time stepping or load stepping.
+    
     PROD, IR, IA, IB, IC, Name, --, --, FACTA, FACTB, FACTC // Multiplies variables.
     OUTRES, Item, Freq, Cname, -- , NSVAR // Controls the solution data written to the database.
 
+    CM, Cname, Entity // Groups geometry items into a component.
+
+    CMSEL, Type, Name, Entity // Selects a subset of components and assemblies.
+
+    MODMSH, Lab // Controls the relationship of the solid model and the FE model.
 
 
-
+    
 ## Note	
 1. crack 排查问题的方向：licence server + licence client
 

@@ -5,8 +5,22 @@ create: 2014-06-07
 update: 2014-09-24
 ---
 
-/etc/config/wireless --> open wireless
+## opkg 
 
+    opkg install .ipk
+    opkg remove
+    opkg list-installed
+
+installed:
+1. vpnc 
+    
+    Configuring ip.
+    Configuring libgpg-error.
+    Configuring libgcrypt.
+    Configuring vpnc-scripts.
+    Configuring vpnc.
+
+## note
 1. 时区设置 /etc/config/system
 
         ntpclient -s -t -h 0.openwrt.pool.ntp.org
@@ -114,8 +128,7 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
 
 ## DNS
 1. FreeRouter 方式
-2. ChinaDNS-C Github
--s 127.0.0.1,8.8.8.8
+2. [ChinaDNS](https://github.com/clowwindy/ChinaDNS)
 
 
 
