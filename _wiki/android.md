@@ -151,3 +151,72 @@ adb forward tcp:5555 tcp:8000
 
      adb shell
      sqlite3
+
+## Devices
+1. defy
+机锋升级神贴：http://bbs.gfan.com/android-2736285-1-1.html
+升级，wipe；
+root；
+recovery；
+关闭调试模式
+gms服务包；
+1、下载谷歌服务包（地址请自行搜索，你们懂的～），下载完成后修改文件名为update.zip。
+2、打开压缩包定位到文件：update.zip\META-INF\com\google\android\updater-script，右键“编辑”，
+将updater-script第2行代码：assert(getprop("ro.product.model") == "ME525" && getprop("ro.build.version.sdk") == "8"); 改为：assert(1==1); 然后保存，更新压缩包。
+3、将update.zip放到SD卡根目录下。
+4、ROOT你的系统（如果已经ROOT请跳过此步）。
+5、安装自定义恢复系统（R大师那个就可以）。安装好后打开，点击第一项"安装恢复系统"，出现授权请求时点确认，会弹窗提示你安装成功。
+6、在“设置” - “应用程序” - “开发” 中关闭“USB调试”选项（切记！否则恢复模式重启后会黑屏，要是不幸黑屏了，也不要慌，直接拔电池，然后装上重新启动进系统后关闭“USB调试”即可）。
+7、在恢复系统中点第二项“恢复模式重启”，系统重启进入自定义恢复系统界面。
+8、看到带有“update.zip"字样的选项了吧？使用音量键选择它并按电源键确认，接下来就是安装啦～ 安装完会有提示，此时选择重启即可，启动过程有些慢请耐心等待。
+同步
+
+2. Nexus 4
+Google 四儿子
+
+## note
+0. UNLOCK
+解锁会清除机器数据，所以，买来就解锁吧。
+
+1.ROOT
+   - <http://autoroot.chainfire.eu/>
+   - http://forum.xda-developers.com/showthread.php?t=2025274
+
+2. 首先进入操作系统的拨号“Dialer”界面，输入*#*#4636#*#*即可快速进入Android的工程测试模式。
+
+3. 打开位置报告与Google Now => [LocationReportEnabler](https://github.com/GhostFlying/LocationReportEnabler) need root
+
+4. 进入bootload 模式：
+     - adb reboot bootloader
+     - 关机情况下，同时按电源键+音量减键
+
+5. 解锁 fastboot oem unlock
+
+
+## 线刷OTA或官方镜像
+- 前提是安装好驱动与adb tools
+- Factory Images for Nexus Devices: https://developers.google.com/android/nexus/images
+-  nexus4 <https://developers.google.com/android/nexus/images#occamlrx22c>
+
+### 一般情况
+1. 进入bootload模式 fastboot reboot-bootloader
+2. 选择recovery mode
+3. adb sideload ota.zip
+4. OK
+
+### status 7 error
+1. 线刷上一版本官方镜像部分文件
+
+    fastboot flash recovery recovery.img
+    fastboot flash boot boot.img
+    fastboot flash system system.img
+    fastboot reboot
+
+2. 重复一般情况步骤
+
+### 直接线刷最新版本镜像
+1. 下载镜像
+2. 解压执行官方脚本（也可以手动解压一步一步安装）
+3. 保留数据的话记得去除  `-w`
+
+

@@ -1,7 +1,6 @@
 title: wogong
 baseurl: ""
 production_url: http://www.wogong.net
-cdn_url: http://wogong.qiniudn.com
 permalink: /blog/:title
 
 timezone: Asia/Shanghai
@@ -11,11 +10,11 @@ author:
     name: wogong
     email: i@wogong.net
 
-
 collections:
     wiki:
         output: true
-
+    life:
+        output: true
 
 # front-matter default
 defaults:
