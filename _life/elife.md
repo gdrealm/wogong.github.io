@@ -106,16 +106,6 @@ Google drive：kindle书籍仓库+往期课程文件+各种备份文件+GMail at
 2. Truecrypt
 3. AppleID 2-step verification
 
-## MAC
-RP                08:10:74:DB:E2:3F
-RP eth0           b8:27:eb:40:d6:4d
-iPod              F8:27:93:A0:B3:FB
-ThinkPad          9C:4E:36:6C:3C:0C
-Nexus4            98:D6:F7:61:84:4B
-KPW               00:BB:3A:F3:59:CF
-OpenWRT wlan      0E:82:68:C0:EE:8C
-OpenWRT           0E:82:68:C0:EE:8E
-E5730             0C:96:BF:B2:91:19
 
 ## Domain & DNS
 wogong.net godaddy dnsimple
