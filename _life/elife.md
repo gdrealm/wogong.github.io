@@ -4,7 +4,12 @@
 2. evernote
 3. pinboard
 4. instapaper
-4. wiki+blog+personal
+4. wiki+blog+life+items
+5. log.wogong.net
+6. read.wogong.net
+7. Twitter
+8. Weibo (Kindle bot)
+9. iPhone Photos
 
 ## site
 1. www.wogong.net  jekyll，托管于github
@@ -45,12 +50,6 @@
       - youtube youku bili
 3. 其他
    各种资料、视频
-
-## output
-1. wiki
-2. blog
-3. Social Networks (need back up, you know, never trust any commercial companies)
-4. Photos
 
 ## sync & backup
 1. PC

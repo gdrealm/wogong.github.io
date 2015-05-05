@@ -10,10 +10,12 @@ update: 2015-04-01
     /filename
     /title
     /prep7 进入前处理器
+
 2. 定义单元类型
     ET, ITYPE, Ename, KOP1, KOP2, KOP3, KOP4, KOP5, KOP6, INOPR // Defines a local element type from the element library.
     R, NSET, R1, R2, R3, R4, R5, R6 // Defines the element real constants.
     RMORE, R7, R8, R9, R10, R11, R12 // Adds real constants to a set.
+
 3. 定义材料模型
     MP
     TB, Lab, MAT, NTEMP, NPTS, TBOPT, EOSOPT, FuncName // Activates a data table for material properties or special element input.
@@ -21,19 +23,30 @@ update: 2015-04-01
 
 4. 建立几何模型
     WPAVE, X1, Y1, Z1, X2, Y2, Z2, X3, Y3, Z3 // Moves the working plane origin to the average of specified points.
+    
     CSWPLA, KCN, KCS, PAR1, PAR2 // Defines a local coordinate system at the origin of the working plane.
+    
     CSYS, KCN // Activates a previously defined coordinate system.
 
     KGEN, ITIME, NP1, NP2, NINC, DX, DY, DZ, KINC, NOELEM, IMOVE // Generates additional keypoints from a pattern of keypoints.
+    
     BLOCK, X1, X2, Y1, Y2, Z1, Z2 // Creates a block volume based on working plane coordinates.
+    
     BLC4, XCORNER, YCORNER, WIDTH, HEIGHT, DEPTH // Creates a rectangular area or block volume by corner points.
 
     LOVLAP, NL1, NL2, NL3, NL4, NL5, NL6, NL7, NL8, NL9 // Overlaps lines. see help doc fotr illustration 
+
+    CYLIND, RAD1, RAD2, Z1, Z2, THETA1, THETA2 // Creates a cylindrical volume centered about the working plane origin.
+    $$
+
 5. 网格划分
 
     aatt 设置几何模型-面的属性
     KMESH, NP1, NP2, NINC // Generates nodes and point elements at keypoints.
     AMESH, NA1, NA2, NINC // Generates nodes and area elements within areas.
+
+    LESIZE, NL1, SIZE, ANGSIZ, NDIV, SPACE, KFORC, LAYER1, LAYER2, KYNDIV // Specifies the divisions and spacing ratio on unmeshed lines.
+    $$
 
     ESIZE, SIZE, NDIV // Specifies the default number of line divisions.
     LSEL, Type, Item, Comp, VMIN, VMAX, VINC, KSWP // Selects a subset of lines.
@@ -73,6 +86,8 @@ update: 2015-04-01
 
     EDPVEL, Option, PID, VX, VY, VZ, OMEGAX, OMEGAY, OMEGAZ, XC, YC, ZC, ANGX, ANGY, ANGZ // Applies initial velocities to parts or part assemblies in an explicit dynamic analysis.
     $$edpvl,vgen,3,0,-0.5,0
+
+    EDCGEN, Option, Cont, Targ, FS, FD, DC, VC, VDC, V1, V2, V3, V4, BTIME, DTIME, BOXID1, BOXID2 // Specifies contact parameters for an explicit dynamics analysis.
 
 8. 求解
     NSUBST, NSBSTP, NSBMX, NSBMN, Carry // Specifies the number of substeps to be taken this load step.
