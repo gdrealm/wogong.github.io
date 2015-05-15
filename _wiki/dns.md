@@ -1,4 +1,4 @@
-    ---
+---
 layout: wiki
 title: dns
 create: 1970-01-01
@@ -13,7 +13,6 @@ DNS: Domain Name Server
 2. dns cache remove
 
     # Windows
-    ipconfig/flushdns
     net stop/start dnscache
     # MAC
         - sudo killall -HUP mDNSResponder (for Lion & Mountain Lion)
