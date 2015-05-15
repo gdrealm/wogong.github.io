@@ -17,13 +17,12 @@ update: 2014-06-10
    
         service samba status
 
-
 3. commands
 
         smbclient //166.111.9.155/movie -U username%passwd
         mount -t cifs -o username="administrator",password="" //192.168.1.101/name /mnt/samba
-         sudo mount -t cifs -o username="wogong",password="cz",uid=1000,gid=1000,dirmode=0777 //192.168.2.180/wind /mnt
-         # 写权限
+        sudo mount -t cifs -o username="wogong",password="cz",uid=1000,gid=1000,dirmode=0777 //192.168.2.180/wind /mnt
+        # 写权限
 
 4. 使用 pdbedit 指令功能
 
@@ -48,5 +47,3 @@ update: 2014-06-10
     writable = yes 
     printable = no
     create mask = 0644
-
-6.
