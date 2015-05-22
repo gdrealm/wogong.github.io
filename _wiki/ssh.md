@@ -4,11 +4,10 @@ title: ssh
 create: 2014-06-29
 update: 2014-09-17
 ---
-
 Secure Shell
 
 1. 生成密钥对 key
-`ssh-keygen -t rsa -C name@domain.com`  
+`ssh-keygen -t rsa -C comment` 
 将www-data加入用户组,ssh密钥登陆会失效。使用VPS得到的教训。
 2. `scp`
 3. 本地7070端口代理，使用端口转发 `ssh -qTfnN -D 7070 xxx@x.x.x.x -p port`

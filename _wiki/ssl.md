@@ -196,8 +196,3 @@ Verification cannot be completed. GlobalSign's verification server is temporally
 3. 在加DNS TXT记录前点击Verify了, 因为DNS缓存TTL的原因, 你需要等待2至48小时再验证; 
 4. 域名托管在加速乐(jiasule.com), 加速乐违反DNS协议约定, 私自将用户提交的DNS TXT记录值转换成小写, 而x509标准域名验证是严格执行的, 大小写不一致也会导致验证失败. 为了您的生命安全, 请远离加速乐等调皮CDN厂商. 
 综上, 为了节约您宝贵的时间建议您使用www.dnspod.cn托管域名. 
-
-
-
-附录5: 若浏览器意外关闭 
-您可以手工输入CODE继续申请流程.

@@ -26,6 +26,11 @@ ThinkPad X230 可选网卡
 2. Intel Centrino Advanced-N 6205 AGN
 
 ### DISK
-fat32 4G max
-ntfs
-exfat 
+- fat32
+    不支持单个文件4G （过时）
+
+- ntfs
+    现在超过4GB的U盘格式化时默认是NTFS分区，但是这种格式是很伤U盘的，因为NTFS分区是采用“日志式”的文件系统，需要记录详细的读写操作，肯定会比较伤闪盘芯片，因为要不断读写。（过时）
+
+- exfat 
+    比NTFS简单，比FAT32大，VISTA本身就支持，现在推出xp更新包exFAT只是一个折中的方案，只为U盘而生。（全称Extended File Allocation Table File System，扩展FAT，即扩展文件分配表）是Microsoft在Windows Embeded 5.0以上（包括Windows CE 5.0、6.0、Windows Mobile5、6、6.1）中引入的一种适合于闪存的文件系统，为了解决FAT32等不支持4G及其更大的文件而推出。对于闪存，NTFS文件系统不适合使用，exFAT更为适用。但是兼容性是个问题，一些电视、盒子可能不支持。

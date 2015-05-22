@@ -10,8 +10,7 @@
 
 ## monthly
 0. review weekly reviews to get monthly review
-1. sync SMS to Gmail and call log to Calendar
-2. 信用卡还款
+1. 信用卡还款
 
 ## yearly
 0. yearly review

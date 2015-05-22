@@ -6,7 +6,6 @@ update: 2015-02-13
 ---
 ## note
 1. 环境变量管理。Envman
-2. 快速启动 `d:\Dropbox\Software\_QS\` working with adress bar in task bar.
 3. program and features 取消不常用的windows 功能。
 4. 如何修改网络类型？homegroup troubleshoot。
 5. 休眠
@@ -21,7 +20,7 @@ update: 2015-02-13
 10. 计划任务 Schedule tasks 用于自动备份 C 盘文件还是很方便的。
 11. CMD 自带命令： help
 12. Windows en   
-    中文 需要更改 语言设置 否则一些中文软件会出现乱码
+    中文 需要更改 语言设置 否则一些中文软件会出现乱码 控制面板-时间等
     lpksetup 手动安装下载的语言包
 12. Appdata 文件夹内部文件位置可以更改，包括 Local LocalLow Roaming
 13. 最近将日常使用的用户更改为标准账户，用了Windows系统五年多了，到今天才开始理解Windows的用户权限控制。以前总是吐槽微软，这次可以吐槽自己了。
@@ -52,7 +51,7 @@ update: 2015-02-13
   - Office 记得取消安装一些奇葩的组件
   - 小狼毫 用户资料夹采用mklink解决\ 同步至Dropbox
   - 7zip
-  - 浏览器 Chrome
+  - 浏览器 Chrome 
   - Drive 需要翻墙环境
   - iTunes
   - zotero
@@ -70,13 +69,11 @@ update: 2015-02-13
 鼠标触控板设置
 
 
-2. 浏览器 Chrome
-   - swithysharp数据导出
-
 3. 安装完毕，做什么？
    - 更改个人文件默认位置，windows库
    - everything 服务 开机启动
    - 安装软件:输入法，office，TC，Dropbox，Evernote
+   - chrome abp 选项
 4. 数据
    - $HOME 目录 配置文件， vim
 
@@ -130,3 +127,46 @@ V7. babun  \*nix like console
 1.首先将C盘设置为活动分区：bootsect /nt60 ALL /mbr
 2.修复系统的MBR表：bootrec /fixmbr
 3.重启系统，并拔出U盘，即可。进入系统后，我们会发现，系统激活已经完毕。
+
+
+windows 7 - How to remove unwanted tunnel adapter connections? - Super User
+  * Open Start Menu
+  * Type In: Device Manager
+  * Select Device Manager
+  * Click the View menu from the top
+  * Select Show Hidden Devices (Must be check before continuing)
+  * Scroll down and expand Network Adapters
+  * Right-Click a duplicated Microsoft 6to4 Adapter or Microsoft ISATAP Adapter 
+  * Select Uninstall
+  * Click OK for the pop-up warning message
+  * Repeat and repeat for each of the unwanted duplicated adapter
+  * Close Device Manager when finish
+
+
+重装系统，卸载 机械硬盘，只保留 SSD 安装系统。之后打开 File History
+
+添置笔记本硬盘
+
+
+按下 Win + R 快捷键组合，在弹出的运行对话框中输入 diskmgmt.msc，按下回车启动“磁盘管理”。
+
+选择“操作”菜单中的“创建 VHD”选项，VHD 文件是一种虚拟磁盘文件格式，Windows 8 将被安装到该文件中，因此无需特别的分区。在对话框中设置 VHD 文件路径和大小，推荐大小至少为 20 GB。为提高性能，建议选择“固定大小”。
+
+设置完毕，点击“确定”即可。Windows 将开始创建 VHD 文件。
+
+VHD 创建完毕之后，在下方的磁盘列表就可以看到该虚拟磁盘了，右键点击该虚拟磁盘，选择“初始化磁盘”。
+
+
+=========
+
+请注意这块机械硬盘中是否保存了系统文件，例如分页文件、休眠文件、其他系统文件，以及 Windows 的库位置。因为设计要求，包含这些文件的硬盘分区无法用作历史记录的备份位置
+
+对于您指E盘中的的Boot及Bootmgr文件夹是如何出现的呢？您是否设置或备份引导记录；您可以尝试创建VHD分区后再次测试下文件历史记录是否可以在该分区中创建。
+
+
+Windows使用了这么多年，依旧能发现新鲜的东西。利用虚拟硬盘当作文件历史记录盘，避免了使用外置盘的不便。当然以后重装系统还是需要拆下机械硬盘，系统装好后插上机械硬盘当作数据盘。这样就不用迂回路线了。另外，总结下双系统卸载方法，grub rescue后重新引导windows
+
+
+## windows 利用计划任务备份本地C盘文件
+
+help xcopy

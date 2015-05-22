@@ -29,6 +29,7 @@ goagentX
 ### 3. Android
 
 #### 安装 影梭/Shadowsocks 应用
+<https://github.com/shadowsocks/shadowsocks-android/releases>
 
 #### 若PC上已经使用Shadowsocks，右键显示二维码，利用APP的添加配置功能直接扫描二维码即可。当然你也可以手动输入配置。
 

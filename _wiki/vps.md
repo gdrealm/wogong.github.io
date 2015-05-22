@@ -80,12 +80,13 @@ update: 2015-02-04
 1. BudgetVM  
     推介 <https://www.budgetvm.com/account/aff.php?aff=1061>
 
-2. BuyVM 有余额 13$  
+2. BuyVM 有余额 13$
+    <https://my.frantech.ca/aff.php?aff=1332>
     he.net 的网络，不错
 
 3. Hostigation
 
-4. Linode  
+4. Linode  55$
     Referrals Code: 9bd81fd03ec9f3917cb2db12d6843d1ee2d30892
     Referrals <https://www.linode.com/?r=9bd81fd03ec9f3917cb2db12d6843d1ee2d30892>
 

@@ -21,4 +21,10 @@ update: 2014-05-29
             z = 75+3*k
             print x,y,z
 
-4.  
+## 希腊字母
+
+        \sigma
+        \beta
+        \varepsilon
+        \epsilon
+

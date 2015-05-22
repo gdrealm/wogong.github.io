@@ -1,15 +1,18 @@
 ## information repo
-1. gmail
+1. Gmail
 2. google drive
 2. evernote
 3. pinboard
-4. instapaper
+4. instapaper (new to Pinboard; likes to Pinboard)
 4. wiki+blog+life+items
 5. log.wogong.net
 6. read.wogong.net
-7. Twitter
-8. Weibo (Kindle bot)
-9. iPhone Photos
+7. Twitter (backup in Pinboard & Twitter archive)
+8. Weibo (Kindle bot to Twitter)
+9. iPhone Photos (Google+ Photos)
+10. Calibre Libary
+11. Wechat Public Account (Dogear.cn to Feedly to Pinboard)
+12. Nike+ running
 
 ## site
 1. www.wogong.net  jekyll，托管于github
@@ -21,16 +24,16 @@
 ## VPS
 1. se 2015-07-18 ramnode 128M 80G 15$
     - se.wogong.net:9091 Transmission
-    - vagex: php php5-curl
+    - aria2c+yaaw
     - ss
 2. ss 2016-02-04
     - cron: vagex;v2ex_daily
     - bingrewards
-    - vagex
     - ss
     - chengzhen.me
 3. sf digitalocean
     - ss
+    - 
 
 ## proxy
 1. vpnso (@cosbeta) ss+vpn+apnp
@@ -41,7 +44,7 @@
 
 ## input
 1. 现实
-   书籍、讲座、课堂、聊天、新闻联播
+   书籍、讲座、课堂、聊天、新闻
 2. 网络
       - RSS - feedly + press
       - 豆瓣, 知乎, V2EX
@@ -58,39 +61,16 @@
       - Dropbox 本地IM记录
       - TrueCript 储存本地敏感资料，照片，文档
       - User Dir: vim/snippet
-2. 网络信息
-      - weibo 主动发布，豆瓣同步，多看阅读分享 ；
-              通过 ifttt 至 Evernote，含 coco
-      - Twitter 主动发布（尽量减少，慢慢转移至weibo），豆瓣同步，kindle分享；  
-                自动归档至 Google Drive
-      - Facebook Twitter分享，kindle分享；
-                 很少主动发布信息，多为自动同步，基本不需备份
-      - Douban 主动发布，标记；使用feedburner，处理豆瓣的RSS，设置。
-               通过 ifttt 至 Evernote
-      - Mail Gmail(backup to outlook, not any more 2014-10-18)
-      - LastPass
-      - KEY change periodically
-3. Mobile
-      - SMS SMS backup+ to Gmail ; SMS to Text to csv file
-      - 随手记 定期备份至SD
-      - call log SMS backup+ to Gmail and Google Calendar
-      - Apps Ti backup
+2. network information
+      - Twitter tweets; nike+ share; ifttt-douban; ifttt-blog; ifttt-weibo(kindle highlights) ==> archive to google drive
+      - Facebook nike+ share
+      - Weibo kindle highlights
+      - Douban favorite ==> ifttt(feedburner to RSS) to Twitter
+      - Wechat moments
 
-## cloud
-快盘：分享文件
-vdisk：分享文件
-百度网盘：共享速度快
-115：分享文件
-dbank：各种分享文件，速度不错
-Google drive：kindle书籍仓库+往期课程文件+各种备份文件+GMail attachments
-
-## download
-1. VPS : ar & la
-2. thunder offline ivan member
-3. Baidu Pan & 115
 
 ## security
-0. lastpass
+0. keepass
    - 1password 数据存储在本地，有手机客户端
    - lastpass 数据存储在服务器
    - Keepass
@@ -105,27 +85,22 @@ Google drive：kindle书籍仓库+往期课程文件+各种备份文件+GMail at
 2. Truecrypt
 3. AppleID 2-step verification
 
-
 ## Domain & DNS
 wogong.net godaddy dnsimple
 chengzhen.me namecheap dnsimple
 
-dnsimple
-  - wogong.net
-  - chengzhen.me
-
-## CDN
-1. upyun
-主机：v1.ftp.upyun.com (电信) v2.ftp.upyun.com (联通网通) v3.ftp.upyun.com (移动铁通) v0.ftp.upyun.com (自动判断
+## CDN upyun
+主机：
+- v1.ftp.upyun.com (电信) 
+- v2.ftp.upyun.com (联通网通) 
+- v3.ftp.upyun.com (移动铁通) 
+- v0.ftp.upyun.com (自动判断)
+- 
 用户：操作员的用户名/空间名（需要两个同时填写）wogong/wogong-file
 密码：操作员的密码
 端口：21
 文件传输协议：FTP
 编码方式（字符集）：统一使用 UTF-8
- wogong-file.b0.upaiyun.com
- wogong-image.b0.upaiyun.com
-
-2. qiniu
-- Questions you should ask to yourself
-1. What if you lose your phone/PC or any digital devices?
-2. What about change a phone number？
+ 
+ file.wogong.net =>wogong-file.b0.upaiyun.com
+ image.wogong.net =>wogong-image.b0.upaiyun.com

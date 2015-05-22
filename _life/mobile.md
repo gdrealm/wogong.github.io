@@ -1,11 +1,16 @@
-手机号码
+---
+layout: wiki
+title: mobile
+create: 2015-05-01
+update: 2015-05-01
+---
 
-原则：
+## 通信
+- 原则：
 1. 能不绑定就不绑定
 2. 能 Google Voice 就 Google Voice
 
-
-## Google Voivce +1 858
+- Google Voivce +1 858
     - 阿里巴巴：淘宝，支付宝
     - 腾讯：WeChat
     - Twitter 
@@ -15,7 +20,7 @@
     - Evernote
     - AppleID
 
-## 主要号码 +86 170
+- 主要号码 +86 170
 1. 网络账户
     - Google: wogong38
     - 电商：京东
@@ -45,7 +50,7 @@
     - wechat 通知
     - QQ 通知
 
-## 备用号码 +86 152
+- 备用号码 +86 152
 鉴于170的不靠谱，长期持有1745这个号码（年费60RMB）。2016-07失效
 
     - elong
@@ -53,13 +58,26 @@
     - 7Daysinn
     - SF
 
-## 亲心小号
+- 亲心小号
 年费36RMB，优点是直接应用控制，不需要另外的手机，话费也是从本机扣除，感觉可以抛弃移动的号码了。
 目前使用感觉不错，最大的问题是不清楚阿里能否提供堪比三大运营商的稳定服务。
 
 
-手机硬件
-Android系统手机刷机/更新前备份内容:
-- Download directory
-- pictures
-- 钛备份备份所有应用
+## 硬件
+###　Android
+
+系统手机刷机/更新前备份内容:
+    - Download directory
+    - pictures
+    - 钛备份备份所有应用
+
+
+### iPhone
+
+    - Find My iPhone
+    - Backup using iTunes
+    - Photos to PC
+
+- AppStore CN
+1. 迅雷
+2. 网易云音乐

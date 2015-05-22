@@ -286,3 +286,24 @@ yes "yes" | script.sh
 如果使用了如awesome、i3这样的窗口管理器，调节音量可以用下面两种方法：
 1、安装kde组件kmix，然后将kmix设置为自动启动。kmix是图形界面的。
 2、安装alsa-utils，然后在终端上输入命令alsamixer，就会打开一个字符界面的音量控制器。按方向键上增加音量，方向键下减少音量，按数字0－9分别会将音量调至0％－90％，按Esc退出。
+
+
+不小心更改了/usr/的权限.
+在执行sudo 的时候出现 sudo: must be setuid root这个提示,
+网上搜了下,解决了.特记录.
+
+ls -l  /usr/bin/sudo
+
+chown root:root /usr/bin/sudo
+
+chmod 4755 /usr/bin/sudo
+
+reboot
+
+
+1、输入用户管理的命令，新建用户（以test为例）：
+useradd test
+修改 test 用户的密码：
+passwd test
+2、将新用户添加到管理组：
+gpasswd -a test admin
