@@ -5,6 +5,7 @@ create: 2014-09-17
 update: 2014-09-17
 ---
 
+
 1. Putty ['pʌti] 
 之前我一直读[puti]，真是贻笑大方，不过相信有不少人读错了吧？
 http://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-pronounce

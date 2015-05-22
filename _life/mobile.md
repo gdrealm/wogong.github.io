@@ -1,12 +1,9 @@
----
-layout: wiki
-title: mobile
-create: 2015-05-01
-update: 2015-05-01
----
+手机号码
+
 原则：
 1. 能不绑定就不绑定
 2. 能 Google Voice 就 Google Voice
+
 
 ## Google Voivce +1 858
     - 阿里巴巴：淘宝，支付宝
@@ -62,12 +59,7 @@ update: 2015-05-01
 
 
 手机硬件
-1. Android系统手机刷机/更新前备份内容:
-    - Download directory
-    - pictures
-    - 钛备份备份所有应用
-
-2. iPhone
-    - Find My iPhone
-    - Backup using iTunes
-    - Photos to PC
+Android系统手机刷机/更新前备份内容:
+- Download directory
+- pictures
+- 钛备份备份所有应用

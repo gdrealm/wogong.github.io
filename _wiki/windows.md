@@ -130,18 +130,3 @@ V7. babun  \*nix like console
 1.首先将C盘设置为活动分区：bootsect /nt60 ALL /mbr
 2.修复系统的MBR表：bootrec /fixmbr
 3.重启系统，并拔出U盘，即可。进入系统后，我们会发现，系统激活已经完毕。
-
-
-windows 7 - How to remove unwanted tunnel adapter connections? - Super User
-  * Open Start Menu
-  * Type In: Device Manager
-  * Select Device Manager
-  * Click the View menu from the top
-  * Select Show Hidden Devices (Must be check before continuing)
-  * Scroll down and expand Network Adapters
-  * Right-Click a duplicated Microsoft 6to4 Adapter or Microsoft ISATAP Adapter 
-  * Select Uninstall
-  * Click OK for the pop-up warning message
-  * Repeat and repeat for each of the unwanted duplicated adapter
-  * Close Device Manager when finish
-

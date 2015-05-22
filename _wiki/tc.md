@@ -6,8 +6,11 @@ title: tc
 TC or TotalCommander
 
 ## note
-1. 安装时可以选择配置文件位置，但是工具栏需要自己定义，工具栏文件defaultbar同样放在Dropbox文件夹中，方便恢复。
-2. 安装时可以自定义配置文件的位置，但是安装完毕之后则没有这个配置选项。官方网站给出了这样一个小程
+1. 安装时可以选择配置文件位置，但是工具栏需要自己
+定义，工具栏文件default.bar同样放在Dropbox文件夹
+中，方便恢复。
+2. 安装时可以自定义配置文件的位置，但是安装完毕之
+后则没有这个配置选项。官方网站给出了这样一个小程
 序，inireloc，可以满足使用要求
 3. viaTC 利用 [[AHK|ahk]] 编写的 TC 下 VIM 风格快捷键插件。
 4. TC复制目录结构：为复制限定特殊条件
@@ -67,44 +70,3 @@ TC拼音首字母搜索功能，或者说，TC本身的快速搜索功能，
 
 2. uLister  
 TC的万能文件查看插件  http://xbeta.info/tc-docx.htm
-
-
-## Temp
-
-
-Total Commander（下称TC）和Everything都是我常使用的软件，一个是功能超级强大的资源管理软件，另一个是速度电光火石的文件搜索软件。将两者结合起来可以极大的提高工作效率。本文对两者的结合方法进行了介绍。这里参考了善用佳软和水木社区的讨论，以及【1】中的方法总结。
- 
-1. 在Everything中调用TC
-在Everything的安装目录下找到Everything.ini文件，其中包含着对Everything软件的设置选项。修改下面的几个条目：
-Ini代码 
-
-    1. open_folder_path_command=$exec("c:\Program Files\totalcmd\TOTALCMD.EXE" "/O" "/T" "$parent(%1)")  
-    2. open_folder_command=$exec("c:\Program Files\totalcmd\TOTALCMD.EXE" "/O" "/T" "%1")  
-
- 这样在Everything中搜索的时候，对于目录会通过TC来打开。需要注意的地方：
-
-    * 在修改Everything的配置文件之前，最好是退出Everything。否则可能修改不成功或者是修改后会还原。
-    * 上面的两个设置中，其中第一个是指搜索到了文件，通过右键中的"Open Path"来打开目录；而第二个是指搜索到了目录，直接双击打开或者通过右键中的“Open”来打开。
-    * 在Everything.ini文件中还可以看到，还有类似explore_folder_command、explore_folder_path_command这样的项我们并没有修改。这些条目中定义了右键菜单中“Explore Path”所采取的行为。没有进行修改的一个原因是可以通过此选项来调用Windows的资源管理器，从而给打开目录提供了另外一种选择。
-    * 为了避免在新的TC中打开目录，可以设置TC仅仅运行一个实例。具体的操作方式是在“配置->选项->操作方式->主程序”中设置“只允许一个TC运行”。如下图所示。
-
-
-
-    * 在上面的条目设置中，"/T"表示在一个新的标签中打开目录。如果不需要的话可以将此选项去掉。在网上的很多版本中，这个地方都写成了"/O /T"，从而导致打开新标签失败。这里要注意的就是将选项单独开来。
-
-
-2. 在TC中调用Everything
-在TC的主目录下找到usercmd.ini（如果没有的话，手工新建一个），在其中输入下面的设置代码：
-Ini代码 
-
-    1. [em_Everything]  
-    2. cmd=C:\Program Files\Everything\Everything.exe  
-    3. param="-search "%P ""  
-
- 在上面的设置代码中，第一个是Everything的可执行文件路径，第二个是参数。这个命令的目的是在当前目录(%P)下进行搜索。如果希望是全局搜索，则可以将param中后面的"%P "去掉。这里需要注意的是，在"%P "中包含有空格，这样做的好处是在搜索的时候将会包含有子目录。如果只是希望在当前目录下搜索而不需要包含子目录，可以将此空格去掉。
-接下来在设置选项中的其他设置中找到自定义快捷键的地方，进行快捷键设置。这里使用Windows资源管理器中常用的Ctrl+F作为搜索的快捷键。在自定义快捷键的地方选中Ctrl和F后，在命令后面的放大镜弹出窗口中可以找到前面设置好的em_Everything命令，并按后面的确定按钮使其生效。如下图所示。
-
-通过这样的设置后，按下Ctrl+F，即可以通过Everything在当前目录下搜索文件了。
- 
-【1】http://iamplaymore.blogspot.com/2009/02/everythingtotal-commander.html
-

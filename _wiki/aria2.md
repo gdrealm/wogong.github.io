@@ -3,7 +3,6 @@ layout: wiki
 title: aria2
 update: 2015-03-17
 ---
-
 ## Note
 1. Windows 下使用 VBS 建立开机启动脚本 http://bbs.kafan.cn/thread-1686205-1-1.html
 
@@ -21,7 +20,3 @@ This is easier than previous one, but it is insecure because it does not verify 
 
 
 aria2c -i list.txt
-
-## project
-1. [BaiduExporter](https://github.com/acgotaku/BaiduExporter)
-2. [YAAW](https://github.com/binux/yaaw)

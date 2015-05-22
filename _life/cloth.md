@@ -5,11 +5,6 @@ create: 2015-05-01
 update: 2015-05-01
 ---
 
-## size
-chest 88cm = 34.64
-waist 78cm = 30.71
-
-## note
 - 成衣的尺码永远穿小一号
 
 ## shoe
@@ -54,6 +49,13 @@ New Balance 男鞋尺码对照表
 
 
 5. Mizuno
+
+
+
+
+
+
+
 
 
 
@@ -126,36 +128,3 @@ UNIQLO尺寸(商品尺寸)	实测腰围	侧边长
 170/95(M)	            76～84	    27
 175/100(L)	            84～92	    29
 180/105(XL)	            92～100	    31
-
-2. Github
-
-S
-M
-
-American Apparel — Men/Unisex
-    XS  S   M   L   XL  2XL 3XL
-chest(in)   30–32   34–36   38–40   42–44   46–48   48–50   50–52
-waist(in)   28–30   30–32   32–33   33–34   36–38   40–42   44–48
-This sizing chart is approximate. American Apparel suggests the following method for measuring your approximate shirt size:
-Chest
-Measure under arms around the fullest part of the chest. Be sure to keep tape level across back and comfortably loose.
-Waist
-Measure around natural waist with a measuring tape.
-American Apparel — Women
-    S   M   L
-size    0–2 4–6 8–10
-chest(in)   30–32   32–34   36–38
-waist(in)   25–26   27–28   30–32
-This sizing chart is approximate. American Apparel suggests the following method for measuring your approximate shirt size:
-Chest
-Measure under arms around the fullest part of the bust. Be sure to keep tape level across back and comfortably loose.
-Waist
-Measure around natural waist with a measuring tape.
-American Apparel — Kids
-    2 years 4 years 6 years
-weight(lbs) 31–34   35–41   42–45
-height(in)  32–36   36–40   40–43
-chest(in)   21  22  23
-This sizing chart is approximate. American Apparel suggests the following method for measuring your approximate shirt size:
-Chest
-Measure under arms around the fullest part of the chest. Be sure to keep tape level across back and comfortably loose.

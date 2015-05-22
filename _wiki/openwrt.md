@@ -4,24 +4,23 @@ title: openwrt
 create: 2014-06-07
 update: 2014-09-24
 ---
-## installed package
-0. tcpdump
-1. dnsmasq `opkg install dnsmasq`
-`2. [ChinaDNS](https://github.com/clowwindy/ChinaDNS) 配合 dnsmasq使用
-3. [Shadowsocks](https://github.com/shadowsocks/openwrt-shadowsocks) 
-    - 开启DNS端口转发，解决DNS污染问题
-    - 配置文件 `/etc/shadowsocks/config.json`
-    - IP 忽略列表: /etc/shadowsocks/ignore.list 可以使用下面命令更新`wget -O- 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > /etc/shadowsocks/ignore.list`
-    - 
 
+## opkg 
 
-## note
-0. opkg
- 
-    opkg install name.ipk
+    opkg install .ipk
     opkg remove
     opkg list-installed
 
+installed:
+1. vpnc 
+    
+    Configuring ip.
+    Configuring libgpg-error.
+    Configuring libgcrypt.
+    Configuring vpnc-scripts.
+    Configuring vpnc.
+
+## note
 1. 时区设置 /etc/config/system
 
         ntpclient -s -t -h 0.openwrt.pool.ntp.org
@@ -124,6 +123,14 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
   	        option proto 'pppoe'
   	        option username '02502223350'
   	        option password '123123'
+
+
+
+## DNS
+1. FreeRouter 方式
+2. [ChinaDNS](https://github.com/clowwindy/ChinaDNS)
+
+
 
 * 更新路由器固件
       root@OpenWrt:~# sysupgrade /tmp/openwrt-ar71xx-generic-tl-mr11u-v1-squashfs-sysupgrade_6.09.bin

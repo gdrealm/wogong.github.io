@@ -220,8 +220,3 @@ Google 四儿子
 3. 保留数据的话记得去除  `-w`
 
 
-## tips
-
-      - SMS SMS backup+ to Gmail ; SMS to Text to csv file
-      - call log SMS backup+ to Gmail and Google Calendar
-      - Apps Ti backup

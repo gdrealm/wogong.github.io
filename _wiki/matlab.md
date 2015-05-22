@@ -9,16 +9,6 @@ MATLAB MATrix LABoratory
 
 x=solve('x^2+100*x+99=0','x')
 
-　　Matlab作为一门科学计算语言，在求解矩阵运算方面非常方便。　　
-　　求解AX=B
-　　Matlab代码：X=A\B或者X=mldivide(A,B)或者X=inv(A)*B
-　　mldivide()是运算符\的函数封装，作用是一样的。对于\求解X，Matlab采用的是高斯消元法求解。inv()作用是求矩阵的逆，采用inv(A)*B求解X不如\精确。
-　　求解XA=B
-　　Matlab代码： X=B/A或者X=mrdivide(B,A)或者X=B*inv(A)
-　　如果方程没有解，上面方法求解都是一个最小二乘解。
-
-
-
 ## Install
 1. MATLAB运行错误
 error while loading shared libraries: libXp.so.6: cannot open shared object file: No such file or directory
