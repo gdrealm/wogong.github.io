@@ -1,4 +1,6 @@
 {
+"configs" : [
+  {
 "server" : "se.wogong.net",
 "server_port" : 8338,
 "local_port" : 8080,

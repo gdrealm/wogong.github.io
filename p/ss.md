@@ -9,12 +9,16 @@ published: true
 ### Windows上使用Shadowsocks
 
 #### 下载最新版Shadowsocks
-
+* 官方下载
 Download [latest release](https://sourceforge.net/projects/shadowsocksgui/files/dist/).
 
 For <= Windows 7, download Shadowsocks-win-x.x.x.zip.
 
 For >= Windows 8, download Shadowsocks-win-dotnet4.0-x.x.x.zip.
+
+* 如果官方下载网页无法打开请看这里
+    - win7 <http://file.wogong.net/Shadowsocks-win-2.3.1.zip>
+    - win8 <http://file.wogong.net/Shadowsocks-win-dotnet4.0-2.3.1.zip>
 
 #### 下载配置文件
 

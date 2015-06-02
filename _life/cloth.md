@@ -55,7 +55,8 @@ New Balance 男鞋尺码对照表
 
 5. Mizuno
 
-
+6. Clarks
+US 9D 偏大
 
 
 ## clothes

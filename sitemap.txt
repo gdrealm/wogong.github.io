@@ -12,5 +12,8 @@ title : Sitemap
 {% for post in site.wiki %}
 {{site.production_url}}{{ post.url }}{% endfor %}
 
+{% for post in site.life %}
+{{site.production_url}}{{ post.url }}{% endfor %}
+
 {% for post in site.read %}
 {{site.production_url}}{{ post.url }}{% endfor %}

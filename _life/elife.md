@@ -1,5 +1,5 @@
 ## information repo
-1. Gmail
+1. gmail
 2. google drive
 2. evernote
 3. pinboard
@@ -13,6 +13,7 @@
 10. Calibre Libary
 11. Wechat Public Account (Dogear.cn to Feedly to Pinboard)
 12. Nike+ running
+13. Google Photos
 
 ## site
 1. www.wogong.net  jekyll，托管于github
@@ -26,7 +27,7 @@
     - se.wogong.net:9091 Transmission
     - aria2c+yaaw
     - ss
-2. ss 2016-02-04
+2. ss 2016-02-04 vpsto
     - cron: vagex;v2ex_daily
     - bingrewards
     - ss
@@ -47,10 +48,11 @@
    书籍、讲座、课堂、聊天、新闻
 2. 网络
       - RSS - feedly + press
-      - 豆瓣, 知乎, V2EX
+      - 豆瓣, V2EX
       - qzone, weibo, wechat
       - BBS
       - youtube youku bili
+      - zhihu quora
 3. 其他
    各种资料、视频
 
@@ -67,7 +69,6 @@
       - Weibo kindle highlights
       - Douban favorite ==> ifttt(feedburner to RSS) to Twitter
       - Wechat moments
-
 
 ## security
 0. keepass
@@ -104,3 +105,6 @@ chengzhen.me namecheap dnsimple
  
  file.wogong.net =>wogong-file.b0.upaiyun.com
  image.wogong.net =>wogong-image.b0.upaiyun.com
+
+upyund.sh
+upyunu.sh

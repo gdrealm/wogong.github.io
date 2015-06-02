@@ -37,4 +37,7 @@ update: 2015-05-14
 2. shadowsocks apk
     - [官方](https://github.com/shadowsocks/shadowsocks-android/releases)
     - [wogong](http://file.wogong.net/shadowsocks-nightly-2.6.7.apk)
-3. ss config (http://file.wogong.net/gui-config.json)
+3. ss config <http://file.wogong.net/gui-config.json>
+4. ss for windows
+    - win7 <http://file.wogong.net/Shadowsocks-win-2.3.1.zip>
+    - win8 <http://file.wogong.net/Shadowsocks-win-dotnet4.0-2.3.1.zip>

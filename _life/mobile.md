@@ -81,3 +81,4 @@ update: 2015-05-01
 - AppStore CN
 1. 迅雷
 2. 网易云音乐
+3. Enlight
