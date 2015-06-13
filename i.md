@@ -30,6 +30,12 @@ update: 2015-05-14
 * new words
 * mooc
 
+* sound
+    1. podcast
+    2. audiobooks
+    3. online radio
+    4. instapaper
+
 ## Tools
 1. openconnect apk
     - [官方](https://f-droid.org/repo/app.openconnect_1029.apk)

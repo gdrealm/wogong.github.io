@@ -18,7 +18,6 @@ x=solve('x^2+100*x+99=0','x')
 　　如果方程没有解，上面方法求解都是一个最小二乘解。
 
 
-
 ## Install
 1. MATLAB运行错误
 error while loading shared libraries: libXp.so.6: cannot open shared object file: No such file or directory

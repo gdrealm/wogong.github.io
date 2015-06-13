@@ -17,3 +17,4 @@ ifttt的bot真是偷懒，虽然可以用来管理很多事情，但是！bot总
 1. todoist finished to Google calendar
 2. nike+ running to Google calendar
 3. Douban favorite (feedburner to RSS) to Twitter
+4. Weibo to Twitter

@@ -92,6 +92,7 @@ http://xbeta.info/key-tweak-remap.htm
 6. Universal-USB-Installer-1.9.5.2.exe 制作启动U盘
 V7. babun  \*nix like console
 7. Windows 更新错误 http://windows.microsoft.com/zh-cn/windows/windows-update-error-80070003
+8. Du meter
 8. WINDOWS 中交换 CONTROL 键和 CAPS LOCK 键
 
 在开始的搜索框或者运行框输入regedit ，打开注册表管理器。
@@ -170,3 +171,10 @@ Windows使用了这么多年，依旧能发现新鲜的东西。利用虚拟硬�
 ## windows 利用计划任务备份本地C盘文件
 
 help xcopy
+
+Hotkeys:
+
+    ALT + 1..4             -> changes to desktop 1..4
+    CTRL + 1..4            -> moves active window to desktop 1..4
+    ALT + CTRL + SHIFT + Q -> exits the program
+    ALT + CTRL + SHIFT + S -> starts/stops handling of other hotkeys
