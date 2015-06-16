@@ -45,7 +45,6 @@
 1. 现实
    书籍、讲座、课堂、聊天、新闻
 2. 网络
-
     - RSS - feedly + press
     - 豆瓣, V2EX
     - qzone, weibo, wechat
@@ -54,7 +53,6 @@
     - zhihu quora
     - hacker news
     - reddit
-
 3. 其他
    各种资料、视频
 
@@ -73,7 +71,7 @@
       - Wechat moments
 
 ## security
-0. keepass
+0. KeePass
    - 1password 数据存储在本地，有手机客户端
    - lastpass 数据存储在服务器
    - Keepass
@@ -89,8 +87,8 @@
 3. AppleID 2-step verification
 
 ## Domain & DNS
-wogong.net godaddy dnsimple
-chengzhen.me namecheap dnsimple
+- wogong.net namesilo dnsimple
+- chengzhen.me namecheap dnsimple
 
 ## CDN upyun
 主机：
