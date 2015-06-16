@@ -4,7 +4,6 @@ title: When you don't know what to do
 create: 2015-05-14
 update: 2015-05-14
 ---
-
 ## 研究生学习
 1. 健全知识
 2. 资料积累

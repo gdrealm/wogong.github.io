@@ -36,3 +36,4 @@ Google的发音是通过http请求实现，实现方法如下：
 1. https://support.google.com/installer/answer/126299?hl=en
     -  for your own user account only: <http://www.google.com/chrome/eula.html?standalone=1>
     -  for all user accounts on your computer <http://www.google.com/chrome/eula.html?system=true&standalone=1>
+2. 关闭 Flash Plugin 省电，Settings-content

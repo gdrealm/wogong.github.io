@@ -1,3 +1,5 @@
+整理关于 Google Reader 的资料
+
 ## 免费
 AOL Reader：大厂出品，值得信赖。
 

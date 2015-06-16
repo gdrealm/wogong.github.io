@@ -129,7 +129,7 @@ update: 2015-02-13
     欧陆词典 ￥99
 * Internet Download Manager IDM
     下载工具 ￥89
-* [Total Commander TC](/tc)
+* [Total Commander TC](/wiki/tc)
 * Evernote
 * Dropbox
 * Ccleaner
@@ -140,7 +140,7 @@ update: 2015-02-13
       用于清除office等卸载不干净的情况，同样适应于其他msi安装方式的软件卸载
 * wireshart
     抓包软件
-* [Vmware](/vmware)
+* [Vmware](/wiki/vmware)
 * KeyTweak
     windows下改变键盘映射工具，其他类似工具参见xbeta  
     <http://xbeta.info/key-tweak-remap.htm>
