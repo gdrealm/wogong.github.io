@@ -1,0 +1,14 @@
+---
+layout: wiki
+title: wiki
+create: 2014-07-22
+update: 2014-07-22
+---
+
+<div id="home">
+  <ul>
+    {% for item in site.favorites %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
