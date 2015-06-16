@@ -93,3 +93,8 @@ fortran 列优先。如 2 times 3 的矩阵，第 1、2 行分别为 1 2 3、4 5
 默认支持的列长有限，需要`-ffree-line-length-0`去除限制
 
 	gfortran polyhedron.f90 qsort.f90 -ffree-line-length-0
+
+2. elf90
+
+3. Compaq Visual Fortran
+    debug还是用这个玩意比较靠谱。

@@ -4,9 +4,7 @@
 2. evernote
 3. pinboard
 4. instapaper (new to Pinboard; likes to Pinboard)
-4. wiki+blog+life+items
-5. log.wogong.net
-6. read.wogong.net
+4. wiki+blog+life+items+farbox
 7. Twitter (backup in Pinboard & Twitter archive)
 8. Weibo (Kindle bot to Twitter)
 9. iPhone Photos (Google+ Photos)
@@ -47,12 +45,16 @@
 1. 现实
    书籍、讲座、课堂、聊天、新闻
 2. 网络
-      - RSS - feedly + press
-      - 豆瓣, V2EX
-      - qzone, weibo, wechat
-      - BBS
-      - youtube youku bili
-      - zhihu quora
+
+    - RSS - feedly + press
+    - 豆瓣, V2EX
+    - qzone, weibo, wechat
+    - BBS
+    - youtube youku bili
+    - zhihu quora
+    - hacker news
+    - reddit
+
 3. 其他
    各种资料、视频
 

@@ -1,5 +1,10 @@
 ---
 title: iPhone
+## tips
+
+      - SMS SMS backup+ to Gmail ; SMS to Text to csv file
+      - call log SMS backup+ to Gmail and Google Calendar
+      - Apps Ti backup
 date: 2015-03-05
 ---
 

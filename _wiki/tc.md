@@ -25,6 +25,7 @@ TC or TotalCommander
 ## 快捷键
 * C-m 批量重命名
 * ALT+SHIFT+ENTER 　在详细列表状态下显示当前所有目录的大小 
+* ALT+ENTER 　显示文件属性
 * Ctrl + B 把当前文件夹下所有子目录中的文件放在一起显示 
 * CTRL + P 把当前路径拷贝到命令行 
 * → 将焦点定位到命令行以便输入命令。
