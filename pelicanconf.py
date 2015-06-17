@@ -11,23 +11,24 @@ TIMEZONE = 'Asia/Shanghai'
 DEFAULT_LANG = 'zh'
 PATH = 'content'
 
-# GITHUB_URL = 'http://github.com/ametaireau/'
+# GITHUB_URL = ''
 # DISQUS_SITENAME = "wogong"
-REVERSE_CATEGORY_ORDER = False
+# REVERSE_CATEGORY_ORDER = False
 # DATE_FORMATS = '%Y-%m-%d'
 LOCALE = 'C'
 DEFAULT_PAGINATION = 4
 # DEFAULT_DATE = (2012, 3, 2, 14, 1, 1)
 DEFAULT_DATE = 'fs'
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
-# FEED_ALL_RSS = 'feeds/all.rss.xml'
-# CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+## Feed generation is usually not desired when developing
+# FEED_ALL_ATOM = None
+# CATEGORY_FEED_ATOM = None
+# TRANSLATION_FEED_ATOM = None
+# AUTHOR_FEED_ATOM = None
+# AUTHOR_FEED_RSS = None
+
+FEED_ALL_RSS = 'feeds/all.rss.xml'
+CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
 ## Blogroll
 #LINKS = (('Pelican', 'http://getpelican.com/'),
@@ -47,15 +48,13 @@ MENUITEMS = (('blog', '/category/blog'),
 
 ## Uncomment following line if you want document-relative URLs when developing
 ## can be useful in development, but set to False when you're ready to publish
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 ARTICLE_URL = '{category}/{slug}'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
 PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
-CATEGORY_URL = 'category/{slug}/'
-CATEGORY_SAVE_AS = 'category/{slug}/index.html'
-
-LOAD_CONTENT_CACHE = False
+CATEGORY_URL = '{slug}/'
+CATEGORY_SAVE_AS = '{slug}/index.html'
 
 USE_FOLDER_AS_CATEGORY = True
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -67,3 +66,6 @@ THEME = "/home/wogong/pelican/themes/wogong"
 
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
+
+## develop
+LOAD_CONTENT_CACHE = False
