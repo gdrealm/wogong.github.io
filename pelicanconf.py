@@ -5,15 +5,14 @@ from __future__ import unicode_literals
 AUTHOR = 'wogong'
 SITENAME = 'Inner Space'
 SITESUBTITLE = 'Personal page for wogong, including blog, wiki and other things.'
-SITEURL = 'http://wogong.net'
+SITEURL = 'https://wogong.net'
 TIMEZONE = 'Asia/Shanghai'
-
 
 DEFAULT_LANG = 'zh'
 PATH = 'content'
 
 # GITHUB_URL = 'http://github.com/ametaireau/'
-DISQUS_SITENAME = "wogong"
+# DISQUS_SITENAME = "wogong"
 REVERSE_CATEGORY_ORDER = False
 # DATE_FORMATS = '%Y-%m-%d'
 LOCALE = 'C'
@@ -49,10 +48,12 @@ MENUITEMS = (('blog', '/category/blog'),
 ## Uncomment following line if you want document-relative URLs when developing
 ## can be useful in development, but set to False when you're ready to publish
 RELATIVE_URLS = True
-ARTICLE_URL = '{category}/{slug}/'
-ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
+ARTICLE_URL = '{category}/{slug}'
+ARTICLE_SAVE_AS = '{category}/{slug}.html'
 PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
+CATEGORY_URL = 'category/{slug}/'
+CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 
 LOAD_CONTENT_CACHE = False
 
