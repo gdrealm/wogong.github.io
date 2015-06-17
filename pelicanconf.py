@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'wogong'
 SITENAME = 'Inner Space'
 SITESUBTITLE = 'Personal page for wogong, including blog, wiki and other things.'
-SITEURL = 'http://wogong.net'
+SITEURL = 'https://wogong.net'
 TIMEZONE = 'Asia/Shanghai'
 
 
