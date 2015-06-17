@@ -48,8 +48,8 @@ MENUITEMS = (('blog', '/category/blog'),
 ## Uncomment following line if you want document-relative URLs when developing
 ## can be useful in development, but set to False when you're ready to publish
 RELATIVE_URLS = True
-ARTICLE_URL = '{category}/{slug}/'
-ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
+ARTICLE_URL = '{category}/{slug}'
+ARTICLE_SAVE_AS = '{category}/{slug}.html'
 PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
 CATEGORY_URL = 'category/{slug}/'
