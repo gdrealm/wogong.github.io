@@ -51,8 +51,11 @@ update: 2015-02-04
         # arch  
         timedatectl set-timezone Asia/Shanghai
 9. hostname
-   `/etc/hostname`
-   `sudo hostnamectl set-hostname myhostname`
+
+      # debian
+      /etc/hostname
+      # arch
+      sudo hostnamectl set-hostname myhostname
 
 ## VPS 评测
 1. CPU  

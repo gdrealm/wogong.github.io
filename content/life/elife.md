@@ -26,6 +26,10 @@ date: 2015-06-17
 5. [vps name].wogong.net 下载
 
 ## VPS
+0. jp from: 2015-06-17 
+    - pelican
+    - ss
+
 1. se 2015-07-18 ramnode 128M 80G 15$
     - se.wogong.net:9091 Transmission
     - aria2c+yaaw
