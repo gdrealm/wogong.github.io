@@ -12,20 +12,12 @@ DEFAULT_LANG = 'zh'
 PATH = 'content'
 
 # GITHUB_URL = ''
-# DISQUS_SITENAME = "wogong"
 # REVERSE_CATEGORY_ORDER = False
 # DATE_FORMATS = '%Y-%m-%d'
 LOCALE = 'C'
 DEFAULT_PAGINATION = 4
 # DEFAULT_DATE = (2012, 3, 2, 14, 1, 1)
 DEFAULT_DATE = 'fs'
-
-## Feed generation is usually not desired when developing
-# FEED_ALL_ATOM = None
-# CATEGORY_FEED_ATOM = None
-# TRANSLATION_FEED_ATOM = None
-# AUTHOR_FEED_ATOM = None
-# AUTHOR_FEED_RSS = None
 
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
@@ -40,15 +32,12 @@ CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 #SOCIAL = (('Twitter', 'http://twitter.com/wogong38'),
 #          ('Wechat', '#'),)
 
-MENUITEMS = (('blog', '/category/blog'),
-        ('wiki', '/category/wiki'),
-        ('book', '/category/book'),
-        ('movie', '/category/movie'),
+MENUITEMS = (('blog', '/blog'),
+        ('wiki', '/wiki'),
+        ('book', '/book'),
+        ('movie', '/movie'),
         ('archive', '/archives'),)
 
-## Uncomment following line if you want document-relative URLs when developing
-## can be useful in development, but set to False when you're ready to publish
-RELATIVE_URLS = False
 ARTICLE_URL = '{category}/{slug}'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
 PAGE_URL = 'pages/{slug}/'
@@ -67,5 +56,15 @@ THEME = "/home/wogong/pelican/themes/wogong"
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
 
+DISQUS_SITENAME = "wogong"
+GOOGLE_ANALYTICS = "UA-34308107-1"
+
 ## develop
+RELATIVE_URLS = False
 LOAD_CONTENT_CACHE = False
+## Feed generation is usually not desired when developing
+# FEED_ALL_ATOM = None
+# CATEGORY_FEED_ATOM = None
+# TRANSLATION_FEED_ATOM = None
+# AUTHOR_FEED_ATOM = None
+# AUTHOR_FEED_RSS = None
