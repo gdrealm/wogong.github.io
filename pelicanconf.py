@@ -66,6 +66,11 @@ EXTRA_PATH_METADATA = {
         'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 
+# default value is ('index', 'tags', 'categories', 'archives')
+# so we just add a 'sitemap'
+DIRECT_TEMPLATES = ('index', 'tags', 'categories', 'archives', 'sitemap')
+SITEMAP_SAVE_AS = 'sitemap.xml'
+
 ## develop
 RELATIVE_URLS = False
 LOAD_CONTENT_CACHE = False
