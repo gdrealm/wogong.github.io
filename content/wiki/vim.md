@@ -105,6 +105,23 @@ Delete line and substitute text.
     g* 向下搜索光标所在处的单词（部分匹配）
     g# 向上搜索光标所在处的单词（部分匹配）
 
+:args *.txt *.cpp
+:argdo %s/hate/love/gc | update
+就可以完成啦。解释如下，
+
+:args *.txt *.cpp
+这样写会扫描当前目录下的.txt 和 .cpp文件，并加入到参数列表。但是这样写只会稻苗当前目录，如果想要递归扫描所有下级目录的话，用
+
+:args **/*.txt
+如果只想扫描下一级目录（即不扫描当前目录）的话，用
+
+:args */*.txt
+而
+
+:argdo %s/hate/love/gc | update
+是将参数列表中的所有文件的hate提换成love，并写入硬盘（如果没有|update，就不会写入，但相应的替换也会被中断）。
+
+最后强调一点，使用替换命令的时候，一定记得备份，因为替换是直接写入硬盘滴哦……
 
 ### exiting 
 
