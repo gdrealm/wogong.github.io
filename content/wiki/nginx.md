@@ -2,8 +2,16 @@
 layout: wiki
 title: nginx
 date: 2014-08-30
-update: 2014-08-30
+modified: 2015-06-18 20:47:32
 ---
+
+## note
+1. nginx in arch 默认以 nobody 身份运行
+    
+    /etc/nginx/nginx.conf
+    user myuser mygroup; # e.g. http
+
+2. ngninx -t 测试配置文件正确性
 
 ## 常用命令  
 添加php插件后需要重启：
@@ -11,13 +19,21 @@ update: 2014-08-30
     service nginx restart/reload/stop/start
     service php5-fpm restart/reload/stop/start
 
-## 配置文件
+## config
 1. 认证
 
         auth_basic "input you user name and password";
         auth_basic_user_file /path/to/passwd;
         # nginx可以为网站或目录甚至特定的文件设置密码认证。密码必须是crypt加密的。可以用apache的htpasswd来创建密码。
-        # htpasswd -b -c pwd username password
+        htpasswd -b -c pwd username password
+        # 或者手动生成
+        
+        $ php -a
+        php > echo crypt('mypassword', base64_encode('mypassword'));
+        bX6j7x3Ep6RnU
+
+        echo 'myuser:bX6j7x3Ep6RnU' >> /etc/nginx/htpasswd
+
 2. 目录文件列表功能  
    参考：http://wiki.nginx.org/ChsHttpAutoindexModule  
    如果想希望目录列表支持header,footer则可以安装三方插件: http://wiki.nginx.org/NginxNgxFancyIndex

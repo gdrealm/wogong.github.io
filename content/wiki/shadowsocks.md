@@ -12,6 +12,7 @@ modified: 2015-06-18 08:07:12
     # debian
     apt-get install python-pip
     pip install shadowsocks
+
     # arch
     sudo pacman -S python2-pip
     sudo pip2 install shadowsocks

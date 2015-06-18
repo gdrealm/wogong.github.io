@@ -3,7 +3,7 @@ title: pelican
 date: 2015-06-17
 ---
 
-pelican content -o /var/www/output --relative-urls
+pelican content --output /var/www/output --relative-urls --ignore-cache
 
 
 $ pelican --help

@@ -75,7 +75,7 @@ update: 2014-12-07
 
 4. 远程仓库管理
 
-        git remote show -v
+        git remote -v
         git remote show name -v
         git remote add name url
         git remote rm name

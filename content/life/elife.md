@@ -1,6 +1,7 @@
 ---
 title: elife
 date: 2015-06-17
+modified: 2015-06-18 19:50:11
 ---
 
 ## information repo
@@ -29,6 +30,7 @@ date: 2015-06-17
 0. jp from: 2015-06-17 
     - pelican
     - ss
+    - bypy
 
 1. se 2015-07-18 ramnode 128M 80G 15$
     - se.wogong.net:9091 Transmission
@@ -54,7 +56,6 @@ date: 2015-06-17
 1. 现实
    书籍、讲座、课堂、聊天、新闻
 2. 网络
-
     - RSS - feedly + press
     - 豆瓣, V2EX
     - qzone, weibo, wechat
@@ -62,8 +63,6 @@ date: 2015-06-17
     - youtube youku bili
     - zhihu quora
     - hacker news
-    - reddit
-
 3. 其他
    各种资料、视频
 
@@ -119,3 +118,11 @@ chengzhen.me namecheap dnsimple
 
 upyund.sh
 upyunu.sh
+
+## cafe
+1. toolbox in Baidu and jp.wogong.net
+    - putty
+    - Caps2Ctrl
+    - ss
+2. 迅雷离线+百度网盘
+3. 
