@@ -11,7 +11,6 @@ you can always find some interesting things there.
 
 http://coolshell.cn
 
-
 ## note
 1. 改变当前文本文件编码：set fileencoding=gbk
 2. "set syntax=on" in .vimrc may cause this problem: "filetype unknown Press ENTER or type command to continue ". Finally resolved.
@@ -105,32 +104,38 @@ Delete line and substitute text.
     g* 向下搜索光标所在处的单词（部分匹配）
     g# 向上搜索光标所在处的单词（部分匹配）
 
-:args *.txt *.cpp
-:argdo %s/hate/love/gc | update
-就可以完成啦。解释如下，
+    # 扫描当前目录下的.txt 和 .cpp文件，并加入到参数列表
+    :args *.txt *.cpp
 
-:args *.txt *.cpp
-这样写会扫描当前目录下的.txt 和 .cpp文件，并加入到参数列表。但是这样写只会稻苗当前目录，如果想要递归扫描所有下级目录的话，用
+    # 递归扫描所有下级目录的话
+    :args **/*.txt
 
-:args **/*.txt
-如果只想扫描下一级目录（即不扫描当前目录）的话，用
+    # 只想扫描下一级目录（即不扫描当前目录）的话
+    :args */*.txt
+    
+    # 是将参数列表中的所有文件的hate提换成love，并写入硬盘
+    # 如果没有|update，就不会写入，但相应的替换也会被中断）。
+    :argdo %s/hate/love/gc | update
 
-:args */*.txt
-而
 
-:argdo %s/hate/love/gc | update
-是将参数列表中的所有文件的hate提换成love，并写入硬盘（如果没有|update，就不会写入，但相应的替换也会被中断）。
-
-最后强调一点，使用替换命令的时候，一定记得备份，因为替换是直接写入硬盘滴哦……
 
 ### exiting 
 
-### multi-file
-:split
-:vsplit
-Ctrl+w+方向键——切换到前／下／上／后一个窗格 
-Ctrl+w+h/j/k/l ——同上 
-Ctrl+ww——依次向后切换到下一个窗格中
+### windows and multi-file
+
+    :split filename
+    :vsplit filename
+    <C-w>s
+    <C-w>v
+    Ctrl+w+方向键   切换到前／下／上／后一个窗格 
+    Ctrl+w+h/j/k/l  同上 
+    Ctrl+ww         依次向后切换到下一个窗格中
+    :q[uit]	close the currently active window
+    :on[ly]	close all windows except the currently active window    
+    ctrl-w +	increase height of current window by 1 line
+    ctrl-w -	decrease height of current window by 1 line
+    ctrl-w _	maximise height of current window
+    ctrl-w |	maximise width of current window    
 
 :n          编辑下一个文档。 
 :2n        编辑下两个文档。 
@@ -226,9 +231,7 @@ set syntax = apdl
 zo打开折叠
 zc 保存退出
 
-
 :set diffopt=context: 5
-
 
 
 ---------------------------------------------------------------------
@@ -285,17 +288,21 @@ ST的特性，华丽。代码托管在
 文本文件outliner。详见
 [xbeta](http://xbeta.info/vim-voof.htm)
 
+
 需要Python 环境，windows 8 64bit 下需要安装
 32bit Python 2.7 (配合Gvim7.3 32bit)。否则提
 示无法加载库python27.dll。
 安装vimpdb 之后出现问题，reinstall 解决。
 
 ### NERDTree
-碉堡。
-read the help file, you'll get everything
+与自带的 netrw 在一定程度上相似，but they are different things. So I choose netrw.
 
-bookmark is useful
+REF:
+- <https://www.reddit.com/r/vim/comments/22ztqp/why_does_nerdtree_exist_whats_wrong_with_netrw/>
+- <http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/>
 
+### vim-vinegar
+supplement to netrw
 
 ### NERDCommenter
 Want to be able to comment and uncomment code with 
@@ -311,6 +318,7 @@ That function alone is worth installing it.
 
 ### calendar
 calendar.vim 默认日记文件后缀为.cal, 用 Vim 安装 MarkDown 写作插件则为 .md
+
 ### vim-indent-guides
 
 ### vim-markdown
@@ -336,3 +344,13 @@ kien/ctrlp.vim 使用模糊匹配搜索/打开文件，非常好用，强烈推�
 
 ### vim-fugitive
 :help fugitive
+
+### vim-airline
+
+### vim-powerline
+
+    "" Powerline
+    set laststatus=2   " Always show the statusline
+    "let g:Powerline_symbols = 'unicode'
+    "let g:Powerline_colorscheme = 'skwp'
+    "let g:Powerline_symbols = 'fancy'
