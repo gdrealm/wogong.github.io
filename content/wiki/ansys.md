@@ -3,7 +3,6 @@ layout: wiki
 title: ansys
 date: 2014-01-01
 update: 2015-04-01
-
 ---
 
 ## Note	
@@ -131,3 +130,7 @@ http://v.pps.tv/play_3ECRJX.html 简支梁 点面接触分析视频 4min
     $$ 
     
     *VREAD, ParR, Fname, Ext, --, Label, n1, n2, n3, NSKIP // Reads data and produces an array parameter vector or matrix.
+
+## Error
+1. `no *do trips needed, enter *enddo`
+    一般是循环变量设置出错。

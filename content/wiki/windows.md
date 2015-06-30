@@ -1,5 +1,4 @@
----
-layout: wiki
+
 title: windows
 date: 2014-06-21
 update: 2015-02-13
@@ -73,31 +72,39 @@ update: 2015-02-13
     从U盘启动Windows，进入系统后按Shift+F10，启动DOS：
     首先将C盘设置为活动分区：bootsect /nt60 ALL /mbr
     修复系统的MBR表：bootrec /fixmbr
-
+16. 
+    键值 
+    文件夹
+    {374DE290-123F-4565-9164-39C4925E4678}	下载
+    {B4BFCC3A-DB2C-424C-BO29-7FE99A87C641}	桌面
+    {1CF1260C-4DD0-4ebb-811F-33C572699FDE} 
+    音乐
+    {3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA} 
+    图片
+    {A0953C92-50DC-43bf-BE83-3742FED03C9C}	视频
+    {A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}	文档
+    
 ## Reinstall
+* Caps -> Ctrl
+* TC config: Portable\tc
+* Office 记得取消安装一些奇葩的组件 MathType
+* 小狼毫 `mklink /D c:\Users\wogong\AppData\Roaming\Rime d:\Portable\Weasel`
+* eudict `mklink /D c:\Users\wogong\AppData\Roaming\Francochinois d:\Portable\Francochinois`
+* zotero
+* 7zip IDM DUMETER
+* Chrome  
+* iTunes (iPhone Backup)
+* 定时备份的计划任务
+
 1. softwares
-  - Office 记得取消安装一些奇葩的组件
-  - 小狼毫 用户资料夹采用mklink解决\ 同步至Dropbox
-  - 7zip
-  - 浏览器 Chrome 
-  - Drive 需要翻墙环境
-  - iTunes
-  - zotero
   - 字体 Monoca
   - git
   - picasa
-  - eudict 程序文件需要备份 Portable文件夹 mklink to portable
-  - putty 注册表导出
-  - windows update 调整设置
-2. Data
-  - iPhone Backup: Windows Vista, Windows 7, and Windows 8: \Users\(username)\AppData\Roaming\Apple Computer\MobileSync\Backup\
-  - 
 3. Settings
    - 更改个人文件默认位置，windows库
-   - everything 服务 开机启动
-   - 安装软件:输入法，office，TC，Dropbox，Evernote
-   - chrome abp 选项
    - 鼠标触控板设置
+   - everything 服务 开机启动
+   - chrome abp 选项
 
 
 ## Softwares

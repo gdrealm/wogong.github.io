@@ -19,7 +19,7 @@ update: 2015-03-04
 
 * new start:
 1. copy wogong.schemal file to config dir
-2. copyt default.custom.yml to config dir
+2. copy default.custom.yml to config dir
 3. deploy + sync_dir + installtion id
 
 ## REF

@@ -125,6 +125,13 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
   	        option username '02502223350'
   	        option password '123123'
 
+4. wan DHCP
+
+  		config interface 'wan'
+  	        option ifname 'eth0'
+  	        option proto 'dhcp'
+
+
 * 更新路由器固件
       root@OpenWrt:~# sysupgrade /tmp/openwrt-ar71xx-generic-tl-mr11u-v1-squashfs-sysupgrade_6.09.bin
       Saving config files...

@@ -301,6 +301,10 @@ REF:
 - <https://www.reddit.com/r/vim/comments/22ztqp/why_does_nerdtree_exist_whats_wrong_with_netrw/>
 - <http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/>
 
+### netrw
+
+     :[N]Explore[!]  [dir]... Explore directory of current file      *:Explore*
+
 ### vim-vinegar
 supplement to netrw
 
