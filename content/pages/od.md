@@ -1,7 +1,7 @@
 ---
 title: 离线下载
 date: 2015-01-12
-Save_as: od.html
+Save_as: page/od/index.html
 ---
 
 ## 原理
