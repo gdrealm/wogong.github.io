@@ -83,7 +83,8 @@ update: 2015-02-13
     图片
     {A0953C92-50DC-43bf-BE83-3742FED03C9C}	视频
     {A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}	文档
-    
+17. 用户文件夹位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+
 ## Reinstall
 * Caps -> Ctrl
 * TC config: Portable\tc

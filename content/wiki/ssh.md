@@ -60,5 +60,6 @@ sample config: `/etc/ssh/ssh_config`
    参考资料：
    - https://library.linode.com/networking/mosh
    - http://mosh.mit.edu/
+3. windows 下无原生的 mosh 客户端，可以采用的解决办法有 cygwin 或者 chrome app，懒得安装 cygwin 弄乱电脑的环境,尝试 chrome app，感觉良好
 
 
