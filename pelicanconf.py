@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'wogong'
 SITENAME = 'Inner Space'
 SITESUBTITLE = 'Personal page for wogong, including blog, wiki and other things.'
-SITEURL = 'https://wogong.net'
+SITEURL = 'http://www.wogong.net'
 TIMEZONE = 'Asia/Shanghai'
 
 DEFAULT_LANG = 'zh'
@@ -36,7 +36,7 @@ MENUITEMS = (('blog', '/blog'),
         ('wiki', '/wiki'),
         ('book', '/book'),
         ('movie', '/movie'),
-        ('archive', '/archives'),)
+        ('archive', '/archives.html'),)
 
 ARTICLE_URL = '{category}/{slug}'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
@@ -47,7 +47,7 @@ CATEGORY_SAVE_AS = '{slug}/index.html'
 
 USE_FOLDER_AS_CATEGORY = True
 DISPLAY_CATEGORIES_ON_MENU = False
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
 
 # THEME = "simple"
 # THEME = "notmyidea"
