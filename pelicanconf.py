@@ -5,7 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = 'wogong'
 SITENAME = 'Inner Space'
 SITESUBTITLE = 'Personal page for wogong, including blog, wiki and other things.'
-SITEURL = 'http://www.wogong.net'
+#SITEURL = 'http://www.wogong.net'
+SITEURL = 'http://www.chengzhen.me'
 TIMEZONE = 'Asia/Shanghai'
 
 DEFAULT_LANG = 'zh'
@@ -19,8 +20,8 @@ DEFAULT_PAGINATION = 4
 # DEFAULT_DATE = (2012, 3, 2, 14, 1, 1)
 DEFAULT_DATE = 'fs'
 
-FEED_ALL_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+#FEED_ALL_RSS = 'feeds/all.rss.xml'
+#CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
 ## Blogroll
 #LINKS = (('Pelican', 'http://getpelican.com/'),
@@ -36,12 +37,13 @@ MENUITEMS = (('blog', '/blog'),
         ('wiki', '/wiki'),
         ('book', '/book'),
         ('movie', '/movie'),
-        ('archive', '/archives.html'),)
+        ('archive', '/archives.html'),
+        ('about', '/about.html'),)
 
-ARTICLE_URL = '{category}/{slug}'
-ARTICLE_SAVE_AS = '{category}/{slug}.html'
-PAGE_URL = 'pages/{slug}/'
-PAGE_SAVE_AS = 'pages/{slug}/index.html'
+ARTICLE_URL = '{category}/{slug}/'
+ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
+PAGE_URL = 'page/{slug}/'
+PAGE_SAVE_AS = 'page/{slug}/index.html'
 CATEGORY_URL = '{slug}/'
 CATEGORY_SAVE_AS = '{slug}/index.html'
 
@@ -74,9 +76,8 @@ SITEMAP_SAVE_AS = 'sitemap.xml'
 ## develop
 RELATIVE_URLS = False
 LOAD_CONTENT_CACHE = False
-## Feed generation is usually not desired when developing
-# FEED_ALL_ATOM = None
-# CATEGORY_FEED_ATOM = None
-# TRANSLATION_FEED_ATOM = None
-# AUTHOR_FEED_ATOM = None
-# AUTHOR_FEED_RSS = None
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None

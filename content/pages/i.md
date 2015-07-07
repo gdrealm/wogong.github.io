@@ -1,8 +1,9 @@
 ---
 title: When you don't know what to do
 date: 2015-05-14
-Save_as: i.html
+Save_as: page/i/index.html
 ---
+
 ## 研究生学习
 1. 健全知识
 2. 资料积累

@@ -1,7 +1,7 @@
 ---
 title: 我的旅行
 date: 2015-01-15
-Save_as: travel.html
+Save_as: page/travel/index.html
 ---
 
 启发自  http://cnphil.com/backpack/
