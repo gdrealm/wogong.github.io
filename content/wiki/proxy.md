@@ -17,14 +17,14 @@ update: 2015-01-11
 ### @cosbeta 提供的服务
 * Shadowsocks + VPN +APNP
 应网站要求不公布网址，目前使用其提供的shadowsocks，按年收费，价格便宜，自助服务。另有VPN，APNP等，多服务器，多协议。需要请联系。
-<https://vpnso.com/buyss/16708>
-<https://vpnso.com/buyvpn/26574>
+推广链接，注册使用延长30天使用时间。
+<https://**/buyss/16708>
+<https://**/buyvpn/26574>
 
 ### VnetLink 微林
 * HTTP
 非常方便，价格便宜，按流量计费，亦可包月，价格便宜。
-<https://vnet.link>
-需要注册请联系我索要邀请码。
+<https://vnet.link/?rc=118>
 
 ### 曲径
 * PAC
