@@ -2,7 +2,7 @@
 layout: default
 title: 代购
 date: 2014-12-20
-Save_as: js.html
+Save_as: page/js/index.html
 ---
 
 提供美国亚马逊等网站代购，代购手续费用为商品价值的8%.
