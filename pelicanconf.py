@@ -47,7 +47,7 @@ CATEGORY_SAVE_AS = '{slug}/index.html'
 
 USE_FOLDER_AS_CATEGORY = True
 DISPLAY_CATEGORIES_ON_MENU = False
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
 
 # THEME = "simple"
 # THEME = "notmyidea"
