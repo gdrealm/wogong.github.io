@@ -2,12 +2,10 @@
 layout: wiki
 title: linux
 date: 2014-07-18
-update: 2015-02-22
+modified: 2015-06-30
 ---
 
-我使用过的发行版，按照时间顺序依次为：Ubuntu, Fedora, Archlinux, Debian。
-使用时间最久远、我最喜欢的是Archlinux。
-目前使用最多的是Archlinux & Ubuntu。
+我使用过的发行版，按照时间顺序依次为：Ubuntu, Fedora, Archlinux, Debian。使用时间最久远、最喜欢的是Archlinux。目前使用最多的是Archlinux & Debian。
 
 ## note
 1. ubuntu  `cat /etc/issue`
@@ -25,6 +23,7 @@ ubuntu下ack居然是另外一个东西，解决：
         service nginx restart
         service php5-fpm restart
 6. split 分割文件，cat合并文件
+7. `du -sh * | sort -n`
  
 ## 常用命令
 1. 用户管理

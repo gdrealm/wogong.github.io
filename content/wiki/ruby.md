@@ -46,10 +46,12 @@ date: 2015-06-17
         jekyll --server --no-auto 利于检查错误
 
 3. Octopress [http://octopress.org/docs/setup/ 官方文档]
-4. 
-
 
 ## gem source 
+
+uninstall all installed gems
+`gem list --local |awk '{print $1}' |xargs gem uninstall`
+
 http://ruby.taobao.org/
 
 为什么有这个？
