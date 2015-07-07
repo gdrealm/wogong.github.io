@@ -58,9 +58,9 @@ THEME = "/home/wogong/pelican/themes/wogong"
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
 
-DISQUS_SITENAME = "wogong"
+#DISQUS_SITENAME = "wogong"
 GOOGLE_ANALYTICS = "UA-34308107-1"
-TWITTER_USERNAME = "wogong38"
+#TWITTER_USERNAME = "wogong38"
 
 STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico']
 EXTRA_PATH_METADATA = {
