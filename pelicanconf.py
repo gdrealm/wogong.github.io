@@ -58,9 +58,9 @@ THEME = "./themes/wogong"
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
 
-DISQUS_SITENAME = "wogong"
+#DISQUS_SITENAME = "wogong"
 GOOGLE_ANALYTICS = "UA-34308107-1"
-TWITTER_USERNAME = "wogong38"
+#TWITTER_USERNAME = "wogong38"
 
 STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico']
 EXTRA_PATH_METADATA = {
@@ -76,7 +76,6 @@ SITEMAP_SAVE_AS = 'sitemap.xml'
 ## develop
 RELATIVE_URLS = False
 LOAD_CONTENT_CACHE = False
-## Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
