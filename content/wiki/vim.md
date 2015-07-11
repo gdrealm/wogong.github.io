@@ -1,10 +1,7 @@
----
 layout: wiki
 title: vim
 date: 2014-07-10
-update: 2014-07-16
-
----
+modified: 2015-07-10
 
 coolshell has some great vim articles about vim. when you feel boring,
 you can always find some interesting things there.
@@ -251,7 +248,7 @@ BundleInstall，安装插件
 手动安装插件：
 1. 下载 git 包，到 bundle 目录
 2. vimrc 中添加插件名
-3. done
+3. note for update by hand often. watch for GitHub repo update.
 
 
 ### vimwiki

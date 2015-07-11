@@ -1,9 +1,7 @@
----
-layout: wiki
 title: openwrt
 date: 2014-06-07
-update: 2014-09-24
----
+modified: 2015-07-10
+
 ## installed package
 0. tcpdump
 1. dnsmasq `opkg install dnsmasq`
@@ -12,7 +10,6 @@ update: 2014-09-24
     - 开启DNS端口转发，解决DNS污染问题
     - 配置文件 `/etc/shadowsocks/config.json`
     - IP 忽略列表: /etc/shadowsocks/ignore.list 可以使用下面命令更新`wget -O- 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > /etc/shadowsocks/ignore.list`
-    - 
 
 
 ## note
@@ -126,7 +123,7 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
   	        option password '123123'
 
 4. wan DHCP
-
+    - /etc/config/network
   		config interface 'wan'
   	        option ifname 'eth0'
   	        option proto 'dhcp'
@@ -155,3 +152,29 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
 用winscp里的打开终端，sysupgrade /tmp/openwrt-ar71xx-generic-tl-wr703n-v1-squashfs-sysupgrade.bin
 直接开始刷固件。
 若干秒后，刷机完成。
+
+    #Allow only specific source MAC addresses out to the WAN
+    config 'rule'
+        option 'name' 'Allow X230'
+        option 'src' 'lan'
+        option 'dest' 'wan'
+        option 'proto' 'all'
+        option 'src_mac' '00:24:D7:C4:E5:88'
+        option 'target' 'ACCEPT'
+    
+    config 'rule'
+        option 'name' 'Allow iPhone'
+        option 'src' 'lan'
+        option 'dest' 'wan'
+        option 'proto' 'all'
+        option 'src_mac' '28:5A:EB:AF:3F:14'
+        option 'target' 'ACCEPT'
+    
+    # Another explicit deny at the end.
+    #config 'rule'
+    #    option 'name' 'Deny lan -> WAN'
+    #    option 'src' 'lan'
+    #    option 'dest' 'wan'
+    #    option 'proto' 'all'
+    #    option 'target' 'REJECT'
+    

@@ -1,15 +1,15 @@
----
-layout: wiki
 title: zotero
 date: 2014-07-21
-update: 2015-01-14
----
+modified: 2015-07-11
 
 ## note
 
 已下载符合中国论文标准的引文样式
 
 暂时不支持 S 标准
+
+1. change lang
+In Zotero Standalone, the interface language defaults to matching the operating system's language. To override this and use English instead of the operating system's language, open Preferences→Advanced→Open about:config), and set intl.locale.matchOS to false. Then restart Zotero.
 
 
 ## add-on

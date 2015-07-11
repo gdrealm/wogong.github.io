@@ -89,7 +89,7 @@ update: 2015-02-04
 
 3. Hostigation
 
-4. Linode  55$
+4. Linode  50$
     Referrals Code: 9bd81fd03ec9f3917cb2db12d6843d1ee2d30892
     Referrals <https://www.linode.com/?r=9bd81fd03ec9f3917cb2db12d6843d1ee2d30892>
 
@@ -119,3 +119,19 @@ update: 2015-02-04
 9. VPSTO
    @showfom 推出的廉价VPS，主要用于科学上网
    <https://portal.vpsto.com/aff.php?aff=045>
+
+## possess
+1. ss 2016-02-04 vpsto Los Angelas
+    - cron: vagex;v2ex_daily
+    - bingrewards
+    - ss
+    - chengzhen.me
+2. sf digitalocean
+
+## mess up
+1. ss   `sudo pip install shadowsocks`
+2. bypy `git clone git@github.com:houtianze/bypy.git`
+3. transmission </wiki/transmission>
+4. xunlei-lixian
+5. pelican
+6. dl
