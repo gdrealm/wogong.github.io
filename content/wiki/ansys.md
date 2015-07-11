@@ -1,9 +1,6 @@
----
-layout: wiki
 title: ansys
 date: 2014-01-01
 modified: 2015-07-05
----
 
 ## Note	
 1. crack 排查问题的方向：licence server + licence client
@@ -48,7 +45,7 @@ http://v.pps.tv/play_3ECRJX.html 简支梁 点面接触分析视频 4min
 
     LOVLAP, NL1, NL2, NL3, NL4, NL5, NL6, NL7, NL8, NL9 // Overlaps lines. see help doc fotr illustration 
 
-    CYLIND, RAD1, RAD2, Z1, Z2, THETA1, THETA2 // Creates a cylindrical volume centered about the working plane origin.
+    CYLIND, RAD1, RAD2, Z1, Z2, THETA1, THETA2 // Creates a cylindrical volume centered about the working plane originw
     $$
 
 5. 网格划分
@@ -80,6 +77,9 @@ http://v.pps.tv/play_3ECRJX.html 简支梁 点面接触分析视频 4min
     NSLV, Type, NKEY // Selects those nodes associated with the selected volumes.
     NSLA, Type, NKEY // Selects those nodes associated with the selected areas.
     NSLL, Type, NKEY // Selects those nodes associated with the selected lines.
+
+    PARTSEL, Type, PMIN, PMAX, PINC
+Selects a subset of parts in an explicit dynamic analysis.`
     
 
     ESURF, XNODE, Tlab, Shape // Generates elements overlaid on the free faces of existing selected elements.
@@ -106,6 +106,9 @@ http://v.pps.tv/play_3ECRJX.html 简支梁 点面接触分析视频 4min
     $$edpvl,vgen,3,0,-0.5,0
 
     EDCGEN, Option, Cont, Targ, FS, FD, DC, VC, VDC, V1, V2, V3, V4, BTIME, DTIME, BOXID1, BOXID2 // Specifies contact parameters for an explicit dynamics analysis.
+
+    EDLOAD, Option, Lab, KEY, Cname, Par1, Par2, PHASE, LCID, SCALE, BTIME, DTIME
+ // Specifies loads for an explicit dynamics analysis.
 
 8. 求解
     NSUBST, NSBSTP, NSBMX, NSBMN, Carry // Specifies the number of substeps to be taken this load step.

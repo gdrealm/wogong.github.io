@@ -84,6 +84,17 @@ update: 2015-02-13
     {A0953C92-50DC-43bf-BE83-3742FED03C9C}	视频
     {A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}	文档
 17. 用户文件夹位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+18. 针对隐藏文件U盘病毒 c:\users\wogong\Desktop\help
+19.  win8系统怎么建立一键关机/重启/锁定/休眠/睡眠快捷方式？
+在桌面空白处鼠标右键/新建/快捷方式（如下图）
+点击查看原图
+然后再键入对象位置：中输入以下win8指令代码
+关机输入：Shutdown.exe -s -t 00
+重启计算机输入：shutdown.exe -r -t 00
+锁定计算机输入：rundll32.exe user32.dll,LockWorkStation
+休眠计算机输入: rundll32.exe powrProf.dll,SetSuspendState
+睡眠计算机输入: rundll32.exe powrprof.dll,SetSuspendState 0,1,0
+20. 远程访问权限 系统属性-远程
 
 ## Reinstall
 * Caps -> Ctrl
@@ -106,7 +117,16 @@ update: 2015-02-13
    - 鼠标触控板设置
    - everything 服务 开机启动
    - chrome abp 选项
-
+4. windows 8 优化 <http://www.iplaysoft.com/windows8-you-hua-ji-qiao.html>
+    - 关闭视觉特效 系统属性 – 高级 – 性能
+    - 关闭磁盘碎片整理（优化驱动器）计划
+    - 用好索引选项，减少硬盘压力。
+    - 将临时文件夹 (TEMP/TMP) 等移动到非系统盘
+    - 关闭家庭组，在某些情况下可能会导致硬盘和CPU处于高负荷状态 控制面板 – 管理工具 – 服务 – HomeGroup Listener 和 HomeGroup Provider 禁用
+    - 设置好 Superfetch 服务
+    - 开启 Hybrid Boot (混合启动技术)
+    - 关闭开机画面（GUI引导）加速开机启动速度 msconfig – 引导 – 勾上 无GUI引导
+    - 关闭 IPv6 特性
 
 ## Softwares
 * Everything

@@ -1,9 +1,6 @@
----
-layout: wiki
 title: linux
 date: 2014-07-18
-modified: 2015-06-30
----
+modified: 2015-07-10
 
 我使用过的发行版，按照时间顺序依次为：Ubuntu, Fedora, Archlinux, Debian。使用时间最久远、最喜欢的是Archlinux。目前使用最多的是Archlinux & Debian。
 
@@ -101,7 +98,7 @@ https://wiki.archlinux.org/index.php/Rsyslog
               more /var/log/filename
               tail -f /var/log/filename
 
-## Software
+## package
 1. ranger
 vim风格的cli文件管理器。更改默认编辑器及
 shell等等：依靠系统环境变量
@@ -150,6 +147,7 @@ http://wiki.ubuntu.org.cn/Apache%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA%E6%8C%87%E5
 
 17. ack-grep
 ubuntu下ack居然是另外一个东西，解决：`sudo ln -sf /usr/bin/ack-grep /usr/local/bin/ack`
+18. ncdu For looking at why a disk is full, ncdu saves time over the usual commands like du -sh *.
 
 
 ## Linux常用命令

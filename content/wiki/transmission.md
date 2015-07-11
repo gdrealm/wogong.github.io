@@ -1,9 +1,7 @@
----
 layout: wiki
 title: transmission
 date: 2014-07-18
-update: 2014-08-29
----
+modified: 2014-08-29
 
 sudo apt-get install transmission-daemon
 

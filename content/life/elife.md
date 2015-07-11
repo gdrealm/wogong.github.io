@@ -26,25 +26,6 @@ modified: 2015-06-18 19:50:11
 4. log.wogong.net FarBox
 5. [vps name].wogong.net 下载
 
-## VPS
-0. jp from: 2015-06-17 
-    - pelican
-    - ss
-    - bypy
-
-1. se 2015-07-18 ramnode 128M 80G 15$
-    - se.wogong.net:9091 Transmission
-    - aria2c+yaaw
-    - ss
-2. ss 2016-02-04 vpsto
-    - cron: vagex;v2ex_daily
-    - bingrewards
-    - ss
-    - chengzhen.me
-3. sf digitalocean
-    - ss
-    - 
-
 ## proxy
 1. vpnso (@cosbeta) ss+vpn+apnp
 2. <vnet.link> AC+PAC
@@ -125,4 +106,3 @@ upyunu.sh
     - Caps2Ctrl
     - ss
 2. 迅雷离线+百度网盘
-3. 
