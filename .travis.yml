@@ -15,7 +15,7 @@ install:
     - sudo pip install s3cmd
 
 script:
-    - pelican content
+    - make publish
 
 after_success:
     - s3cmd sync output/ s3://www.wogong.net --acl-public --delete-removed --guess-mime-type --access_key=$ACCESS_KEY --secret_key=$SECRET_KEY
