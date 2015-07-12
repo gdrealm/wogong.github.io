@@ -32,13 +32,11 @@ first, you should encrypt privacy information by using travis cli `gem install t
         curl -H "Accept: application/vnd.travis-ci.2+json" https://api.travis-ci.org/repos/<github-id/repo>/key | python2 -m json.tool | grep key | sed 's/.*"key": "\(.*\)"/\1/' | xargs -0 echo -en | sed 's/ RSA//' > travis.pem
         # note: <github-id/repo> no '<>'
         # note: this cli command fails in my test, but you can do it by hand, plz see ref[1] for more detail . anyway, you should get the right public key, travis.pem.
-
 then, you can encrypt your privacy info.
 
         echo -n 'ACCESS_KEY=blah SECRET_KEY=blah' | openssl rsautl -encrypt -pubin -inkey travis.pem | base64 -w0
         # you will get a long base64 string
         # note: no % at the end
-
 last, add the base64 string .travis.yml, and access it by $ACCESS_KEY. see the following finished .tavis.yml file.
 
         language: python

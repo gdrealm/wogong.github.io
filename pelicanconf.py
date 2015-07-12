@@ -5,8 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'wogong'
 SITENAME = 'Inner Space'
 SITESUBTITLE = 'Personal page for wogong, including blog, wiki and other things.'
-#SITEURL = 'http://www.wogong.net'
-SITEURL = 'http://www.chengzhen.me'
+SITEURL = 'http://www.wogong.net'
 TIMEZONE = 'Asia/Shanghai'
 
 DEFAULT_LANG = 'zh'
@@ -73,8 +72,8 @@ EXTRA_PATH_METADATA = {
 DIRECT_TEMPLATES = ('index', 'tags', 'categories', 'archives', 'sitemap')
 SITEMAP_SAVE_AS = 'sitemap.xml'
 
-## develop
-RELATIVE_URLS = False
+# develop
+RELATIVE_URLS = True
 LOAD_CONTENT_CACHE = False
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
