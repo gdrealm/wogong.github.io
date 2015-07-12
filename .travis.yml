@@ -1,0 +1,15 @@
+language: python
+
+python:
+    - "2.7"
+
+before_install:
+
+install:
+    - sudo pip install pelican
+    - sudo pip install markdown
+    - sudo pip install s3cmd
+
+script:
+    - mkdir output
+    - make html

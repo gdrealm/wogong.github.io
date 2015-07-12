@@ -53,7 +53,7 @@ DISPLAY_PAGES_ON_MENU = False
 
 # THEME = "simple"
 # THEME = "notmyidea"
-THEME = "/home/wogong/pelican/themes/wogong"
+THEME = "./themes/wogong"
 
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}

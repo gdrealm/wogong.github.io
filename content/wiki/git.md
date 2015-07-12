@@ -1,9 +1,6 @@
----
-layout: wiki
 title: git
 date: 2014-06-14
-update: 2014-12-07
----
+modified: 2015-07-11
 
 ## note
 1. 与其他服务比较  

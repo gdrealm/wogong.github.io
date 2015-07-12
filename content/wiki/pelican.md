@@ -1,7 +1,7 @@
----
 title: pelican
 date: 2015-06-17
----
+modified: 2015-07-11
+
 
 pelican content --output /var/www/output --relative-urls --ignore-cache
 
@@ -50,3 +50,9 @@ optional arguments:
   -w SELECTED_PATHS, --write-selected SELECTED_PATHS
                         Comma separated list of selected paths to write
                         (default: None)
+
+
+## make 
+make html
+make serve
+make s3_upload
