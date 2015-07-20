@@ -1,9 +1,6 @@
----
-layout: wiki
 title: arch
 date: 2014-07-18
-update: 2015-02-22
----
+modified: 2015-07-12 19:23:27
 
 1. screen backlight: xbackloght -set 10
 
@@ -226,3 +223,13 @@ Core 0:       +56.0°C  (high = +95.0°C, crit = +105.0°C)
 coretemp-isa-0002
 Adapter: ISA adapter
 Core 2:       +57.0°C  (high = +95.0°C, crit = +105.0°C)
+
+
+openconnect Failed to open tun device: No such device
+
+    [root@localhost net]# find /lib/modules/ -iname 'tun.ko.gz'
+    /lib/modules/3.15.1-1-ARCH/kernel/drivers/net/tun.ko.gz
+    [root@localhost net]# insmod /lib/modules/3.15.1-1-ARCH/kernel/drivers/net/tun.ko.gz
+    [root@localhost net]# lsmod | grep tun
+    tun                    20931  0 
+    [root@localhost net]#

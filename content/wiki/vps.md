@@ -1,9 +1,6 @@
----
-layout: wiki
 title: vps
 date: 2014-07-06
-update: 2015-02-04
----
+modified: 2015-07-16 19:50:37
 
 ## 配置VPS
 

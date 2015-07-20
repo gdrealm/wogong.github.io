@@ -1,7 +1,6 @@
-layout: wiki
 title: vim
 date: 2014-07-10
-modified: 2015-07-10
+modified: 2015-07-12 19:10:04
 
 coolshell has some great vim articles about vim. when you feel boring,
 you can always find some interesting things there.
@@ -300,7 +299,8 @@ REF:
 
 ### netrw
 
-     :[N]Explore[!]  [dir]... Explore directory of current file      *:Explore*
+    renanme: R
+    :[N]Explore[!]  [dir]... Explore directory of current file      *:Explore*
 
 ### vim-vinegar
 supplement to netrw

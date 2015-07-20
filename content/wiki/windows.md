@@ -1,8 +1,6 @@
----
 title: windows
 date: 2014-06-21
-update: 2015-02-13
----
+modified: 2015-07-13 08:21:47
 
 重装系统，卸载 机械硬盘，只保留 SSD 安装系统。之后打开 File History
 
@@ -84,7 +82,7 @@ update: 2015-02-13
     {A0953C92-50DC-43bf-BE83-3742FED03C9C}	视频
     {A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}	文档
 17. 用户文件夹位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
-18. 针对隐藏文件U盘病毒 c:\users\wogong\Desktop\help
+18. 针对隐藏文件U盘病毒 attrib * -s -h -a -r /s /d
 19.  win8系统怎么建立一键关机/重启/锁定/休眠/睡眠快捷方式？
 在桌面空白处鼠标右键/新建/快捷方式（如下图）
 点击查看原图
@@ -98,7 +96,7 @@ update: 2015-02-13
 
 ## Reinstall
 * Caps -> Ctrl
-* TC config: Portable\tc
+* TC config: Portable\tc 安装32bit 位置改动到program files，no x86
 * Office 记得取消安装一些奇葩的组件 MathType
 * 小狼毫 `mklink /D c:\Users\wogong\AppData\Roaming\Rime d:\Portable\Weasel`
 * eudict `mklink /D c:\Users\wogong\AppData\Roaming\Francochinois d:\Portable\Francochinois`

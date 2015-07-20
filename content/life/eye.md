@@ -1,9 +1,6 @@
----
-layout: wiki
 title: eye
 date: 2015-05-24
-update: 2015-05-24
----
+modified: 2015-07-18 00:34:19
 
 ## 度数
 R（右眼度数）：-2.75 

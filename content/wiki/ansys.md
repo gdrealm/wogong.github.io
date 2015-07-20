@@ -48,6 +48,10 @@ http://v.pps.tv/play_3ECRJX.html 简支梁 点面接触分析视频 4min
     CYLIND, RAD1, RAD2, Z1, Z2, THETA1, THETA2 // Creates a cylindrical volume centered about the working plane originw
     $$
 
+    VROTAT, NA1, NA2, NA3, NA4, NA5, NA6, PAX1, PAX2, ARC, NSEG
+Generates cylindrical volumes by rotating an area pattern about an axis.
+
+
 5. 网格划分
 
     aatt 设置几何模型-面的属性
@@ -133,6 +137,9 @@ Selects a subset of parts in an explicit dynamic analysis.`
     $$ 
     
     *VREAD, ParR, Fname, Ext, --, Label, n1, n2, n3, NSKIP // Reads data and produces an array parameter vector or matrix.
+
+    EDASMP, Option, ASMID, PART1, PART2, PART3, PART4, PART5, PART6, PART7, PART8, PART9, PART10, PART11, PART12, PART13, PART14, PART15, PART16 
+Creates a part assembly to be used in an explicit dynamic analysis.
 
 ## Error
 1. `no *do trips needed, enter *enddo`

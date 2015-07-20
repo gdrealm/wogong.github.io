@@ -1,9 +1,6 @@
----
-layout: wiki
 title: android
 date: 2015-01-15
-update: 2015-01-19
----
+modified: 2015-07-13 08:22:54
 
 ## tips
 
@@ -11,7 +8,7 @@ update: 2015-01-19
       - call log SMS backup+ to Gmail and Google Calendar
       - Apps Ti backup
 
-## Apps
+## Purchased Apps
 1. Greenify
 2. Titanim Backup
 

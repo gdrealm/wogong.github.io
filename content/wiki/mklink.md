@@ -1,8 +1,6 @@
----
-layout: wiki
 title: mklink
 date: 2015-06-17
----
+modified: 2015-07-13 22:51:41
 
 Windows 下类似于 Linux 中命令 `ln`
 
