@@ -93,6 +93,7 @@ modified: 2015-07-13 08:21:47
 休眠计算机输入: rundll32.exe powrProf.dll,SetSuspendState
 睡眠计算机输入: rundll32.exe powrprof.dll,SetSuspendState 0,1,0
 20. 远程访问权限 系统属性-远程
+21. 远程桌面复制粘贴失效 rdpclip.exe
 
 ## Reinstall
 * Caps -> Ctrl

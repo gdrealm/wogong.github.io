@@ -1,9 +1,6 @@
----
-layout: wiki
 title: python
 date: 2014-06-10
-update: 2015-03-04
----
+modified: 2015-07-28 23:53:51
 
 ## NOTE
 1. `python -m SimpleHTTPServer` 8000端口快速共享文件。(Python3 中取消了SimpleHTTPServer 这个模块。)

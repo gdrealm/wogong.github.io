@@ -1,13 +1,22 @@
 title: iOS
 date: 2015-06-16
-modified: 2015-07-13 08:22:00
+modified: 2015-07-28 10:46:29
 
 ## Purchaesd Apps
-1. Reeder 2
-2. Pinner
-3. A Dark Room
-4. Enlight
+*@w*g.net US
 
-* todoist
-* sunrise calendar
-* 
+* Reeder 2 
+* Pinner 4.99
+* minecraft 6.99
+* 1writer 4.99
+* goodreader 0.99
+* nplayer 4.99
+* avplayer 2.99 refunded
+* iA writer 4.99 refunded
+* Day One     4.99 refunded
+
+*@*mail.com CN
+
+* A Dark Room
+* Enlight
+
