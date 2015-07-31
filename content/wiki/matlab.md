@@ -1,9 +1,6 @@
----
-layout: wiki
 title: matlab
 date: 2014-09-10
-update: 2015-02-03
----
+modified: 2015-07-21 21:43:21
 
 MATLAB MATrix LABoratory
 
@@ -66,3 +63,11 @@ FORMAT LOOSE Puts the extra line-feeds back in
 7. `...` 用于多行输入
 8. 随机数 0-1均匀分布 rand()
 9. 画点 `plot(x,y,'*')`
+
+子程序
+
+    funtion F=functionname(a,b)
+        F=a+b;
+    end
+
+

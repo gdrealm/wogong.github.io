@@ -1,35 +1,30 @@
----
-layout: wiki
 title: dropbox
 date: 2015-06-17
----
+modified: 2015-07-31 15:52:13
 
+## Linux Install
+<https://www.dropbox.com/install?os=lnx>
 
-## 软件安装
-### Windows 略
-### Linux
-https://www.dropbox.com/install?os=lnx
+dropbox.py help
 
-dropbox.py 脚本管理：
-
-> > ```%dropbox.py help```
-> > ```Dropbox command-line interface```
-
-> > ```commands:```
-
-> > ```Note: use dropbox help <command> to view usage for a specific command.```
-
-> >  ```status       get current status of the dropboxd```
-> >  ```help         provide help```
-> >  ```puburl       get public url of a file in your dropbox```
-> >  ```stop         stop dropboxd```
-> >  ```running      return whether dropbox is running```
-> >  ```start        start dropboxd```
-> >  ```filestatus   get current sync status of one or more files```
-> >  ```ls           list directory contents with current sync status```
-> >  ```autostart    automatically start dropbox at login```
-> >  ```exclude      ignores/excludes a directory from syncing```
-> >  ```lansync      enables or disables LAN sync```
+    dropbox.py help
+    ropbox command-line interface
+    
+    ommands:
+    
+    ote: use dropbox help <command> to view usage for a specific command.
+    
+    status       get current status of the dropboxd
+    help         provide help
+    puburl       get public url of a file in your dropbox
+    stop         stop dropboxd
+    running      return whether dropbox is running
+    start        start dropboxd
+    filestatus   get current sync status of one or more files
+    ls           list directory contents with current sync status
+    autostart    automatically start dropbox at login
+    exclude      ignores/excludes a directory from syncing
+    lansync      enables or disables LAN sync
 
 ## note
 1. 电脑使用，很多服务暂时还是只在Windows(现在基本都在Arch下了20120504)下使用吧，比如Dropbox的同步，等等诸如此类，两边同时发布的错误几率太大（相同硬盘文件）。不同PC之间同步不会有任何问题。
@@ -52,6 +47,3 @@ Dropbox自动化，监控Dropbox特定文件夹，对Dropbox中的文档进行�
 自由设定规则，对Dropbox中的文件进行重排，监控SortBox文件夹，然后将文件分别整理到其他文件夹。
 4. 基于Dropbox和Markdown的blog：
 http://calepin.co/  源码：https://github.com/jokull/calepin; http://scriptogr.am/
-
-
-因为3G，告别Dropbox。
