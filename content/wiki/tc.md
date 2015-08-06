@@ -1,10 +1,9 @@
----
-layout: wiki
 title: tc
 date: 2015-06-17
----
+modified: 2015-07-13 22:42:29
 
-TC or TotalCommander
+
+TC or Total Commander
 
 ## note
 1. 安装时可以选择配置文件位置，但是工具栏需要自己定义，工具栏文件defaultbar同样放在Dropbox文件夹中，方便恢复。
@@ -21,7 +20,6 @@ TC or TotalCommander
    
        Dir *.* /s /ad >list.txt
        Tree *.* /s >tree.txt
-
 
 ## 快捷键
 * C-m 批量重命名
@@ -73,7 +71,6 @@ TC的万能文件查看插件  http://xbeta.info/tc-docx.htm
 
 ## Temp
 
-
 Total Commander（下称TC）和Everything都是我常使用的软件，一个是功能超级强大的资源管理软件，另一个是速度电光火石的文件搜索软件。将两者结合起来可以极大的提高工作效率。本文对两者的结合方法进行了介绍。这里参考了善用佳软和水木社区的讨论，以及【1】中的方法总结。
  
 1. 在Everything中调用TC
@@ -108,5 +105,5 @@ Ini代码
 
 通过这样的设置后，按下Ctrl+F，即可以通过Everything在当前目录下搜索文件了。
  
-【1】http://iamplaymore.blogspot.com/2009/02/everythingtotal-commander.html
+[1] http://iamplaymore.blogspot.com/2009/02/everythingtotal-commander.html
 

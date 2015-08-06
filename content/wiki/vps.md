@@ -1,9 +1,6 @@
----
-layout: wiki
 title: vps
 date: 2014-07-06
-update: 2015-02-04
----
+modified: 2015-07-16 19:50:37
 
 ## 配置VPS
 
@@ -127,11 +124,18 @@ update: 2015-02-04
     - ss
     - chengzhen.me
 2. sf digitalocean
+3. hk host.us
 
 ## mess up
 1. ss   `sudo pip install shadowsocks`
 2. bypy `git clone git@github.com:houtianze/bypy.git`
 3. transmission </wiki/transmission>
 4. xunlei-lixian
-5. pelican
+5. pelican `sudo pip install pelican,markdown`
 6. dl
+7. [ocserv](/blog/openconnect-server/)
+8. [cow](https://github.com/cyfdecyf/cow)
+9. [nmdown](https://github.com/skyline75489/nmdown)
+    
+    sudo pip install eyed3
+    zsh alias to nm

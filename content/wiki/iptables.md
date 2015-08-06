@@ -1,18 +1,70 @@
----
-layout: wiki
 title: iptable
 date: 2015-05-06
-update: 2015-05-06
----
+modified: 2015-07-30 09:21:59
+
+
+Linode Guide: Securing Your Server
+<https://www.linode.com/docs/security/securing-your-server>
+
+    sudo iptables -L
+
+    sudo vim /etc/iptables.firewall.rules
+
+    sudo iptables-restore < /etc/iptables.firewall.rules
+
+default rule. By default, the rules will allow traffic to the following services and ports: HTTP (80), HTTPS (443), SSH (22), and ping. All other ports will be blocked.
+
+    *filter
+    
+    #  Allow all loopback (lo0) traffic and drop all traffic to 127/8 that doesn't use lo0
+    -A INPUT -i lo -j ACCEPT
+    -A INPUT -d 127.0.0.0/8 -j REJECT
+    
+    #  Accept all established inbound connections
+    -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+    
+    #  Allow all outbound traffic - you can modify this to only allow certain traffic
+    -A OUTPUT -j ACCEPT
+    
+    #  Allow HTTP and HTTPS connections from anywhere (the normal ports for websites and SSL).
+    -A INPUT -p tcp --dport 80 -j ACCEPT
+    -A INPUT -p tcp --dport 443 -j ACCEPT
+    
+    #  Allow SSH connections
+    #
+    #  The -dport number should be the same port number you set in sshd_config
+    #
+    -A INPUT -p tcp -m state --state NEW --dport 22 -j ACCEPT
+    
+    #  Allow ping
+    -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
+    
+    #  Log iptables denied calls
+    -A INPUT -m limit --limit 5/min -j LOG --log-prefix "iptables denied: " --log-level 7
+    
+    #  Drop all other inbound - default deny unless explicitly allowed policy
+    -A INPUT -j DROP
+    -A FORWARD -j DROP
+    
+    COMMIT
+
 
  KiwiVM has blocked port 8080 in your server by adding the following iptables rule:
 
     iptables -I INPUT -p tcp --destination-port 8080 -j DROP
 	
-	
+
+for debian:
+
+    sudo vim /etc/network/if-pre-up.d/firewall
+    sudo chmod +x /etc/network/if-pre-up.d/firewall
 
 
-iptables简介
+    /etc/network/if-pre-up.d/firewall
+    #!/bin/sh
+    /sbin/iptables-restore < /etc/iptables.firewall.rules
+
+## 简介
 
 iptables是基于内核的防火墙，功能非常强大，iptables内置了filter，nat和mangle三张表。
 
@@ -61,16 +113,6 @@ iptables主要参数
 注意：所有链名必须大写，表明必须小写，动作必须大写，匹配必须小写
 
 
-## openwrt 屏蔽指定IP
-
-root@OpenWrt:~# iptables -A INPUT -s 192.168.2.146 -j DROP
-root@OpenWrt:~# iptables -A OUTPUT -s 192.168.2.146 -j DROP
-root@OpenWrt:~# iptables -I INPUT -s 192.168.2.146 -j DROP
-root@OpenWrt:~# iptables -I OUTPUT -s 192.168.2.146 -j DROP
-root@OpenWrt:~# iptables -I FORWARD -s 192.168.2.146 -j DROP
-
-
-
 ## temp
 
 1、安装iptables防火墙
@@ -83,6 +125,7 @@ Debian/Ubuntu执行：apt-get install iptables
 iptables -F
 iptables -X
 iptables -Z
+
 3、开放指定的端口
  
 
@@ -143,19 +186,20 @@ CentOS上可以执行：service iptables save保存规则
 
 linux下iptables封ip段的常见命令：
 封单个IP：
- 
+    
+    iptables -I INPUT -s 211.1.0.0 -j DROP
 
-iptables -I INPUT -s 211.1.0.0 -j DROP
 封IP段：
  
 
 iptables -I INPUT -s 211.1.0.0/16 -j DROP
 iptables -I INPUT -s 211.2.0.0/16 -j DROP
 iptables -I INPUT -s 211.3.0.0/16 -j DROP
+
 封整个段：
  
-
 iptables -I INPUT -s 211.0.0.0/8 -j DROP
+
 封几个段：
  
 
@@ -181,12 +225,9 @@ iptables -F 全清掉了
 
 /etc/rc.d/init.d/iptables restart
 1、重启后生效
- 
-
 开启：chkconfig iptables on
 关闭：chkconfig iptables off
-2、即时生效，重启后失效
- 
 
+2、即时生效，重启后失效
 开启：service iptables start
 关闭：service iptables stop

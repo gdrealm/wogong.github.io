@@ -1,7 +1,5 @@
----
 title: heroes in my heart
 date: 2010-01-13
----
 
 文章最初连载于未名BBS
 

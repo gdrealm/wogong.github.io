@@ -14,3 +14,8 @@ tp wogong -258 66 72
 
 
 /gamerule keepInventory true 死亡不掉落
+
+
+server
+
+java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui

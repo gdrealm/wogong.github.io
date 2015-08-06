@@ -93,6 +93,7 @@ Default /etc/network/interfaces file as supplied in the raspbian image - do not 
     iface wlan0 inet manual
     iface wlan0 inet dhcp
         pre-up wpa_supplicant -Dwext -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -B 
+    default 2015-07-16 #wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
 
 /etc/wpa_supplicant/wpa_supplicant.conf
 
