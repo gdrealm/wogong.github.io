@@ -12,6 +12,7 @@
 @import url("reset.css");
 @import url("pygment.css");
 @import url("typogrify.css");
+@import url("yue.css");
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
 
 /***** Global *****/
@@ -20,7 +21,7 @@ body {
     background: #F5F4EF;
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Arimo', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.429;
     margin: 0;
     padding: 0;

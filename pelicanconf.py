@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'wogong'
 SITENAME = 'Inner Space'
-SITESUBTITLE = 'Personal page for wogong, including blog, wiki and other things.'
+# SITESUBTITLE = 'Personal page for wogong, including blog, wiki and other things.'
 SITEURL = 'http://www.wogong.net'
 TIMEZONE = 'Asia/Shanghai'
 
@@ -39,12 +39,12 @@ MENUITEMS = (('blog', '/blog'),
         ('archive', '/archives.html'),
         ('about', '/about.html'),)
 
-ARTICLE_URL = '{category}/{slug}/'
-ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
-PAGE_URL = 'page/{slug}/'
-PAGE_SAVE_AS = 'page/{slug}/index.html'
-CATEGORY_URL = '{slug}/'
-CATEGORY_SAVE_AS = '{slug}/index.html'
+ARTICLE_URL = ('{category}/{slug}/')
+ARTICLE_SAVE_AS = ('{category}/{slug}/index.html')
+PAGE_URL = ('page/{slug}/')
+PAGE_SAVE_AS = ('page/{slug}/index.html')
+CATEGORY_URL = ('{slug}/')
+CATEGORY_SAVE_AS = ('{slug}/index.html')
 
 USE_FOLDER_AS_CATEGORY = True
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -53,6 +53,7 @@ DISPLAY_PAGES_ON_MENU = False
 # THEME = "simple"
 # THEME = "notmyidea"
 THEME = "./themes/wogong"
+# THEME = "./themes/bootlex"
 
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
