@@ -55,6 +55,11 @@ Generates cylindrical volumes by rotating an area pattern about an axis.
 5. 网格划分
 
     aatt 设置几何模型-面的属性
+    LATT, MAT, REAL, TYPE, --, KB, KE, SECNUM //Associates element attributes with the selected, unmeshed lines.
+    VATT, MAT, REAL, TYPE, ESYS, SECNUM //Associates element attributes with the selected, unmeshed volumes.
+
+    MSHKEY, KEY // Specifies whether free meshing or mapped meshing should be used to mesh a model.
+
     KMESH, NP1, NP2, NINC // Generates nodes and point elements at keypoints.
     AMESH, NA1, NA2, NINC // Generates nodes and area elements within areas.
 
@@ -83,6 +88,11 @@ Generates cylindrical volumes by rotating an area pattern about an axis.
     NSLL, Type, NKEY // Selects those nodes associated with the selected lines.
 
     PARTSEL, Type, PMIN, PMAX, PINC
+
+    wpoffs
+
+    WPROTA, THXY, THYZ, THZX // Rotates the working plane.
+
 Selects a subset of parts in an explicit dynamic analysis.`
     
 

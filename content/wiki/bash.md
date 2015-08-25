@@ -1,8 +1,7 @@
----
-layout: wiki
 title: bash
 date: 2015-06-17
----
+modified: 2015-08-07 09:50:27
+
 
 ## PS1相关知识
  

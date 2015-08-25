@@ -1,12 +1,10 @@
----
 title: elife
 date: 2015-06-17
 modified: 2015-06-18 19:50:11
----
 
 ## information repo
 1. gmail
-2. google drive
+2. google drive: powerful search。
 2. evernote
 3. pinboard
 4. instapaper (new to Pinboard; likes to Pinboard)
@@ -20,9 +18,8 @@ modified: 2015-06-18 19:50:11
 13. Google Photos
 
 ## site
-1. www.wogong.net  jekyll，托管于github
+1. www.wogong.net blog
 2. twitter.wogong.net URL 转发，利用Google Drive 进行托管，自动更新
-3. read.wogong.net FarBox
 4. log.wogong.net FarBox
 5. [vps name].wogong.net 下载
 
@@ -63,18 +60,18 @@ modified: 2015-06-18 19:50:11
 
 ## security
 0. keepass
+    * minikeepass iOS
+    * kpcli linux
    - 1password 数据存储在本地，有手机客户端
    - lastpass 数据存储在服务器
    - Keepass
    - Enpass
-1. Google Authenticator
+1. 2-step
     - Dropbox
     - Microsoft
     - Evernote
     - Github
     - Google
-    - Lastpass
-2. Truecrypt
 3. AppleID 2-step verification
 
 ## Domain & DNS

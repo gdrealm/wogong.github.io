@@ -9,6 +9,12 @@ authors: wogong
 summary: 
 ---
 
+## note
+1. verycd .gdajie
+    
+http://www.verycd.gdajie.com/detail.htm?id=1790447
+
+
 ## 迅雷离线
 
 ## 百度云
@@ -38,5 +44,20 @@ summary:
     运行时添加-ddd，还会会显示HTTP通讯信息（警告：非常多）
 
 ## VPS
+1. transmission
 
+
+几个有关规范的资源：
+ 
+标准分享网：
+http://www.bzfxw.com/
+常用标准均可免费下载，不过内容貌似没有很好的搜索，用google里这样：
+site:bzfxw.com 混凝土
+就会只在该网站中搜“混凝土”了
+ 
+知网的两个校内资源，我还没怎么用，但是是可以下载的：
+国家标准全文数据库：
+http://dbpub.cnki.net/grid2008/dbpub/brief.aspx?id=scsf
+中国行业标准全文数据库：
+http://dbpub.cnki.net/grid2008/dbpub/brief.aspx?id=schf
 

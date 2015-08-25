@@ -10,7 +10,7 @@ Linode Guide: Securing Your Server
 
     sudo vim /etc/iptables.firewall.rules
 
-    sudo iptables-restore < /etc/iptables.firewall.rules
+    sudo iptables-restore < /etc/iptables.firewall.rules    ## added to repo
 
 default rule. By default, the rules will allow traffic to the following services and ports: HTTP (80), HTTPS (443), SSH (22), and ping. All other ports will be blocked.
 

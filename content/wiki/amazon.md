@@ -31,6 +31,10 @@ AWS GovCloud（美国）	us-gov-west-1	GovCloud	AWS GovCloud（美国）
 
 s3cmd `sudo pacman -S s3cmd
 
+* web hosting
+
+    All of your css files have Content Type set to binary/octet-stream, you need to set it to text/css
+
 ## Route 53
 托管区域
 前 25 个托管区域：每个托管区域每月 0.50 USD

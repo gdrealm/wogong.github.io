@@ -1,9 +1,14 @@
----
-layout: wiki
 title: kindle
 date: 2014-07-16
-update: 2015-02-04
----
+modified: 2015-08-25 21:57:54
+
+## services
+1. kindleear GAE kindleear.wogong.net
+2. Instapaper
+3. amazon.com
+4. amazon.cn
+5. kindledxpush
+
 ## note
 1. kindle dxg 适合的PDF：优化->印刷版本。
 2. Kindle 的官方充电器输出电流为 0.85A。
@@ -18,8 +23,10 @@ update: 2015-02-04
 2. Kindle Keyboard 3
 3. Kindle 4
 4. Kindle 5 （Kindle 4 的升级产品）
-5. Kindle Paperwhite （当前首选）简称KPW，是内置光源的新一代触摸屏版本Kindle
-6. Kindle Paperwhite 2（当前首选）简称 KPW2, KPW 的升级版本
+4. Kindle 6 （Kindle 5 的升级产品）
+5. Kindle Paperwhite   简称KPW，是内置光源的新一代触摸屏版本Kindle
+6. Kindle Paperwhite 2 简称 KPW2, KPW 的升级版本
+6. Kindle Paperwhite 3（当前首选）简称 KPW3, KPW2 的升级版本
 7. Kindle Voyage
 
 ## 如何获取电子书

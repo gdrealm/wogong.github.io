@@ -115,41 +115,41 @@ sudo cp doc/sample.config /etc/ocserv/ocserv.conf
 
 确保以下配置正确
 
-# 登陆方式，目前先用密码登录
-auth = "plain[/etc/ocserv/ocpasswd]"
-
-# 允许同时连接的客户端数量
-max-clients = 4
-
-# 限制同一客户端的并行登陆数量
-max-same-clients = 2
-
-# 服务监听的IP（服务器IP，可不设置）
-listen-host = 1.2.3.4
-
-# 服务监听的TCP/UDP端口（选择你喜欢的数字）
-tcp-port = 9000
-udp-port = 9001
-
-# 自动优化VPN的网络性能
-try-mtu-discovery = true
-
-# 确保服务器正确读取用户证书（后面会用到用户证书）
-cert-user-oid = 2.5.4.3
-
-# 服务器证书与密钥
-server-cert = /etc/ssl/private/my-server-cert.pem
-server-key = /etc/ssl/private/my-server-key.pem
-
-# 客户端连上vpn后使用的dns
-dns = 8.8.8.8
-dns = 8.8.4.4
-
-# 注释掉所有的route，让服务器成为gateway
-#route = 192.168.1.0/255.255.255.0
-
-# 启用cisco客户端兼容性支持
-cisco-client-compat = true
+    # 登陆方式，目前先用密码登录
+    auth = "plain[/etc/ocserv/ocpasswd]"
+    
+    # 允许同时连接的客户端数量
+    max-clients = 4
+    
+    # 限制同一客户端的并行登陆数量
+    max-same-clients = 2
+    
+    # 服务监听的IP（服务器IP，可不设置）
+    listen-host = 1.2.3.4
+    
+    # 服务监听的TCP/UDP端口（选择你喜欢的数字）
+    tcp-port = 9000
+    udp-port = 9001
+    
+    # 自动优化VPN的网络性能
+    try-mtu-discovery = true
+    
+    # 确保服务器正确读取用户证书（后面会用到用户证书）
+    cert-user-oid = 2.5.4.3
+    
+    # 服务器证书与密钥
+    server-cert = /etc/ssl/private/my-server-cert.pem
+    server-key = /etc/ssl/private/my-server-key.pem
+    
+    # 客户端连上vpn后使用的dns
+    dns = 8.8.8.8
+    dns = 8.8.4.4
+    
+    # 注释掉所有的route，让服务器成为gateway
+    #route = 192.168.1.0/255.255.255.0
+    
+    # 启用cisco客户端兼容性支持
+    cisco-client-compat = true
 
 创建一个登陆用的用户名与密码。
 

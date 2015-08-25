@@ -13,6 +13,7 @@ modified: 2015-07-28 23:53:51
 5. ipython notebook (pythonxy)
     - linux 
         sudo apt-get install ipython-notebook
+        sudo pacman -S ipython-notebook
         sudo apt-get install python-matplotlib
 6. v2ex_daily
     pip install BeautifulSoup4

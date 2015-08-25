@@ -1,12 +1,10 @@
----
-layout: wiki
 title: network
 date: 2014-06-13
-update: 2014-06-13
----
+modified: 2015-08-05 23:16:50
+
 
 ## Commands
-1. ifconfig
+1. ifconfig/ipconfig
 2. arp IP -- MAC
 3. ping
 
@@ -15,7 +13,7 @@ update: 2014-06-13
 ## NOTE
 0. curl ip.gs/ip.cn/ip.tl
 0. arch wiki
-   https://wiki.archlinux.org/index.php/Network
+   <https://wiki.archlinux.org/index.php/Network>
 
 1. 带宽
    425Kbps，此处的b即是Byte。1Byte=8bit，加上其它开销，10Kb的宽带流量可大致获得1KB每秒的下载速度，所以下载速度为425KB/秒时带宽约为4.25Mbps。
@@ -35,6 +33,8 @@ update: 2014-06-13
 的心吧。
 
 ## softwares
+0. pingviewinfo
+0. winMTR
 1. inSSIDer 2.0  
    通过inSSIDer搜索无线热点，我们可以看到每个热点的MAC地址、网络名称（SSID）、无线信号强度、使用的信道、加密方式、最大无线传输速率和网络类型等主要信息，非常的全面。此外，在这些基本信息的下方，我们还可以查看每个时间段每个无线热点的信号强度和稳定性（纵坐标：信号强度，横坐标：时间段），其中纵坐标越高，表明信号强度越强，而横坐标越平滑，则表明无线信号越稳定。
    - 2.4GHz频段信道使用情况
@@ -71,7 +71,6 @@ ARP协议用在局域网(LAN)内部。借用ARP协议，设备可以知道同一
       sudo tcpdump -i en0 arp //监听en0接口的arp协议通信
  
 
-##
 
 路由局域网通过路由器，接入广域的互联网。互联网上的通信往往要经过多个路由器接力。途中路由器的故障，可能导致互联网访问异常。
 netstat -nr
@@ -80,7 +79,7 @@ netstat -nr
 traceroute 74.125.128.99
 追踪到达IP目的地的全程路由。
   traceroute -I 74.125.128.99
-  通过ICMP协议，追踪路由。ICMP协议经常会被禁用，所以会返回"*"的字符串。
+  通过ICMP协议，追踪路由。ICMP协议经常会被禁用，所以会返回"\*"的字符串。
   sudo traceroute -T -p 80 74.125.128.99
   通过TCP协议，经80端口，追踪路由。TCP协议的默认端口80很少会被禁用。
 
@@ -99,8 +98,6 @@ sudo tcpdump -i en0
   将lo0接口的通信存入文件record.pcap
 
 运行Tcpdump监听POP邮箱密码：tcpdump -X -i br-br0 port 110
-
-
 
 ## pv
 
@@ -155,8 +152,3 @@ and capture that checksum in a “test.md5″ file with `tee` – just in-case f
 for extra credit, what disc was used for this sample output?
 9) TIME HOW FAST THE COMPUTER READS FROM /DEV/ZEROpv /dev/zero > /dev/null
 my stats 217GB 0:00:38 [4,36GB/s]
-
-
-## softwares
-pingviewinfo
-winMTR

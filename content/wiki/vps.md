@@ -1,6 +1,6 @@
 title: vps
 date: 2014-07-06
-modified: 2015-07-16 19:50:37
+modified: 2015-07-31 16:30:17
 
 ## 配置VPS
 
@@ -128,14 +128,44 @@ modified: 2015-07-16 19:50:37
 
 ## mess up
 1. ss   `sudo pip install shadowsocks`
-2. bypy `git clone git@github.com:houtianze/bypy.git`
-3. transmission </wiki/transmission>
-4. xunlei-lixian
+2. bypy 
+    
+    git clone git@github.com:houtianze/bypy.git
+    ln -s  /path/to/bypy.py ~/bin/bp
+
+    3. transmission </wiki/transmission>
+    
+    9091
+
+4. [xunlei-lixian](https://github.com/iambus/xunlei-lixian)
+
+    git clone git://github.com/iambus/xunlei-lixian.git
+    ln -s  /path/to/lixian_cli.py ~/bin/lx
+
 5. pelican `sudo pip install pelican,markdown`
 6. dl
 7. [ocserv](/blog/openconnect-server/)
 8. [cow](https://github.com/cyfdecyf/cow)
+
+    ~/bin/cow
+
 9. [nmdown](https://github.com/skyline75489/nmdown)
     
     sudo pip install eyed3
     zsh alias to nm
+
+10. [dropbox](/wiki/dropbox)
+
+    zsh alias to db
+    ~/bin/dropbox.py
+
+11. [drive](/wiki/google)
+    - go
+
+12. ipython notebook
+
+    sudo apt-get install ipython-notebook
+    sudo apt-get install python-matplotlib
+    8888
+
+13. crontab

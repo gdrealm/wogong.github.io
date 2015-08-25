@@ -1,6 +1,6 @@
 title: windows
 date: 2014-06-21
-modified: 2015-07-13 08:21:47
+modified: 2015-08-09 11:02:58
 
 重装系统，卸载 机械硬盘，只保留 SSD 安装系统。之后打开 File History
 
@@ -106,6 +106,7 @@ modified: 2015-07-13 08:21:47
 * Chrome  
 * iTunes (iPhone Backup)
 * 定时备份的计划任务
+* 修改 Windows Search 索引位置，添加 md 文件后缀
 
 1. softwares
   - 字体 Monoca
@@ -165,7 +166,7 @@ modified: 2015-07-13 08:21:47
     FTP tools
 * Windows install cleaner
       用于清除office等卸载不干净的情况，同样适应于其他msi安装方式的软件卸载
-* wireshart
+* wireshark
     抓包软件
 * [Vmware](/wiki/vmware)
 * KeyTweak

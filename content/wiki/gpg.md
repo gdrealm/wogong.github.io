@@ -1,12 +1,9 @@
----
-layout: wiki
 title: gpg
 date: 2014-06-04
-update: 2014-07-19
----
+modified: 2015-08-24 14:28:37
+
 
 09DD1201
-
 
 <http://www.ruanyifeng.com/blog/2013/07/gpg.html>
 

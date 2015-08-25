@@ -1,9 +1,7 @@
----
-layout: wiki
 title: Fit
 date: 2015-05-01
-update: 2015-05-01
----
+modified: 2015-08-02 19:49:40
+
 
 “减脂是体力活，增肌是技术活”
 

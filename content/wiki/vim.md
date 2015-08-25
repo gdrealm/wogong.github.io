@@ -1,6 +1,7 @@
 title: vim
 date: 2014-07-10
-modified: 2015-07-12 19:10:04
+modified: 2015-07-31 16:39:24
+
 
 coolshell has some great vim articles about vim. when you feel boring,
 you can always find some interesting things there.
@@ -275,6 +276,7 @@ vim文件时，用用ctrl-]来执行跳转，通过ctrl+t来跳转回来就可�
 
 
 ### snipmate
+自动在 rtp runtime path 寻找可用的 snippets，windows 下手动将 $VIM/.vim 加入 rtp 
 
 ### vim-multiple-cursors
 ST的特性，华丽。代码托管在

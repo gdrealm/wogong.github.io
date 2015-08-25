@@ -1,9 +1,7 @@
----
-layout: wiki
 title: ahk
 date: 2014-09-10
-update: 2014-09-10
----
+modified: 2015-08-24 01:33:06
+
 
 AutoHotKey AHK
 
@@ -41,3 +39,11 @@ AutoHotKey AHK
     Control::Capslock ; 把Control替换为Capslock 
     Capslock::Control   ; 把Capslock替换为Control 
     #IfWinActive
+
+a::
+loop,1000
+{
+send {delete}
+sleep 0
+}
+return

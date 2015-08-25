@@ -5,7 +5,7 @@ modified: 2015-07-12 19:35:16
 修改配置文件后一定要在 ia 上测试。
 
 ## commands 
-pelican content --output /var/www/output --relative-urls --ignore-cache
+pelican content --output output --relative-urls --ignore-cache
 make html
 make serve
 make s3_upload

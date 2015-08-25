@@ -21,6 +21,8 @@ ubuntu下ack居然是另外一个东西，解决：
         service php5-fpm restart
 6. split 分割文件，cat合并文件
 7. `du -sh * | sort -n`
+8. 最近修改文件find / -size +1000000c -mtime -1
+9. 查看 32/64 位 `getconf LONG_BIT`
  
 ## 常用命令
 1. 用户管理
@@ -253,7 +255,9 @@ e），查看所有用户
 
  * lsof
 
- * sudo chmod u+s `which ping`
+* ping: icmp open socket: Operation not permitted
+
+    sudo chmod u+s `which ping`
 
 Options
 

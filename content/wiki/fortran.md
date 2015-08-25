@@ -1,9 +1,18 @@
----
-layout: wiki
 title: fortran
 date: 2014-01-01
-update: 2014-09-11
----
+modified: 2015-08-02 19:16:27
+
+或许你会想学 Fortran，却苦于找不到 Fortran 90 编译程式，这一点在近两三年已经不是问题了，因为至少有三个 Fortran 90 编译程式是免费的。第一个就是Lahey 公司的 ELF (Essential Lachey Fortran) ，你可以在http://www.lahey.com 中找到它。它是个 Fortran 90/95 标准的程式，但是ELF 中去掉了一些比较不常用，很复杂的功能；再者，为了让用 ELF 的朋友写作结构良好的程式，它强迫你写作满足某些规格的程式。这并非是个问题，我是很赞成这样做，你用了 ELF 就知道为什么。请注意，ELF 只能在Windows 95/98/NT 之下作业。若想有个完整 Fortran 90/95 编译程式，不妨试试 Lahey的Lahey LF95 Express。
+
+在 Linux 上的情况比较好，目前它已经有了免费的 Fortran 77 编译程式，叫做 g77。要用 Fortran 90 有两条路，第一是用一套叫做 F 的语言。与 ELF 一样，去掉了很多不必要的功能，也强制用户写作的好格局 Fortran 程式，你可在下面的网址抄录免费的 Linux 版 F: http://www.fortran.com/fortran 。
+
+Pasific-Sierra Research 公司最近也提供了一个 Linux 用的完整 Fortran 90 编译程式，在http://www.psrv.com ，这个叫做 VAST/F90 的 Fortran 90 编译程式，也是免费的，也少了一些功能，但对初学者而言，这些少掉了的功能根本不会有什么影响。这也是个 Linux 用的编译程式，却不是个完整的编译系统。
+
+VAST/F90 把你的 Fortran 90 程式翻译成 Fortran 77，再由 Linux 上的g77 翻译成机器语言，所以你的 Linux 系统上必须有 g77，版本多号码至少要是 0.5.21 以上。Pasific-Sierra Research 还有其它有趣的 Fortran 90 产品，例如说支援在Linux 下双处理器的HPF (High Performance Fortran) ，这也免费的。
+
+如果你想要知道Fortran 的功能与其它资讯，你不妨试试http://www.fortran.com (Fortran Market) 与http://www.fortranlib.com (Fortran Link) 。
+
+
 
 1. 简洁严格的编译器：elf90
 
@@ -85,6 +94,29 @@ fortran 列优先。如 2 times 3 的矩阵，第 1、2 行分别为 1 2 3、4 5
 - qsort() http://nf.nci.org.au/facilities/software/FORTRAN/Intel10/doc/main_for/mergedProjects/lref_for/source_files/rfqsort.htm
 - 
 
+矩阵转置
+
+语法格式：result = TRANSPOSE (matrix) 
+例子：B is the array 
+
+[ 2 3 4 ]
+[ 5 6 7 ]
+[ 8 9 1 ].
+
+TRANSPOSE ( 结果是
+[ 2 5 8 ]
+[ 3 6 9 ]
+[ 4 7 1 ].
+第二种情况
+INTEGER array(2, 3), result(3, 2)
+array = RESHAPE((/1, 2, 3, 4, 5, 6/), (/2, 3/))
+! array is 1 3 5
+! 2 4 6
+result = TRANSPOSE(array)
+! result is 1 2
+! 3 4
+! 5 6
+END
 
 
 ## compiler
