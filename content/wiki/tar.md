@@ -1,10 +1,7 @@
----
-layout: wiki
 title: tar
 date: 2015-06-17
----
+modified: 2015-08-26 10:28:10
 
-# tar
 
 ## 常用命令
     tar xzf .tar.gz

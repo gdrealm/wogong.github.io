@@ -169,3 +169,5 @@ modified: 2015-07-31 16:30:17
     8888
 
 13. crontab
+    - kindlepush
+    - v2ex_daily
