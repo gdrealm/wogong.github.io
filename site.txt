@@ -1,0 +1,37 @@
+---
+title: Inner Space
+keywords: wogong
+avatar: /_image/avatar.jpg
+cover: /_image/cover.jpg
+posts_per_page: 
+post_content_type: markdown
+post_paragraph_indent: no
+file_path: /
+show_toc: yes
+mathjax: no
+disqus: wogong
+duoshuo: 
+template_priority: self
+template_inherit: yes
+template_clone_allowed: yes
+autoreload: auto
+post_url_format: no_prefix
+scripts_per_page: 
+scripts_for_doc: 
+domain: wogong.farbox.com
+domains:
+- wogong.farbox.com
+- wogong.net
+- www.wogong.net
+dns: 
+auto_image: yes
+comment: yes
+sync_by_3rd: yes
+sync_by_3rd_public: yes
+outside_links_allowed: yes
+score_degree: 
+hidden_urls: 
+users: 
+client_date: Sun Aug 30 2015 18:54:27 GMT+0800 (China Standard Time)
+---
+Note.
