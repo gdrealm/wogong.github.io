@@ -1,12 +1,6 @@
 title: windows
 date: 2014-06-21
-modified: 2015-08-09 11:02:58
-
-重装系统，卸载 机械硬盘，只保留 SSD 安装系统。之后打开 File History
-
-添置笔记本硬盘
-
-另外，总结下双系统卸载方法，grub rescue后重新引导windows
+modified: 2015-09-01 11:02:58
 
 ## NOTE
 1. 环境变量管理 Envman
@@ -48,54 +42,45 @@ modified: 2015-08-09 11:02:58
 20. svchost.exe点击我的电脑右键->管理->服务和应用程序->服务，找到“Background Intelligent Transfer Service”，关闭，点击右键设置属性，将启动类型设置为手动或禁用。这是微软搞的后台自动传输数据的服务。
 21. sc query 查询服务 sc delete 删除服务
 22 WINDOWS 中交换 CONTROL 键和 CAPS LOCK 键
-<http://www.kodiva.com/post/swapping-caps-lock-and-control-keys>
-转到  HKEY_LOCAL_MACHINE -> System -> CurrentControlSet -> Control -> KeyBoard Layout
-在此文件夹“新建” ， “二进制值”
-修改新建的名字为：Scancode Map
-在其上点右键，选择修改二进制数据，输入如下数据。
-- 替换
-0000 00 00 00 00 00 00 00 00
-0008 03 00 00 00 1d 00 3a 00
-0010 3a 00 1d 00 00 00 00 00
-0018
-- 修改
-0000 00 00 00 00 00 00 00 00
-0008 02 00 00 00 1d 00 3a 00
-0010 00 00 00 00
+	<http://www.kodiva.com/post/swapping-caps-lock-and-control-keys>
+	转到  HKEY_LOCAL_MACHINE -> System -> CurrentControlSet -> Control -> KeyBoard Layout
+	在此文件夹“新建” ， “二进制值”
+	修改新建的名字为：Scancode Map
+	在其上点右键，选择修改二进制数据，输入如下数据。
+	- 替换
+	
+		0000 00 00 00 00 00 00 00 00
+		0008 03 00 00 00 1d 00 3a 00
+		0010 3a 00 1d 00 00 00 00 00
+		0018
+
+	- 修改
+	
+		0000 00 00 00 00 00 00 00 00
+		0008 02 00 00 00 1d 00 3a 00
+		0010 00 00 00 00
 
 23. 运行secpol.msc命令修改本地安全策略，找到 网络列表管理器策略 改变网络类型 
 24. windows 利用计划任务备份本地C盘文件
-    help xcopy
+     help xcopy
 25. 修复 mbr 分区
     从U盘启动Windows，进入系统后按Shift+F10，启动DOS：
     首先将C盘设置为活动分区：bootsect /nt60 ALL /mbr
     修复系统的MBR表：bootrec /fixmbr
-16. 
-    键值 
-    文件夹
-    {374DE290-123F-4565-9164-39C4925E4678}	下载
-    {B4BFCC3A-DB2C-424C-BO29-7FE99A87C641}	桌面
-    {1CF1260C-4DD0-4ebb-811F-33C572699FDE} 
-    音乐
-    {3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA} 
-    图片
-    {A0953C92-50DC-43bf-BE83-3742FED03C9C}	视频
-    {A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}	文档
 17. 用户文件夹位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
 18. 针对隐藏文件U盘病毒 attrib * -s -h -a -r /s /d
 19.  win8系统怎么建立一键关机/重启/锁定/休眠/睡眠快捷方式？
-在桌面空白处鼠标右键/新建/快捷方式（如下图）
-点击查看原图
-然后再键入对象位置：中输入以下win8指令代码
-关机输入：Shutdown.exe -s -t 00
-重启计算机输入：shutdown.exe -r -t 00
-锁定计算机输入：rundll32.exe user32.dll,LockWorkStation
-休眠计算机输入: rundll32.exe powrProf.dll,SetSuspendState
-睡眠计算机输入: rundll32.exe powrprof.dll,SetSuspendState 0,1,0
+在桌面空白处鼠标右键/新建/快捷方式，然后再键入对象位置中输入以下win8指令代码
+	关机输入：Shutdown.exe -s -t 00
+	重启计算机输入：shutdown.exe -r -t 00
+	锁定计算机输入：rundll32.exe user32.dll,LockWorkStation
+	休眠计算机输入: rundll32.exe powrProf.dll,SetSuspendState
+	睡眠计算机输入: rundll32.exe powrprof.dll,SetSuspendState 0,1,0
 20. 远程访问权限 系统属性-远程
 21. 远程桌面复制粘贴失效 rdpclip.exe
 
 ## Reinstall
+* 卸载机械硬盘，只保留 SSD 安装系统。
 * Caps -> Ctrl
 * TC config: Portable\tc 安装32bit 位置改动到program files，no x86
 * Office 记得取消安装一些奇葩的组件 MathType
@@ -106,6 +91,7 @@ modified: 2015-08-09 11:02:58
 * Chrome  
 * iTunes (iPhone Backup)
 * 定时备份的计划任务
+* File history
 * 修改 Windows Search 索引位置，添加 md 文件后缀
 
 1. softwares

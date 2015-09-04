@@ -4,17 +4,19 @@ modified: 2015-06-18 19:50:11
 
 ## information repo
 1. gmail
-2. google drive: powerful search。
+2. google drive: powerful search
 2. evernote
 3. pinboard
 4. instapaper (new to Pinboard; likes to Pinboard)
-4. wiki+blog+life+items+farbox
-7. Twitter (backup in Pinboard & Twitter archive)
+4. Farbox: wiki+blog+life+items+diary
+7. Twitter
+	1.  backup in Pinboard
+	2. Twitter archive to August 1 2015
 8. Weibo (Kindle bot to Twitter)
-9. iPhone Photos (Google+ Photos)
+9. iPhone Photos (Google Photos)
 10. Calibre Libary
-11. Wechat Public Account (Dogear.cn to Feedly to Pinboard)
-12. Nike+ running
+11. Wechat Public Account, add to Instapaper or mail to pocket by hand
+12. Nike+ running IFTTT to google calendar
 13. Google Photos
 
 ## site
@@ -31,8 +33,7 @@ modified: 2015-06-18 19:50:11
     * eproxy2 可以下载各种文献
 
 ## input
-1. 现实
-   书籍、讲座、课堂、聊天、新闻
+1. 现实: 书籍、讲座、课堂、聊天、新闻
 2. 网络
     - RSS - feedly + press
     - 豆瓣, V2EX
@@ -46,11 +47,9 @@ modified: 2015-06-18 19:50:11
 
 ## sync & backup
 1. PC
-      - Documents + Music + Pictures 定期备份至移动硬盘 rsync
-      - BTSync 备份 (MAIN)
-      - Dropbox 本地IM记录
-      - TrueCript 储存本地敏感资料，照片，文档
-      - User Dir: vim/snippet
+      - Documents + Music + Pictures 定期备份至移动硬盘 goodsync
+      - Dropbox 本地IM记录, zip储存本地敏感资料，照片，文档
+      - File history
 2. network information
       - Twitter tweets; nike+ share; ifttt-douban; ifttt-blog; ifttt-weibo(kindle highlights) ==> archive to google drive
       - Facebook nike+ share
@@ -58,33 +57,18 @@ modified: 2015-06-18 19:50:11
       - Douban favorite ==> ifttt(feedburner to RSS) to Twitter
       - Wechat moments
 
-## security
-0. keepass
-    * minikeepass iOS
-    * kpcli linux
-   - 1password 数据存储在本地，有手机客户端
-   - lastpass 数据存储在服务器
-   - Keepass
-   - Enpass
-1. 2-step
-    - Dropbox
-    - Microsoft
-    - Evernote
-    - Github
-    - Google
-3. AppleID 2-step verification
-
 ## Domain & DNS
 wogong.net godaddy dnsimple
 chengzhen.me namecheap dnsimple
 
 ## CDN upyun
+Image storage is not elegant, try Farbox?
 主机：
 - v1.ftp.upyun.com (电信) 
 - v2.ftp.upyun.com (联通网通) 
 - v3.ftp.upyun.com (移动铁通) 
 - v0.ftp.upyun.com (自动判断)
-- 
+
 用户：操作员的用户名/空间名（需要两个同时填写）wogong/wogong-file
 密码：操作员的密码
 端口：21
@@ -98,8 +82,10 @@ upyund.sh
 upyunu.sh
 
 ## cafe
-1. toolbox in Baidu and jp.wogong.net
+1. toolbox in Baidu Pan
     - putty
     - Caps2Ctrl
     - ss
 2. 迅雷离线+百度网盘
+3. 永硕网盘
+

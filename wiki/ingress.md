@@ -1,10 +1,6 @@
----
-layout: wiki
 title: ingress
 date: 2015-05-10
 update: 2015-05-10
----
-
 
 Ingress 新手指南
 

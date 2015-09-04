@@ -9,7 +9,7 @@ post_paragraph_indent: no
 file_path: /
 show_toc: yes
 mathjax: no
-disqus: wogong
+disqus: 
 duoshuo: 
 template_priority: self
 template_inherit: yes
@@ -25,13 +25,13 @@ domains:
 - www.wogong.net
 dns: 
 auto_image: yes
-comment: yes
+comment: no
 sync_by_3rd: yes
 sync_by_3rd_public: yes
-outside_links_allowed: yes
+outside_links_allowed: no
 score_degree: 
 hidden_urls: 
 users: 
-client_date: Sun Aug 30 2015 18:54:27 GMT+0800 (China Standard Time)
+client_date: Mon Aug 31 2015 01:04:16 GMT+0800 (CST)
 ---
 Note.
