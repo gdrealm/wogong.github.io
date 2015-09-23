@@ -1,11 +1,23 @@
----
-layout: wiki
 title: ffmpeg
 date: 2014-07-03
----
 
 
 ## Usage
+Hi,
+just a little tip, you can use ffmpeg (a free command line tool for linux and windows) to encode videos to mp4. Here is the command line:
+
+ffmpeg -i [InputVideo.almostanyformat] -r 20 -ar 44100 -ab 196 -b 300k -aspect 4:3 -s 320x240 -croptop 0 -cropbottom 0 -cropleft 0 -cropright 0 [EncodedVideo.mp4]
+
+on windows use ffmpeg.exe (you have to get the software first)
+-r 20 is the framerate [frames/second]
+-ar 44100 is the audio rate [samples/second]
+-ab 196 is audio 196kbps
+-b 300k is the video bitrate of 300kbps
+-aspect 4:3 is the desired aspect ratio
+-s 320x240 will scale to E8 screen resolution
+-crop use the crop lines to cut of unwanted edges of original video
+
+Hope this can be of some help
 
 ### VPS
 
