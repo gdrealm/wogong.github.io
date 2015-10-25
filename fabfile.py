@@ -11,7 +11,7 @@ from fabric.colors import blue, red
 import fabric.contrib.project as project
 
 # Remote host and username
-env.hosts = []
+env.hosts = ['localhost']
 env.user = ""
 env.colorize_errors = True
 
@@ -20,7 +20,7 @@ env.local_output = os.path.join(
     os.path.abspath(os.path.dirname(__file__)),
     "output/")
 # Remote path to deploy output
-env.remote_output = ""
+env.remote_output = "/var/www"
 
 # Other options
 env.rsync_delete = False
