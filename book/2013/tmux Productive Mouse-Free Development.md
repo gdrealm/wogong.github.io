@@ -1,6 +1,7 @@
 ---
 title: tmux: productive mouse-free development
-date: 2015-06-17
+date: 2013-06-17
+---
 
 算是少数读完的英文书之一，虽然还是技术方面的。
 

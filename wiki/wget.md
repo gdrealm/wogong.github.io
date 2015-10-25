@@ -1,6 +1,8 @@
+---
 title: wget
 date: 2014-07-05
 modified: 2015-08-26 00:51:57
+---
 
 
 	* $ wget -r -np -nd http://example.com/packages/

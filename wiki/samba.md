@@ -1,6 +1,8 @@
+---
 title: samba
 date: 2014-06-10
 modified: 2015-08-03 23:28:36
+---
 
 
 ## NOTE

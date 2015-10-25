@@ -1,3 +1,4 @@
+---
 title: using travis to automatic build pages and sync to Amazon S3
 date: 2015-07-11 20:08:33
 modified: 2015-07-12 18:18:39
@@ -6,6 +7,7 @@ tags:
 slug: 
 authors: wogong
 summary: 
+---
 
 
 1. Register Travis <https://travis-ci.org/>

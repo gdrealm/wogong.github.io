@@ -1,3 +1,4 @@
+---
 title: marathon
 date: 2015-08-02 19:50:52
 modified: 2015-08-02 19:50:52
@@ -6,6 +7,7 @@ tags:
 slug: 
 authors: wogong
 summary: 
+---
 
 
 马拉松

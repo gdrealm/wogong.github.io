@@ -1,3 +1,4 @@
+---
 title: 迁移至 Amazon S3 
 date: 2015-07-07 10:24:05
 modified: 2015-07-07 10:24:05
@@ -6,6 +7,7 @@ tags:
 slug: to-amazon-s3
 authors: wogong
 summary: 静态博客托管迁移至AWS S3 Service
+---
 
 最开始在网上的页面是 vimwiki，之后转移到 Jekyll，基本一直托管在 Github，可恨 Jekyll 对于中文的支持直到 3.0 版本都没有任何改观，所以前段时间简单折腾转移到 Pelican，目前的静态博客生成工具非常多，相比 Jekyll，Pelican 于我而言最大的优势是对中文的支持较为友好，另外 Python 环境相比 Ruby 而言，折腾起来较为简单。当然，游走于各种环境只是为了折腾，和书写其实没有太大关系，也和文题无关。
 

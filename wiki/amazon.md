@@ -1,3 +1,4 @@
+---
 title: amazon
 date: 2015-07-07 16:15:38
 modified: 2015-07-12 19:00:23
@@ -6,6 +7,7 @@ tags:
 slug: 
 authors: wogong
 summary: 
+---
 
 目前使用两个账户
 wogong38 -> 托管博客

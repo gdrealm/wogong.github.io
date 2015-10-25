@@ -1,6 +1,8 @@
+---
 title: zotero
 date: 2014-07-21
 modified: 2015-09-05
+---
 
 Zotero是一款很好用的开源文献管理软件，集成了Word和Libreoffice的插件，可以方便的进行文献管理和文献引用。一般安装Zotero Standalone版本时，软件会自动根据系统语言选择界面语言（Zotero for Firefox的界面语言由Firefox的语言而确定），如果想换成英文的节目语言，需要进行如下操作。
 

@@ -1,7 +1,9 @@
+---
 title: 科学上网
 date: 2015-01-12
 modified: 2015-07-21 23:24:04
 Save_as: page/ss/index.html
+---
 
 ### Windows上使用Shadowsocks
 

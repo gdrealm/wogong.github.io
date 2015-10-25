@@ -1,6 +1,8 @@
+---
 title: mklink
 date: 2015-06-17
 modified: 2015-07-21 19:51:14
+---
 
 Windows 下类似于 Linux 中命令 `ln`
 

@@ -1,6 +1,8 @@
+---
 title: travel
 date: 2015-05-02
 modified: 2015-09-28
+---
 
 ## list
 常用差旅物品清单，备存。

@@ -1,6 +1,8 @@
+---
 title: pronunciation
 date: 2014-09-17
 modified: 2015-09-01
+---
 
 1. Putty ['pʌti] 
 之前我一直读[puti]，真是贻笑大方，不过相信有不少人读错了吧？

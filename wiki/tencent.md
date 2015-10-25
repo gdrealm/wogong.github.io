@@ -1,3 +1,4 @@
+---
 title: tencent
 date: 2015-06-21 21:39:53
 modified: 2015-06-21 21:39:53
@@ -6,6 +7,7 @@ tags:
 slug: 
 authors: wogong
 summary:
+---
 
 ## WeChat 微信
 

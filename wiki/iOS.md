@@ -1,6 +1,8 @@
+---
 title: iOS
 date: 2015-06-16
 modified: 2015-09-05
+---
 
 关于 AppStore 多账户问题
 

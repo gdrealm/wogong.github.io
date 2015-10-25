@@ -1,6 +1,8 @@
+---
 title: debian
 date: 2014-05-18
 modified: 2015-07-30 22:40:20
+---
 
 ## note
 2. apt-get

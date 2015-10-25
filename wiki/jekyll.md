@@ -1,6 +1,8 @@
+---
 title: jekyll
 date: 2014-06-19
 modified: 2014-06-19
+---
 
 ## install
 	sudo apt-get install ruby1.9.1-dev

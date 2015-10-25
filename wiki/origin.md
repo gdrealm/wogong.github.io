@@ -1,6 +1,8 @@
+---
 title: origin
 date: 2015-01-24
 modified: 2015-08-20 23:08:14
+---
 
 使用快捷键Ctrl+m输入特殊符号。
 

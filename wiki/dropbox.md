@@ -1,6 +1,8 @@
+---
 title: dropbox
 date: 2015-06-17
 modified: 2015-07-31 15:52:13
+---
 
 ## Linux Install
 <https://www.dropbox.com/install?os=lnx>

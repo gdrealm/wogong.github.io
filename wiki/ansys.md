@@ -1,6 +1,8 @@
+---
 title: ansys
 date: 2014-01-01
 modified: 2015-07-05
+---
 
 ## Note	
 1. crack 排查问题的方向：licence server + licence client

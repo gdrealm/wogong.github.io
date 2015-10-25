@@ -1,6 +1,8 @@
+---
 title: vim
 date: 2014-07-10
 modified: 2015-07-31 16:39:24
+---
 
 
 coolshell has some great vim articles about vim. when you feel boring,

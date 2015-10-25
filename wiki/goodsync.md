@@ -1,3 +1,4 @@
+---
 title: goodsync
 date: 2015-07-21 19:51:50
 modified: 2015-07-21 19:51:50
@@ -6,6 +7,7 @@ tags:
 slug: 
 authors: wogong
 summary: 
+---
 
 using mklink 同步多个folder
 在 GoodSync 中单击“分析”，这时会提示左侧的文件夹是联接，已排除。所以需要更

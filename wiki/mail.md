@@ -1,6 +1,8 @@
+---
 title: mail
 date: 2015-06-17
 modified: 2015-09-09 00:35:52
+---
 
 
 Fastmail 使用 Gmail 账户身份，个人邮件先不设置了。

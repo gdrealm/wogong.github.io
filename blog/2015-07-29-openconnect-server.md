@@ -1,3 +1,4 @@
+---
 title: openconnect server
 date: 2015-07-29 17:39:48
 modified: 2015-07-29 17:39:48
@@ -6,6 +7,7 @@ tags:
 slug: 
 authors: wogong
 summary: 
+---
 
 Cisco Anyconnect，这并不是一个科学上网商业服务，也不是一个免费的 App，她是 Cisco 研发的企业级 SSL VPN 解决方案，早期只用于 Cisco 的企业用户，背后是开源技术 OpenConnect，简单来说就是对使用 UDP 的 DTLS 协议进行加密，掉线时自动使用 TCP 的 TLS 协议进行备份恢复，所以与其他 VPN（L2TP/PPTP） 比较稳定，可以保持长时间在线，与 Cisco 之前推出（连过 iOS 内置 VPN 的都见过，上面有个 Cisco 的 LOGO）的 IPSec VPN 相比, AnyConnect 在用户认证管理和安全协议等方面更加强大，而且 AnyConnect 对于长 Latency 网络有更高的容忍度。你可以在自己的 VPS 主机上通过 ocserv 搭建 Anyconnect 服务，与 Shadowsocks 有些像吧？综合以上几点，可以发现 Anyconnect 很适合当前大局域网的网络现状，她支持各种平台，Mac, Win, Android, iOS, Linux 涵盖很广。
 

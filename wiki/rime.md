@@ -1,6 +1,8 @@
+---
 title: rime
 date: 2015-03-03
 modified: 2015-08-02 19:40:27
+---
 
 
 ## note

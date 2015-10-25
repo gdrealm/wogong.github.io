@@ -1,6 +1,8 @@
+---
 title: kindle
 date: 2014-07-16
 modified: 2015-08-25 21:57:54
+---
 
 ## services
 1. kindleear GAE kindleear.wogong.net

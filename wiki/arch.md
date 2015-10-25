@@ -1,6 +1,8 @@
+---
 title: arch
 date: 2014-07-18
 modified: 2015-07-12 19:23:27
+---
 
 1. screen backlight: xbackloght -set 10
 

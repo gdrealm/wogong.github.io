@@ -1,6 +1,8 @@
+---
 title: everything
 date: 2015-06-17
 modified: 2015-07-13 22:48:14
+---
 
 
 open_folder_command2=$exec("%1")

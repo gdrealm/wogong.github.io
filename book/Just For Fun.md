@@ -1,5 +1,7 @@
+---
 title: Just For Fun
 date: 2015-06-17
+---
 
 除了程序员，大概很少人知道Linux操作系统。
 

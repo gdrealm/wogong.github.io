@@ -1,5 +1,7 @@
+---
 title: The Design of Everyday Things
 date: 2000-12-24
+---
 
 2014-08-28
 

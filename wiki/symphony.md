@@ -2,7 +2,7 @@
 layout: wiki
 title: symphony
 date: 2015-06-17
---- 
+---
 
 高雅艺术进校园，春天的艺术专场音乐会
 
