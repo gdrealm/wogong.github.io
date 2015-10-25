@@ -11,7 +11,7 @@ show_toc: yes
 mathjax: no
 disqus: 
 duoshuo: 
-template_priority: self
+template_priority: auto
 template_inherit: yes
 template_clone_allowed: yes
 autoreload: auto
@@ -40,8 +40,10 @@ sync_by_3rd: yes
 sync_by_3rd_public: yes
 outside_links_allowed: no
 score_degree: 
-hidden_urls: 
-users: 
-client_date: Fri Sep 04 2015 23:20:25 GMT+0800 (China Standard Time)
+hidden_urls:
+- diary/*
+users:
+- wogong@1f9bb75af0cac30ae2fbef2009297478b09fa7e6d17c6853f01399ad8a1dbfbd
+client_date: Fri Oct 23 2015 13:12:32 GMT+0800 (Malay Peninsula Standard Time)
 ---
 Note.

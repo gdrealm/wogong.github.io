@@ -11,18 +11,20 @@ modified: 2015-07-28 23:53:51
    - from module import * 不推荐
 2. itertools 迭代工具
 5. ipython notebook (pythonxy)
-    - linux 
+    - linux
         sudo apt-get install ipython-notebook
         sudo pacman -S ipython-notebook
         sudo apt-get install python-matplotlib
 6. v2ex_daily
     pip install BeautifulSoup4
     pip install requests
+7. ipython
+  dir() 查看当前导入的模块
 
 ## INSTALL
 Windows 下，建议安装32bit 版本。
 ### easy_install
-[下载地址：](http://pypi.python.org/pypi/setuptools) 
+[下载地址：](http://pypi.python.org/pypi/setuptools)
 可以找到正确的版本进行下载。win7 32位可以下载
 setuptools-0.6c11.win32-py2.7.exe 。
 
@@ -40,7 +42,7 @@ flake8 同样也很神奇，但是暂时没必要安装
 <http://pip.readthedocs.org/en/latest/installing.html>
 
 sudo apt-get install python-pip
-pip install 
+pip install
 pip install -U 安装更新
 pip uninstall
 
@@ -51,7 +53,6 @@ pip uninstall
    用于科学计算
 ### Web 框架
 1. web.py
-2. 
 
 ## 基本语法
 注释，采用\#符号
@@ -59,7 +60,7 @@ pip uninstall
 
         def func_name():
             statements
-        
+
         lambda x: exp(x)
 
 2. if
@@ -69,7 +70,7 @@ pip uninstall
 
 3. for
 
-        for i in range(1,10,2)
+        for i in range(1,10,2):
             do something
 
 ## 科学计算
@@ -92,13 +93,13 @@ these accept complex numbers.
 3. NumPy & SciPy
     NumPy为Python提供了快速的多维数组处理的能力，而SciPy则在NumPy基础上添加了众多的科学
 计算所需的各种工具包，有了这两个库，Python就有几乎和Matlab一样的处理数据和计算的能力了。
-   
+
     NumPy和SciPy官方网址： http://www.scipy.org
 
     NumPy为Python带来了真正的多维数组功能，并且提供了丰富的函数库处理这些数组。它将常用的
 数学函数都进行数组化，使得这些数学函数能够直接对数组进行操作，将本来需要在Python级别进行
 的循环，放到C语言的运算中，明显地提高了程序的运算速度。
-    
+
     SciPy的核心计算部分都是一些久经考验的Fortran数值计算库，例如：
     - 线性代数使用LAPACK库
     - 快速傅立叶变换使用FFTPACK库

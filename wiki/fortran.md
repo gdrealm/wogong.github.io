@@ -2,6 +2,24 @@ title: fortran
 date: 2014-01-01
 modified: 2015-08-02 19:16:27
 
+## Basic
+### 数据类型
+- integer
+- logical
+- real
+### 基本结构
+- do loop
+    
+    do i=1,N
+        blah
+    end do
+
+    do while()
+        blah
+    end do
+- if
+
+
 或许你会想学 Fortran，却苦于找不到 Fortran 90 编译程式，这一点在近两三年已经不是问题了，因为至少有三个 Fortran 90 编译程式是免费的。第一个就是Lahey 公司的 ELF (Essential Lachey Fortran) ，你可以在http://www.lahey.com 中找到它。它是个 Fortran 90/95 标准的程式，但是ELF 中去掉了一些比较不常用，很复杂的功能；再者，为了让用 ELF 的朋友写作结构良好的程式，它强迫你写作满足某些规格的程式。这并非是个问题，我是很赞成这样做，你用了 ELF 就知道为什么。请注意，ELF 只能在Windows 95/98/NT 之下作业。若想有个完整 Fortran 90/95 编译程式，不妨试试 Lahey的Lahey LF95 Express。
 
 在 Linux 上的情况比较好，目前它已经有了免费的 Fortran 77 编译程式，叫做 g77。要用 Fortran 90 有两条路，第一是用一套叫做 F 的语言。与 ELF 一样，去掉了很多不必要的功能，也强制用户写作的好格局 Fortran 程式，你可在下面的网址抄录免费的 Linux 版 F: http://www.fortran.com/fortran 。
@@ -24,8 +42,11 @@ elf90安装在“Program Files”中在命令行中调用会出现错误，
 - doesn't support `print`, `write(*,*)` instead
 - `stop` in the end
 
-
-----
+    if () then
+        blah
+    else
+        blah
+    end if
 
 where结构：
 
@@ -130,3 +151,45 @@ END
 
 3. Compaq Visual Fortran
     debug还是用这个玩意比较靠谱。
+
+
+
+1,goto
+goto 在Fortran77中就流传下来了，它提供一个任意跳跃到所赋值行代码的位置，如果是在一个do 循环中如
+do 30 i=1,N
+   if(……)  goto 30
+30 continue 
+上语句的意思就是如果符合if里的条件，则会进行下一次循环。
+
+
+2，pause
+pause的功能就能跟它的字面意思相同，程序执行到pause 时，会暂停执行，直到用户按下Enter键才会继续执行。
+
+
+3. continue
+continue这个命令没有实际的用途，它的功能就是 继续向下执行程序
+
+
+4，stop
+它可用来结束程序执行。
+
+
+5，cycle
+cycle命令可由略过循环的程序模块中，在cycle命令后面的所有程序代码，直接跳回循环的开头来进行下一次循环。
+如
+do floor=1,dest
+  if(floor==4) cycle
+write(*,*) floor
+end do
+
+执行结果如下
+1 
+2
+3
+5
+6
+……
+
+
+6。exit
+exit的功能是可以直接跳出一个正在进行的循环，不论是do 循环还是do while 循环。

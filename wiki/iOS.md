@@ -21,6 +21,9 @@ modified: 2015-09-05
 	* iA writer 4.99 refunded
 	* Day One 4.99 refunded
 	* Overcast 4.99
+    * Peace 2.99 refunded
+    * Purify 3.99
+    * Tweetbot 4.99
 
 2. *@gmail.com CN
 	* A Dark Room

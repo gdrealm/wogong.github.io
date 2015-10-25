@@ -170,4 +170,5 @@ modified: 2015-07-31 16:30:17
 
 13. crontab
     - kindlepush
-    - v2ex_daily
+    - v2ex_daily `/usr/bin/python2 /home/wogong/.sh/v2ex_daily_wogong.py`
+    - bingrewards `/usr/bin/python2 /home/wogong/bingrewards/main.py 2>&1`

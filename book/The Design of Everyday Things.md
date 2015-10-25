@@ -1,7 +1,6 @@
----
 title: The Design of Everyday Things
 date: 2000-12-24
----
+
 2014-08-28
 
 http://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C

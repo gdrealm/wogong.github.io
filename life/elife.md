@@ -10,7 +10,7 @@ modified: 2015-06-18 19:50:11
 4. instapaper (new to Pinboard; likes to Pinboard)
 4. Farbox: wiki+blog+life+items+diary
 7. Twitter
-	1.  backup in Pinboard
+	1. backup in Pinboard
 	2. Twitter archive to August 1 2015
 8. Weibo (Kindle bot to Twitter)
 9. iPhone Photos (Google Photos)
@@ -46,6 +46,7 @@ modified: 2015-06-18 19:50:11
    各种资料、视频
 
 ## sync & backup
+资料管理备份应该区分网络下载内容与个人生成内容。
 1. PC
       - Documents + Music + Pictures 定期备份至移动硬盘 goodsync
       - Dropbox 本地IM记录, zip储存本地敏感资料，照片，文档
@@ -57,16 +58,12 @@ modified: 2015-06-18 19:50:11
       - Douban favorite ==> ifttt(feedburner to RSS) to Twitter
       - Wechat moments
 
-## Domain & DNS
-wogong.net godaddy dnsimple
-chengzhen.me namecheap dnsimple
-
 ## CDN upyun
 Image storage is not elegant, try Farbox?
 主机：
-- v1.ftp.upyun.com (电信) 
-- v2.ftp.upyun.com (联通网通) 
-- v3.ftp.upyun.com (移动铁通) 
+- v1.ftp.upyun.com (电信)
+- v2.ftp.upyun.com (联通网通)
+- v3.ftp.upyun.com (移动铁通)
 - v0.ftp.upyun.com (自动判断)
 
 用户：操作员的用户名/空间名（需要两个同时填写）wogong/wogong-file
@@ -74,7 +71,7 @@ Image storage is not elegant, try Farbox?
 端口：21
 文件传输协议：FTP
 编码方式（字符集）：统一使用 UTF-8
- 
+
  file.wogong.net =>wogong-file.b0.upaiyun.com
  image.wogong.net =>wogong-image.b0.upaiyun.com
 
@@ -88,4 +85,3 @@ upyunu.sh
     - ss
 2. 迅雷离线+百度网盘
 3. 永硕网盘
-

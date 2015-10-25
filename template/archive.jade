@@ -1,19 +1,17 @@
 extends base
-{% from "mixins" import make_paginator%}
-
 block title
-	| Archive | {{ site.title }}
-
+	title Archive
 block content
-	ul.list_with_title
-		for year, posts in get_data(type='post', sort='desc', limit=300).group('-date:year')
-			li.listing_title= year
+	entries = get_data(type='post', sort='desc', limit=300).group('date:year', reverse=True)
+	#archive
+		for year, posts in entries
+			h3= year
 			ul.listing
 				for post in posts
-					li.listing-item
-						span.date
-							| {{ post.visits or 0 }} | {{ post.date.format("%m.%d") }}
+					li.listing_item
+						span= post.date.format("%Y-%m-%d")
 						a(href=post.url, title=post.title)= post.title
+		include include/paginator.jade
 
-	+make_paginator()
+
 
