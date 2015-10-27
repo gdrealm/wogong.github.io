@@ -16,6 +16,7 @@ modified: 2015-08-11 08:18:50
 
 ## Drive
 linux <https://github.com/odeke-em/drive>
+文件直链 <https://drive.google.com/uc?export=download&id=FILE_ID>
 
 
 ## Gmail
@@ -28,7 +29,7 @@ linux <https://github.com/odeke-em/drive>
 OK Maps 离线地图
 
 ## Search
-请求移除敏感信息: https://www.google.com/webmasters/tools/removals?hl=en
+请求移除敏感信息: <https://www.google.com/webmasters/tools/removals?hl=en>
 
 ## Translate
 - 提供单词读音的API,获取Google Translate发音的方法：

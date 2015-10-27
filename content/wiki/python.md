@@ -28,7 +28,7 @@ Windows 下，建议安装32bit 版本。
 ### easy_install
 [下载地址：](http://pypi.python.org/pypi/setuptools)
 可以找到正确的版本进行下载。win7 32位可以下载
-setuptools-0.6c11.win32-py2.7.exe 。
+setuptools-0.6c11.win32-py2.7.exe
 
 注意：win7 64位必须使用ez_setup.py进行安装。方法
 是下载
@@ -53,6 +53,9 @@ pip uninstall
    在线wiki。还不错。使用过一段时间，从vimwiki 迁移过来，后来再次迁移到gollum。
 2. Python(x,y)
    用于科学计算
+3. pelican
+4. simiki
+
 ### Web 框架
 1. web.py
 
