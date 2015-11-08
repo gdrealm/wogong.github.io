@@ -1,6 +1,7 @@
 ---
 title: ffmpeg
 date: 2014-07-03
+modified: 2015-10-31 01:36:21
 ---
 
 
@@ -166,5 +167,29 @@ sudo apt-get install yasm libmp3lame-dev
     --enable-libass --enable-libfdk-aac --enable-libfreetype --enable-libmp3lame \
     --enable-libtheora --enable-libvorbis --enable-nonfree
 
+PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./configure \
+  --prefix="$HOME/ffmpeg_build" \
+  --pkg-config-flags="--static" \
+  --extra-cflags="-I$HOME/ffmpeg_build/include" \
+  --extra-ldflags="-L$HOME/ffmpeg_build/lib" \
+  --bindir="$HOME/bin" \
+  --enable-gpl \
+  --enable-libfdk-aac \
+  --enable-nonfree
 
 
+  编译 ffmpeg 了好久，DO 的入门级VPS抗不住。。
+
+  https://trac.ffmpeg.org/wiki/Encode/AAC
+
+  https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu#ffmpeg
+
+  https://trac.ffmpeg.org/wiki/Encode/AAC#fdk_he
+
+  直接不加任何参数转码，可能会导致duration加倍。解决方案是
+
+   ffmpeg -i input.wav -write_xing 0 output.mp3
+
+   http://superuser.com/questions/607703/wrong-audio-duration-with-ffmpeg
+
+   According to #2697: MP3 output duration incorrect in OS X, using the -write_xing 0 option solves the problem.

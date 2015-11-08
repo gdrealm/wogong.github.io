@@ -17,10 +17,12 @@ then maybe you will get an environment varible error running Ansys. Just copy th
 http://v.pps.tv/play_3ECRJX.html 简支梁 点面接触分析视频 4min  
 
 ## Process
+0. /finish
 1. 分析环境设置
     /filename
     /title
     /prep7 进入前处理器
+    /units,mks 国际单位制
 
 2. 定义单元类型
     ET, ITYPE, Ename, KOP1, KOP2, KOP3, KOP4, KOP5, KOP6, INOPR // Defines a local element type from the element library.

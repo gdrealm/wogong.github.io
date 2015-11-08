@@ -21,16 +21,10 @@ modified: 2015-06-18 19:50:11
 12. Nike+ running IFTTT to google calendar
 13. Google Photos
 
-## site
-1. www.wogong.net blog
-2. twitter.wogong.net URL 转发，利用Google Drive 进行托管，自动更新
-4. log.wogong.net FarBox
-5. [vps name].wogong.net 下载
-
 ## proxy
 1. vpnso (@cosbeta) ss+vpn+apnp
-2. <vnet.link> AC+PAC
-3. EDU Tsinghua  
+2. <vnet.link> OV+SSLedge
+3. EDU
     * VPN 只可以浏览校内资源
     * eproxy2 可以下载各种文献
 
@@ -77,9 +71,6 @@ Image storage is not elegant, try Farbox?
  file.wogong.net =>wogong-file.b0.upaiyun.com
  image.wogong.net =>wogong-image.b0.upaiyun.com
 
-upyund.sh
-upyunu.sh
-
 ## cafe
 1. toolbox in Baidu Pan
     - putty
@@ -87,3 +78,10 @@ upyunu.sh
     - ss
 2. 迅雷离线+百度网盘
 3. 永硕网盘
+
+##
+1. pinboard 25$
+2. VPS 60$
+3. ladder  100￥
+4. thunder 100￥
+5. wogong.net 

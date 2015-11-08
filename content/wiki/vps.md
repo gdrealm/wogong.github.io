@@ -1,7 +1,7 @@
 ---
 title: vps
 date: 2014-07-06
-modified: 2015-07-31 16:30:17
+modified: 2015-10-30 23:42:32
 ---
 
 ## 配置VPS
@@ -12,7 +12,7 @@ modified: 2015-07-31 16:30:17
         `pacman -S git tmux vim ctags curl sudo`
         # ubuntu  
         `apt-get update`
-        `apt-get install sudo git tmux vim ctags curl mosh zsh openssl ca-certificates keychain`
+        `apt-get install sudo git tmux vim ctags curl mosh zsh openssl ca-certificates keychain nginx python-pip python-dev`
 
 2. add user   
    `useradd -m -g users -s /bin/zsh wogong`
@@ -174,3 +174,4 @@ modified: 2015-07-31 16:30:17
     - kindlepush
     - v2ex_daily `/usr/bin/python2 /home/wogong/.sh/v2ex_daily_wogong.py`
     - bingrewards `/usr/bin/python2 /home/wogong/bingrewards/main.py 2>&1`
+    - /usr/bin/python /home/wogong/sh/bing-jp.py 

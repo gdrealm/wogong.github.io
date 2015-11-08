@@ -1,7 +1,7 @@
 ---
 title: google
 date: 2014-08-28
-modified: 2015-08-11 08:18:50
+modified: 2015-11-01 20:18:30
 ---
 
 ## Calendar
@@ -23,7 +23,17 @@ linux <https://github.com/odeke-em/drive>
 1. 高级搜搜功能：http://support.google.com/mail/bin/answer.py?hl=zh-Hans&hlrm=en&answer=7190
 2. 如何使用邮件过滤器？ http://wiki.tuna.tsinghua.edu.cn/GmailFilterHowto
 3. 邮件备注：转发给自己。
-4. 搜索大于一定体积的附件 size: xxx
+4. 搜索
+
+    in:trash
+    in:spam
+    before: (before:2004/04/16)
+    older_than: (older_than:3y)
+    larger: (larger:10M)
+    filename: (filename:mp4)
+    label: (label:google+)
+    size: 
+
 
 ## Maps
 OK Maps 离线地图

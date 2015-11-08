@@ -1,7 +1,7 @@
 ---
 title: python
 date: 2014-06-10
-modified: 2015-07-28 23:53:51
+modified: 2015-10-30 23:42:09
 ---
 
 ## NOTE
@@ -36,18 +36,6 @@ setuptools-0.6c11.win32-py2.7.exe
 后，在cmd下执行 python ez_setup.py，
 即可自动安装setuptools。目前没有直接的exe安装版本。
 
-### vim 配置
-pep8 编程风格检查；vim缩进折叠等设置见配置文件
-flake8 同样也很神奇，但是暂时没必要安装
-
-### pip
-<http://pip.readthedocs.org/en/latest/installing.html>
-
-sudo apt-get install python-pip
-pip install
-pip install -U 安装更新
-pip uninstall
-
 ## 相关项目
 1. moinmoin  
    在线wiki。还不错。使用过一段时间，从vimwiki 迁移过来，后来再次迁移到gollum。
@@ -55,6 +43,7 @@ pip uninstall
    用于科学计算
 3. pelican
 4. simiki
+3. shadowsocks
 
 ### Web 框架
 1. web.py

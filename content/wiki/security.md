@@ -27,6 +27,7 @@ date: 2015-09-01
 	    - Evernote
 	    - Github
 	    - Google
+        - bitbucket
 	  
 2. AppleID 2-step verification
 

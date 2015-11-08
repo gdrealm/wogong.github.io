@@ -22,6 +22,12 @@ modified: 2015-08-02 19:16:27
 - if
 
 
+    if () then
+        blah
+    else
+        blah
+    end if
+
 或许你会想学 Fortran，却苦于找不到 Fortran 90 编译程式，这一点在近两三年已经不是问题了，因为至少有三个 Fortran 90 编译程式是免费的。第一个就是Lahey 公司的 ELF (Essential Lachey Fortran) ，你可以在http://www.lahey.com 中找到它。它是个 Fortran 90/95 标准的程式，但是ELF 中去掉了一些比较不常用，很复杂的功能；再者，为了让用 ELF 的朋友写作结构良好的程式，它强迫你写作满足某些规格的程式。这并非是个问题，我是很赞成这样做，你用了 ELF 就知道为什么。请注意，ELF 只能在Windows 95/98/NT 之下作业。若想有个完整 Fortran 90/95 编译程式，不妨试试 Lahey的Lahey LF95 Express。
 
 在 Linux 上的情况比较好，目前它已经有了免费的 Fortran 77 编译程式，叫做 g77。要用 Fortran 90 有两条路，第一是用一套叫做 F 的语言。与 ELF 一样，去掉了很多不必要的功能，也强制用户写作的好格局 Fortran 程式，你可在下面的网址抄录免费的 Linux 版 F: http://www.fortran.com/fortran 。
@@ -44,11 +50,6 @@ elf90安装在“Program Files”中在命令行中调用会出现错误，
 - doesn't support `print`, `write(*,*)` instead
 - `stop` in the end
 
-    if () then
-        blah
-    else
-        blah
-    end if
 
 where结构：
 
@@ -140,6 +141,15 @@ result = TRANSPOSE(array)
 ! 3 4
 ! 5 6
 END
+
+DOT_PRODUCT (VECTOR_A, VECTOR_B)
+
+两个一级数组的点乘积 
+
+MATMUL (MATRIX_A, MATRIX_B)
+
+矩阵乘法 
+
 
 
 ## compiler

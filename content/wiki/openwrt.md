@@ -131,6 +131,19 @@ http://wiki.openwrt.org/doc/howto/luci.essentials
   	        option proto 'dhcp'
 
 
+5. WR720n WAN -> LAN
+
+    /etc/config/network
+
+    config interface 'lan'
+        ...
+        option ifname 'eth1' -> option ifname 'eth0 eth1'
+        ...
+
+    config interface 'wan'
+        ...
+        option ifname 'eth0' -> option ifname 'test'
+
 * 更新路由器固件
       root@OpenWrt:~# sysupgrade /tmp/openwrt-ar71xx-generic-tl-mr11u-v1-squashfs-sysupgrade_6.09.bin
       Saving config files...
