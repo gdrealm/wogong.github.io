@@ -1,3 +1,5 @@
-output/
+_site/
+images/
 
 .pyc
+*.JPG
