@@ -1,0 +1,236 @@
+---
+title: openconnect server
+date: 2015-07-29 17:39:48
+modified: 2016-05-04
+---
+
+Cisco Anyconnect，是 Cisco 研发的企业级 SSL VPN 解决方案，早期只用于 Cisco 的企业用户，背后是开源技术 OpenConnect，简单来说就是对使用 UDP 的 DTLS 协议进行加密，掉线时自动使用 TCP 的 TLS 协议进行备份恢复，所以与其他 VPN（L2TP/PPTP） 比较稳定，可以保持长时间在线。
+
+## Server
+### 安装 OCserv
+1. 下载最新的 OpenConnect Server 版本 <ftp://ftp.infradead.org/pub/ocserv/>
+
+   wget ftp://ftp.infradead.org/pub/ocserv/ocserv-0.11.2.tar.xz
+
+2. 编译安装 OCserv
+
+   tar xvf ocserv-0.11.2.tar.xz
+   cd ocserv-0.11.2
+   ./configure
+   make
+   sudo make install
+
+### 配置 OCserv
+配置文件、参考官方文档是最佳选项，但为了方便起见，这是你需要注意的一些设置。回到ocserv-0.10.5的文件夹下，将配置文件复制到OCserv默认读取的位置。
+
+	sudo mkdir /etc/ocserv
+	sudo cp doc/sample.config /etc/ocserv/ocserv.conf
+
+确保以下配置正确：
+
+	# 登陆方式，目前先用密码登录
+	auth = "plain[/etc/ocserv/ocpasswd]"
+	# 允许同时连接的客户端数量
+	max-clients = 4
+	# 限制同一客户端的并行登陆数量
+	max-same-clients = 2
+	# 服务监听的IP（服务器IP，可不设置）
+	listen-host = 1.2.3.4
+	# 服务监听的TCP/UDP端口（选择你喜欢的数字）
+	tcp-port = 9000
+	udp-port = 9001
+	# 自动优化VPN的网络性能
+	try-mtu-discovery = true
+	# 确保服务器正确读取用户证书（后面会用到用户证书）
+	cert-user-oid = 2.5.4.3
+	# 服务器证书与密钥
+	server-cert = /etc/ssl/private/my-server-cert.pem
+	server-key = /etc/ssl/private/my-server-key.pem
+	# 客户端连上vpn后使用的dns
+	dns = 8.8.8.8
+	dns = 8.8.4.4
+	# 注释掉所有的route，让服务器成为gateway
+	#route = 192.168.1.0/255.255.255.0
+	# 启用cisco客户端兼容性支持
+	cisco-client-compat = true
+
+创建一个登陆用的用户名与密码
+
+	sudo ocpasswd -c /etc/ocserv/ocpasswd your-username
+
+最后我们需要打开IPv4的流量转发
+
+	sudo nano /etc/sysctl.conf
+
+启用此项
+
+	net.ipv4.ip_forward=1
+
+并刷新配置
+
+	sudo sysctl -p /etc/sysctl.conf
+
+### 测试OCserv
+在服务器端启动 OpenConnect Server。
+
+	sudo ocserv -f -d 1
+
+## Client
+### iOS
+假设你使用iOS，下载 Cisco AnyConnect。
+
+在Connections下加入新的VPN配置，在服务器地址栏目上填入对应的IP/Hostname和TCP端口（我们的例子就是1.2.3.4:9000）
+
+然后到设置标签页下暂时禁用“阻止不信任的服务器”选项。首次连接，AnyConnect会提示你这是不信任证书，如果你之前的服务器证书模板的cn没写错的话（我们的例子是1.2.3.4），你可以接受并导入该证书（可在诊断标签页的证书菜单里的服务器证书列表看到）。以后即便启用“阻止不信任的服务器”选项，也不会报错了（和SSH首次登陆类似）。
+
+### Windows
+安装 Cisco AnyConnect 客户端，输入服务器地址。
+
+## 进阶
+### 证书登录
+
+#### iOS
+#### Windows 导入客户端证书
+
+开始菜单搜索“cmd”，打开后输入 mmc（Microsoft 管理控制台）
+
+“文件”-“添加/删除管理单元”，添加“证书”单元，证书单元的弹出窗口中一定要选“计算机账户”，之后选“本地计算机”，确定。
+
+在左边的“控制台根节点”下选择“证书”-“个人”，然后选右边的“更多操作”-“所有任务”-“导入”打开证书导入窗口。选择刚才生成的 client.cert.p12 文件。下一步输入私钥密码。
+
+下一步“证书存储”选“个人”，导入成功后，把导入的 CA 证书复制到“受信任的根证书颁发机构”的证书文件夹里面，
+
+打开剩下的那个私人证书，看一下有没有显示“您有一个与该证书对应的私钥”，以及“证书路径”下面是不是显示“该证书没有问题”然后关闭 mmc，提示“将控制台设置存入控制台1吗”，选“否”即可，至此，证书导入完成。
+
+为AnyConnect建个客户端证书
+
+和服务器端证书的步骤基本相同。回到之前的certificates文件夹。
+
+创建user.tmpl
+
+cn = "some random name"
+unit = "some random unit"
+expiration_days = 365
+signing_key
+tls_www_client
+
+User密钥
+
+certtool --generate-privkey --outfile user-key.pem
+
+User证书
+
+certtool --generate-certificate --load-privkey user-key.pem --load-ca-certificate ca-cert.pem --load-ca-privkey ca-key.pem --template user.tmpl --outfile user-cert.pem
+
+然后要将证书和密钥转为PKCS12的格式。
+
+certtool --to-p12 --load-privkey user-key.pem --pkcs-cipher 3des-pkcs12 --load-certificate user-cert.pem --outfile user.p12 --outder
+
+然后我们要通过URL将user.p12文件导入AnyConnect，具体位置在诊断标签页的证书栏目下。如果你的服务器已经有Nginx/Apache服务，只要传到一个可以访问的URL路径下即可。另一个选择是将user.p12复制到本地，建立一个HTTP服务（例如用node.js）。
+
+导入成功之后，将对应的VPN设置的高级设置部分的证书栏目，改为导入的这张证书。
+
+最后我们要调整下OCserv的配置——
+
+sudo nano /etc/ocserv/ocserv.conf
+
+修改以下内容
+
+    # 改为证书登陆，注释掉原来的登陆模式
+    auth = "certificate"
+    
+    # 证书认证不支持这个选项，注释掉这行
+    #listen-clear-file = /var/run/ocserv-conn.socket
+    
+    # 启用证书验证
+    ca-cert = /etc/ssl/private/my-ca-cert.pem
+
+重启OCserv服务，确认VPN无需密码就可以正常登陆。
+
+
+### 开启 HTTPS
+
+### 路由设置
+no-route 指定不走vpn的ip段
+route 指定走vpn的ip段
+二者不能同时使用
+
+关于证书的配置
+ocserv on Arch Linux with SSL support and certificate auth
+
+    关于证书的配置
+    # 采用 CA 签发的 SSL 证书, 支持 HTTPS，避免客户端连接时出现证书不受信任的警告
+    server-cert = /etc/ocserv/server-cert.pem
+    server-key = /etc/ocserv/server-key.pem
+    # 采用自己生成的 CA，目的在于实现证书认证
+    ca-cert = /etc/ocserv/my-ca-cert.pem
+
+1. 默认配置文件路径 `/etc/ocserv/config`
+
+
+
+
+1. 密码
+   我们希望做到的，是无需用户名与密码的客户端证书验证登陆。但在此之前，让我们先测通更简单的密码登录模式。首先让我们把CA证书与服务器证书生成好，具体步骤官方文档也有——
+
+先准备好certtool命令。
+
+sudo apt-get install gnutls-bin
+
+创建CA
+
+mkdir certificates
+
+cd certificates
+
+CA模板，创建ca.tmpl，按需填写，这里的cn和organization可以随便填。
+
+cn = "Your CA name" 
+organization = "Your fancy name" 
+serial = 1 
+expiration_days = 3650
+ca 
+signing_key 
+cert_signing_key 
+crl_signing_key
+
+CA密钥
+
+certtool --generate-privkey --outfile ca-key.pem
+
+CA证书
+
+certtool --generate-self-signed --load-privkey ca-key.pem --template ca.tmpl --outfile ca-cert.pem
+
+同理，我们用CA签名，生成服务器证书。先创建server.tmpl模板。这里的cn项必须对应你最终提供服务的hostname或IP，否则AnyConnect客户端将无法正确导入证书。
+
+cn = "Your hostname or IP" 
+organization = "Your fancy name" 
+expiration_days = 3650
+signing_key 
+encryption_key
+tls_www_server
+
+Server密钥
+
+certtool --generate-privkey --outfile server-key.pem
+
+Server证书
+
+certtool --generate-certificate --load-privkey server-key.pem --load-ca-certificate ca-cert.pem --load-ca-privkey ca-key.pem --template server.tmpl --outfile server-cert.pem
+
+将CA，Server证书与密钥复制到以下文件夹
+
+sudo cp ca-cert.pem /etc/ssl/private/my-ca-cert.pem
+
+sudo cp server-cert.pem /etc/ssl/private/my-server-cert.pem
+
+sudo cp server-key.pem /etc/ssl/private/my-server-key.pem
+
+## Refrence
+[^1] 折腾笔记：架设OpenConnect Server给iPhone提供更顺畅的网络生活<http://bitinn.net/11084/>
+[^2] <https://www.linode.com/docs/security/securing-your-server>
+[^3] <http://www.infradead.org/ocserv/manual.html>
+[^4] <http://www.infradead.org/ocserv/download.html>
+[^5] ocserv 使用 startssl 证书，怎么设置
+[^6] https://www.vultr.com/docs/setup-openconnect-vpn-server-for-cisco-anyconnect-on-ubuntu-14-04-x64
