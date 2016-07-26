@@ -27,6 +27,7 @@ modified: 2015-10-30 23:42:32
 
 3. dotfiles  
    `git clone https://github.com/wogong/dotfiles.git ~`  
+   `git clone git@github.com:wogong/dotfiles.git ~`  
    `git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting`
 
 5. 配置vundle
