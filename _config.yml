@@ -1,6 +1,6 @@
 title: wogong
 baseurl: ""
-production_url: http://www.wogong.net
+production_url: https://wogong.github.io
 permalink: /blog/:title
 
 timezone: Asia/Shanghai
@@ -25,9 +25,16 @@ defaults:
 #            layout: "post"
 #    -
         scope:
-            path: "blog"
+            path: "post"
             type: "post" #page, post or draft
         values:
             layout: "post" # overrides previous default layout
             author: "wogong"
             category: "blog"
+        scope:
+            path: "wiki"
+            type: "post" #page, post or draft
+        values:
+            layout: "wiki" # overrides previous default layout
+            author: "wogong"
+            category: "wiki"
