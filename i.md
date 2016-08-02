@@ -34,19 +34,3 @@ update: 2015-05-14
     2. audiobooks
     3. online radio
     4. instapaper
-
-## Tools
-1. openconnect apk
-    - [官方](https://f-droid.org/repo/app.openconnect_1029.apk)
-    - [wogong](http://file.wogong.net/app.openconnect_1029.apk)
-2. shadowsocks apk
-    - [官方](https://github.com/shadowsocks/shadowsocks-android/releases)
-    - [wogong](http://file.wogong.net/shadowsocks-nightly-2.6.7.apk)
-3. ss config <http://file.wogong.net/gui-config.json>
-4. ss for windows
-    - win7 <http://file.wogong.net/Shadowsocks-win-2.3.1.zip>
-    - win8 <http://file.wogong.net/Shadowsocks-win-dotnet4.0-2.3.1.zip>
-5. windows 8 key
-    - 专业版安装密匙：XHQ8N-C3MCJ-RQXB6-WCHYG-C9WKB 
-    - 普通版安装密匙：334NH-RXG76-64THK-C7CKG-D3VPT
-
