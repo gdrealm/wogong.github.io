@@ -39,8 +39,10 @@ xelatex + ctex
 
 
 
-
-中文推荐解决方案，ctex 文档类
+5. 中文推荐解决方案，ctex 文档类
+6. 字体
+    - Texlive 文档
+    - 复制 Windows 字体至 /usr/share/fonts/windows, sudo fc-cache -fsv
 
 ### 数学排版
 1. 2^x

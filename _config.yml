@@ -13,28 +13,18 @@ author:
 collections:
     wiki:
         output: true
-    life:
-        output: true
 
 # front-matter default
 defaults:
     -
-#        scope:
-#            path: "" # empty string for all files
-#        values:
-#            layout: "post"
-#    -
         scope:
-            path: "post"
-            type: "post" #page, post or draft
+            path: ""
         values:
-            layout: "post" # overrides previous default layout
-            author: "wogong"
-            category: "blog"
+            layout: "default" # overrides previous default layout
+    -
         scope:
-            path: "wiki"
-            type: "post" #page, post or draft
+            path: ""
+            type: "wiki" #page, post or draft
         values:
             layout: "wiki" # overrides previous default layout
-            author: "wogong"
-            category: "wiki"
+            author: "Cheng Zhen"
