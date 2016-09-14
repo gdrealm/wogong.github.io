@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 社交网络
-tags: 
-descreption: 
-create: 2015-06-16
+date: 2015-06-16
 update: 2015-06-16
 ---
 

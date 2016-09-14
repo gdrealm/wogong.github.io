@@ -4,6 +4,12 @@ date: 2014-07-18
 modified: 2015-07-12 19:23:27
 ---
 
+Install Arch Linux on Vultr instance using custom ISO
+
+[1] <https://wiki.archlinux.org/index.php/Installation_guide>
+[2] <https://www.vultr.com/docs/installing-arch-linux-on-a-vultr-server>
+[3] <http://bao3.org/14518870323173.html>
+
 ## note
 1. screen backlight: xbackloght -set 10
 

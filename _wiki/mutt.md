@@ -15,6 +15,8 @@ modified: 2015-10-20 14:25:24
 
 配置文件什么的只要设置下邮箱位置就OK，网上也有一堆，我的github上也放了，但是以后应该不会更新了。
 
+How to add use mutt’s S/MIME capabilities: <https://dev.mutt.org/trac/wiki/MuttGuide/UseSMIME>
+
 ## 配置文件
 
     # 默认信箱目录
@@ -28,5 +30,7 @@ modified: 2015-10-20 14:25:24
     # 已发送的信箱
     set record="+outgoing"
 
+
 ## 参考
 [Mutt中文手册](http://xhc.me/wp-content/uploads/mutt/manual_1.5.19_zh.html#tuning-search)
+

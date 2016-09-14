@@ -87,7 +87,7 @@ gd
 
 
 ### cut and paste
-d line_number gg
+d line\_number gg
 s
 Delete character at cursor and substitute text.
 
