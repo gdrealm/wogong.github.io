@@ -32,6 +32,8 @@
         var $content = document.getElementById('content');
 
         function process (e) {
+            console.log("start");
+            console.log($content.value);
             var regexResult = $content.value.match(/([0-9A-Z]{4}-[0-9A-Z]{6}-[0-9A-Z]{4})\s+(.+[\d\.]+.+)/g);
 
 
@@ -40,7 +42,9 @@
             regexResult.forEach(function (item) {
                 var re = /([0-9A-Z]{4}-[0-9A-Z]{6}-[0-9A-Z]{4})\s+(.+[\d\.]+.+)/;
                 var newitem = item.replace(re,"$1|$2");
+                console.log(newitem);
                 var itemValue = newitem.split(/\|/);
+                console.log(itemValue);
 
                 if (!result[itemValue[1]]) {
                     result[itemValue[1]] = [];
