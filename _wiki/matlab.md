@@ -1,10 +1,12 @@
 ---
-title: matlab
+title: matlab/octave
 date: 2014-09-10
-modified: 2015-11-05 21:07:05
+update: 2016-09-25
 ---
 
 MATLAB: MATrix LABoratory
+
+Octave: Open Source Matlab implementation
 
 ## Install
 1. MATLAB运行错误 error while loading shared libraries: libXp.so.6: cannot open shared object file: No such file or directory
