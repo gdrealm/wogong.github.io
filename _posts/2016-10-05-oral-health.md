@@ -44,12 +44,11 @@ update: 2016-10-05
 
 
 太医来了上关于口腔健康的节目汇总（截至更新日期）：
-
-    * 太医来了#38 有的牙医就是享受手动刷牙的快感<http://ipn.li/taiyilaile/38/>
-    * 太医来了#59 关于蛀牙，我们过去想得太简单了<http://ipn.li/taiyilaile/59/>
-    * 太医来了#68 从牙套妹到女神的进化之路<https://ipn.li/taiyilaile/68/>
-    * 太医来了#90 刷牙出血你别不当回事儿<https://ipn.li/taiyilaile/90/>
-    * 太医来了#97 牙齿美白的秘密<https://ipn.li/taiyilaile/97/>
+* 太医来了#38 有的牙医就是享受手动刷牙的快感<http://ipn.li/taiyilaile/38/>
+* 太医来了#59 关于蛀牙，我们过去想得太简单了<http://ipn.li/taiyilaile/59/>
+* 太医来了#68 从牙套妹到女神的进化之路<https://ipn.li/taiyilaile/68/>
+* 太医来了#90 刷牙出血你别不当回事儿<https://ipn.li/taiyilaile/90/>
+* 太医来了#97 牙齿美白的秘密<https://ipn.li/taiyilaile/97/>
 
 知乎上关于口腔健康的讨论也很多，但是良莠不齐、争论也较多，相信谁以及是否相
 信作者在这里的一些观点，选择权在读者您的手中。只是无论如何，希望所有人都能
