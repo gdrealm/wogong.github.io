@@ -83,6 +83,15 @@ modified: 2015-09-01 11:02:58
 	睡眠计算机输入: rundll32.exe powrprof.dll,SetSuspendState 0,1,0
 20. 远程访问权限 系统属性-远程
 21. 远程桌面复制粘贴失效 rdpclip.exe
+22. 提取 PDF 书签，老马的 FreePic2Pdf
+23.常用RDP登陆Windows 机器，重启、关机、休眠、锁定
+
+    关机计算机：shutdown.exe -s -t 00
+    重启计算机：shutdown.exe -r -t 00
+    注销计算机：shutdown.exe -l -t 00
+    锁定计算机：rundll32.exe user32.dll,LockWorkStation
+    休眠计算机：rundll32.exe powrProf.dll,SetSuspendState
+    睡眠计算机：rundll32.exe powrprof.dll,SetSuspendState 0,1,0
 
 ## Reinstall
 * 卸载机械硬盘，只保留 SSD 安装系统。
