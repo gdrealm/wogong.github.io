@@ -1,9 +1,7 @@
 ---
 title: 迁移至 Amazon S3 
 date: 2015-07-07 10:24:05
-modified: 2015-07-07 10:24:05
-category: 
-tags: 
+update: 2016-10-19
 slug: to-amazon-s3
 authors: wogong
 summary: 静态博客托管迁移至AWS S3 Service
@@ -16,7 +14,7 @@ summary: 静态博客托管迁移至AWS S3 Service
 Amazon S3 Service 是 AWS 服务的一项，AWS 需要信用卡开通，新用户有一年的免费试用时间。S3 的价格非常便宜，作为静态博客托管基本可以不考虑费用:)
 
 官方提供了详细的静态网站托管流程：[使用自定义域设置静态网站](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html)
-但是个人采用的方案和上述流程有一些区别，例如域名解析上述流程采用  Route 53，一些关于权限和域名绑定的小问题记录如下。
+但是个人采用的方案和上述流程有一些区别，例如域名解析上述流程采用 Route 53，一些关于权限和域名绑定的小问题记录如下。
 
 ### 权限设置（利用 ref4 AWS Policy Generator 生成）：
 
@@ -57,7 +55,7 @@ Amazon S3 Service 是 AWS 服务的一项，AWS 需要信用卡开通，新用�
 
 下一步要折腾的就是 CDN 了，Amazon CloudFront 服务正在申请中
 
-reference:
+### reference:
 1. [怎样用linux命令行访问AmazonS3云存储](http://www.geekfan.net/7935/)
 2. [使用 HTTPS 连接访问您的对象](https://docs.aws.amazon.com/zh_cn/AmazonCloudFront/latest/DeveloperGuide/SecureConnections.html)
 3. <https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html> 

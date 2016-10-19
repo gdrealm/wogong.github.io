@@ -1,7 +1,7 @@
 ---
 title: network
 date: 2014-06-13
-modified: 2015-08-05 23:16:50
+update: 2016-10-19
 ---
 
 
@@ -154,3 +154,14 @@ and capture that checksum in a “test.md5″ file with `tee` – just in-case f
 for extra credit, what disc was used for this sample output?
 9) TIME HOW FAST THE COMPUTER READS FROM /DEV/ZEROpv /dev/zero > /dev/null
 my stats 217GB 0:00:38 [4,36GB/s]
+
+
+
+## BGP
+BGP协议：151109xingli.m4a
+计算机网络 李星老师
+
+
+
+https://github.com/mininet/mininet/wiki/BGP-Path-Hijacking-Attack-Demo
+
