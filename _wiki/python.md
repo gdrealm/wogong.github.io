@@ -1,7 +1,7 @@
 ---
 title: python
 date: 2014-06-10
-modified: 2016-07-19
+update: 2016-10-19
 ---
 
 ## NOTE
@@ -21,7 +21,7 @@ modified: 2016-07-19
   dir() 查看当前导入的模块
 8. INSTALL
     1. Windows 下，建议安装32bit 版本。
-    2. easy_install
+    2. `easy_install`
     [下载地址：](http://pypi.python.org/pypi/setuptools)
     可以找到正确的版本进行下载。win7 32位可以下载
     setuptools-0.6c11.win32-py2.7.exe
@@ -31,7 +31,10 @@ modified: 2016-07-19
     [ez_setup.py](http://peak.telecommunity.com/dist/ez_setup.py)
     后，在cmd下执行 python ez_setup.py，
     即可自动安装setuptools。目前没有直接的exe安装版本。
-    
+9. `v2ex_daily_xx`
+    sudo apt-get installd libxml2 libxml2-dev python-dev libxslt1-dev  lib32z1-dev
+    pip install --user lxml bs4
+
 ## Project
 1. moinmoin  
    在线wiki。还不错。使用过一段时间，从vimwiki 迁移过来，后来再次迁移到gollum。
