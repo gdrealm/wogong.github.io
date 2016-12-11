@@ -1,12 +1,7 @@
 ---
 title: amazon
 date: 2015-07-07 16:15:38
-modified: 2015-07-12 19:00:23
-category: 
-tags: 
-slug: 
-authors: wogong
-summary: 
+update: 2015-07-12 19:00:23
 ---
 
 目前使用两个账户

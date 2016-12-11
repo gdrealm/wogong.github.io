@@ -1,10 +1,7 @@
 ---
 title: 迁移至 Amazon S3 
 date: 2015-07-07 10:24:05
-update: 2016-10-19
-slug: to-amazon-s3
-authors: wogong
-summary: 静态博客托管迁移至AWS S3 Service
+update: 2016-11-23
 ---
 
 最开始在网上的页面是 vimwiki，之后转移到 Jekyll，基本一直托管在 Github，可恨 Jekyll 对于中文的支持直到 3.0 版本都没有任何改观，所以前段时间简单折腾转移到 Pelican，目前的静态博客生成工具非常多，相比 Jekyll，Pelican 于我而言最大的优势是对中文的支持较为友好，另外 Python 环境相比 Ruby 而言，折腾起来较为简单。当然，游走于各种环境只是为了折腾，和书写其实没有太大关系，也和文题无关。
@@ -33,9 +30,14 @@ Amazon S3 Service 是 AWS 服务的一项，AWS 需要信用卡开通，新用�
     }
 
 ### 域名绑定：Dnsimple
+访问域名： www.wogong.net
 
     ALIAS   wogong.net      www.wogong.net.s3-website-ap-northeast-1.amazonaws.com
     CNAME   www.wogong.net  www.wogong.net.s3-website-ap-northeast-1.amazonaws.com
+
+若访问域名为：wogong.net, 则需要考虑裸域的 CNAME 记录可能会与 MX 记录产生冲突。
+故建议使用 www.
+
 
 ### 重定向规则
 为 HTTP 错误进行重定向

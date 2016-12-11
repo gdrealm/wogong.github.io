@@ -1,7 +1,7 @@
 ---
 title: windows
 date: 2014-06-21
-update: 2015-09-01 11:02:58
+update: 2016-11-15
 ---
 
 ## NOTE
@@ -92,6 +92,9 @@ update: 2015-09-01 11:02:58
     锁定计算机：rundll32.exe user32.dll,LockWorkStation
     休眠计算机：rundll32.exe powrProf.dll,SetSuspendState
     睡眠计算机：rundll32.exe powrprof.dll,SetSuspendState 0,1,0
+24. hide onedrive
+    
+    Local Computer Policy\Computer Configuration\Administrative Templates\Windows Components\OneDrive
 
 ## Reinstall
 * 卸载机械硬盘，只保留 SSD 安装系统。

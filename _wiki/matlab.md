@@ -85,3 +85,9 @@ x=solve('x^2+100*x+99=0','x')
     if 1==1
         blah
     end
+
+    if exp
+        blah
+    elseif
+        blah
+    end

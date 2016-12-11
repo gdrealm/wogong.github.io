@@ -2,15 +2,13 @@
 layout: wiki
 title: tex
 date: 2013-06-13
-update: 2014-08-28
+update: 2016-11-08
 ---
-
-相关条目： [[texmacs]]
 
 1. 推荐文档书籍
 - 《LaTeX2e 完全学习手册》
 - lshort
-- 插图 LaTeX2e插图指南 <http://www.ctex.org/documents/latex/graphics/graphics.html>
+- 插图 LaTeX2e 插图指南 <http://www.ctex.org/documents/latex/graphics/graphics.html>
 
 2. 排版
 一直想学而未坚持下来，总是在使用的时候为求方便叛逃
@@ -37,8 +35,6 @@ xelatex + ctex
     - distro: 套件，各种引擎、宏包、文档的集合
     - 编译：tex ——> dvi/pdf
 
-
-
 5. 中文推荐解决方案，ctex 文档类
 6. 字体
     - Texlive 文档
@@ -52,6 +48,7 @@ xelatex + ctex
     latex example.tex_____nothing to say
     dvips example.dvi_____make .dvi into .ps
     xdvi example.dvi_____displsy .dvi(only for unix~)
+    xelatex example.tex
 
 ### Latex宏包
 - syntonly
@@ -110,8 +107,6 @@ Latex字符串:
     \LaTeX
     \LaTeXe
     
-
-
 Latex特殊字符、符号:
 ''  ''
 ''
@@ -128,7 +123,10 @@ $^{\circ}\mathrm{C}$  度
 
 Latex环境：
 
-    \begin{environment} text end{environment}
+    \begin{environment}
+        \item text 
+    \end{environment}
+    
     itemize 简单列表
     enumerate  带序号的列表
     description  带描述的列表 
@@ -147,6 +145,7 @@ Latex环境：
     tabular
  
 ### 插图及引用
+1. 单幅图
     \usepackage{graphicx}
 
     \begin{figure}
@@ -157,7 +156,7 @@ Latex环境：
 
 The graph in Figure~\ref{fig:graph} on Page~\pageref{fig:graph}...
 
-\usepackage[section]{placeins}  使得浮动图形在所在的章节排出
+    \usepackage[section]{placeins}  使得浮动图形在所在的章节排出
 
 
 ### 参考文献

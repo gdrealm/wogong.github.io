@@ -1,9 +1,8 @@
 ---
 title: vim
 date: 2014-07-10
-modified: 2015-07-31 16:39:24
+update: 2016-11-17
 ---
-
 
 coolshell has some great vim articles about vim. when you feel boring,
 you can always find some interesting things there.
@@ -29,6 +28,12 @@ http://coolshell.cn
     Use C-o to jump back to previous locations which were autosaved in a jumplist.
 11. :set paste 粘贴模式
 12. `"D:\Program Files\Vim\vim73\gvim.exe" -p --remote-tab-silent "%*"` Windows 下新标签打开
+13. 自动补全时，使用 C-n C-p 选择补全项目。
+14. vim with python support in debian.
+    
+    sudo apt-get install vim-nox
+
+15. blah
 
 ## vimrc
 1. mouse设置  
@@ -136,15 +141,15 @@ Delete line and substitute text.
     ctrl-w _	maximise height of current window
     ctrl-w |	maximise width of current window    
 
-:n          编辑下一个文档。 
-:2n        编辑下两个文档。 
-:N          编辑上一个文档。注意，该方法只能用于同时打开多个文档。 
-:e 文档名        这是在进入vim后，不离开 vim 的情形下打开其他文档。 
-:e# 或 Ctrl+ˆ      编辑上一个文档,用于两个文档相互交换编辑时使用。?# 代表的是编辑前一次编辑的文档 
-:files 或 :buffers 或 :ls     可以列出目前 缓冲区 中的所有文档。加号 + 表示 缓冲区已经被修改过了。＃代表上一次编辑的文档，%是目前正在编辑中的文档 
-:b 文档名或编号      移至该文档。 
-:f  或 Ctrl+g     显示当前正在编辑的文档名称。 
-:f name         改变编辑中的文档名。(file)
+    :n          编辑下一个文档。 
+    :2n        编辑下两个文档。 
+    :N          编辑上一个文档。注意，该方法只能用于同时打开多个文档。 
+    :e 文档名        这是在进入vim后，不离开 vim 的情形下打开其他文档。 
+    :e# 或 Ctrl+ˆ      编辑上一个文档,用于两个文档相互交换编辑时使用。?# 代表的是编辑前一次编辑的文档 
+    :files 或 :buffers 或 :ls     可以列出目前 缓冲区 中的所有文档。加号 + 表示 缓冲区已经被修改过了。＃代表上一次编辑的文档，%是目前正在编辑中的文档 
+    :b 文档名或编号      移至该文档。 
+    :f  或 Ctrl+g     显示当前正在编辑的文档名称。 
+    :f name         改变编辑中的文档名。(file)
 
 ### macros
 
@@ -206,7 +211,8 @@ map <leader>n :cn<CR>
 map <leader>p :cp<CR>
 
 ### syntax
-set syntax = apdl
+
+    set syntax = apdl
 
 根据后缀设置 syntax，see vimrc
 
@@ -218,19 +224,18 @@ set syntax = apdl
     ]c 移动到下一个diff
     [c 移动到上一个diff
 
-
-
-:diffput
-
-:diffget
-
-:diffupdate
+    :diffput
+    
+    :diffget
+    
+    :diffupdate
 
 ### fold
-zo打开折叠
-zc 保存退出
 
-:set diffopt=context: 5
+    zo 打开折叠
+    zc 保存退出
+    :set diffopt=context: 5
+    :set foldmethod = syntax/
 
 
 ---------------------------------------------------------------------
@@ -280,6 +285,13 @@ vim文件时，用用ctrl-]来执行跳转，通过ctrl+t来跳转回来就可�
 ### snipmate
 自动在 rtp runtime path 寻找可用的 snippets，windows 下手动将 $VIM/.vim 加入 rtp 
 
+### utilsnip
+pair with vim-snip
+personal snippets in ~/.vim/snippets/_.snippet
+
+### vim-snippet
+pre-defined snippets
+
 ### vim-multiple-cursors
 ST的特性，华丽。代码托管在
 [Github](https://github.com/terryma/vim-multiple-cursors)
@@ -327,7 +339,7 @@ calendar.vim 默认日记文件后缀为.cal, 用 Vim 安装 MarkDown 写作插�
 ### vim-indent-guides
 
 ### vim-markdown
-let g:vim_markdown_folding_disabled=1
+`let g:vim_markdown_folding_disabled=1`
 
 :Toc 生成目录
 ### zoom
