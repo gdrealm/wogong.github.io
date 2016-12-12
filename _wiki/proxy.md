@@ -4,7 +4,6 @@ date: 2014-06-07
 modified: 2015-08-04 17:58:28
 ---
 
-
 ## 相关概念
 1. 防火长城（英语：Great Firewall of China，常用简称：G-F-W，中文也称中国国家防火墙或防火长城。），是对中国政府在其互联网边界审查系统（包括相关行政审查系统）的统称。
 2. 服务器  
@@ -15,11 +14,8 @@ modified: 2015-08-04 17:58:28
 ## 推荐付费服务
 
 ### @cosbeta 提供的服务
-* Shadowsocks + VPN +APNP
+* Shadowsocks + VPN
 应网站要求不公布网址，目前使用其提供的shadowsocks，按年收费，价格便宜，自助服务。另有VPN，APNP等，多服务器，多协议。需要请联系。
-推广链接，注册使用延长30天使用时间。
-<https://**/buyss/16708>
-<https://**/buyvpn/26574>
 
 ### VnetLink 微林
 * HTTP
@@ -30,6 +26,7 @@ modified: 2015-08-04 17:58:28
 * PAC
 高端大气上档次，多平台支持，价格相比以上较为昂贵。尤其推荐其Android平台下的APP，一键无忧。
 <http://getqujujing.com>
+2016-12-11    曲径早已经结束服务。
 
 ### 熊猫翻滚
 全平台，多种套餐。（将推介链接发给您的朋友，您可获得他们充值金额10%的奖励哦！）
@@ -73,3 +70,4 @@ modified: 2015-08-04 17:58:28
           sudo src/chinadns -l ~/ChinaDNS-C-1.1.4/iplist.txt -s 192.168.1.1,208.67.222.222,8.8.8.8 -p 5151
 5. gfwlist2pac <https://github.com/clowwindy/gfwlist2pac>
 gfwlist2pac -f pac -p "SOCKS5 127.0.0.1:8080; SOCKS 127.0.0.1:8080; HTTPS node-cnx.vnet.link:111; PROXY node-cnx.vnet.link:110; DIRECT;" --user-rule user_rule.txt
+6. [Autoproxy](autoproxy)
