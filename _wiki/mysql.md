@@ -2,37 +2,32 @@
 layout: wiki
 title: mysql
 date: 2015-06-17
+update: 2017-01-20
 ---
-
-# Mysql
 
 ## note
 1. set names "latin1" 显示中文
 
 ## 常用命令
-sudo /etc/rc.d/mysqld start
-
-mysql -u root -p
-
-create database _databsename_
-
-show databases
-
-drop database _databasename_
-
-create table _tablename_
-
-describe _tablename_
-
-drop table _tablename_ use aliendatabase
-
-select * from aliens_abduction
-
-访问phpmyadmin：http://localhost/phpmyadmin
-
-sha() secure hash algotithm
-
-source filename.sql;
+    # shell
+    sudo /etc/rc.d/mysqld start
+    mysql.server start
+    mysql -u root -p
+    
+    # command
+    create database _databsename_
+    show databases
+    desc _tablename_
+    drop database _databasename_
+    create table _tablename_
+    describe _tablename_
+    drop table _tablename_ use aliendatabase
+    
+    # sql
+    select * from aliens_abduction limit 5;
+    
+    # import
+    source filename.sql;
 
 
 ## List of all MySQL commands:
@@ -63,3 +58,5 @@ source filename.sql;
     nowarning (\w) Don't show warnings after every statement.
     
     For server side help, type 'help contents'
+
+

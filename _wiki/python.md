@@ -36,7 +36,7 @@ update: 2016-10-19
     pip install --user lxml bs4
 
 ## Project
-1. moinmoin  
+1. moinmoin
    在线wiki。还不错。使用过一段时间，从vimwiki 迁移过来，后来再次迁移到gollum。
 2. Python(x,y)
    用于科学计算

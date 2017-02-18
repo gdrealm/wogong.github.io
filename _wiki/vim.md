@@ -33,7 +33,7 @@ http://coolshell.cn
     
     sudo apt-get install vim-nox
 
-15. blah
+15. vim 修改 bc 中的小数点位数。`%s/ \(\d*\) USD/ \1.00 USD`
 
 ## vimrc
 1. mouse设置  
@@ -371,3 +371,5 @@ kien/ctrlp.vim 使用模糊匹配搜索/打开文件，非常好用，强烈推�
     "let g:Powerline_symbols = 'unicode'
     "let g:Powerline_colorscheme = 'skwp'
     "let g:Powerline_symbols = 'fancy'
+
+
