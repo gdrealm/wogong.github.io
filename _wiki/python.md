@@ -12,7 +12,7 @@ update: 2016-10-19
    - from module import func 只导入需要的函数
    - from module import * 不推荐
 2. itertools 迭代工具
-5. ipython notebook (pythonxy)
+5. ipython notebook
     - linux
         sudo apt-get install ipython-notebook
         sudo pacman -S ipython-notebook
