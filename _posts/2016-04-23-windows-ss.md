@@ -2,6 +2,7 @@
 title: Windows 使用 Shadowsocks 科学上网
 author: wogong
 date: 2016-04-23
+update: 2017-04-05
 ---
 
 本文介绍 Shadowsocks 协议在 Windows 平台的使用。
