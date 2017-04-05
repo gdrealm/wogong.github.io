@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "Peer Review Instructions"
-create: 2015-03-19
-description: ""
-tags: []
+date: 2015-03-19
 ---
-<http://adcaij.usal.es/reviewers-instructions>
+[http://adcaij.usal.es/reviewers-instructions][1]
 
 ## Instructions for reviews
 
@@ -65,3 +63,5 @@ If the article builds upon previous research does it reference that work appropr
 Plagiarism: If you suspect that an article is a substantial copy of another work, please let the editor know, citing the previous work in as much detail as possible
 Fraud: It is very difficult to detect the determined fraudster, but if you suspect the results in an article to be untrue, discuss it with the editor
 Other ethical concerns: For medical research, has confidentiality been maintained? Has there been a violation of the accepted norms in the ethical treatment of animal or human subjects? If so, then these should also be identified to the editor
+
+[1]:	http://adcaij.usal.es/reviewers-instructions

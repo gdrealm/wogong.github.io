@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "使用ssh优化上网"
-description: ""
-tags: [ssh]
 ---
+
 本文测试贴图，以及指导如何使用SSH。假设的上网环境是Chrome未装任何扩展，或者IE（本文演示的浏览器版本chrome21、IE10，版本差异基本不影响操作）
 
 ### 打开Interenet选项（Interenet Options）
@@ -30,4 +29,6 @@ IE操作，点击齿轮图标或者工具菜单，选择Internet选项
 
 
 ### 测试
-打开[IPCN IP 地理位置查询](http://whois.ipcn.org/)，根据结果判断是否成功。
+打开[IPCN IP 地理位置查询][1]，根据结果判断是否成功。
+
+[1]:	http://whois.ipcn.org/

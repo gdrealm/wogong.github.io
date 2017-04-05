@@ -76,7 +76,9 @@
 ||typekit.com
 ||typekit.net
 ||w3schools.com
+||wanqu.co
 ||wikipedia.org
+||wikileaks.org
 ||wireshark.org
 ||wordpress.com
 ||wp.com
