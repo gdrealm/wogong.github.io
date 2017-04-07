@@ -1,7 +1,10 @@
 _site/*
-images/
 static/
 
 .pyc
 *.JPG
-diary.md
+*.zip
+*.exe
+*.msi
+*.apk
+*.plist
