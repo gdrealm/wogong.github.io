@@ -2,11 +2,6 @@
 title: download
 date: 2015-06-18 19:55:09
 modified: 2015-06-18 19:55:09
-category: 
-tags: 
-slug: 
-authors: wogong
-summary: 
 ---
 
 ## note

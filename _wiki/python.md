@@ -2,7 +2,36 @@
 title: python
 date: 2014-06-10
 update: 2016-10-19
----
+--- 
+
+<!-- vim-markdown-toc GFM -->
+* [NOTE](#note)
+* [Project](#project)
+* [Basics](#basics)
+* [Scientific](#scientific)
+    * [函数库 module](#函数库-module)
+    * [数值分析](#数值分析)
+* [Vamei tutorial](#vamei-tutorial)
+    * [Python基础教程01 Hello World](#python基础教程01-hello-world)
+    * [Python基础教程02 基本数据类型](#python基础教程02-基本数据类型)
+    * [Python基础教程03 序列](#python基础教程03-序列)
+    * [Python基础教程04 运算](#python基础教程04-运算)
+    * [Python基础教程05 缩进和选择](#python基础教程05-缩进和选择)
+    * [Python基础教程06 循环](#python基础教程06-循环)
+    * [Python基础教程07 函数](#python基础教程07-函数)
+    * [Python基础教程08 面向对象的基本概念](#python基础教程08-面向对象的基本概念)
+    * [Python基础教程09 面向对象的进一步拓展](#python基础教程09-面向对象的进一步拓展)
+    * [Python基础教程10 反过头来看看](#python基础教程10-反过头来看看)
+    * [Python进阶01 词典](#python进阶01-词典)
+    * [Python进阶02 文本文件的输入输出](#python进阶02-文本文件的输入输出)
+    * [Python进阶03 模块](#python进阶03-模块)
+    * [Python进阶04 函数的参数对应](#python进阶04-函数的参数对应)
+    * [Python进阶05 循环设计](#python进阶05-循环设计)
+    * [Python进阶06 循环对象](#python进阶06-循环对象)
+    * [Python进阶07 函数对象](#python进阶07-函数对象)
+    * [usage](#usage)
+
+<!-- vim-markdown-toc -->
 
 ## NOTE
 1. `python -m SimpleHTTPServer` 8000端口快速共享文件。(Python3 中取消了SimpleHTTPServer 这个模块。)
@@ -19,21 +48,6 @@ update: 2016-10-19
         sudo apt-get install python-matplotlib
 7. ipython
   dir() 查看当前导入的模块
-8. INSTALL
-    1. Windows 下，建议安装32bit 版本。
-    2. `easy_install`
-    [下载地址：](http://pypi.python.org/pypi/setuptools)
-    可以找到正确的版本进行下载。win7 32位可以下载
-    setuptools-0.6c11.win32-py2.7.exe
-    
-    注意：win7 64位必须使用ez_setup.py进行安装。方法
-    是下载
-    [ez_setup.py](http://peak.telecommunity.com/dist/ez_setup.py)
-    后，在cmd下执行 python ez_setup.py，
-    即可自动安装setuptools。目前没有直接的exe安装版本。
-9. `v2ex_daily_xx`
-    sudo apt-get installd libxml2 libxml2-dev python-dev libxslt1-dev  lib32z1-dev
-    pip install --user lxml bs4
 
 ## Project
 1. moinmoin
@@ -44,8 +58,6 @@ update: 2016-10-19
 4. simiki
 3. shadowsocks
 
-### Web 框架
-1. web.py
 
 ## Basics
 0. 注释，采用\#符号
@@ -456,10 +468,6 @@ Python会在以下路径中搜索它想要寻找的模块：
 
 ### Python进阶06 循环对象
 ### Python进阶07 函数对象
-## pip
-### install
-<http://pip.readthedocs.org/en/latest/installing.html>
-`sudo apt-get install pip`
 
 ### usage
 

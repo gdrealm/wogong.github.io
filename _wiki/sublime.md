@@ -1,5 +1,4 @@
 ---
-layout: wiki
 title: sublime
 date: 2014-08-26
 update: 2014-09-02

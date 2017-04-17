@@ -40,10 +40,10 @@ AutoHotKey AHK
     Capslock::Control   ; 把Capslock替换为Control 
     #IfWinActive
 
-a::
-loop,1000
-{
-send {delete}
-sleep 0
-}
-return
+    a::
+    loop,1000
+    {
+    send {delete}
+    sleep 0
+    }
+    return

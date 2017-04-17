@@ -1,7 +1,24 @@
-# my personal page
-Cheng Zhen
+# wiki index
 
-## wiki
-[[git]]
+## Programme
+* [python](python)
+* [fortran](fortran)
+* [go](go)
+* [c](c)
+* [java](java)
+* [matlab](matlab)
+* [php](php)
+* [shell](shell)
+* [ruby](ruby)
+* [javascript](javascript)
 
-## [diary](diary)
+## Web
+* [html](html)
+* [css](css)
+
+## Editor
+* [vim](vim)
+* [emacs](emacs)
+* [sublime](sublime)
+
+## Apps

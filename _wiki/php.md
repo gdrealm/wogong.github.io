@@ -4,7 +4,7 @@ title: php
 date: 2015-06-17
 ---
 
-[BOTTOM][TOP]php参考资料
+php参考资料
 
 php官方手册
 
@@ -162,5 +162,3 @@ array (
 
 
 调试的时候可以根据不同的需要选用不同的输出方式。
-----
-CategoryProgram

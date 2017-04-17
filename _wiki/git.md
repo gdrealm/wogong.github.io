@@ -145,4 +145,3 @@ https://www.digitalocean.com/community/articles/how-to-deploy-jekyll-blogs-with-
     cd
     mkdir .ssh
     cp /home/wogong/.ssh/id_rsa .ssh
-    
