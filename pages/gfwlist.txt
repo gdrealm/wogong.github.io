@@ -4,6 +4,7 @@
 /^https?:\/\/[^\/]+blogspot\.(.*)/
 /^https?:\/\/[^\/]+thepiratebay.org\.(.*)/
 ||addthis.com
+||appsto.re
 ||adroll.com
 ||akamai.net
 ||akamaihd.net
@@ -54,12 +55,14 @@
 ||live.com
 ||microsoft.com
 ||msecnd.net
+||mailgun.com
 ||medium.com
 ||office.com
 ||office.net
 ||optimizely.com
 ||plnkr.co
 ||pinboard.in
+||quora.com
 ||rawgit.com
 ||segment.com
 ||sfx.ms

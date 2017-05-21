@@ -5,15 +5,16 @@ date: 2014-09-09
 update: 2014-09-09 21:15:47
 ---
 
+
 1. 合并 vmdk 文件
 vmware-vdiskmanager.exe -r /f/Vmware/arch/Arch.vmdk -t 0 VM.vmdk
 
 执行结果：
 
-    $ vmware-vdiskmanager.exe -r /f/Vmware/arch/Arch.vmdk -t 0 VM.vmdk
-      Creating disk 'VM.vmdk'
-      Convert: 100% done.
-    Virtual disk conversion successful.
+	$ vmware-vdiskmanager.exe -r /f/Vmware/arch/Arch.vmdk -t 0 VM.vmdk
+	  Creating disk 'VM.vmdk'
+	  Convert: 100% done.
+	Virtual disk conversion successful.
 
 2. 问题描述：当用 VMware Workstation 打开后缀vmx 文件时，出现 "This virtual machine appears to be in use."的提示信息框！
 分析：

@@ -42,3 +42,5 @@ modified: 2015-09-05
 ## Mac purchased APPs
 1. iCloud CN
 	* MWeb
+2. wogong38 CN
+	- Reeder 3
