@@ -3,11 +3,16 @@ title: Apple
 date: 2015-06-16
 modified: 2015-09-05
 ---
-关于 AppStore 多账户问题
+
+* 关于 AppStore 多账户问题
+
+目前美区账户 2 个，分别为 i 与 wogong.38,中区账户2个，分别为 icloud 与 wogong38.
 
 中国地区账户只在电脑登陆，下载更新应用均在电脑，这样手机便不会提醒更新。手机端只登陆美区账户。
 
 所有可以在美区下载的应用只在美区下载。限免精品应用除外。
+
+手机上由于 Apple Music 的使用，以后只能登录 iCloud 账户。应用的更新问题不大，下载智能依靠 iTunes.
 
 ## iOS purchased APPs
 1. i US
@@ -29,7 +34,9 @@ modified: 2015-09-05
 	* A Dark Room
 	* Enlight
 3. iCloud CN
+	* iCloud
 	* iMessage
+	* Apple Music
 4. wogong.38 US
 	* Tweetbot 4 
 	* Prompt 2
@@ -42,3 +49,6 @@ modified: 2015-09-05
 ## Mac purchased APPs
 1. iCloud CN
 	* MWeb
+2. wogong38 CN
+	* Reeder
+	* Tweetbot
