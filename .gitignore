@@ -1,5 +1,6 @@
 _site/*
 static/
+.DS_Store
 
 .pyc
 *.JPG

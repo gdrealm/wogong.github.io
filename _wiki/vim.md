@@ -25,36 +25,40 @@ http://coolshell.cn
    zw
 9. word count: In command mode, press g, then ctrl-g
 10. :ju C-o C-i
-    Use C-o to jump back to previous locations which were autosaved in a jumplist.
+	Use C-o to jump back to previous locations which were autosaved in a jumplist.
 11. :set paste 粘贴模式
 12. `"D:\Program Files\Vim\vim73\gvim.exe" -p --remote-tab-silent "%*"` Windows 下新标签打开
 13. 自动补全时，使用 C-n C-p 选择补全项目。
 14. vim with python support in debian.
-    
-    sudo apt-get install vim-nox
+	sudo apt-get install vim-nox
 
 15. vim 修改 bc 中的小数点位数。`%s/ \(\d*\) USD/ \1.00 USD`
 16. specific lines sub: :10,100s/pattern/blah/
 
 ## vimrc
 1. mouse设置  
-set mouse=a 不可以右键粘贴，但是可以鼠标操作切换vsplit窗口
+	set mouse=a 不可以右键粘贴，但是可以鼠标操作切换vsplit窗口
 set mouse-=a 相反
 2. 判断 OS
 
-    if has('win32')
-    ... 
-    elseif has('unix')
-    ... 
-    elseif has('mac')
-    ... 
-    endif
+	if has('win32')
+	... 
+	elseif has('unix')
+	... 
+	elseif has('mac')
+	... 
+	endif
 
 
 ## Commands
-### set
+### regex
+查找替换实例：
+- `%s/"\(\d\{32}\)" ""/"Beiwo" "\1"`
+	- 匹配 `\(\)` 后面用 `\1`
+	- 重复模式 `\{num, num}`
+### setttings
 
-    set syntax = apdl
+	set syntax = apdl
 
 ### cursor movement
 - hjkl
@@ -74,15 +78,15 @@ gd
 [N]G
 
 * marks
-    :marks 查看当前所有书签
-    ma a为小写字母，为光标所在处设定文档书签a
-    mA A为大写字母，为光标所在处设定全局书签A
-    `a 到文档书签a处，Tab键上方
-    'a 到文档书签a所在行行首处，Enter键左边
-    `A 到全局书签A处，Tab键上方
-    'A 到全局书签A所在行行首处，Enter键左边
-    `n 如果n=0，缓冲区将打开上一次的文档，且光标在上次编辑最后的位置，1-9以此类推
-    'n 如果n=0，缓冲区将打开上一次的文档，且光标在上次编辑最后的位置所在行的行首，1-9以此类推
+	:marks 查看当前所有书签
+	ma a为小写字母，为光标所在处设定文档书签a
+	mA A为大写字母，为光标所在处设定全局书签A
+	\`a 到文档书签a处，Tab键上方
+	'a 到文档书签a所在行行首处，Enter键左边
+	\`A 到全局书签A处，Tab键上方
+	'A 到全局书签A所在行行首处，Enter键左边
+	\`n 如果n=0，缓冲区将打开上一次的文档，且光标在上次编辑最后的位置，1-9以此类推
+	'n 如果n=0，缓冲区将打开上一次的文档，且光标在上次编辑最后的位置所在行的行首，1-9以此类推
 
 ### insert mode
 
@@ -103,67 +107,66 @@ Delete line and substitute text.
 ### visual mode
 
 ### search/replace
-    
-    * 向下搜索光标所在处的单词（完全匹配）
-    # 向上搜索光标所在处的单词（完全匹配）
-    g* 向下搜索光标所在处的单词（部分匹配）
-    g# 向上搜索光标所在处的单词（部分匹配）
-
-    # 扫描当前目录下的.txt 和 .cpp文件，并加入到参数列表
-    :args *.txt *.cpp
-
-    # 递归扫描所有下级目录的话
-    :args **/*.txt
-
-    # 只想扫描下一级目录（即不扫描当前目录）的话
-    :args */*.txt
-    
-    # 是将参数列表中的所有文件的hate提换成love，并写入硬盘
-    # 如果没有|update，就不会写入，但相应的替换也会被中断）。
-    :argdo %s/hate/love/gc | update
-
+	* 向下搜索光标所在处的单词（完全匹配）
+	# 向上搜索光标所在处的单词（完全匹配）
+	g* 向下搜索光标所在处的单词（部分匹配）
+	g# 向上搜索光标所在处的单词（部分匹配）
+	
+	# 扫描当前目录下的.txt 和 .cpp文件，并加入到参数列表
+	:args *.txt *.cpp
+	
+	# 递归扫描所有下级目录的话
+	:args **/*.txt
+	
+	# 只想扫描下一级目录（即不扫描当前目录）的话
+	:args */*.txt
+	
+	# 是将参数列表中的所有文件的hate提换成love，并写入硬盘
+	# 如果没有|update，就不会写入，但相应的替换也会被中断）。
+	:argdo %s/hate/love/gc | update
 
 
-### exiting 
+
+### exiting
 
 ### windows and multi-file
 
-    :split filename
-    :vsplit filename
-    <C-w>s
-    <C-w>v
-    Ctrl+w+方向键   切换到前／下／上／后一个窗格 
-    Ctrl+w+h/j/k/l  同上 
-    Ctrl+ww         依次向后切换到下一个窗格中
-    :q[uit]	close the currently active window
-    :on[ly]	close all windows except the currently active window    
-    ctrl-w +	increase height of current window by 1 line
-    ctrl-w -	decrease height of current window by 1 line
-    ctrl-w _	maximise height of current window
-    ctrl-w |	maximise width of current window    
-
-    :n          编辑下一个文档。 
-    :2n        编辑下两个文档。 
-    :N          编辑上一个文档。注意，该方法只能用于同时打开多个文档。 
-    :e 文档名        这是在进入vim后，不离开 vim 的情形下打开其他文档。 
-    :e# 或 Ctrl+ˆ      编辑上一个文档,用于两个文档相互交换编辑时使用。?# 代表的是编辑前一次编辑的文档 
-    :files 或 :buffers 或 :ls     可以列出目前 缓冲区 中的所有文档。加号 + 表示 缓冲区已经被修改过了。＃代表上一次编辑的文档，%是目前正在编辑中的文档 
-    :b 文档名或编号      移至该文档。 
-    :f  或 Ctrl+g     显示当前正在编辑的文档名称。 
-    :f name         改变编辑中的文档名。(file)
+	:split filename
+	:vsplit filename
+	<C-w>s
+	<C-w>v
+	Ctrl+w+方向键   切换到前／下／上／后一个窗格 
+	Ctrl+w+h/j/k/l  同上 
+	Ctrl+ww         依次向后切换到下一个窗格中
+	:q[uit] close the currently active window
+	:on[ly] close all windows except the currently active window    
+	ctrl-w +    increase height of current window by 1 line
+	ctrl-w -    decrease height of current window by 1 line
+	ctrl-w _    maximise height of current window
+	ctrl-w |    maximise width of current window    
+	
+	:n          编辑下一个文档。 
+	:2n        编辑下两个文档。 
+	:N          编辑上一个文档。注意，该方法只能用于同时打开多个文档。 
+	:e 文档名        这是在进入vim后，不离开 vim 的情形下打开其他文档。 
+	:e# 或 Ctrl+ˆ      编辑上一个文档,用于两个文档相互交换编辑时使用。?# 代表的是编辑前一次编辑的文档 
+	:files 或 :buffers 或 :ls     可以列出目前 缓冲区 中的所有文档。加号 + 表示 缓冲区已经被修改过了。＃代表上一次编辑的文档，%是目前正在编辑中的文档 
+	:b 文档名或编号      移至该文档。 
+	:f  或 Ctrl+g     显示当前正在编辑的文档名称。 
+	:f name         改变编辑中的文档名。(file)
 
 ### macros
 
 ### buffer
 
-    :ls 查看当前打开文件列表
-    :bp 前一文件
-    :bn 后一文件
-    N+Ctrl+^ 跳转到编号N的文件
-    Ctrl+^ 跳转下一个文件
-    :buffer N
-    :b N
-    :bd close current buffer file
+	:ls 查看当前打开文件列表
+	:bp 前一文件
+	:bn 后一文件
+	N+Ctrl+^ 跳转到编号N的文件
+	Ctrl+^ 跳转下一个文件
+	:buffer N
+	:b N
+	:bd close current buffer file
 
 ### table
 vim 从 vim7 开始加入了多标签切换的功能， 相当于多窗口.
@@ -186,15 +189,15 @@ vimgrep是gvim内部集成的一个查找文件命令，可以方便的搜索多
 vimgrep /pattern/ file
 patern代表的是你要搜索的内容，可以用正则表达式
 file代表的是文件名，文件名也可以用正则表达式，特别是**，下面说明一下**的用法：
-    ** 代表的是递归查找大于100层目录，例如：
-    **/*.c，所有目录下的 a.c
+	** 代表的是递归查找大于100层目录，例如：
+	**/*.c，所有目录下的 a.c
 
 
 下面就举一下常用的例子：
-:vimgrep /test/ *  说明： 查找当前目录下所有包含test关键字
-:vimgrep /test/ **  说明： 递归查找当前目录下所有包含test关键字
-:vimgrep /\<test\>/ **  说明： 递归查找当前目录下所有包含只有test关键字,不包括testabc、abctest、abctestabc等等，如果一行有多个test的话，只搜索一个test结果
-:vimgrep /\<test\>/g **  说明： 递归查找当前目录下所有包含只有test关键字,不包括testabc、abctest、abctestabc等等，如果一行有多个test的话，搜索多个test结果
+:vimgrep /test/ \*  说明： 查找当前目录下所有包含test关键字
+:vimgrep /test/ \*\*  说明： 递归查找当前目录下所有包含test关键字
+:vimgrep /\<test\>/ \*\*  说明： 递归查找当前目录下所有包含只有test关键字,不包括testabc、abctest、abctestabc等等，如果一行有多个test的话，只搜索一个test结果
+:vimgrep /\<test\>/g \*\*  说明： 递归查找当前目录下所有包含只有test关键字,不包括testabc、abctest、abctestabc等等，如果一行有多个test的话，搜索多个test结果
 :vimgrep /\<test\>/ \*.html 说明： 查找当前目录下所有的html文件包含只有test关键字,不包括testabc、abctest、abctestabc等等，如果一行有多个test的话，搜索多个test结果
 搜索的结果不会立即显示出来，但可以用:copen来打开所有的搜索结果，并会打开第一个符合的文件中第一个符合的位置
  
@@ -213,40 +216,40 @@ map <leader>p :cp<CR>
 
 ### syntax
 
-    set syntax = apdl
+	set syntax = apdl
 
 根据后缀设置 syntax，see vimrc
 
 
 ### vimdiff
 
-    :set diffopt=context: 5
-    vimdiff filea fileb
-    ]c 移动到下一个diff
-    [c 移动到上一个diff
-
-    :diffput
-    
-    :diffget
-    
-    :diffupdate
+	:set diffopt=context: 5
+	vimdiff filea fileb
+	]c 移动到下一个diff
+	[c 移动到上一个diff
+	
+	:diffput
+	
+	:diffget
+	
+	:diffupdate
 
 ### fold
 
-    zo 打开折叠
-    zc 保存退出
-    :set diffopt=context: 5
-    :set foldmethod = syntax/
+	zo 打开折叠
+	zc 保存退出
+	:set diffopt=context: 5
+	:set foldmethod = syntax/
 
 
----------------------------------------------------------------------
+---- 
 ## Plugin
----------------------------------------------------------------------
+---- 
 ### vundle
-[Github](https://github.com/gmarik/vundle)
+[Github][1]
 
 - 在Windows下使用Vundle  
-[Vundle for Windows]
+	[Vundle for Windows]
 (https://github.com/gmarik/vundle/wiki/Vundle-for-Windows)
 需要注意环境变量的设置。
 
@@ -268,8 +271,8 @@ html手写神器，目前我还没怎么使用。
 ### taglist
 需要ctags配合生成tags文件，浏览代码必备。
 
-    set tags=tags;
-    set autochdir
+	set tags=tags;
+	set autochdir
 
 注意第一个命令里的分号是必不可少的。这个命令让vim首先在当前目录里寻找tags文件，如果没有找到tags文件，或者没有找到对应的目标，就到父目录中查找，一直向上递归。因为tags文件中记录的路径总是相对于tags文件所在的路径，所以要使用第二个设置项来改变vim的当前目录。
 
@@ -288,18 +291,18 @@ vim文件时，用用ctrl-]来执行跳转，通过ctrl+t来跳转回来就可�
 
 ### utilsnip
 pair with vim-snip
-personal snippets in ~/.vim/snippets/_.snippet
+personal snippets in \~/.vim/snippets/\_.snippet
 
 ### vim-snippet
 pre-defined snippets
 
 ### vim-multiple-cursors
 ST的特性，华丽。代码托管在
-[Github](https://github.com/terryma/vim-multiple-cursors)
+[Github][2]
 
 ### VOoM
 文本文件outliner。详见
-[xbeta](http://xbeta.info/vim-voof.htm)
+[xbeta][3]
 
 
 需要Python 环境，windows 8 64bit 下需要安装
@@ -311,13 +314,13 @@ ST的特性，华丽。代码托管在
 与自带的 netrw 在一定程度上相似，but they are different things. So I choose netrw.
 
 REF:
-- <https://www.reddit.com/r/vim/comments/22ztqp/why_does_nerdtree_exist_whats_wrong_with_netrw/>
-- <http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/>
+- [https://www.reddit.com/r/vim/comments/22ztqp/why\_does\_nerdtree\_exist\_whats\_wrong\_with\_netrw/][4]
+- [http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/][5]
 
 ### netrw
 
-    renanme: R
-    :[N]Explore[!]  [dir]... Explore directory of current file      *:Explore*
+	renanme: R
+	:[N]Explore[!]  [dir]... Explore directory of current file      *:Explore*
 
 ### vim-vinegar
 supplement to netrw
@@ -367,8 +370,14 @@ kien/ctrlp.vim 使用模糊匹配搜索/打开文件，非常好用，强烈推�
 
 ### vim-powerline
 
-    "" Powerline
-    set laststatus=2   " Always show the statusline
-    "let g:Powerline_symbols = 'unicode'
-    "let g:Powerline_colorscheme = 'skwp'
-    "let g:Powerline_symbols = 'fancy'
+	"" Powerline
+	set laststatus=2   " Always show the statusline
+	"let g:Powerline_symbols = 'unicode'
+	"let g:Powerline_colorscheme = 'skwp'
+	"let g:Powerline_symbols = 'fancy'
+
+[1]:	https://github.com/gmarik/vundle
+[2]:	https://github.com/terryma/vim-multiple-cursors
+[3]:	http://xbeta.info/vim-voof.htm
+[4]:	https://www.reddit.com/r/vim/comments/22ztqp/why_does_nerdtree_exist_whats_wrong_with_netrw/
+[5]:	http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
