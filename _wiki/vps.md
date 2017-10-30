@@ -52,10 +52,10 @@ modified: 2015-10-30 23:42:32
         timedatectl set-timezone Asia/Shanghai
 9. hostname
 
-      # debian
-      /etc/hostname
-      # arch
-      sudo hostnamectl set-hostname myhostname
+       # debian
+       /etc/hostname
+       # arch
+       sudo hostnamectl set-hostname myhostname
 
 ## VPS 评测
 1. CPU  
@@ -69,7 +69,7 @@ modified: 2015-10-30 23:42:32
    ` dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync`
 4. 入口带宽 `wget http://cachefly.cachefly.net/100mb.test`
 5. 出口带宽 `wget /file/in/your/server`
-6. 网络 `ping, tracert`
+6. 网络 `ping, traceroute`
    - <http://ping.chinaz.com> 
    - <http://www.webkaka.com> 
    - <http://ping.aizhan.com>
