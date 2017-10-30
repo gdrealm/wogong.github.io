@@ -12,7 +12,7 @@ modified: 2015-09-05
 
 所有可以在美区下载的应用只在美区下载。限免精品应用除外。
 
-手机上由于 Apple Music 的使用，以后只能登录 iCloud 账户。应用的更新问题不大，下载智能依靠 iTunes.
+手机上由于 Apple Music 的使用，以后只能登录 iCloud 账户。应用的更新问题不大，下载只能依靠 iTunes.
 
 ## iOS purchased APPs
 1. i US
@@ -23,13 +23,13 @@ modified: 2015-09-05
 	* goodreader 0.99
 	* nplayer 4.99
 	* Marvin 3.99
-	* avplayer 2.99 refunded
-	* iA writer 4.99 refunded
-	* Day One 4.99 refunded
-	* Overcast 4.99
-	* Peace 2.99 refunded
 	* Purify 3.99
-	* Tweetbot 4.99
+	* Tweetbot 3 4.99
+	* pdf expert
+	* documents
+	* surge
+	* Sortly
+	* Tweebot 4
 2. wogong38 CN
 	* A Dark Room
 	* Enlight
