@@ -2,7 +2,7 @@
 title: python
 date: 2014-06-10
 update: 2016-10-19
---- 
+---
 
 <!-- vim-markdown-toc GFM -->
 * [NOTE](#note)
@@ -48,7 +48,8 @@ update: 2016-10-19
         sudo apt-get install python-matplotlib
 7. ipython
   dir() 查看当前导入的模块
-
+8. requests docuemnt: http://docs.python-requests.org/en/master/
+9. BeautifulSoup 还需要进一步学习，熟悉选择器的用法
 ## Project
 1. moinmoin
    在线wiki。还不错。使用过一段时间，从vimwiki 迁移过来，后来再次迁移到gollum。
@@ -185,19 +186,19 @@ if语句之后的冒号
 以四个空格的缩进来表示隶属关系, Python中不能随意缩进
 
     if  <条件1>:
-    
+
         statement
-    
+
     elif <条件2>:
-    
+
         statement
-    
+
     elif <条件3>：
-    
+
         statement
-    
+
     else:
-    
+
         statement
 
 ### Python基础教程06 循环
@@ -231,7 +232,7 @@ break      # 停止执行整个循环
 这个函数的功能是求两个数的平方和。首先，def，这个关键字通知python：我在定义一个函数。square_sum是函数名。括号中的a, b是函数的参数，是对函数的输入。参数可以有多个，也可以完全没有（但括号要保留）。
 
 我们已经在循环和选择中见过冒号和缩进来表示的隶属关系。
-           
+
 return可以返回多个值，以逗号分隔。相当于返回一个tuple(定值表)。
 
     return a,b,c         #相当于 return (a,b,c)
@@ -260,7 +261,7 @@ Python通过位置，知道3对应的是函数定义中的第一个参数a， 4�
     return a
     print change_integer(a)
     print a
-    
+
     b = [1,2,3]
     def change_list(b):
     b[0] = b[0] + 1
@@ -291,7 +292,7 @@ Python通过位置，知道3对应的是函数定义中的第一个参数a， 4�
 用继承来说明父类-子类关系。子类自动具有父类的所有属性。
 
 self代表了根据类定义而创建的对象，方法中第一个参数是 self
- 
+
 
 建立对一个对象： 对象名 = 类名()
 
@@ -315,11 +316,11 @@ len() dir() help()
 词典的每个元素是键值对。元素没有顺序。
 
     dic = {'tom':11, 'sam':57,'lily':100}
-    
+
     dic['tom'] = 99
-    
+
     for key in dic: ...
-    
+
     del, len()
 
 ### Python进阶02 文本文件的输入输出
@@ -360,17 +361,17 @@ Python具有基本的文本文件读写功能。Python的标准库提供有更�
     for line in file(文件名):    print line
     # 利用file()函数，我们创建了一个循环对象。在循环中，文件的每一行依次被读取，赋予给line变量。
 
- 
+
 总结：
 
     f = open(name, "r")
-    
+
     line = f.readline()
-    
+
     f.write('abc')
-    
+
     f.close()
-    
+
     for line in file(name): ...
 
 ### Python进阶03 模块
@@ -379,7 +380,7 @@ Python具有基本的文本文件读写功能。Python的标准库提供有更�
 
 模块(module)也是为了同样的目的。在Python中，一个.py文件就构成一个模块。通过模块，你可以调用其它文件中的程序。
 
- 
+
 
 1. 引入(import)和使用模块
 
@@ -392,12 +393,12 @@ Python具有基本的文本文件读写功能。Python的标准库提供有更�
     import firstfor i in range(10):    first.laugh()
 
 在second.py中，我们并没有定义laugh函数，但通过从first中引入(import)，我们就可以直接使用first.py中的laugh函数了。
- 
+
 
 从上面可以看到，引入模块后，我们可以通过 模块.对象 的方式来调用所想要使用的对象。上面例子中，first为引入的模块，laugh()是我们所引入的对象。
 
 此外，还有其它的引入方式, import a as b, from a import ， 都是处于方便书写的原因，本质上没有差别。
- 
+
 
 2. 搜索路径
 
@@ -418,9 +419,9 @@ Python会在以下路径中搜索它想要寻找的模块：
 总结
 
     import module
-    
+
     module.object
-    
+
     __init__.py
 
 
@@ -428,7 +429,7 @@ Python会在以下路径中搜索它想要寻找的模块：
 1. 关键字传递
 2. 参数默认值
 3. 包裹传递
-    
+
     # list
     def func(*name):
     print type(name)
@@ -472,7 +473,7 @@ Python会在以下路径中搜索它想要寻找的模块：
 ### usage
 
 1. --user (recommend)
-    
+
     # install to ~/.local
     pip install --user pkg_name
 
