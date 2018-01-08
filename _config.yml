@@ -1,6 +1,6 @@
 title: wogong
 baseurl: ""
-production_url: https://wogong.github.io
+production_url: http://blog.wogong.net
 permalink: /blog/:title
 
 timezone: Asia/Shanghai
