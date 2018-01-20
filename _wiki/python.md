@@ -1,37 +1,8 @@
 ---
 title: python
 date: 2014-06-10
-update: 2016-10-19
+update: 2018-01-18
 ---
-
-<!-- vim-markdown-toc GFM -->
-* [NOTE](#note)
-* [Project](#project)
-* [Basics](#basics)
-* [Scientific](#scientific)
-    * [函数库 module](#函数库-module)
-    * [数值分析](#数值分析)
-* [Vamei tutorial](#vamei-tutorial)
-    * [Python基础教程01 Hello World](#python基础教程01-hello-world)
-    * [Python基础教程02 基本数据类型](#python基础教程02-基本数据类型)
-    * [Python基础教程03 序列](#python基础教程03-序列)
-    * [Python基础教程04 运算](#python基础教程04-运算)
-    * [Python基础教程05 缩进和选择](#python基础教程05-缩进和选择)
-    * [Python基础教程06 循环](#python基础教程06-循环)
-    * [Python基础教程07 函数](#python基础教程07-函数)
-    * [Python基础教程08 面向对象的基本概念](#python基础教程08-面向对象的基本概念)
-    * [Python基础教程09 面向对象的进一步拓展](#python基础教程09-面向对象的进一步拓展)
-    * [Python基础教程10 反过头来看看](#python基础教程10-反过头来看看)
-    * [Python进阶01 词典](#python进阶01-词典)
-    * [Python进阶02 文本文件的输入输出](#python进阶02-文本文件的输入输出)
-    * [Python进阶03 模块](#python进阶03-模块)
-    * [Python进阶04 函数的参数对应](#python进阶04-函数的参数对应)
-    * [Python进阶05 循环设计](#python进阶05-循环设计)
-    * [Python进阶06 循环对象](#python进阶06-循环对象)
-    * [Python进阶07 函数对象](#python进阶07-函数对象)
-    * [usage](#usage)
-
-<!-- vim-markdown-toc -->
 
 ## NOTE
 1. `python -m SimpleHTTPServer` 8000端口快速共享文件。(Python3 中取消了SimpleHTTPServer 这个模块。)
@@ -50,6 +21,8 @@ update: 2016-10-19
   dir() 查看当前导入的模块
 8. requests docuemnt: http://docs.python-requests.org/en/master/
 9. BeautifulSoup 还需要进一步学习，熟悉选择器的用法
+10. `pip install $(pip list --outdated | awk '{ print $1 }') --upgrade`
+
 ## Project
 1. moinmoin
    在线wiki。还不错。使用过一段时间，从vimwiki 迁移过来，后来再次迁移到gollum。
