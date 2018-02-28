@@ -25,7 +25,23 @@ ubuntu下ack居然是另外一个东西，解决：
 7. `du -sh * | sort -n`
 8. 最近修改文件find / -size +1000000c -mtime -1
 9. 查看 32/64 位 `getconf LONG_BIT`
- 
+
+## Ubuntu
+1. 键盘布局
+
+    在Ubuntu系统终端中执行：
+    sudo vim /etc/default/keyboard
+    修改下面这一行：（改变capslock为ctrl）
+    XKBOPTIONS="ctrl:nocaps"
+
+2. apt-get
+
+    apt-get update
+    apt-get install
+    apt-cache search
+    apt-cache show
+    apt-get autoremove
+
 ## 常用命令
 1. 用户管理
    - `useradd, userdel, usermod, passwd`

@@ -468,3 +468,13 @@ Python会在以下路径中搜索它想要寻找的模块：
 
     pip install -U
     pip uninstall
+
+
+## Mac 下的 Python 环境
+系统自带：`/System/Library/Frameworks/Python.framework/Versions/2.7`
+homebrew: `usr/local/Cellar/python3/`
+homebrew: `usr/local/Cellar/python2/`
+Anaconda
+python 系统自带
+python2 brew python2
+python3 brew python3

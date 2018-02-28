@@ -1,12 +1,7 @@
 ---
 title: docker
 date: 2015-08-04 20:34:28
-modified: 2015-08-04 20:34:28
-category: 
-tags: 
-slug: 
-authors: wogong
-summary: 
+update: 2018-01-24
 ---
 
 
@@ -18,12 +13,14 @@ summary:
     docker images
     
     # run bash in the container
-    docker run -t -i wogong/run:test /bin/bash
+    # t means tag
+    docker run -ti wogong/run:test /bin/bash
 
     # Building an image from a Dockerfile
-    docker build -t="wogong/cow:test" docker-cow/
+    docker build -t wogong/cow:test docker-cow/
 
-    # 
+    docker build --no-cache
+
 
 
 
