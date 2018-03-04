@@ -7,18 +7,18 @@ modified: 2015-07-10
 我使用过的发行版，按照时间顺序依次为：Ubuntu, Fedora, Archlinux, Debian。使用时间最久远、最喜欢的是Archlinux。目前使用最多的是Archlinux & Debian。
 
 ## note
+
 1. ubuntu  `cat /etc/issue`
 2. ntp sudo apt-get install ntpdate `ntpdate ntp.tuna.tsinghua.edu.cn`  3.cn.pool.ntp.org
    配置文件`/etc/ntp.conf`
    hwclock -w ?
 3. 更改默认shell `chsh -s /bin/bash`
-4. 切换到systemd出现错误，原因在于fstab文件挂载了
-vmware分享文件夹，官方wiki中说明。
+4. 切换到systemd出现错误，原因在于fstab文件挂载了vmware分享文件夹，官方wiki中说明。
 5. ack-grep
-ubuntu下ack居然是另外一个东西，解决：
-`sudo ln -sf /usr/bin/ack-grep /usr/local/bin/ack`
-基本配置文件：fast_cgi
-添加php插件后需要重启：
+    ubuntu下ack居然是另外一个东西，解决：
+    `sudo ln -sf /usr/bin/ack-grep /usr/local/bin/ack`
+    基本配置文件：fast_cgi
+    添加php插件后需要重启：
         service nginx restart
         service php5-fpm restart
 6. split 分割文件，cat合并文件
@@ -27,6 +27,7 @@ ubuntu下ack居然是另外一个东西，解决：
 9. 查看 32/64 位 `getconf LONG_BIT`
 
 ## Ubuntu
+
 1. 键盘布局
 
     在Ubuntu系统终端中执行：
@@ -36,22 +37,25 @@ ubuntu下ack居然是另外一个东西，解决：
 
 2. apt-get
 
-    apt-get update
-    apt-get install
-    apt-cache search
-    apt-cache show
-    apt-get autoremove
+        apt-get update
+        apt-get install
+        apt-cache search
+        apt-cache show
+        apt-get autoremove
+
+3. PPA 文件路径 `/etc/apt/sources.list.d`
 
 ## 常用命令
+
 1. 用户管理
    - `useradd, userdel, usermod, passwd`
    - `groupadd, groupdel, groupmod`
    - 更改用户名 `usermod -l new_user_name old_user_name`
    - 用户信息文件 `/etc/passwd`
    - 踢出已登录用户 `pkill -KILL -t pts/0`
-     可以采用`w`查看当前登录用户详细信息
-3. rsyslog 日志系统
-4. pacman
+   - 可以采用`w`查看当前登录用户详细信息
+2. rsyslog 日志系统
+3. pacman
 
         #强制更新包目录
         pacman -Syy
@@ -101,49 +105,48 @@ ubuntu下ack居然是另外一个东西，解决：
 
         pacman -Qe
 
-5. 文件系统  
-   `fdisk, mkfs.ext3, mount df, du`
-6. 任务管理
-   `ps aux, top`
-7. 挂载分区
+4. 文件系统 `fdisk, mkfs.ext3, mount df, du`
+5. 任务管理 `ps aux, top`
+6. 挂载分区
    1. Linux下挂载windows分区 我现在是windows7与Fedora16双系统，在Fedora中可以看到windows下的磁盘，但是每次使用都得类似于移动设备载入一般，而且名称是复杂无规律的字符串，非常不方便操作。今天偶然看到挂载分区的技巧，记录如下： 1.为C盘也就是/dev/sda1挂载一个目录，为/mnt/winC，步骤如下， mkdir /mnt/winC mount -t ntfs -o nls=utf8,umask=000 /dev/sda1 /mnt/winC 可以通过df -lh查看是否已经挂载成功。
    2. 若是希望开机自动实现上述挂载，可以这么做： 在/etc/fstab文件加入一行：/dev/sda1 /mnt/winC ntfs umask=000,nls=utf8 若是fat32分区，这样：/dev/sda2 /mnt/winD vfat umask=0,iocharset=utf8 0 0
    3. 可以这样设置快捷方式到桌面： ln -s /mnt/winC ~root/Desktop/winC
-8. 日志系统
-arch和ubuntu的文档都是很详细的，需要时再进一步看吧
-https://wiki.archlinux.org/index.php/Rsyslog
+
+7. 日志系统
+    arch和ubuntu的文档都是很详细的，需要时再进一步看吧
+    https://wiki.archlinux.org/index.php/Rsyslog
    - 修改rsyslog文件，将/etc/rsyslog.d/50-default.conf
    - 重启rsyslog服务service rsyslog restart
-   - 查看日志： 
+   - 查看日志
               more /var/log/filename
               tail -f /var/log/filename
 
 ## package
+
 1. ranger
-vim风格的cli文件管理器。更改默认编辑器及
-shell等等：依靠系统环境变量
+    vim风格的cli文件管理器。更改默认编辑器及
+    shell等等：依靠系统环境变量
 2. dnsmasq
 3. postfix 《Postfix 权威指南》
-删除邮件队列中全部文件：`postsuper -d ALL`
-显示邮件队列邮件：`postcat -q ID`
-`postmap hash:/etc/postfix/name` 大部分文件都需要这样做才OK
+    删除邮件队列中全部文件：`postsuper -d ALL`
+    显示邮件队列邮件：`postcat -q ID`
+    `postmap hash:/etc/postfix/name` 大部分文件都需要这样做才OK
 4. apache
-ubuntu手册，虚拟主机配置指南
-http://wiki.ubuntu.org.cn/Apache%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA%E6%8C%87%E5%8D%97
-简单配置网站：
-    - 配置文件
-    - sudo a2ensite edunuke
-    - sudo a2dissite edunuke
-    - sudo /etc/init.d/apache2 restart 或者 service apache2 reload/restart
-5. freetalk   
+    ubuntu手册，虚拟主机配置指南
+    http://wiki.ubuntu.org.cn/Apache%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA%E6%8C%87%E5%8D%97
+    简单配置网站：
+        - 配置文件
+        - sudo a2ensite edunuke
+        - sudo a2dissite edunuke
+        - sudo /etc/init.d/apache2 restart 或者 service apache2 reload/restart
+5. freetalk
    console下不错的Jobber客户端。
-6. irssi  
+6. irssi
    IRC console 客户端
 7. vsftp
    靠谱的FTP 服务端软件。  
    `systemctl status vsftpd.service`
-8. samba  
-9. [[shadowsocks]]
+8. samba
 10. ufw
 11. iptables
 12. su
@@ -171,6 +174,7 @@ ubuntu下ack居然是另外一个东西，解决：`sudo ln -sf /usr/bin/ack-gre
 
 
 ## Linux常用命令
+
 - 查看系统已有字体：fc-list
 - 查看电池电量信息：acpi; acpi -i
 
@@ -178,15 +182,6 @@ ubuntu下ack居然是另外一个东西，解决：`sudo ln -sf /usr/bin/ack-gre
     cd -  后退
     cd ..  上一层目录
     cd .  这个真心没用，本层目录
-
-- 更改路径：
-  # 暂时使用
-亦即重启或注销后就失效了。
-使用 PATH=$PATH:目录:目录... 直接赋值。如 PATH=$PATH:/sbin。
-	# 长期使用
-在全局文件 /etc/profile 中或用户自定义文件 ~/.bash_profile 中添加上述命令即可！bash_rc?
-
-
 
 v看到终端输出命令
 
@@ -213,31 +208,6 @@ cat /etc/passwd |awk -F [:] '{print $4}' |sort|uniq | getent group |awk -F [:] '
 这里用到一个命令是getent,可以通过组ID来查找组信息,如果这个命令没有的话,那就很难查找,系统中所有的组了.
 二，用户操作
 1，增加用户
-查看复制打印?
-[root@krlcgcms01 mytest]# useradd --help  
-Usage: useradd [options] LOGIN  
-  
-Options:  
- -b, --base-dir BASE_DIR       设置基本路径作为用户的登录目录  
- -c, --comment COMMENT         对用户的注释  
- -d, --home-dir HOME_DIR       设置用户的登录目录  
- -D, --defaults                改变设置  
- -e, --expiredate EXPIRE_DATE  设置用户的有效期  
- -f, --inactive INACTIVE       用户过期后，让密码无效  
- -g, --gid GROUP               使用户只属于某个组  
- -G, --groups GROUPS           使用户加入某个组  
- -h, --help                    帮助  
- -k, --skel SKEL_DIR           指定其他的skel目录  
- -K, --key KEY=VALUE           覆盖 /etc/login.defs 配置文件  
- -m, --create-home             自动创建登录目录  
- -l,                           不把用户加入到lastlog文件中  
- -M,                           不自动创建登录目录  
- -r,                           建立系统账号  
- -o, --non-unique              允许用户拥有相同的UID  
- -p, --password PASSWORD       为新用户使用加密密码  
- -s, --shell SHELL             登录时候的shell  
- -u, --uid UID                 为新用户指定一个UID  
- -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping  
 
 useradd test
 passwd test
