@@ -1,7 +1,7 @@
 ---
 title: shadowsocks
 date: 2015-01-10
-modified: 2015-06-18 08:07:12
+update: 2015-06-18 08:07:12
 ---
 
 由 @clowwindy 开发的轻量级服务器中转包传输工具。

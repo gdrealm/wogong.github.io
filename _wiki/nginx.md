@@ -2,7 +2,7 @@
 layout: wiki
 title: nginx
 date: 2014-08-30
-modified: 2015-06-18 20:47:32
+update: 2015-06-18 20:47:32
 ---
 
 ## note

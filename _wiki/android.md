@@ -1,7 +1,7 @@
 ---
 title: android
 date: 2015-01-15
-modified: 2015-07-13 08:22:54
+update: 2015-07-13 08:22:54
 ---
 
 ## tips

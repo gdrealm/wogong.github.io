@@ -1,7 +1,7 @@
 ---
 title: linux
 date: 2014-07-18
-modified: 2015-07-10
+update: 2015-07-10
 ---
 
 我使用过的发行版，按照时间顺序依次为：Ubuntu, Fedora, Archlinux, Debian。使用时间最久远、最喜欢的是Archlinux。目前使用最多的是Archlinux & Debian。

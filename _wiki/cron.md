@@ -2,7 +2,7 @@
 layout: wiki
 title: cron
 date: 2014-12-07
-modified: 2015-08-30 01:13:20
+update: 2015-08-30 01:13:20
 ---
 
 Linux 定时任务

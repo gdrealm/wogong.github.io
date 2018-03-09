@@ -1,7 +1,7 @@
 ---
 title: kindle
 date: 2014-07-16
-modified: 2015-08-25 21:57:54
+update: 2015-08-25 21:57:54
 ---
 
 ## services

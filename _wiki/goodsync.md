@@ -1,7 +1,7 @@
 ---
 title: goodsync
 date: 2015-07-21 19:51:50
-modified: 2015-07-21 19:51:50
+update: 2015-07-21 19:51:50
 ---
 
 using mklink 同步多个folder

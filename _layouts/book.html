@@ -11,8 +11,10 @@ layout: default
 <div>
 <p>
 <hr />
-<span itemprop="datePublished" content="{{page.update}}">Published {{ page.create}}, Updated {{page.update}}</span> <br>
-<span>Link: <a itemprop="url" href="http://www.wogong.net{{page.url}}">www.wogong.net{{page.url}}</a></span> <br>
+<span itemprop="datePublished" content="{{page.date}}">Published {{ page.date}}</span> <br>
+{% if page.update %}
+<span itemprop="dateUpdated" content="{{page.update}}">Updated {{page.update}}</span> <br>
+{% endif %}
 <span itemscope itemtype="http://schema.org/Article">
 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
   BY <span itemprop="name">wogong</span>

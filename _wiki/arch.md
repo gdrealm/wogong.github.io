@@ -1,7 +1,7 @@
 ---
 title: arch
 date: 2014-07-18
-modified: 2015-07-12 19:23:27
+update: 2015-07-12 19:23:27
 ---
 
 Install Arch Linux on Vultr instance using custom ISO

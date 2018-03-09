@@ -1,7 +1,7 @@
 ---
 title: LS-DYNA
 date: 2015-03-20
-modified: 2015-07-13 22:32:20
+update: 2015-07-13 22:32:20
 ---
 
 ## Note

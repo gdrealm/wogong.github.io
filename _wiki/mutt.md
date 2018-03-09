@@ -2,7 +2,7 @@
 layout: wiki
 title: mutt
 date: 2015-06-17
-modified: 2015-10-20 14:25:24
+update: 2015-10-20 14:25:24
 ---
 
 ## note
