@@ -1,5 +1,4 @@
 ---
-layout: wiki
 title: tex
 date: 2013-06-13
 update: 2016-11-08
@@ -11,6 +10,7 @@ update: 2016-11-08
 - 插图 LaTeX2e 插图指南 <http://www.ctex.org/documents/latex/graphics/graphics.html>
 
 2. 排版
+
 一直想学而未坚持下来，总是在使用的时候为求方便叛逃
 到Office阵营。其实Tex/LaTex并不是十分难学，前期
 学习成本的确会高一点，但是之后的方便会证明这种投入

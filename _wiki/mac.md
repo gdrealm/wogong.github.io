@@ -21,3 +21,9 @@ defaults write com.apple.screencapture name "我的截图"
 killall SystemUIServer
 defaults write com.apple.screencapture name "\$ScreenShot"
 killall SystemUIServer
+
+networksetup -setdnsservers（网络服务）（DNS IP）
+
+例如，将Wi-Fi设置为Google的DNS为8.8.8.8语法将为
+
+networksetup -setdnsservers Wi-Fi 8.8.8.8
