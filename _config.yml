@@ -1,6 +1,6 @@
 title: wogong
 baseurl: ""
-production_url: http://blog.wogong.net
+production_url: http://www.wogong.net
 permalink: /blog/:title
 
 timezone: Asia/Shanghai
@@ -12,6 +12,8 @@ author:
 
 collections:
     wiki:
+        output: true
+    book:
         output: true
 
 # front-matter default
@@ -28,5 +30,12 @@ defaults:
         values:
             layout: "wiki" # overrides previous default layout
             author: "Cheng Zhen"
+    -
+        scope:
+            path: ""
+            type: "book" #page, post or draft
+        values:
+            layout: "book" # overrides previous default layout
+            author: "Cheng Zhen"
 
-theme: jekyll-theme-leap-day
+Exclude: [books]

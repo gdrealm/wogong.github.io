@@ -143,8 +143,6 @@ array(3) {
 }
 
 var_export($a); 
-输出结果：
-{{{array ( 'a' => 'apple', 'b' => 'banana', 'c' => array ( 0 => 'x', 1 => 'y', 2 => 'z', ), ) }}}
 
 print "<pre>"; var_export($a); print "</pre>"; 
 输出结果：

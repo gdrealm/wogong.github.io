@@ -1,0 +1,77 @@
+title: 
+date: 2015-08-26 17:14:21
+modified: 2015-08-26 17:14:21
+category: 
+tags: 
+slug: keybase.txt
+authors: wogong
+summary: 
+
+==================================================================
+https://keybase.io/wogong
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.wogong.net
+  * I am wogong (https://keybase.io/wogong) on keybase.
+  * I have a public key with fingerprint 9154 A629 62DE 93DC 64EC  3D4D 05D6 93E0 09DD 1201
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "9154a62962de93dc64ec3d4d05d693e009dd1201",
+            "host": "keybase.io",
+            "key_id": "05d693e009dd1201",
+            "kid": "010185f40af6130fe23a91e00bb2361b954a587a1c73c37994c509813336c8d484bd0a",
+            "uid": "5dd411a6c2bc017c9024ad282fbd4e00",
+            "username": "wogong"
+        },
+        "service": {
+            "hostname": "www.wogong.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1440579210,
+    "expire_in": 157680000,
+    "prev": "0c2fa86303e45e5fd101477311d2eccf493f00a135fa6093e1ecc53c5a880d4a",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.43
+Comment: https://keybase.io/crypto
+
+yMIYAnicbZJdSBVBGIbPyfxJEMuoKAhqI00Rm9mZ/TtZqSURSSZliWin3Z3Z03Zq
+97i7aiIdi6AyKEMDSQwjBC8qAi9S0cpEyDK6CPqBiLIuBKMoKvoRqlnNu+ZmmPd7
+vvebeZnRtIRAajDxWdubBa8ygsHxewW1gfJX8bONnGaTBi7UyEXpzGaYVoQ6Mce0
+PC7EKVDAqsgrIk+ogoguYqojggkQiKggCoBCCOQB5HK5g7brdzAbTXVpnmkzjR3C
+JmHqf/jobAECKAsGBqohQgQMyiNVgQzUNB6JUFPYfEGWVKhLSEeSomBdAIoMEUKi
+LhMsY40AldnVztgJhGAIVVHnNR1ASVcAj1XCy7yhEcxcfdCljqUeoYyutyO2FeGO
+5XJMqzN16gfgv2OuXl+fN8vkWdRjvTHH9mzdPsxqBz0vFvJbvYbYDEu18D+XsGZa
+hMXIGuqo45q2xYUgI3XP9G0hxkCQFB6CXI4ejZkODZs+IUiiDNjyx9A6PxudN1RZ
+RABRLFDBICwrLEkIQsJTXTewggwAVIgEQxUBixcyVUC6oMoyINhPxaU1ls2FJHZN
+NcIsXTNiqV6tQ7ljI8NV8wPB1EBS4jz/IwRSFyyc+x6rc5L/NJ1ovNXb/n20fYPi
+nty5923+ixfve/+U9m/7eRMWc+uDdaumBn7tzi88cDXWvCu9b33X8o/XMz4PTgrx
+zrLXL6dOFRkFTdG7KcfTn9zNkOKJDx/FvbUPbv/uxpk9ZzdFk27Ek1pGiyern1aq
+mfc796QPd+yvLGhem9PT2uZ2nIkuuXau5l38KHfokzK0qCS1I2Fs5ErDymnUcCGt
+Ojt/c9/X53i8JTnnR1Z4HS274zpcRdV0d2jNxkUw8n1L1umufTtTLk19k2LlK8Ay
+cPmxl93UV7q1cCLBqsjsd51CvnWq5GJL8uD5gcLFX3q2d0/8SPrMN/9u/9A+1Jpd
+NLajqGjpX1v+H38=
+=jNDq
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wogong
+
+==================================================================
+

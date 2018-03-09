@@ -1,16 +1,18 @@
 ---
 title: jekyll
 date: 2014-06-19
-modified: 2014-06-19
+update: 2014-06-19
 ---
 
 ## install
+
 	sudo apt-get install ruby1.9.1-dev
 	sudo gem install jekyll
 	sudo gem install rdiscount
 	sudo gem install therubyracer
 
 ## usage
+
 	jekyll build -s source -d \_sites
 	jekyll serve --host 0.0.0.0 --port 4000
 	

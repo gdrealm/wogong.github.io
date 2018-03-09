@@ -9,5 +9,4 @@ static/
 *.msi
 *.apk
 *.plist
-books/
 www/
